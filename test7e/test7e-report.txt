@@ -1,0 +1,51 @@
+TEST 7E — SQUAWK-CORRELATED MODE A 2D LOCALIZATION
+==========================================================
+
+TEST 7E STATUS: PASS
+
+EVIDENCE
+Confirmed squawk intervals: 143 across 87 aircraft and 88 distinct squawks.
+Fresh 3+ receiver Mode-A events: 2421; same-squawk truth available: 2410.
+Strong TDOA associations: 2248 unthinned; 837 independent; unique aircraft: 28.
+
+LOCALIZATION (independent strong events; unambiguous branches)
+Attempted 837, converged 837, unambiguous 102, ambiguous 732, rejected geometry 3.
+Horizontal error P50/P75/P90/P95/P99/max (m): 121.54347975108382, 392.9019766896198, 686.0741823158835, 890.3547441222917, 1809.8407502617852, 2588.0816860264795.
+3 receivers: {"ambiguous": 732, "attempted": 837, "condition": {"count": 102, "max": 68.26283144289431, "median": 5.538473320894553, "p50": 5.538473320894553, "p75": 22.226544224330826, "p90": 61.03122533057946, "p95": 65.64523168352423, "p99": 67.81815878722344}, "converged": 837, "horizontal_error_m": {"count": 102, "max": 2588.0816860264795, "median": 121.54347975108382, "p50": 121.54347975108382, "p75": 392.9019766896198, "p90": 686.0741823158835, "p95": 890.3547441222917, "p99": 1809.8407502617852}, "rejected_geometry": 3, "tdoa_rms_us": {"count": 102, "max": 9.285805883891937e-12, "median": 1.2617025816479606e-12, "p50": 1.2617025816479606e-12, "p75": 2.340045458853506e-12, "p90": 4.555779414193888e-12, "p95": 4.872084223495211e-12, "p99": 6.182253142045994e-12}, "unambiguous": 102}
+4 receivers: {"ambiguous": 0, "attempted": 0, "condition": {"count": 0, "max": null, "median": null, "p50": null, "p75": null, "p90": null, "p95": null, "p99": null}, "converged": 0, "horizontal_error_m": {"count": 0, "max": null, "median": null, "p50": null, "p75": null, "p90": null, "p95": null, "p99": null}, "rejected_geometry": 0, "tdoa_rms_us": {"count": 0, "max": null, "median": null, "p50": null, "p75": null, "p90": null, "p95": null, "p99": null}, "unambiguous": 0}
+
+SQUAWK SHARING
+UNIQUE: {"ambiguity_percent": 0.0, "ambiguous_events": 0, "association_success_percent": 93.27800829875518, "candidate_events": 2410, "horizontal_p50_m": 121.54347975108382, "horizontal_p90_m": 686.0741823158835, "horizontal_p95_m": 890.3547441222917, "plausible_events": 0, "squawk_group": "UNIQUE_SQUAWK", "strong_events": 2248}
+SHARED_2: {"ambiguity_percent": 0, "ambiguous_events": 0, "association_success_percent": 0, "candidate_events": 0, "horizontal_p50_m": null, "horizontal_p90_m": null, "horizontal_p95_m": null, "plausible_events": 0, "squawk_group": "SHARED_2", "strong_events": 0}
+SHARED_3_PLUS: {"ambiguity_percent": 0, "ambiguous_events": 0, "association_success_percent": 0, "candidate_events": 0, "horizontal_p50_m": null, "horizontal_p90_m": null, "horizontal_p95_m": null, "plausible_events": 0, "squawk_group": "SHARED_3_PLUS", "strong_events": 0}
+
+DIAGNOSTICS
+Median east/north error (m): 57.70217446951785 / -58.27183394937825.
+Altitude +/-1 km absolute horizontal-error change median/P90 (m): 45.251241705035355 / 61.0439182314131.
+Independent truth-association TDOA RMS median/P90/P95 (us): 0.06568181184690587 / 0.19016610479759372 / 0.3060781417455903.
+The 3-receiver fixed-altitude problem has two equations and two unknowns, so its selected-branch solver residual is numerically zero; truth-association residual and condition are the meaningful timing/geometry diagnostics. Test 7C's four-receiver synthetic reference is 0.10/0.25/0.50/1.00 us -> about 65/162/325/653 m median.
+
+CONCLUSION
+Existing data meet the requested diversity target; Mode-A timestamps plus independently supplied altitude produce a directly validated horizontal position.
+PASS is limited to 3-receiver, unique-squawk evidence: 2 strict 4-receiver candidate cliques existed but none achieved an independent strong association, and no simultaneous shared-squawk truth case survived, so redundancy and shared-code disambiguation remain unvalidated.
+Squawk was never treated as identity. Same-code candidates were ranked only by TDOA geometry. Truth latitude/longitude was used only after the solve for error measurement.
+
+KEY QUESTIONS
+1. Usable squawk timeline? Yes: 143 confirmed intervals.
+2. Aircraft with simultaneous squawk and position truth? 87; 28 appear in independent strong events.
+3. Independent 3+ receiver same-squawk events? 837 strong after thinning (2410 candidate events had same-squawk truth).
+4. Strongly confirmed by TDOA? 2248 unthinned, 837 independent.
+5. Unique aircraft represented? 28.
+6. Horizontal P50/P75/P90/P95/P99 (m)? 121.54347975108382 / 392.9019766896198 / 686.0741823158835 / 890.3547441222917 / 1809.8407502617852.
+7. Three receivers? 837 attempted; 102 unambiguous; P50/P90 121.54347975108382 / 686.0741823158835 m.
+8. Four receivers? 2 candidate cliques, but 0 independent strong events; not validated in this capture.
+9. Does sharing increase ambiguity? Not measurable: no simultaneous shared-squawk truth cases.
+10. Can TDOA disambiguate shared squawks? Not established by this capture.
+11. Best receiver combinations? {"Dao_Cai_chien;QK4;BachLongVi": {"ambiguous": 0, "attempted": 3, "condition": {"count": 3, "max": 5.549397537310194, "median": 3.6980225162713847, "p50": 3.6980225162713847, "p75": 4.623710026790789, "p90": 5.179122533102431, "p95": 5.364260035206312, "p99": 5.5123700368894175}, "converged": 3, "horizontal_error_m": {"count": 3, "max": 110.87708949787586, "median": 104.31521780444231, "p50": 104.31521780444231, "p75": 107.59615365115909, "p90": 109.56471515918915, "p95": 110.2209023285325, "p99": 110.74585206400718}, "rejected_geometry": 0, "tdoa_rms_us": {"count": 3, "max": 4.728523550595865e-12, "median": 3.4635636269884553e-12, "p50": 3.4635636269884553e-12, "p75": 4.09604358879216e-12, "p90": 4.475531565874383e-12, "p95": 4.602027558235124e-12, "p99": 4.703224352123717e-12}, "unambiguous": 3}, "T37;Dao_Cai_chien;BachLongVi": {"ambiguous": 713, "attempted": 716, "condition": {"count": 0, "max": null, "median": null, "p50": null, "p75": null, "p90": null, "p95": null, "p99": null}, "converged": 716, "horizontal_error_m": {"count": 0, "max": null, "median": null, "p50": null, "p75": null, "p90": null, "p95": null, "p99": null}, "rejected_geometry": 3, "tdoa_rms_us": {"count": 0, "max": null, "median": null, "p50": null, "p75": null, "p90": null, "p95": null, "p99": null}, "unambiguous": 0}, "T37;Dao_Cai_chien;QK4": {"ambiguous": 17, "attempted": 66, "condition": {"count": 49, "max": 68.26283144289431, "median": 22.261934025255446, "p50": 22.261934025255446, "p75": 60.752641068224676, "p90": 65.81682122164862, "p95": 67.01284931232931, "p99": 68.05214081729349}, "converged": 66, "horizontal_error_m": {"count": 49, "max": 2588.0816860264795, "median": 410.0113794601148, "p50": 410.0113794601148, "p75": 624.2391284405808, "p90": 904.3575203518611, "p95": 1431.3969337841127, "p99": 2216.1669093670107}, "rejected_geometry": 0, "tdoa_rms_us": {"count": 49, "max": 4.966410785393149e-12, "median": 1.0336544996020966e-12, "p50": 1.0336544996020966e-12, "p75": 1.7182847017364237e-12, "p90": 3.864562401203985e-12, "p95": 4.686787481342556e-12, "p99": 4.922060038262073e-12}, "unambiguous": 49}, "T37;QK4;BachLongVi": {"ambiguous": 2, "attempted": 52, "condition": {"count": 50, "max": 5.790790625791712, "median": 4.616872992947414, "p50": 4.616872992947414, "p75": 5.0277945113238305, "p90": 5.343022918075265, "p95": 5.5031075114180705, "p99": 5.661802280348441}, "converged": 52, "horizontal_error_m": {"count": 50, "max": 181.66743482251547, "median": 77.31470805915531, "p50": 77.31470805915531, "p75": 113.27255704072988, "p90": 155.85300120327088, "p95": 169.77650296266114, "p99": 179.94751335786526}, "rejected_geometry": 0, "tdoa_rms_us": {"count": 50, "max": 9.285805883891937e-12, "median": 1.5220995161869854e-12, "p50": 1.5220995161869854e-12, "p75": 2.6052895191026746e-12, "p90": 4.775344403913885e-12, "p95": 5.110550479662097e-12, "p99": 7.770000705319081e-12}, "unambiguous": 50}} No 4-receiver 3-of-4 ranking was possible.
+12. Systematic east/north bias? Median 57.70217446951785 / -58.27183394937825 m; small relative to P90, with no correction applied.
+13. Consistent with Test 7C timing behavior? Broadly yes in scale, but only association residual—not an overdetermined solver residual—is observable for these 3-receiver fixes.
+14. +/-1 km altitude material? Median/P90 absolute error change 45.251241705035355 / 61.0439182314131 m; generally not material, with outliers retained.
+15. Useful Mode-A 2D localization? Yes for independently unambiguous 3-receiver branches: P50 121.54347975108382 m and P90 686.0741823158835 m; broad 4-receiver/shared-squawk claims are not supported.
+
+FILES
+test7e-summary.json; test7e-squawk-timeline.csv; test7e-modea-events.csv; test7e-truth-associations.csv; test7e-localization.csv; test7e-per-aircraft.csv; test7e-squawk-groups.csv; test7e-candidates.csv; test7e-failures.csv; test7e-three-of-four.csv; test7e-altitude-sensitivity.csv

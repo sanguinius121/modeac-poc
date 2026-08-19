@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="vi">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Bộ quy hoạch triển khai MLAT</title>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body class="basic-mode">
+<header>
+ <div><h1>Bộ quy hoạch triển khai MLAT</h1><span class="phase">Phase Tool-3.5 · đánh giá bố trí và vùng thu</span></div>
+ <div class="display-mode" role="radiogroup" aria-label="Chế độ hiển thị">
+  <span>Chế độ hiển thị:</span>
+  <label><input type="radio" name="display-mode" value="basic" checked> Cơ bản</label>
+  <label><input type="radio" name="display-mode" value="advanced"> Nâng cao</label>
+ </div>
+ <button id="show-help" class="header-button">Xem giải thích các chỉ số</button>
+</header>
+<main>
+ <aside>
+  <section>
+   <div class="section-title"><h2>Trạm thu</h2><span id="receiver-count"></span></div>
+   <div class="button-row"><button id="load-current">Nạp mạng hiện tại</button><button id="add-receiver">+ Thêm trạm thu</button></div>
+   <div class="button-row reception-global"><button id="show-all-reception">Hiện mọi vùng thu</button><button id="hide-all-reception">Ẩn mọi vùng thu</button></div>
+   <label class="inline"><input id="show-coverage" type="checkbox" checked> Hiện lớp vùng thu</label>
+   <p class="outline-caveat">Vùng readsb chỉ phản ánh nơi đã quan sát được aircraft, không bảo đảm vùng phủ RF theo mọi hướng.</p>
+   <div id="receiver-list"></div>
+  </section>
+  <section>
+   <h2>Vùng giám sát <span class="help" title="Planner chỉ đánh giá các điểm lưới nằm trong vùng này. Kết luận không tự động áp dụng bên ngoài vùng đã vẽ.">?</span></h2>
+   <p class="hint">Dùng công cụ đa giác hoặc hình chữ nhật trên bản đồ.</p>
+   <div id="area-info">Chưa chọn vùng.</div>
+   <button id="clear-area">Xóa vùng giám sát</button>
+  </section>
+  <section class="controls">
+   <h2>Phân tích mạng</h2>
+   <label>Độ cao mục tiêu (m)<input id="target-altitude" type="number" value="2500" list="altitudes" min="0" max="30000"><datalist id="altitudes"><option value="1000"><option value="2500"><option value="5000"><option value="10000"><option value="12000"></datalist></label>
+   <label>Sai số thời gian giả định <span class="help" title="Mức nhiễu timestamp giả định cho từng trạm. P95 là dự báo theo giá trị này, không phải sai số đo thực tế.">?</span><select id="timing-noise"><option value="0.1">0,10 µs</option><option selected value="0.25">0,25 µs</option><option value="0.5">0,50 µs</option><option value="1">1,00 µs</option></select></label>
+   <label>Độ phân giải lưới <span class="help" title="Khoảng cách gần đúng giữa các điểm được phân tích. Lưới nhỏ chi tiết hơn nhưng chạy lâu hơn.">?</span><select id="grid-step"><option value="20">20 km</option><option selected value="10">10 km</option><option value="5">5 km</option></select></label>
+   <label class="advanced-only">Chiến lược bố trí (Geometry strategy)<select id="geometry-strategy"><option selected value="best_4_of_n">Tổ hợp 4 trạm tốt nhất (Best 4-of-N)</option><option value="strict_4">Đúng 4 trạm đã chọn (Strict selected 4RX)</option><option value="worst_4_of_n">Tổ hợp 4 trạm yếu nhất (Worst 4-of-N)</option><option value="full_n_diagnostic">Đánh giá toàn bộ trạm (Full-N diagnostic; best-4 là chính)</option></select></label>
+   <div id="planning-warning" class="outline-caveat advanced-only">Backend MLAT realtime hiện dùng bốn trạm cố định. Kết quả 4-of-N tại đây chỉ phục vụ quy hoạch.</div>
+   <label class="advanced-only">Giả lập mất trạm thu<select id="failed-receiver"><option value="">Không</option></select></label>
+   <label>Lớp bản đồ <span class="help" title="Nên xem lần lượt: số trạm thu được, chất lượng tốt nhất, P95, khả năng mất một trạm và mức phụ thuộc trạm.">?</span><select id="view-mode"></select></label>
+   <label id="importance-control">Trạm cần xem mức phụ thuộc <span class="help" title="Cho biết best P95 tăng bao nhiêu khi không sử dụng trạm này. Đây là đóng góp về bố trí, không phải chất lượng phần cứng.">?</span><select id="importance-receiver"></select></label>
+   <div id="stale" class="stale">Cấu hình đã thay đổi — hãy phân tích lại.</div>
+   <div class="analysis-actions"><button id="analyze" class="primary">Phân tích mạng</button><button id="clear-results" disabled>Xóa kết quả phân tích</button></div>
+   <div id="progress" hidden>Đang phân tích…</div>
+  </section>
+  <section>
+   <h2>Cấu hình</h2>
+   <div class="button-row"><button id="export-config">Xuất JSON</button><label class="file-button">Nhập JSON<input id="import-config" type="file" accept="application/json"></label></div>
+  </section>
+ </aside>
+ <div id="map"></div>
+</main>
+
+<section id="assessment-panel" hidden>
+ <div class="assessment-heading"><div><span class="eyebrow">ĐÁNH GIÁ MẠNG MLAT</span><h2 id="overall-rating">Tổng quan</h2></div><span class="ux-badge">Diễn giải UX</span></div>
+ <div id="assessment-scope"></div>
+ <div id="assessment-cards"></div>
+ <div id="assessment-paragraph"></div>
+ <p class="assessment-note">GOOD/ACCEPTABLE/POOR/VERY_POOR là lớp chất lượng lõi. “Rất tốt/Tốt/Trung bình/Kém” ở panel này chỉ là diễn giải UX từ metric tổng hợp.</p>
+</section>
+
+<footer>
+ <section id="legend"><h2>Chú giải</h2><div id="legend-content"></div></section>
+ <section id="network-summary"><h2>Tổng quan mạng</h2><div id="summary-content">Hãy chạy phân tích để xem kết quả.</div></section>
+</footer>
+
+<dialog id="help-dialog">
+ <form method="dialog"><button class="dialog-close" aria-label="Đóng">×</button></form>
+ <h2>Giải thích nhanh các chỉ số</h2>
+ <dl>
+  <dt>Vùng thu chung</dt><dd>Phần khu vực mà nhiều trạm cùng có thể thu tín hiệu. MLAT bốn trạm cần ít nhất bốn trạm cùng thu.</dd>
+  <dt>Chất lượng bố trí trạm</dt><dd>Đánh giá mức thuận lợi của vị trí tương đối giữa target và các trạm.</dd>
+  <dt>Độ tách biệt nghiệm</dt><dd>Đánh giá nguy cơ một vị trí khác ở xa tạo TDOA gần giống. Cao hơn giúp giảm nguy cơ nhầm nhánh.</dd>
+  <dt>P50</dt><dd>Sai số điển hình; khoảng một nửa mẫu mô phỏng thấp hơn giá trị này.</dd>
+  <dt>P95</dt><dd>Khoảng 95% mẫu mô hình thấp hơn giá trị này. Không phải sai số đo thực tế hay bảo đảm.</dd>
+  <dt>Tổ hợp 4-of-N</dt><dd>Liệt kê các cách chọn bốn trong N trạm eligible rồi xếp hạng theo rule hiện có.</dd>
+  <dt>N-1</dt><dd>Mất lần lượt bất kỳ một trạm vẫn còn ít nhất một tổ hợp bốn trạm GOOD.</dd>
+  <dt>Phụ thuộc trạm</dt><dd>Tỷ số best P95 khi cấm dùng trạm so với best P95 ban đầu.</dd>
+  <dt>Sai số thời gian giả định</dt><dd>Sigma timing dùng trong mô hình Monte Carlo deterministic, không phải clock quality realtime.</dd>
+ </dl>
+</dialog>
+
+<!-- Legacy/Advanced contract references:
+ Geometry Quality; Receiver Count; Predicted P95 Error;
+ Good Subset Count; N-1 Survivability; Receiver Importance.
+ Observed readsb outline reflects where aircraft have been received,
+ not guaranteed RF coverage in every direction.
+-->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

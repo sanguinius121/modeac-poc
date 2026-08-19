@@ -1,0 +1,1169 @@
+{
+  "schema": "phase10a-analysis-v1",
+  "generated_utc": "2026-08-18T01:23:25.534286Z",
+  "analysis_performed": true,
+  "receiver_order": [
+    "T37",
+    "Dao_Cai_chien",
+    "QK4",
+    "BachLongVi",
+    "MongCai"
+  ],
+  "clock_reference": "T37",
+  "clock_pairs": [
+    {
+      "station_a": "T37",
+      "station_b": "Dao_Cai_chien",
+      "common_df17_pairs": 13336,
+      "geometry_samples_total": 4401,
+      "unique_aircraft": 53,
+      "samples": 2000,
+      "slope": 0.9999988820264109,
+      "offset_ticks": 17266540056.126587,
+      "relative_clock_ppm": -1.1179735891486686,
+      "p50_us": 0.05550193786621094,
+      "p90_us": 0.13148028055826824,
+      "p95_us": 0.15930830637613932,
+      "p99_us": 0.22145469665527343,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "T37",
+      "station_b": "QK4",
+      "common_df17_pairs": 801,
+      "geometry_samples_total": 243,
+      "unique_aircraft": 5,
+      "samples": 243,
+      "slope": 0.999998241850215,
+      "offset_ticks": 5557994068433.966,
+      "relative_clock_ppm": -1.7581497849805672,
+      "p50_us": 0.3192545572916667,
+      "p90_us": 0.6420084635416669,
+      "p95_us": 0.7148030598958329,
+      "p99_us": 1.121020507812497,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "T37",
+      "station_b": "BachLongVi",
+      "common_df17_pairs": 5888,
+      "geometry_samples_total": 1706,
+      "unique_aircraft": 47,
+      "samples": 1706,
+      "slope": 1.0000005975227517,
+      "offset_ticks": 9691736409538.164,
+      "relative_clock_ppm": 0.5975227517218684,
+      "p50_us": 0.20426432291666666,
+      "p90_us": 0.4068196614583333,
+      "p95_us": 0.4718424479166667,
+      "p99_us": 0.5870442708333333,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "T37",
+      "station_b": "MongCai",
+      "common_df17_pairs": 4283,
+      "geometry_samples_total": 1250,
+      "unique_aircraft": 30,
+      "samples": 1250,
+      "slope": 1.000000534682007,
+      "offset_ticks": 16499646053.881424,
+      "relative_clock_ppm": 0.5346820068918845,
+      "p50_us": 0.08708254496256511,
+      "p90_us": 0.1988469441731772,
+      "p95_us": 0.25139757792154926,
+      "p99_us": 0.3338158925374348,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "QK4",
+      "common_df17_pairs": 64,
+      "geometry_samples_total": 13,
+      "unique_aircraft": 2,
+      "samples": 13,
+      "slope": null,
+      "offset_ticks": null,
+      "relative_clock_ppm": null,
+      "p50_us": null,
+      "p90_us": null,
+      "p95_us": null,
+      "p99_us": null,
+      "quality": "UNAVAILABLE",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "BachLongVi",
+      "common_df17_pairs": 2817,
+      "geometry_samples_total": 740,
+      "unique_aircraft": 35,
+      "samples": 740,
+      "slope": 1.000001720774064,
+      "offset_ticks": 9674469839345.053,
+      "relative_clock_ppm": 1.7207740639069158,
+      "p50_us": 0.05183919270833333,
+      "p90_us": 0.139892578125,
+      "p95_us": 0.15891113281249994,
+      "p99_us": 0.2160172526041668,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "MongCai",
+      "common_df17_pairs": 2434,
+      "geometry_samples_total": 673,
+      "unique_aircraft": 24,
+      "samples": 673,
+      "slope": 1.0000016585831097,
+      "offset_ticks": -766923118.4848633,
+      "relative_clock_ppm": 1.6585831097426507,
+      "p50_us": 0.051366170247395836,
+      "p90_us": 0.13185475667317723,
+      "p95_us": 0.1580108642578124,
+      "p99_us": 0.21082733154296873,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "QK4",
+      "station_b": "BachLongVi",
+      "common_df17_pairs": 718,
+      "geometry_samples_total": 205,
+      "unique_aircraft": 8,
+      "samples": 205,
+      "slope": 1.0000023523796657,
+      "offset_ticks": 4133729266853.3125,
+      "relative_clock_ppm": 2.352379665726545,
+      "p50_us": 0.146484375,
+      "p90_us": 0.31897786458333327,
+      "p95_us": 0.3682291666666665,
+      "p99_us": 0.5378971354166674,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "QK4",
+      "station_b": "MongCai",
+      "common_df17_pairs": 0,
+      "geometry_samples_total": 0,
+      "unique_aircraft": 0,
+      "samples": 0,
+      "slope": null,
+      "offset_ticks": null,
+      "relative_clock_ppm": null,
+      "p50_us": null,
+      "p90_us": null,
+      "p95_us": null,
+      "p99_us": null,
+      "quality": "UNAVAILABLE",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    },
+    {
+      "station_a": "BachLongVi",
+      "station_b": "MongCai",
+      "common_df17_pairs": 991,
+      "geometry_samples_total": 221,
+      "unique_aircraft": 24,
+      "samples": 221,
+      "slope": 0.9999999380696065,
+      "offset_ticks": -9675236163344.78,
+      "relative_clock_ppm": -0.06193039348012519,
+      "p50_us": 0.08879470825195312,
+      "p90_us": 0.1871210734049479,
+      "p95_us": 0.2224909464518229,
+      "p99_us": 0.2974955240885423,
+      "quality": "STRONG",
+      "rejected_discontinuities": 0,
+      "model_resets": 0
+    }
+  ],
+  "timestamp_mapping": {
+    "T37": {
+      "slope": 1.0,
+      "offset_ticks": 0.0
+    },
+    "Dao_Cai_chien": {
+      "slope": 0.9999988820264109,
+      "offset_ticks": 17266540056.126587
+    },
+    "QK4": {
+      "slope": 0.999998241850215,
+      "offset_ticks": 5557994068433.966
+    },
+    "BachLongVi": {
+      "slope": 1.0000005975227517,
+      "offset_ticks": 9691736409538.164
+    },
+    "MongCai": {
+      "slope": 1.000000534682007,
+      "offset_ticks": 16499646053.881424
+    }
+  },
+  "association": {
+    "exact_payload_required": true,
+    "normalized_time_required": true,
+    "physical_baseline_bound_required": true,
+    "reciprocal_nearest_required": true,
+    "ambiguity_ticks": 6.0,
+    "modeac_margin_us": 10.0,
+    "modes_margin_us": 3.0
+  },
+  "modeac": {
+    "observations": 955386,
+    "two_rx": 125588,
+    "three_rx": 21054,
+    "four_rx": 740,
+    "five_rx": 0,
+    "any_4_of_5": 748,
+    "strict_5rx": 0,
+    "baseline_fixed_4rx": 0,
+    "absolute_increase": 748,
+    "percent_increase": null,
+    "subset_counts": {
+      "T37+Dao_Cai_chien+QK4+BachLongVi": 0,
+      "T37+Dao_Cai_chien+QK4+MongCai": 0,
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": 748,
+      "T37+QK4+BachLongVi+MongCai": 0,
+      "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+    },
+    "association_diagnostics": {
+      "physical_reject": 25907,
+      "nonreciprocal": 934,
+      "ambiguous": 6,
+      "2RX": 125588,
+      "3RX": 21054,
+      "4RX": 740,
+      "payloads": 5994,
+      "observations_used": 317298
+    },
+    "subset_diagnostics": {
+      "T37+Dao_Cai_chien+QK4+BachLongVi": {
+        "physical_reject": 13183,
+        "nonreciprocal": 493,
+        "ambiguous": 1,
+        "2RX": 75171,
+        "3RX": 2300,
+        "payloads": 5864,
+        "observations_used": 157242
+      },
+      "T37+Dao_Cai_chien+QK4+MongCai": {
+        "physical_reject": 23005,
+        "nonreciprocal": 433,
+        "ambiguous": 6,
+        "2RX": 117058,
+        "3RX": 18538,
+        "payloads": 5268,
+        "observations_used": 289730
+      },
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+        "physical_reject": 10089,
+        "nonreciprocal": 752,
+        "ambiguous": 6,
+        "2RX": 124568,
+        "3RX": 21023,
+        "4RX": 748,
+        "payloads": 5917,
+        "observations_used": 315197
+      },
+      "T37+QK4+BachLongVi+MongCai": {
+        "physical_reject": 12162,
+        "nonreciprocal": 494,
+        "ambiguous": 3,
+        "2RX": 86423,
+        "3RX": 2142,
+        "payloads": 5640,
+        "observations_used": 179272
+      },
+      "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+        "physical_reject": 7920,
+        "nonreciprocal": 279,
+        "2RX": 37306,
+        "3RX": 1153,
+        "payloads": 5686,
+        "observations_used": 78071
+      }
+    }
+  },
+  "modes_all": {
+    "observations": 365971,
+    "two_rx": 60226,
+    "three_rx": 23728,
+    "four_rx": 3766,
+    "five_rx": 0,
+    "any_4_of_5": 3766,
+    "strict_5rx": 0,
+    "baseline_fixed_4rx": 35,
+    "absolute_increase": 3731,
+    "percent_increase": 10660.0,
+    "subset_counts": {
+      "T37+Dao_Cai_chien+QK4+BachLongVi": 35,
+      "T37+Dao_Cai_chien+QK4+MongCai": 1,
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": 3730,
+      "T37+QK4+BachLongVi+MongCai": 0,
+      "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+    },
+    "association_diagnostics": {
+      "physical_reject": 1020,
+      "nonreciprocal": 15,
+      "2RX": 60226,
+      "3RX": 23728,
+      "4RX": 3766,
+      "payloads": 67191,
+      "observations_used": 206700
+    },
+    "subset_diagnostics": {
+      "T37+Dao_Cai_chien+QK4+BachLongVi": {
+        "physical_reject": 673,
+        "nonreciprocal": 11,
+        "2RX": 54659,
+        "3RX": 8263,
+        "4RX": 35,
+        "payloads": 64189,
+        "observations_used": 134247
+      },
+      "T37+Dao_Cai_chien+QK4+MongCai": {
+        "physical_reject": 484,
+        "nonreciprocal": 1,
+        "2RX": 52319,
+        "3RX": 20342,
+        "4RX": 1,
+        "payloads": 58124,
+        "observations_used": 165668
+      },
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+        "nonreciprocal": 11,
+        "physical_reject": 17,
+        "2RX": 57651,
+        "3RX": 23084,
+        "4RX": 3730,
+        "payloads": 61841,
+        "observations_used": 199474
+      },
+      "T37+QK4+BachLongVi+MongCai": {
+        "physical_reject": 525,
+        "nonreciprocal": 10,
+        "2RX": 55509,
+        "3RX": 6445,
+        "payloads": 63264,
+        "observations_used": 130353
+      },
+      "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+        "physical_reject": 509,
+        "nonreciprocal": 10,
+        "2RX": 31726,
+        "3RX": 4466,
+        "payloads": 48305,
+        "observations_used": 76850
+      }
+    }
+  },
+  "modes_by_df": {
+    "0": {
+      "observations": 48487,
+      "two_rx": 9117,
+      "three_rx": 3155,
+      "four_rx": 330,
+      "five_rx": 0,
+      "any_4_of_5": 330,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 2,
+      "absolute_increase": 328,
+      "percent_increase": 16400.0,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 2,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 328,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "physical_reject": 38,
+        "nonreciprocal": 3,
+        "2RX": 9117,
+        "3RX": 3155,
+        "4RX": 330,
+        "payloads": 4944,
+        "observations_used": 29019
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "physical_reject": 27,
+          "nonreciprocal": 2,
+          "2RX": 8086,
+          "3RX": 1160,
+          "4RX": 2,
+          "payloads": 4808,
+          "observations_used": 19660
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "physical_reject": 20,
+          "2RX": 8050,
+          "3RX": 2339,
+          "payloads": 3877,
+          "observations_used": 23117
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "nonreciprocal": 3,
+          "physical_reject": 6,
+          "2RX": 8746,
+          "3RX": 3060,
+          "4RX": 328,
+          "payloads": 4705,
+          "observations_used": 27984
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "physical_reject": 24,
+          "nonreciprocal": 2,
+          "2RX": 7676,
+          "3RX": 679,
+          "payloads": 4793,
+          "observations_used": 17389
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "physical_reject": 10,
+          "nonreciprocal": 2,
+          "2RX": 4258,
+          "3RX": 393,
+          "payloads": 3832,
+          "observations_used": 9695
+        }
+      }
+    },
+    "4": {
+      "observations": 17814,
+      "two_rx": 3171,
+      "three_rx": 1399,
+      "four_rx": 197,
+      "five_rx": 0,
+      "any_4_of_5": 197,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 1,
+      "absolute_increase": 196,
+      "percent_increase": 19600.0,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 1,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 196,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "physical_reject": 4,
+        "nonreciprocal": 1,
+        "2RX": 3171,
+        "3RX": 1399,
+        "4RX": 197,
+        "payloads": 1937,
+        "observations_used": 11327
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "physical_reject": 4,
+          "nonreciprocal": 1,
+          "2RX": 2988,
+          "3RX": 432,
+          "4RX": 1,
+          "payloads": 1876,
+          "observations_used": 7276
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "physical_reject": 2,
+          "2RX": 2788,
+          "3RX": 1229,
+          "payloads": 1684,
+          "observations_used": 9263
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "physical_reject": 2,
+          "2RX": 3008,
+          "3RX": 1338,
+          "4RX": 196,
+          "payloads": 1747,
+          "observations_used": 10814
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "physical_reject": 3,
+          "nonreciprocal": 1,
+          "2RX": 3067,
+          "3RX": 368,
+          "payloads": 1863,
+          "observations_used": 7238
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "2RX": 1860,
+          "3RX": 219,
+          "payloads": 1532,
+          "observations_used": 4377
+        }
+      }
+    },
+    "5": {
+      "observations": 4206,
+      "two_rx": 676,
+      "three_rx": 232,
+      "four_rx": 31,
+      "five_rx": 0,
+      "any_4_of_5": 31,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 0,
+      "absolute_increase": 31,
+      "percent_increase": null,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 0,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 31,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "physical_reject": 7,
+        "3RX": 232,
+        "2RX": 676,
+        "4RX": 31,
+        "payloads": 126,
+        "observations_used": 2172
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "physical_reject": 4,
+          "3RX": 85,
+          "2RX": 603,
+          "payloads": 122,
+          "observations_used": 1461
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "physical_reject": 7,
+          "2RX": 551,
+          "3RX": 171,
+          "payloads": 112,
+          "observations_used": 1615
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "3RX": 224,
+          "2RX": 648,
+          "4RX": 31,
+          "payloads": 117,
+          "observations_used": 2092
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "physical_reject": 3,
+          "2RX": 593,
+          "3RX": 70,
+          "payloads": 120,
+          "observations_used": 1396
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "2RX": 329,
+          "3RX": 38,
+          "payloads": 110,
+          "observations_used": 772
+        }
+      }
+    },
+    "11": {
+      "observations": 127915,
+      "two_rx": 18967,
+      "three_rx": 8587,
+      "four_rx": 1943,
+      "five_rx": 0,
+      "any_4_of_5": 1943,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 16,
+      "absolute_increase": 1927,
+      "percent_increase": 12043.75,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 16,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 1927,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "physical_reject": 959,
+        "nonreciprocal": 9,
+        "2RX": 18967,
+        "3RX": 8587,
+        "4RX": 1943,
+        "payloads": 3313,
+        "observations_used": 71467
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "physical_reject": 631,
+          "nonreciprocal": 8,
+          "2RX": 17923,
+          "3RX": 3814,
+          "4RX": 16,
+          "payloads": 3149,
+          "observations_used": 47352
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "physical_reject": 450,
+          "nonreciprocal": 1,
+          "2RX": 16778,
+          "3RX": 7491,
+          "payloads": 2878,
+          "observations_used": 56029
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "physical_reject": 9,
+          "nonreciprocal": 8,
+          "2RX": 18296,
+          "3RX": 8420,
+          "4RX": 1927,
+          "payloads": 3210,
+          "observations_used": 69560
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "physical_reject": 490,
+          "nonreciprocal": 5,
+          "2RX": 18412,
+          "3RX": 2978,
+          "payloads": 3105,
+          "observations_used": 45758
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "physical_reject": 496,
+          "nonreciprocal": 7,
+          "2RX": 11255,
+          "3RX": 2320,
+          "payloads": 2519,
+          "observations_used": 29470
+        }
+      }
+    },
+    "16": {
+      "observations": 3949,
+      "two_rx": 749,
+      "three_rx": 158,
+      "four_rx": 6,
+      "five_rx": 0,
+      "any_4_of_5": 6,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 0,
+      "absolute_increase": 6,
+      "percent_increase": null,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 0,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 6,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "2RX": 749,
+        "3RX": 158,
+        "4RX": 6,
+        "payloads": 2795,
+        "observations_used": 1996
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "2RX": 541,
+          "3RX": 44,
+          "payloads": 2635,
+          "observations_used": 1214
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "2RX": 691,
+          "3RX": 117,
+          "payloads": 2526,
+          "observations_used": 1733
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "2RX": 737,
+          "3RX": 158,
+          "4RX": 6,
+          "payloads": 2762,
+          "observations_used": 1972
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "2RX": 528,
+          "3RX": 14,
+          "payloads": 2449,
+          "observations_used": 1098
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "2RX": 224,
+          "3RX": 7,
+          "payloads": 1709,
+          "observations_used": 469
+        }
+      }
+    },
+    "17": {
+      "observations": 107884,
+      "two_rx": 18342,
+      "three_rx": 7518,
+      "four_rx": 1032,
+      "five_rx": 0,
+      "any_4_of_5": 1032,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 13,
+      "absolute_increase": 1019,
+      "percent_increase": 7838.461538461539,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 13,
+        "T37+Dao_Cai_chien+QK4+MongCai": 1,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 1018,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "3RX": 7518,
+        "2RX": 18342,
+        "4RX": 1032,
+        "payloads": 36262,
+        "observations_used": 63366
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "2RX": 17304,
+          "3RX": 2238,
+          "4RX": 13,
+          "payloads": 34729,
+          "observations_used": 41374
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "3RX": 6500,
+          "2RX": 15404,
+          "4RX": 1,
+          "payloads": 31375,
+          "observations_used": 50312
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "3RX": 7242,
+          "2RX": 17343,
+          "4RX": 1018,
+          "payloads": 32728,
+          "observations_used": 60484
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "2RX": 17418,
+          "3RX": 1945,
+          "payloads": 34304,
+          "observations_used": 40671
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "2RX": 10111,
+          "3RX": 1239,
+          "payloads": 26662,
+          "observations_used": 23939
+        }
+      }
+    },
+    "18": {
+      "observations": 1,
+      "two_rx": 0,
+      "three_rx": 0,
+      "four_rx": 0,
+      "five_rx": 0,
+      "any_4_of_5": 0,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 0,
+      "absolute_increase": 0,
+      "percent_increase": null,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 0,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 0,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "payloads": 1,
+        "observations_used": 0
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "payloads": 1,
+          "observations_used": 0
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "payloads": 0,
+          "observations_used": 0
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "payloads": 1,
+          "observations_used": 0
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "payloads": 1,
+          "observations_used": 0
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "payloads": 1,
+          "observations_used": 0
+        }
+      }
+    },
+    "20": {
+      "observations": 47868,
+      "two_rx": 7989,
+      "three_rx": 2410,
+      "four_rx": 202,
+      "five_rx": 0,
+      "any_4_of_5": 202,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 2,
+      "absolute_increase": 200,
+      "percent_increase": 10000.0,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 2,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 200,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "physical_reject": 8,
+        "2RX": 7989,
+        "3RX": 2410,
+        "4RX": 202,
+        "payloads": 14406,
+        "observations_used": 24016
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "physical_reject": 6,
+          "2RX": 6264,
+          "3RX": 422,
+          "4RX": 2,
+          "payloads": 13593,
+          "observations_used": 13802
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "physical_reject": 4,
+          "2RX": 7067,
+          "3RX": 2258,
+          "payloads": 12783,
+          "observations_used": 20908
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "2RX": 7787,
+          "3RX": 2388,
+          "4RX": 200,
+          "payloads": 13548,
+          "observations_used": 23538
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "physical_reject": 4,
+          "2RX": 6810,
+          "3RX": 337,
+          "payloads": 13469,
+          "observations_used": 14631
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "physical_reject": 2,
+          "2RX": 3269,
+          "3RX": 223,
+          "payloads": 9599,
+          "observations_used": 7207
+        }
+      }
+    },
+    "21": {
+      "observations": 7847,
+      "two_rx": 1215,
+      "three_rx": 269,
+      "four_rx": 25,
+      "five_rx": 0,
+      "any_4_of_5": 25,
+      "strict_5rx": 0,
+      "baseline_fixed_4rx": 1,
+      "absolute_increase": 24,
+      "percent_increase": 2400.0,
+      "subset_counts": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 1,
+        "T37+Dao_Cai_chien+QK4+MongCai": 0,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 24,
+        "T37+QK4+BachLongVi+MongCai": 0,
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+      },
+      "association_diagnostics": {
+        "physical_reject": 4,
+        "nonreciprocal": 2,
+        "2RX": 1215,
+        "3RX": 269,
+        "4RX": 25,
+        "payloads": 3407,
+        "observations_used": 3337
+      },
+      "subset_diagnostics": {
+        "T37+Dao_Cai_chien+QK4+BachLongVi": {
+          "physical_reject": 1,
+          "2RX": 950,
+          "3RX": 68,
+          "4RX": 1,
+          "payloads": 3276,
+          "observations_used": 2108
+        },
+        "T37+Dao_Cai_chien+QK4+MongCai": {
+          "physical_reject": 1,
+          "2RX": 990,
+          "3RX": 237,
+          "payloads": 2889,
+          "observations_used": 2691
+        },
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+          "2RX": 1086,
+          "3RX": 254,
+          "4RX": 24,
+          "payloads": 3023,
+          "observations_used": 3030
+        },
+        "T37+QK4+BachLongVi+MongCai": {
+          "nonreciprocal": 2,
+          "physical_reject": 1,
+          "2RX": 1005,
+          "3RX": 54,
+          "payloads": 3160,
+          "observations_used": 2172
+        },
+        "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+          "physical_reject": 1,
+          "nonreciprocal": 1,
+          "2RX": 420,
+          "3RX": 27,
+          "payloads": 2341,
+          "observations_used": 921
+        }
+      }
+    }
+  },
+  "df16": {
+    "observations": 3949,
+    "two_rx": 749,
+    "three_rx": 158,
+    "four_rx": 6,
+    "five_rx": 0,
+    "any_4_of_5": 6,
+    "strict_5rx": 0,
+    "baseline_fixed_4rx": 0,
+    "absolute_increase": 6,
+    "percent_increase": null,
+    "subset_counts": {
+      "T37+Dao_Cai_chien+QK4+BachLongVi": 0,
+      "T37+Dao_Cai_chien+QK4+MongCai": 0,
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": 6,
+      "T37+QK4+BachLongVi+MongCai": 0,
+      "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+    },
+    "association_diagnostics": {
+      "2RX": 749,
+      "3RX": 158,
+      "4RX": 6,
+      "payloads": 2795,
+      "observations_used": 1996
+    },
+    "subset_diagnostics": {
+      "T37+Dao_Cai_chien+QK4+BachLongVi": {
+        "2RX": 541,
+        "3RX": 44,
+        "payloads": 2635,
+        "observations_used": 1214
+      },
+      "T37+Dao_Cai_chien+QK4+MongCai": {
+        "2RX": 691,
+        "3RX": 117,
+        "payloads": 2526,
+        "observations_used": 1733
+      },
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+        "2RX": 737,
+        "3RX": 158,
+        "4RX": 6,
+        "payloads": 2762,
+        "observations_used": 1972
+      },
+      "T37+QK4+BachLongVi+MongCai": {
+        "2RX": 528,
+        "3RX": 14,
+        "payloads": 2449,
+        "observations_used": 1098
+      },
+      "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+        "2RX": 224,
+        "3RX": 7,
+        "payloads": 1709,
+        "observations_used": 469
+      }
+    }
+  },
+  "capture": {
+    "schema": "phase10a-capture-v1",
+    "started_utc": "2026-08-18T01:12:49.599982Z",
+    "ended_utc": "2026-08-18T01:18:34.597583Z",
+    "requested_duration_s": 300.0,
+    "actual_duration_s": 344.99776969791856,
+    "common_overlap_s": 299.878801516,
+    "capture_accepted": true,
+    "stations": {
+      "T37": {
+        "port": 29996,
+        "connections": 1,
+        "reconnects": 0,
+        "disconnects": 1,
+        "bytes": 8795899,
+        "frames": 663885,
+        "type1": 485279,
+        "type2": 95634,
+        "type3": 82972,
+        "timestamp_zero": 8,
+        "parse_errors": 0,
+        "df": {
+          "21": 3908,
+          "11": 61086,
+          "4": 8345,
+          "17": 50505,
+          "20": 26286,
+          "0": 24078,
+          "5": 2125,
+          "16": 2273
+        },
+        "first_recv_utc_ns": 1787015573971239567,
+        "last_recv_utc_ns": 1787015914377490855
+      },
+      "Dao_Cai_chien": {
+        "port": 29998,
+        "connections": 1,
+        "reconnects": 0,
+        "disconnects": 1,
+        "bytes": 4023406,
+        "frames": 307522,
+        "type1": 229210,
+        "type2": 43927,
+        "type3": 34385,
+        "timestamp_zero": 8,
+        "parse_errors": 0,
+        "df": {
+          "11": 28348,
+          "17": 22253,
+          "16": 1015,
+          "0": 10985,
+          "20": 9829,
+          "5": 766,
+          "4": 3828,
+          "21": 1288
+        },
+        "first_recv_utc_ns": 1787015574233655383,
+        "last_recv_utc_ns": 1787015914377220913
+      },
+      "QK4": {
+        "port": 29997,
+        "connections": 1,
+        "reconnects": 0,
+        "disconnects": 1,
+        "bytes": 815098,
+        "frames": 55560,
+        "type1": 33545,
+        "type2": 8896,
+        "type3": 13119,
+        "timestamp_zero": 11,
+        "parse_errors": 0,
+        "df": {
+          "0": 1888,
+          "4": 1206,
+          "17": 9938,
+          "11": 5544,
+          "20": 1864,
+          "16": 58,
+          "5": 258,
+          "21": 1259
+        },
+        "first_recv_utc_ns": 1787015591601012573,
+        "last_recv_utc_ns": 1787015914291217714
+      },
+      "BachLongVi": {
+        "port": 29999,
+        "connections": 1,
+        "reconnects": 0,
+        "disconnects": 1,
+        "bytes": 2982789,
+        "frames": 222252,
+        "type1": 155138,
+        "type2": 38966,
+        "type3": 28148,
+        "timestamp_zero": 8,
+        "parse_errors": 0,
+        "df": {
+          "11": 25437,
+          "5": 924,
+          "4": 3195,
+          "17": 19806,
+          "0": 9410,
+          "20": 6457,
+          "21": 1401,
+          "16": 483,
+          "18": 1
+        },
+        "first_recv_utc_ns": 1787015573876632436,
+        "last_recv_utc_ns": 1787015914368100868
+      },
+      "MongCai": {
+        "port": 29995,
+        "connections": 1,
+        "reconnects": 0,
+        "disconnects": 1,
+        "bytes": 3110333,
+        "frames": 235822,
+        "type1": 174006,
+        "type2": 33266,
+        "type3": 28550,
+        "timestamp_zero": 8,
+        "parse_errors": 0,
+        "df": {
+          "0": 7357,
+          "17": 17953,
+          "11": 22061,
+          "20": 8938,
+          "5": 596,
+          "16": 620,
+          "4": 3252,
+          "21": 1039
+        },
+        "first_recv_utc_ns": 1787015614412416198,
+        "last_recv_utc_ns": 1787015914373967063
+      }
+    },
+    "queue": {
+      "configured_max": 100000,
+      "high_water": 25799,
+      "final": 0,
+      "dropped": 0
+    },
+    "process": {
+      "cpu_average_percent": 30.425260433252813,
+      "cpu_peak_percent": 99.04223762684727,
+      "rss_peak_kib": 51864
+    },
+    "capture_sha256": {
+      "T37": "4ac095527f1b7adde6fa3b675f7bff47b284f38a651d2ca42d7d43dbfc781222",
+      "Dao_Cai_chien": "43992d8daa17e45ba7bcb4e7ac7de91d51600301ea6afcdfd068017385a34847",
+      "QK4": "69de31cb0ff3001f133d5d22ebe7866ccf4405a7444d7c44d117c3c45d06d621",
+      "BachLongVi": "5af94ae2b76f38421ef917fdca9bae1cc20eef3a1b693f0c37cdd2b12066b5c5",
+      "MongCai": "9206058493b58abb4f7a6b0e717c71ccd94cda09b75f5cc2dc95b81147d7c8a2"
+    }
+  },
+  "analysis_window": {
+    "start_utc": "2026-08-18T01:13:34.412416Z",
+    "end_utc": "2026-08-18T01:18:34.291218Z",
+    "duration_s": 299.878801516,
+    "policy": "intersection of first/last receive timestamps across all five receivers"
+  }
+}

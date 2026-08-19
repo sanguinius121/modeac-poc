@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Unified Mode A/C + Mode-S MLAT</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div><p class="eyebrow">FOUR-RECEIVER TDOA · POC DIAGNOSTIC</p><h1>Mode A/C + Mode-S MLAT</h1></div>
+    <div class="header-status">
+      <span id="backendBadge" class="badge offline"><i></i> Backend offline</span>
+      <span id="rxBadge" class="badge neutral"><i></i> 0 / 4 receivers</span>
+      <span id="clockBadge" class="badge neutral"><i></i> Clock unavailable</span>
+      <span id="modeAcWsBadge" class="badge offline"><i></i> Mode A/C disconnected</span>
+      <span id="modeSWsBadge" class="badge offline"><i></i> Mode-S disconnected</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="map-wrap" aria-label="Unified MLAT map">
+      <div id="map"></div>
+      <div class="map-key">
+        <strong>Inferred MLAT</strong>
+        <span><b class="symbol modeac"></b> Mode A/C</span>
+        <span><b class="symbol modes"></b> Mode-S</span>
+        <span><b class="symbol receiver"></b> Receiver</span>
+        <span class="freshness">opacity = position age</span>
+      </div>
+      <div id="emptyState" class="empty-state">No current MLAT tracks match the filters</div>
+    </section>
+
+    <aside>
+      <section class="panel controls">
+        <div class="panel-title"><h2>Layers</h2><span>independent</span></div>
+        <div class="checks layers">
+          <label><input id="modeAcLayerToggle" type="checkbox" checked> Mode A/C MLAT</label>
+          <label><input id="modeSLayerToggle" type="checkbox" checked> Mode-S MLAT</label>
+          <label><input id="receiverLayerToggle" type="checkbox" checked> Receivers</label>
+        </div>
+      </section>
+
+      <section class="panel controls source-filters">
+        <div class="filter-block modeac-filter">
+          <div class="panel-title"><h2>Mode A/C filter</h2><span>anonymous</span></div>
+          <div class="checks">
+            <label><input type="checkbox" data-source="modeac" data-state="CONFIRMED" checked> Confirmed</label>
+            <label><input type="checkbox" data-source="modeac" data-state="TENTATIVE" checked> Tentative</label>
+            <label><input type="checkbox" data-source="modeac" data-state="STALE" checked> Stale</label>
+          </div>
+          <label class="quality-control">Minimum quality <select id="modeAcQualityFilter"><option value="LOW">All</option><option value="MEDIUM">Medium</option><option value="HIGH">High</option></select></label>
+        </div>
+        <div class="filter-block modes-filter">
+          <div class="panel-title"><h2>Mode-S filter</h2><span>ICAO-aware</span></div>
+          <div class="checks">
+            <label><input type="checkbox" data-source="modes" data-state="CONFIRMED" checked> Confirmed</label>
+            <label><input type="checkbox" data-source="modes" data-state="TENTATIVE" checked> Tentative</label>
+            <label><input type="checkbox" data-source="modes" data-state="STALE" checked> Stale</label>
+          </div>
+          <label class="quality-control">Minimum quality <select id="modeSQualityFilter"><option value="LOW">All</option><option value="MEDIUM">Medium</option><option value="HIGH">High</option></select></label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-title"><h2>Receivers</h2><span id="receiverSummary">Waiting</span></div>
+        <div id="receiverList" class="rows"></div>
+      </section>
+
+      <section id="clockPanel" class="panel">
+        <div class="panel-title"><h2>Shared clock sync</h2><span id="clockSummary">Waiting</span></div>
+        <div id="clockWarning" class="warning hidden">CLOCK QUALITY DEGRADED</div>
+        <details><summary>Six-link detail</summary><div id="clockList" class="rows compact"></div></details>
+      </section>
+
+      <section class="panel stats-panel">
+        <div class="panel-title"><h2>Realtime stats</h2><span id="statsUptime">—</span></div>
+        <h3>Mode A/C MLAT</h3><dl id="modeAcStatsGrid" class="stats-grid"></dl>
+        <h3>Mode-S MLAT</h3><dl id="modeSStatsGrid" class="stats-grid"></dl>
+        <h3>Latency</h3><dl id="latencyGrid" class="stats-grid"></dl>
+      </section>
+
+      <section class="panel cotrack-panel">
+        <div class="panel-title"><h2>Blind co-track diagnostic</h2><span>not identity</span></div>
+        <dl id="cotrackStats" class="stats-grid"><dt>Candidate pairs</dt><dd>0</dd><dt>POSSIBLE</dt><dd>0</dd><dt>STRONG_COTRACK</dt><dd>0</dd></dl>
+      </section>
+
+      <section class="panel track-panel">
+        <div class="panel-title"><h2>Unified tracks</h2><span id="trackCount">0 visible</span></div>
+        <label class="list-filter">List <select id="listSourceFilter"><option value="all">All</option><option value="modeac">Mode A/C</option><option value="modes">Mode-S</option></select></label>
+        <div id="trackList" class="track-list"></div>
+      </section>
+    </aside>
+  </main>
+
+  <footer><strong>Inferred positions:</strong> both layers are four-receiver MLAT, not ADS-B. Co-track labels are blind possibilities, never confirmed identities.</footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

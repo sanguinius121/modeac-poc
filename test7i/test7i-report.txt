@@ -1,0 +1,34 @@
+TEST 7I — BLIND FOUR-RECEIVER MODE A/C LOCALIZATION
+=============================================================
+
+STATUS: PARTIAL PASS (diagnostic; degraded QK4 clocks retained and weighted)
+
+BLIND FREEZE
+Strict 4-RX events=68; BLIND_UNIQUE/MULTIPLE/INCONSISTENT/SOLVER_FAIL=58/2/8/0.
+Anonymous tracks=17; qualities={'HIGH': 3, 'LOW': 14}; frozen hashes are in test7i-blind-freeze.sha256.
+
+POST-HOC VALIDATION
+Unique truth-matched blind fixes=55; branch accuracy=100.0%. Horizontal P50/P90/P95=116.12756416202214/489.70962081752526/751.7366033954734 m; cross-track=71.45284862613937/224.37122064792555/542.2347349500918 m; >5/>10 km=1/1.
+Associated track IDs including singletons=14/17; matched multi-fix/substantive 3+ tracks=6/3; densest={'track_id': 'TRACK_0008', 'codes': '1720', 'blind_quality': 'HIGH', 'duration_s': 271.8365977841288, 'fix_count': 23, 'fixes_per_min': 5.076579133380293, 'median_gap_s': 3.384851321772257, 'p90_gap_s': 21.794446410052004, 'largest_jump_m': 25599.60307665677, 'speed_gate_violations': 0}; longest={'track_id': 'TRACK_0008', 'codes': '1720', 'blind_quality': 'HIGH', 'duration_s': 271.8365977841288, 'fix_count': 23, 'fixes_per_min': 5.076579133380293, 'median_gap_s': 3.384851321772257, 'p90_gap_s': 21.794446410052004, 'largest_jump_m': 25599.60307665677, 'speed_gate_violations': 0}.
+
+ALTITUDE METHODS
+ALTITUDE_GRID={'BLIND_UNIQUE': 58, 'BLIND_MULTIPLE': 2, 'BLIND_INCONSISTENT': 8}; MODE_C_ASSISTED={'BLIND_UNIQUE': 33, 'BLIND_MULTIPLE': 2, 'BLIND_INCONSISTENT': 7}; unconstrained 3D is diagnostic-only in test7i-altitude-methods.csv.
+Post-hoc method diagnostics: {"ALTITUDE_GRID": {"altitude_abs_error_m": {"count": 68, "max": 11136.518542525358, "p50": 5181.600107644685, "p75": 8469.629843181698, "p90": 8534.399843036104, "p95": 9305.375962751265, "p99": 10710.292417610919}, "altitude_alias_over_3000m": 38, "evaluated": 68, "horizontal_error_m": {"count": 68, "max": 1014774.1312542002, "p50": 215.49673036543066, "p75": 514.9700599266939, "p90": 71024.7814774804, "p95": 141059.28074405922, "p99": 559771.1115545183}}, "MODE_C_ASSISTED": {"altitude_abs_error_m": {"count": 42, "max": 7558.530943786651, "p50": 0.00033720172905304935, "p75": 14.259785883128188, "p90": 4385.811895629529, "p95": 5087.67824032317, "p99": 6940.148117157696}, "altitude_alias_over_3000m": 7, "evaluated": 42, "horizontal_error_m": {"count": 42, "max": 1014406.2087523881, "p50": 123.17023249815057, "p75": 1411.2698929137798, "p90": 122428.26662622209, "p95": 303074.2968480959, "p99": 735938.1592511386}}, "UNCONSTRAINED_3D_DIAGNOSTIC": {"altitude_abs_error_m": {"count": 37, "max": 24763.328344989568, "p50": 1414.0532515523955, "p75": 4695.88198920805, "p90": 9194.882414856913, "p95": 15096.015358314664, "p99": 21290.146979582314}, "altitude_alias_over_3000m": 12, "evaluated": 37, "horizontal_error_m": {"count": 37, "max": 313379.19765467977, "p50": 113.59573543080921, "p75": 472.9727853008205, "p90": 4854.857129717247, "p95": 42514.17175210273, "p99": 221632.40586260697}}}
+Gillham decoding is syntactic supporting evidence only; Type-1 does not label reply mode. Grid altitude is chosen by weighted TDOA/geometry and blind temporal tracking, never target truth.
+
+SCIENTIFIC ANSWERS
+1-3. 68 strict events; 58 unique, 2 multiple.
+4-5. Four-RX residual blindly selects a branch; post-hoc accuracy=100.0% among eligible selected events.
+6-7. Anonymous track IDs=17; post-hoc associated including singletons=14, multi-fix=6, substantive 3+=3.
+8-10. Horizontal P50/P90/P95=116.12756416202214/489.70962081752526/751.7366033954734 m; cross-track=71.45284862613937/224.37122064792555/542.2347349500918 m; catastrophic >5 km=1.
+11-12. Densest=TRACK_0008; longest=TRACK_0008.
+13. Same-code observations are gated into independent constant-velocity tracks; code equality alone never merges targets.
+14-15. Mode-C results={'BLIND_UNIQUE': 33, 'BLIND_MULTIPLE': 2, 'BLIND_INCONSISTENT': 7}; altitude-grid results={'BLIND_UNIQUE': 58, 'BLIND_MULTIPLE': 2, 'BLIND_INCONSISTENT': 8}. Post-hoc alias/error counts are reported separately; altitude remains a major blind ambiguity and 3D remains diagnostic.
+16. Where BLIND_UNIQUE is assigned, fourth-receiver weighted residual rejects remote horizontal competitors; ambiguous/inconsistent cases are retained.
+17. Test 7H unique/eligible/P90=25/23/281.786903924544 m versus Test 7I=58/55/489.70962081752526 m.
+18. Qualified conclusion: the four-receiver pipeline can independently generate anonymous horizontal measurements and tracks, but degraded clocks and anonymous altitude ambiguity prevent an operational high-confidence claim.
+
+A/B/C INTERPRETATION
+A. Horizontal mirror: often broken by the redundant weighted residual.
+B. Altitude: not generally observable from anonymous Type-1; Mode-C aliases and grid bands remain limitations.
+C. Tracks: blind tracks are produced before truth; post-hoc confirmation is reported without changing them.

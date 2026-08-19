@@ -1,0 +1,119 @@
+.poc-mlat-status {
+  position: absolute;
+  z-index: 2100;
+  right: 0.55rem;
+  bottom: 1.7rem;
+  min-width: 12.5rem;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 4px;
+  color: #f5f7fb;
+  background: rgba(15, 23, 42, 0.88);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  font: 12px/1.35 system-ui, sans-serif;
+  pointer-events: auto;
+}
+
+.poc-mlat-status strong,
+.poc-mlat-status span {
+  display: block;
+}
+
+.poc-mlat-status .poc-online,
+.poc-mlat-status .poc-live {
+  color: #86efac;
+}
+
+.poc-mlat-status .poc-reconnecting {
+  color: #facc15;
+}
+
+.poc-mlat-status .poc-offline,
+.poc-mlat-status .poc-clock-warning {
+  color: #fca5a5;
+  font-weight: 700;
+}
+
+.poc-fit-button {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.25rem 0.45rem;
+  border: 1px solid #38bdf8;
+  border-radius: 3px;
+  color: #eaf8ff;
+  background: #075985;
+  cursor: pointer;
+  font: inherit;
+}
+
+.poc-fit-button:hover:not(:disabled) {
+  background: #0369a1;
+}
+
+.poc-fit-button:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.poc-mlat-popup {
+  min-width: 19rem;
+  max-height: min(70vh, 34rem);
+  overflow: auto;
+  padding: 0.65rem 0.8rem;
+  border: 2px solid #38bdf8;
+  border-radius: 5px;
+  color: #e5edf8;
+  background: rgba(15, 23, 42, 0.96);
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.48);
+  font: 12px/1.4 system-ui, sans-serif;
+}
+
+.poc-mlat-popup.modeac {
+  border-color: #f59e0b;
+}
+
+.poc-mlat-popup h3 {
+  margin: 0 0 0.45rem;
+  font-size: 14px;
+}
+
+.poc-mlat-popup table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.poc-mlat-popup th,
+.poc-mlat-popup td {
+  padding: 0.1rem 0.35rem 0.1rem 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.poc-mlat-popup th {
+  color: #aab8cb;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.poc-mlat-popup-close {
+  float: right;
+  border: 0;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .poc-mlat-status {
+    right: 0.25rem;
+    bottom: 1.35rem;
+    min-width: 10.5rem;
+    font-size: 11px;
+  }
+
+  .poc-mlat-popup {
+    min-width: 15rem;
+    max-width: 75vw;
+  }
+}

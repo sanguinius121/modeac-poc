@@ -1,0 +1,573 @@
+{
+  "schema": "phase10b-replay-v1",
+  "source_run": "/home/mlatserver/modeac-poc/test10a/20260818T011249Z",
+  "analysis_window": {
+    "start_utc": "2026-08-18T01:13:34.412416Z",
+    "end_utc": "2026-08-18T01:18:34.291218Z",
+    "duration_s": 299.878801516,
+    "policy": "intersection of first/last receive timestamps across all five receivers"
+  },
+  "receiver_ids": [
+    "T37",
+    "Dao_Cai_chien",
+    "QK4",
+    "BachLongVi",
+    "MongCai"
+  ],
+  "cluster_semantics": "one N-RX cluster per associated transmission; no quartet enumeration",
+  "modeac": {
+    "counters": {
+      "total_observations": 955386,
+      "2RX": 125588,
+      "3RX": 21054,
+      "4RX": 740,
+      "5RX": 0,
+      "receiver_membership": {
+        "BachLongVi+MongCai": 2097,
+        "Dao_Cai_chien+BachLongVi": 2908,
+        "Dao_Cai_chien+BachLongVi+MongCai": 386,
+        "Dao_Cai_chien+MongCai": 10692,
+        "Dao_Cai_chien+QK4": 46,
+        "Dao_Cai_chien+QK4+BachLongVi": 5,
+        "Dao_Cai_chien+QK4+MongCai": 4,
+        "QK4+BachLongVi": 701,
+        "QK4+MongCai": 10,
+        "T37+BachLongVi": 6249,
+        "T37+BachLongVi+MongCai": 1364,
+        "T37+Dao_Cai_chien": 45343,
+        "T37+Dao_Cai_chien+BachLongVi": 1513,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 740,
+        "T37+Dao_Cai_chien+MongCai": 17742,
+        "T37+Dao_Cai_chien+QK4": 11,
+        "T37+MongCai": 57206,
+        "T37+QK4": 336,
+        "T37+QK4+BachLongVi": 21,
+        "T37+QK4+MongCai": 8
+      },
+      "per_df": {
+        "0": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "4": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "5": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "11": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "16": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "17": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "20": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        },
+        "21": {
+          "2RX": 0,
+          "3RX": 0,
+          "4RX": 0,
+          "5RX": 0
+        }
+      }
+    },
+    "diagnostics": {
+      "2RX": 125588,
+      "payloads": 5994,
+      "observations_used": 317298,
+      "physical_reject": 25907,
+      "3RX": 21054,
+      "4RX": 740,
+      "nonreciprocal": 934,
+      "ambiguous": 6
+    },
+    "cluster_count": 147382,
+    "memberships": {
+      "BachLongVi+MongCai": 2097,
+      "Dao_Cai_chien+BachLongVi": 2908,
+      "Dao_Cai_chien+BachLongVi+MongCai": 386,
+      "Dao_Cai_chien+MongCai": 10692,
+      "Dao_Cai_chien+QK4": 46,
+      "Dao_Cai_chien+QK4+BachLongVi": 5,
+      "Dao_Cai_chien+QK4+MongCai": 4,
+      "QK4+BachLongVi": 701,
+      "QK4+MongCai": 10,
+      "T37+BachLongVi": 6249,
+      "T37+BachLongVi+MongCai": 1364,
+      "T37+Dao_Cai_chien": 45343,
+      "T37+Dao_Cai_chien+BachLongVi": 1513,
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": 740,
+      "T37+Dao_Cai_chien+MongCai": 17742,
+      "T37+Dao_Cai_chien+QK4": 11,
+      "T37+MongCai": 57206,
+      "T37+QK4": 336,
+      "T37+QK4+BachLongVi": 21,
+      "T37+QK4+MongCai": 8
+    },
+    "per_df": {
+      "0": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "4": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "5": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "11": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "16": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "17": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "20": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      },
+      "21": {
+        "2RX": 0,
+        "3RX": 0,
+        "4RX": 0,
+        "5RX": 0,
+        "memberships": {}
+      }
+    },
+    "partition_buckets": 64,
+    "association_latency_ms": {
+      "p50": 0.01538603100925684,
+      "p95": 0.021132989786565304,
+      "maximum": 12.340938090346754
+    }
+  },
+  "modes": {
+    "counters": {
+      "total_observations": 365971,
+      "2RX": 60226,
+      "3RX": 23728,
+      "4RX": 3766,
+      "5RX": 0,
+      "receiver_membership": {
+        "BachLongVi+MongCai": 1906,
+        "Dao_Cai_chien+BachLongVi": 2319,
+        "Dao_Cai_chien+BachLongVi+MongCai": 650,
+        "Dao_Cai_chien+MongCai": 2955,
+        "Dao_Cai_chien+QK4": 38,
+        "Dao_Cai_chien+QK4+BachLongVi": 10,
+        "QK4+BachLongVi": 1469,
+        "QK4+BachLongVi+MongCai": 1,
+        "QK4+MongCai": 10,
+        "T37+BachLongVi": 9404,
+        "T37+BachLongVi+MongCai": 2040,
+        "T37+Dao_Cai_chien": 20456,
+        "T37+Dao_Cai_chien+BachLongVi": 3858,
+        "T37+Dao_Cai_chien+BachLongVi+MongCai": 3730,
+        "T37+Dao_Cai_chien+MongCai": 16461,
+        "T37+Dao_Cai_chien+QK4": 70,
+        "T37+Dao_Cai_chien+QK4+BachLongVi": 35,
+        "T37+Dao_Cai_chien+QK4+MongCai": 1,
+        "T37+MongCai": 19930,
+        "T37+QK4": 1739,
+        "T37+QK4+BachLongVi": 594,
+        "T37+QK4+MongCai": 44
+      },
+      "per_df": {
+        "0": {
+          "2RX": 9117,
+          "3RX": 3155,
+          "4RX": 330,
+          "5RX": 0
+        },
+        "4": {
+          "2RX": 3171,
+          "3RX": 1399,
+          "4RX": 197,
+          "5RX": 0
+        },
+        "5": {
+          "2RX": 676,
+          "3RX": 232,
+          "4RX": 31,
+          "5RX": 0
+        },
+        "11": {
+          "2RX": 18967,
+          "3RX": 8587,
+          "4RX": 1943,
+          "5RX": 0
+        },
+        "16": {
+          "2RX": 749,
+          "3RX": 158,
+          "4RX": 6,
+          "5RX": 0
+        },
+        "17": {
+          "2RX": 18342,
+          "3RX": 7518,
+          "4RX": 1032,
+          "5RX": 0
+        },
+        "20": {
+          "2RX": 7989,
+          "3RX": 2410,
+          "4RX": 202,
+          "5RX": 0
+        },
+        "21": {
+          "2RX": 1215,
+          "3RX": 269,
+          "4RX": 25,
+          "5RX": 0
+        }
+      }
+    },
+    "diagnostics": {
+      "physical_reject": 1020,
+      "2RX": 60226,
+      "3RX": 23728,
+      "4RX": 3766,
+      "payloads": 67191,
+      "observations_used": 206700,
+      "nonreciprocal": 15
+    },
+    "cluster_count": 87720,
+    "memberships": {
+      "BachLongVi+MongCai": 1906,
+      "Dao_Cai_chien+BachLongVi": 2319,
+      "Dao_Cai_chien+BachLongVi+MongCai": 650,
+      "Dao_Cai_chien+MongCai": 2955,
+      "Dao_Cai_chien+QK4": 38,
+      "Dao_Cai_chien+QK4+BachLongVi": 10,
+      "QK4+BachLongVi": 1469,
+      "QK4+BachLongVi+MongCai": 1,
+      "QK4+MongCai": 10,
+      "T37+BachLongVi": 9404,
+      "T37+BachLongVi+MongCai": 2040,
+      "T37+Dao_Cai_chien": 20456,
+      "T37+Dao_Cai_chien+BachLongVi": 3858,
+      "T37+Dao_Cai_chien+BachLongVi+MongCai": 3730,
+      "T37+Dao_Cai_chien+MongCai": 16461,
+      "T37+Dao_Cai_chien+QK4": 70,
+      "T37+Dao_Cai_chien+QK4+BachLongVi": 35,
+      "T37+Dao_Cai_chien+QK4+MongCai": 1,
+      "T37+MongCai": 19930,
+      "T37+QK4": 1739,
+      "T37+QK4+BachLongVi": 594,
+      "T37+QK4+MongCai": 44
+    },
+    "per_df": {
+      "0": {
+        "2RX": 9117,
+        "3RX": 3155,
+        "4RX": 330,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 225,
+          "Dao_Cai_chien+BachLongVi": 331,
+          "Dao_Cai_chien+BachLongVi+MongCai": 63,
+          "Dao_Cai_chien+MongCai": 385,
+          "Dao_Cai_chien+QK4": 1,
+          "QK4+BachLongVi": 222,
+          "QK4+MongCai": 2,
+          "T37+BachLongVi": 1436,
+          "T37+BachLongVi+MongCai": 256,
+          "T37+Dao_Cai_chien": 3530,
+          "T37+Dao_Cai_chien+BachLongVi": 746,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 328,
+          "T37+Dao_Cai_chien+MongCai": 1993,
+          "T37+Dao_Cai_chien+QK4": 4,
+          "T37+Dao_Cai_chien+QK4+BachLongVi": 2,
+          "T37+MongCai": 2742,
+          "T37+QK4": 243,
+          "T37+QK4+BachLongVi": 82,
+          "T37+QK4+MongCai": 11
+        }
+      },
+      "4": {
+        "2RX": 3171,
+        "3RX": 1399,
+        "4RX": 197,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 80,
+          "Dao_Cai_chien+BachLongVi": 114,
+          "Dao_Cai_chien+BachLongVi+MongCai": 21,
+          "Dao_Cai_chien+MongCai": 189,
+          "Dao_Cai_chien+QK4": 1,
+          "Dao_Cai_chien+QK4+BachLongVi": 1,
+          "QK4+BachLongVi": 97,
+          "QK4+MongCai": 2,
+          "T37+BachLongVi": 459,
+          "T37+BachLongVi+MongCai": 113,
+          "T37+Dao_Cai_chien": 1028,
+          "T37+Dao_Cai_chien+BachLongVi": 176,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 196,
+          "T37+Dao_Cai_chien+MongCai": 1027,
+          "T37+Dao_Cai_chien+QK4": 3,
+          "T37+Dao_Cai_chien+QK4+BachLongVi": 1,
+          "T37+MongCai": 1075,
+          "T37+QK4": 126,
+          "T37+QK4+BachLongVi": 56,
+          "T37+QK4+MongCai": 2
+        }
+      },
+      "5": {
+        "2RX": 676,
+        "3RX": 232,
+        "4RX": 31,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 28,
+          "Dao_Cai_chien+BachLongVi": 27,
+          "Dao_Cai_chien+BachLongVi+MongCai": 7,
+          "Dao_Cai_chien+MongCai": 30,
+          "QK4+BachLongVi": 19,
+          "T37+BachLongVi": 143,
+          "T37+BachLongVi+MongCai": 31,
+          "T37+Dao_Cai_chien": 219,
+          "T37+Dao_Cai_chien+BachLongVi": 46,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 31,
+          "T37+Dao_Cai_chien+MongCai": 140,
+          "T37+MongCai": 193,
+          "T37+QK4": 17,
+          "T37+QK4+BachLongVi": 8
+        }
+      },
+      "11": {
+        "2RX": 18967,
+        "3RX": 8587,
+        "4RX": 1943,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 663,
+          "Dao_Cai_chien+BachLongVi": 957,
+          "Dao_Cai_chien+BachLongVi+MongCai": 335,
+          "Dao_Cai_chien+MongCai": 1028,
+          "Dao_Cai_chien+QK4": 18,
+          "Dao_Cai_chien+QK4+BachLongVi": 3,
+          "QK4+BachLongVi": 376,
+          "QK4+BachLongVi+MongCai": 1,
+          "QK4+MongCai": 2,
+          "T37+BachLongVi": 3270,
+          "T37+BachLongVi+MongCai": 841,
+          "T37+Dao_Cai_chien": 6106,
+          "T37+Dao_Cai_chien+BachLongVi": 1679,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 1927,
+          "T37+Dao_Cai_chien+MongCai": 5511,
+          "T37+Dao_Cai_chien+QK4": 24,
+          "T37+Dao_Cai_chien+QK4+BachLongVi": 16,
+          "T37+MongCai": 6089,
+          "T37+QK4": 458,
+          "T37+QK4+BachLongVi": 181,
+          "T37+QK4+MongCai": 12
+        }
+      },
+      "16": {
+        "2RX": 749,
+        "3RX": 158,
+        "4RX": 6,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 12,
+          "Dao_Cai_chien+BachLongVi": 22,
+          "Dao_Cai_chien+BachLongVi+MongCai": 1,
+          "Dao_Cai_chien+MongCai": 26,
+          "QK4+BachLongVi": 7,
+          "T37+BachLongVi": 64,
+          "T37+BachLongVi+MongCai": 8,
+          "T37+Dao_Cai_chien": 323,
+          "T37+Dao_Cai_chien+BachLongVi": 38,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 6,
+          "T37+Dao_Cai_chien+MongCai": 111,
+          "T37+MongCai": 290,
+          "T37+QK4": 5
+        }
+      },
+      "17": {
+        "2RX": 18342,
+        "3RX": 7518,
+        "4RX": 1032,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 726,
+          "Dao_Cai_chien+BachLongVi": 646,
+          "Dao_Cai_chien+BachLongVi+MongCai": 201,
+          "Dao_Cai_chien+MongCai": 820,
+          "Dao_Cai_chien+QK4": 14,
+          "Dao_Cai_chien+QK4+BachLongVi": 6,
+          "QK4+BachLongVi": 590,
+          "QK4+MongCai": 4,
+          "T37+BachLongVi": 3025,
+          "T37+BachLongVi+MongCai": 663,
+          "T37+Dao_Cai_chien": 6049,
+          "T37+Dao_Cai_chien+BachLongVi": 948,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 1018,
+          "T37+Dao_Cai_chien+MongCai": 5416,
+          "T37+Dao_Cai_chien+QK4": 34,
+          "T37+Dao_Cai_chien+QK4+BachLongVi": 13,
+          "T37+Dao_Cai_chien+QK4+MongCai": 1,
+          "T37+MongCai": 5787,
+          "T37+QK4": 681,
+          "T37+QK4+BachLongVi": 231,
+          "T37+QK4+MongCai": 19
+        }
+      },
+      "20": {
+        "2RX": 7989,
+        "3RX": 2410,
+        "4RX": 202,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 157,
+          "Dao_Cai_chien+BachLongVi": 194,
+          "Dao_Cai_chien+BachLongVi+MongCai": 21,
+          "Dao_Cai_chien+MongCai": 431,
+          "Dao_Cai_chien+QK4": 3,
+          "QK4+BachLongVi": 95,
+          "T37+BachLongVi": 830,
+          "T37+BachLongVi+MongCai": 114,
+          "T37+Dao_Cai_chien": 2826,
+          "T37+Dao_Cai_chien+BachLongVi": 198,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 200,
+          "T37+Dao_Cai_chien+MongCai": 2053,
+          "T37+Dao_Cai_chien+QK4": 3,
+          "T37+Dao_Cai_chien+QK4+BachLongVi": 2,
+          "T37+MongCai": 3325,
+          "T37+QK4": 128,
+          "T37+QK4+BachLongVi": 21
+        }
+      },
+      "21": {
+        "2RX": 1215,
+        "3RX": 269,
+        "4RX": 25,
+        "5RX": 0,
+        "memberships": {
+          "BachLongVi+MongCai": 15,
+          "Dao_Cai_chien+BachLongVi": 28,
+          "Dao_Cai_chien+BachLongVi+MongCai": 1,
+          "Dao_Cai_chien+MongCai": 46,
+          "Dao_Cai_chien+QK4": 1,
+          "QK4+BachLongVi": 63,
+          "T37+BachLongVi": 177,
+          "T37+BachLongVi+MongCai": 14,
+          "T37+Dao_Cai_chien": 375,
+          "T37+Dao_Cai_chien+BachLongVi": 27,
+          "T37+Dao_Cai_chien+BachLongVi+MongCai": 24,
+          "T37+Dao_Cai_chien+MongCai": 210,
+          "T37+Dao_Cai_chien+QK4": 2,
+          "T37+Dao_Cai_chien+QK4+BachLongVi": 1,
+          "T37+MongCai": 429,
+          "T37+QK4": 81,
+          "T37+QK4+BachLongVi": 15
+        }
+      }
+    },
+    "partition_buckets": 64,
+    "association_latency_ms": {
+      "p50": 0.015423051081597805,
+      "p95": 0.02487294841557741,
+      "maximum": 0.39667391683906317
+    }
+  },
+  "fixed4_regression": {
+    "baseline_membership": "T37+Dao_Cai_chien+QK4+BachLongVi",
+    "expected": {
+      "modeac": 0,
+      "modes_all": 35,
+      "modes_by_df": {
+        "0": 2,
+        "4": 1,
+        "5": 0,
+        "11": 16,
+        "16": 0,
+        "17": 13,
+        "20": 2,
+        "21": 1
+      }
+    },
+    "actual": {
+      "modeac": 0,
+      "modes_all": 35,
+      "modes_by_df": {
+        "0": 2,
+        "4": 1,
+        "5": 0,
+        "11": 16,
+        "16": 0,
+        "17": 13,
+        "20": 2,
+        "21": 1
+      }
+    },
+    "match": true
+  },
+  "phase10a_comparison": {
+    "modeac_old_any4": 748,
+    "modeac_generic_full_4rx": 740,
+    "modes_old_any4": 3766,
+    "modes_generic_full_4rx": 3766
+  },
+  "performance": {
+    "wall_s": 27.60545093996916,
+    "cpu_s": 28.268992699000002,
+    "cpu_equivalent_percent": 102.40366209004802,
+    "rss_peak_kib": 114996,
+    "clusters_per_second": 8516.506414303938,
+    "queue": "not applicable: bounded offline replay; source capture queue metrics retained in Phase 10A"
+  }
+}

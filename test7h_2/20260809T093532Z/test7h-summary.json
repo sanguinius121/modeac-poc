@@ -1,0 +1,339 @@
+{
+  "decision": "PARTIAL PASS",
+  "diagnostic_only_due_to_clock_degradation": true,
+  "degraded_clock_links": [
+    [
+      "T37",
+      "QK4"
+    ],
+    [
+      "T37",
+      "BachLongVi"
+    ],
+    [
+      "Dao_Cai_chien",
+      "BachLongVi"
+    ],
+    [
+      "QK4",
+      "BachLongVi"
+    ]
+  ],
+  "capture": {
+    "run_id": "20260809T093532Z",
+    "scheduled_start_ns": 1786268197940326089,
+    "scheduled_start_utc": "2026-08-09T09:36:37.940326+00:00",
+    "duration_s": 600,
+    "stations": {
+      "T37": {
+        "path": "/home/mlatserver/modeac-poc/test7h_2/20260809T093532Z/captures/modeac-T37.csv",
+        "size_bytes": 104998071,
+        "data_lines": 1180241,
+        "stations": {
+          "T37": 1180241
+        },
+        "station_valid": true,
+        "first_utc_ns": 1786268197966600212,
+        "last_utc_ns": 1786268797940519941,
+        "span_s": 599.973919729,
+        "counts": {
+          "modeac": 820305,
+          "timestamp_zero": 15,
+          "modes_short": 170886,
+          "modes_long": 189050
+        }
+      },
+      "Dao_Cai_chien": {
+        "path": "/home/mlatserver/modeac-poc/test7h_2/20260809T093532Z/captures/modeac-Dao_Cai_chien.csv",
+        "size_bytes": 64188763,
+        "data_lines": 656349,
+        "stations": {
+          "Dao_Cai_chien": 656349
+        },
+        "station_valid": true,
+        "first_utc_ns": 1786268197975329993,
+        "last_utc_ns": 1786268797958499789,
+        "span_s": 599.983169796,
+        "counts": {
+          "modeac": 487921,
+          "timestamp_zero": 15,
+          "modes_long": 85598,
+          "modes_short": 82830
+        }
+      },
+      "QK4": {
+        "path": "/home/mlatserver/modeac-poc/test7h_2/20260809T093532Z/captures/modeac-QK4.csv",
+        "size_bytes": 10938650,
+        "data_lines": 111364,
+        "stations": {
+          "QK4": 111364
+        },
+        "station_valid": true,
+        "first_utc_ns": 1786268197978669281,
+        "last_utc_ns": 1786268797960613772,
+        "span_s": 599.981944491,
+        "counts": {
+          "modeac": 63603,
+          "timestamp_zero": 15,
+          "modes_short": 18966,
+          "modes_long": 28795
+        }
+      },
+      "BachLongVi": {
+        "path": "/home/mlatserver/modeac-poc/test7h_2/20260809T093532Z/captures/modeac-BachLongVi.csv",
+        "size_bytes": 26144200,
+        "data_lines": 271854,
+        "stations": {
+          "BachLongVi": 271854
+        },
+        "station_valid": true,
+        "first_utc_ns": 1786268197971670668,
+        "last_utc_ns": 1786268797952044201,
+        "span_s": 599.980373533,
+        "counts": {
+          "modeac": 184427,
+          "timestamp_zero": 15,
+          "modes_short": 44600,
+          "modes_long": 42827
+        }
+      }
+    },
+    "common_overlap_s": 599.96185066,
+    "capture_accepted": true
+  },
+  "clock_links": [
+    {
+      "station_a": "T37",
+      "station_b": "Dao_Cai_chien",
+      "common_df17": 37304,
+      "geometry_samples": 12697,
+      "classification": "PASS",
+      "slope": 0.9999990941133823,
+      "offset_ticks": 11370710863.745605,
+      "p50_us": 0.5752665201822916,
+      "p90_us": 1.0844945271809896,
+      "p95_us": 1.1621696472167968,
+      "p99_us": 1.2694508870442707
+    },
+    {
+      "station_a": "T37",
+      "station_b": "QK4",
+      "common_df17": 8586,
+      "geometry_samples": 2869,
+      "classification": "MARGINAL",
+      "slope": 0.9999986885205637,
+      "offset_ticks": 12805399464165.574,
+      "p50_us": 2.78271484375,
+      "p90_us": 5.207845052083333,
+      "p95_us": 5.583821614583333,
+      "p99_us": 6.015364583333334
+    },
+    {
+      "station_a": "T37",
+      "station_b": "BachLongVi",
+      "common_df17": 12729,
+      "geometry_samples": 3923,
+      "classification": "MARGINAL",
+      "slope": 1.0000006550699119,
+      "offset_ticks": 354417165421.9464,
+      "p50_us": 3.4677734375,
+      "p90_us": 5.510434977213542,
+      "p95_us": 5.7754150390625,
+      "p99_us": 6.056631673177083
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "QK4",
+      "common_df17": 5155,
+      "geometry_samples": 1736,
+      "classification": "PASS",
+      "slope": 0.9999995945400559,
+      "offset_ticks": 12794028757851.68,
+      "p50_us": 2.5734049479166665,
+      "p90_us": 4.4091796875,
+      "p95_us": 4.638997395833333,
+      "p99_us": 4.860644531249999
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "BachLongVi",
+      "common_df17": 8340,
+      "geometry_samples": 2524,
+      "classification": "MARGINAL",
+      "slope": 1.0000015603196182,
+      "offset_ticks": 343046437102.82275,
+      "p50_us": 4.009663899739583,
+      "p90_us": 6.721263631184897,
+      "p95_us": 7.202493794759114,
+      "p99_us": 7.502105814615884
+    },
+    {
+      "station_a": "QK4",
+      "station_b": "BachLongVi",
+      "common_df17": 2134,
+      "geometry_samples": 650,
+      "classification": "INVESTIGATE",
+      "slope": 1.0000019641600908,
+      "offset_ticks": -12451007449526.383,
+      "p50_us": 7.696222941080729,
+      "p90_us": 11.953903198242188,
+      "p95_us": 12.70361582438151,
+      "p99_us": 13.12168884277344
+    }
+  ],
+  "event_builder": {
+    "decoded_type1": 1556256,
+    "timestamp_zero": 60,
+    "station_T37": 820290,
+    "station_Dao_Cai_chien": 487906,
+    "station_QK4": 63588,
+    "station_BachLongVi": 184412,
+    "pair_edges": 222539,
+    "maximal_cliques": 7863,
+    "ambiguous_overlapping_cliques": 16,
+    "physical_rejects": 172015,
+    "generic_four_receiver_candidates": 83,
+    "strict_four_receiver_accepted": 81,
+    "strict_candidate_difference": 2,
+    "three_plus_events": 7847,
+    "four_receiver_events": 81,
+    "four_receiver_events_per_min": 8.1,
+    "prior_test6_four_events_per_min": 1.6002297474812042,
+    "codes_observed": 26,
+    "events_by_code": {
+      "4624": 30,
+      "5710": 1,
+      "5730": 1,
+      "5655": 1,
+      "5740": 2,
+      "5540": 6,
+      "5560": 1,
+      "5520": 5,
+      "5530": 1,
+      "5120": 2,
+      "5140": 2,
+      "5224": 2,
+      "1110": 1,
+      "1560": 1,
+      "5320": 3,
+      "7072": 3,
+      "1740": 1,
+      "1710": 1,
+      "1240": 1,
+      "1260": 4,
+      "1220": 2,
+      "5124": 2,
+      "1660": 1,
+      "1540": 3,
+      "1624": 2,
+      "1505": 2
+    }
+  },
+  "branch_observability": {
+    "UNIQUE_4RX": 35,
+    "SOLVER_FAIL": 42,
+    "INCONSISTENT_4RX": 2,
+    "MULTIPLE_4RX": 2,
+    "unique_percent": 43.20987654320987,
+    "multiple_percent": 2.4691358024691357,
+    "initial_multibranch_unique": 35,
+    "truth_eligible_mirror_checks": 30,
+    "correct_branch_selected": 30,
+    "mirror_rejection_accuracy_percent": 100.0,
+    "altitude_classification_changes": 0
+  },
+  "accuracy": {
+    "eligible_unique_fixes": 30,
+    "unique_without_eligible_truth": 5,
+    "horizontal_error_m": {
+      "count": 30,
+      "p50": 439.2576082203817,
+      "p75": 486.48325397989765,
+      "p90": 536.222016782535,
+      "p95": 640.4026427943045,
+      "p99": 931.6222705311062,
+      "max": 1025.9737024519475
+    },
+    "cross_track_error_m": {
+      "count": 30,
+      "p50": 262.4710319379121,
+      "p75": 294.40816329491713,
+      "p90": 322.79852685364455,
+      "p95": 385.25764271428375,
+      "p99": 493.61914894755,
+      "max": 537.1192496136318
+    },
+    "under_250m": 5,
+    "under_500m": 23,
+    "under_1km": 29,
+    "under_2km": 30,
+    "under_5km": 30,
+    "over_5km": 0,
+    "over_10km": 0
+  },
+  "density": {
+    "raw_type1_replies": 1556256,
+    "three_plus_events": 7847,
+    "four_receiver_events": 81,
+    "unique_fixes": 35,
+    "raw_replies_per_unique_fix": 44464.45714285714,
+    "three_plus_events_per_unique_fix": 224.2,
+    "four_receiver_events_per_unique_fix": 2.3142857142857145,
+    "unique_fixes_per_capture_min": 3.5,
+    "eligible_fixes_per_capture_min": 3.0,
+    "eligible_gap_median_s": 5.182261628219605,
+    "eligible_gap_p90_s": 32.71647826987104
+  },
+  "track_duration_counts": {
+    "30": 2,
+    "60": 2,
+    "120": 2,
+    "180": 2
+  },
+  "continuous_tracks": 1,
+  "top5_by_unique_fix_count": [
+    "88820f",
+    "8880f1",
+    "152079"
+  ],
+  "densest_track": {
+    "icao": "88820f",
+    "squawks": "4624",
+    "unique_fixes": 26,
+    "duration_s": 239.1352187541504,
+    "fixes_per_min": 6.523505856340639,
+    "gap_median_s": 3.033604643178304,
+    "gap_p90_s": 26.755495791666668,
+    "gap_p95_s": 37.62799580484819,
+    "max_gap_s": 59.42108545832825,
+    "horizontal_p50_m": 434.8002151349721,
+    "horizontal_p90_m": 519.0097502201943,
+    "horizontal_p95_m": 531.2525828828537,
+    "cross_track_p50_m": 259.94277896425376,
+    "cross_track_p90_m": 306.3681854844474,
+    "cross_track_p95_m": 314.71146971867233,
+    "heading_error_median_deg": 1.0025682946643428,
+    "heading_error_p90_deg": 3.027878458122905,
+    "speed_error_median_mps": 4.458004085704829,
+    "speed_error_p90_mps": 22.41258775320232,
+    "implied_speed_median_mps": 248.9134484601419,
+    "implied_speed_p90_mps": 1436.3717813388118,
+    "implied_speed_max_mps": 2282.8203217640635,
+    "speed_gate_violations": 0,
+    "jumps_over_1km": 12,
+    "jumps_over_2km": 8,
+    "jumps_over_5km": 5,
+    "jumps_over_10km": 1
+  },
+  "anti_leakage": {
+    "pretruth_artifact": "test7h-selected-before-truth.csv",
+    "truth_fields_present": false,
+    "truth_used_in_branch_selection": false
+  },
+  "method": {
+    "event": "strict reciprocal-nearest complete four-receiver clique; all six physical links",
+    "solver": "fixed-altitude deterministic multistart, all-four residual classification",
+    "credible": "center<=1500 km, condition<=1e6, RMS<=3 us and within 0.5 us of residual floor",
+    "altitude": "DF17 barometric altitude by active Mode-S squawk identity; no latitude/longitude input"
+  }
+}

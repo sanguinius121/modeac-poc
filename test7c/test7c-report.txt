@@ -1,0 +1,68 @@
+TEST 7C — ALTITUDE-CONSTRAINED 2D LOCALIZATION
+====================================================
+
+Decision: STRONG PASS; altitude robustness: ROBUST.
+Solver: network-centered horizontal coordinates, fixed geodetic altitude, deterministic multi-start; truth lat/lon never used for initialization or branch selection.
+
+CLUSTER 104422
+Truth: lat=21.479999, lon=106.130663, altitude=11292.8 m (independent DF17 70401f).
+Four-receiver fixed-altitude solution: lat=21.479186, lon=106.131874, horizontal error=154.7 m, RMS=0.029 us, condition=5.06.
+Test 7A unconstrained 3D: horizontal error=222.4 m, vertical error=-9748.3 m, condition=4.94e+09.
+Condition improvement 3D/2D: 9.77e+08x.
+
+ALTITUDE SENSITIVITY
+Altitude error  -5000 m: horizontal error=196.7 m, solution shift=54.1 m (10.8 m/km), RMS=0.013 us, condition=5.06, competitive/all stationary branches=1/10
+Altitude error  -3000 m: horizontal error=180.5 m, solution shift=37.8 m (12.6 m/km), RMS=0.018 us, condition=5.06, competitive/all stationary branches=1/10
+Altitude error  -1000 m: horizontal error=162.9 m, solution shift=14.4 m (14.4 m/km), RMS=0.025 us, condition=5.06, competitive/all stationary branches=1/10
+Altitude error     +0 m: horizontal error=154.7 m, solution shift=0.0 m (0.0 m/km), RMS=0.029 us, condition=5.06, competitive/all stationary branches=1/10
+Altitude error  +1000 m: horizontal error=147.7 m, solution shift=16.2 m (16.2 m/km), RMS=0.034 us, condition=5.06, competitive/all stationary branches=1/10
+Altitude error  +3000 m: horizontal error=141.2 m, solution shift=54.1 m (18.0 m/km), RMS=0.045 us, condition=5.06, competitive/all stationary branches=1/10
+Altitude error  +5000 m: horizontal error=150.8 m, solution shift=99.3 m (19.9 m/km), RMS=0.057 us, condition=5.06, competitive/all stationary branches=1/10
+
+THREE-RECEIVER COMBINATIONS AT TRUTH ALTITUDE
+T37;Dao_Cai_chien;QK4: branches=10, competitive=1, selected horizontal error=299.6 m, RMS=0.000 us, condition=19.6
+T37;Dao_Cai_chien;BachLongVi: branches=8, competitive=2, selected horizontal error=509.9 m, RMS=0.000 us, condition=22.2
+T37;QK4;BachLongVi: branches=11, competitive=1, selected horizontal error=146.8 m, RMS=0.000 us, condition=5.18
+Dao_Cai_chien;QK4;BachLongVi: branches=11, competitive=1, selected horizontal error=125.9 m, RMS=0.000 us, condition=5.58
+Wrong-altitude range (5/8/10/12/15 km):
+  T37;Dao_Cai_chien;QK4: selected horizontal error min/max=258.3/361.4 m; max competitive branches=1
+  T37;Dao_Cai_chien;BachLongVi: selected horizontal error min/max=320.8/737.6 m; max competitive branches=2
+  T37;QK4;BachLongVi: selected horizontal error min/max=132.7/202.9 m; max competitive branches=1
+  Dao_Cai_chien;QK4;BachLongVi: selected horizontal error min/max=119.8/193.7 m; max competitive branches=1
+Independent geometry ranking: T37;QK4;BachLongVi > Dao_Cai_chien;QK4;BachLongVi > T37;Dao_Cai_chien;QK4 > T37;Dao_Cai_chien;BachLongVi
+
+SYNTHETIC TIMING NOISE — FOUR RECEIVERS
+0.1 us: horizontal median/P90/max=64.9/209.6/303.6 m
+0.25 us: horizontal median/P90/max=162.4/522.9/757.0 m
+0.5 us: horizontal median/P90/max=325.3/1041.9/1507.5 m
+1.0 us: horizontal median/P90/max=652.5/2068.5/2989.5 m
+Synthetic four-receiver altitude-error median/max:
+  -5000 m: 239.7/2694.9 m
+  -3000 m: 196.3/1980.3 m
+  -1000 m: 82.9/780.5 m
+  +1000 m: 100.3/900.3 m
+  +3000 m: 352.4/3057.5 m
+  +5000 m: 672.1/5684.5 m
+Three-receiver 1.0 us timing-noise median/P90/max:
+  T37;Dao_Cai_chien;QK4: 9426.4/78099.2/122774.4 m
+  T37;Dao_Cai_chien;BachLongVi: 16908.5/189425.4/274083.0 m
+  T37;QK4;BachLongVi: 607.6/7465.6/12027.0 m
+  Dao_Cai_chien;QK4;BachLongVi: 299.7/21003.3/34617.3 m
+
+KEY QUESTIONS
+1-2. Correct-altitude 2D recovery: yes; horizontal error 154.7 m.
+3. Test 7A unconstrained horizontal error was 222.4 m, but altitude was wrong by -9748.3 m.
+4. ±1 km altitude errors give 162.9/147.7 m horizontal error.
+5. ±3 km: 180.5/141.2 m.
+6. ±5 km: 196.7/150.8 m.
+7. Approximate-altitude usefulness: ROBUST.
+8. Useful unambiguous three-receiver combinations at truth altitude: 3/4.
+9. Best combinations by independent 2D condition: T37;QK4;BachLongVi, Dao_Cai_chien;QK4;BachLongVi.
+10. Branch counts and competitive credible branches are reported for every combination/altitude.
+11. 2D condition improves over 3D by 9.77e+08x for cluster 104422.
+12. Four-receiver timing-noise median errors at 0.1/0.25/0.5/1.0 us: 64.9 m/162.4 m/325.3 m/652.5 m.
+13. Desirable altitude accuracy is about ±1 km for broadly sub-kilometre performance in these tests (synthetic worst case 900.3 m); ±3–5 km remains useful in favorable geometry but is less reliable.
+14. Yes: stop treating TDOA-derived altitude as a primary output for this geometry.
+15. Recommend architecture: synchronized TDOA + independent trusted altitude -> latitude/longitude.
+
+OVERALL: STRONG PASS

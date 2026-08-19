@@ -1,0 +1,18 @@
+{"duration_s": 300.0, "event": "capture_start", "pid": 2405544, "time": "2026-08-18T01:12:49.599988Z"}
+{"event": "listener_started", "port": 29996, "station": "T37", "time": "2026-08-18T01:12:49.600228Z"}
+{"event": "listener_started", "port": 29998, "station": "Dao_Cai_chien", "time": "2026-08-18T01:12:49.600370Z"}
+{"event": "listener_started", "port": 29997, "station": "QK4", "time": "2026-08-18T01:12:49.600497Z"}
+{"event": "listener_started", "port": 29999, "station": "BachLongVi", "time": "2026-08-18T01:12:49.600617Z"}
+{"event": "listener_started", "port": 29995, "station": "MongCai", "time": "2026-08-18T01:12:49.600736Z"}
+{"event": "receiver_connected", "peer": "('100.120.90.84', 32972)", "station": "BachLongVi", "time": "2026-08-18T01:12:53.857237Z"}
+{"event": "receiver_connected", "peer": "('100.102.185.43', 60002)", "station": "T37", "time": "2026-08-18T01:12:53.970776Z"}
+{"event": "receiver_connected", "peer": "('100.74.130.53', 51674)", "station": "Dao_Cai_chien", "time": "2026-08-18T01:12:54.233479Z"}
+{"event": "receiver_connected", "peer": "('100.119.31.100', 54066)", "station": "QK4", "time": "2026-08-18T01:13:11.600850Z"}
+{"event": "receiver_connected", "peer": "('100.127.47.30', 40982)", "station": "MongCai", "time": "2026-08-18T01:13:34.402716Z"}
+{"event": "all_receivers_connected", "time": "2026-08-18T01:13:34.402952Z", "warmup_s": 44.80296759796329}
+{"event": "receiver_disconnected", "peer": "('100.102.185.43', 60002)", "station": "T37", "time": "2026-08-18T01:18:34.404063Z"}
+{"event": "receiver_disconnected", "peer": "('100.127.47.30', 40982)", "station": "MongCai", "time": "2026-08-18T01:18:34.404224Z"}
+{"event": "receiver_disconnected", "peer": "('100.119.31.100', 54066)", "station": "QK4", "time": "2026-08-18T01:18:34.404298Z"}
+{"event": "receiver_disconnected", "peer": "('100.74.130.53', 51674)", "station": "Dao_Cai_chien", "time": "2026-08-18T01:18:34.404341Z"}
+{"event": "receiver_disconnected", "peer": "('100.120.90.84', 32972)", "station": "BachLongVi", "time": "2026-08-18T01:18:34.404378Z"}
+{"accepted": true, "event": "capture_stop", "overlap_s": 299.878801516, "time": "2026-08-18T01:18:34.687543Z"}

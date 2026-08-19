@@ -1,0 +1,197 @@
+{
+  "decision": "STRONG PASS",
+  "source_capture": "/home/mlatserver/modeac-poc/test7h/20260809T071801Z",
+  "capture_immutable": true,
+  "frame_counts": {
+    "T37": 116669,
+    "Dao_Cai_chien": 63402,
+    "QK4": 23361,
+    "BachLongVi": 27319
+  },
+  "association": {
+    "2RX": 48879,
+    "3RX": 9685,
+    "4RX": 540,
+    "payloads": 78715,
+    "strict_4rx_evaluated_by_solver": 540
+  },
+  "blind_classifications": {
+    "BLIND_UNIQUE": 535,
+    "BLIND_MULTIPLE": 5
+  },
+  "truth_evaluated": 529,
+  "horizontal_error_m": {
+    "count": 529,
+    "p50": 146.12689263793993,
+    "p75": 274.2559961509266,
+    "p90": 600.8383087352197,
+    "p95": 991.5202132404542,
+    "p99": 1588.3734108986532,
+    "max": 2449.241741720069
+  },
+  "cross_track_abs_error_m": {
+    "count": 521,
+    "p50": 93.75102512421101,
+    "p75": 166.22524231804695,
+    "p90": 486.05893920037096,
+    "p95": 824.8382972123829,
+    "p99": 1576.2326386497384,
+    "max": 2421.2848826080904
+  },
+  "df17_altitude_assisted_horizontal_error_m": {
+    "count": 190,
+    "p50": 113.4673670922576,
+    "p75": 184.5406247166847,
+    "p90": 704.3662168709805,
+    "p95": 1151.9369491528023,
+    "p99": 1886.4269251864507,
+    "max": 2425.5319364776387
+  },
+  "unconstrained_3d_horizontal_error_m": {
+    "count": 529,
+    "p50": 652.2998586294514,
+    "p75": 3543.81714351746,
+    "p90": 15931.409534315644,
+    "p95": 27110.248818576365,
+    "p99": 39109.688697822116,
+    "max": 80925.21608568757
+  },
+  "threshold_counts": {
+    ">1km": 25,
+    ">2km": 2,
+    ">5km": 0,
+    ">10km": 0
+  },
+  "branch_accuracy": {
+    "selected_nearest_truth": 529,
+    "evaluated_multiple_candidate": 529
+  },
+  "latency": {
+    "association_ms": {
+      "count": 540,
+      "p50": 0.018198974430561066,
+      "p75": 0.019019702449440956,
+      "p90": 0.02040686085820198,
+      "p95": 0.021543493494391438,
+      "p99": 0.025209682062268264,
+      "max": 0.06946129724383354
+    },
+    "blind_solver_ms": {
+      "count": 540,
+      "p50": 1122.3480550106615,
+      "p75": 1195.4167203512043,
+      "p90": 1243.3283771388233,
+      "p95": 1267.4674696521834,
+      "p99": 1337.4311475083232,
+      "max": 1480.252088047564
+    },
+    "total_solver_ms": {
+      "count": 540,
+      "p50": 1874.3343220558017,
+      "p75": 2064.4813670078292,
+      "p90": 2255.8852629270405,
+      "p95": 2412.368584633805,
+      "p99": 2687.0700021646917,
+      "max": 2843.8458340242505
+    },
+    "association_full_capture_s": 1.555425776168704,
+    "algorithm_note": "Offline CPU execution time; excludes capture/network/display latency."
+  },
+  "clock_links": [
+    {
+      "station_a": "T37",
+      "station_b": "Dao_Cai_chien",
+      "common_df17": "42283",
+      "geometry_samples": "14518",
+      "classification": "STRONG PASS",
+      "slope": "0.9999991400966045",
+      "offset_ticks": "11370688536.7995",
+      "p50_us": "0.5355733235677083",
+      "p90_us": "0.9004389444986979",
+      "p95_us": "0.9701118469238281",
+      "p99_us": "1.0551058451334634"
+    },
+    {
+      "station_a": "T37",
+      "station_b": "QK4",
+      "common_df17": "10005",
+      "geometry_samples": "3394",
+      "classification": "MARGINAL",
+      "slope": "0.9999989268341335",
+      "offset_ticks": "12805399346631.053",
+      "p50_us": "2.732421875",
+      "p90_us": "6.145735677083334",
+      "p95_us": "6.892871093749999",
+      "p99_us": "7.409098307291664"
+    },
+    {
+      "station_a": "T37",
+      "station_b": "BachLongVi",
+      "common_df17": "11797",
+      "geometry_samples": "3485",
+      "classification": "PASS",
+      "slope": "1.0000005803452692",
+      "offset_ticks": "354417198428.0111",
+      "p50_us": "1.2364501953125",
+      "p90_us": "2.1469777425130205",
+      "p95_us": "2.2871195475260415",
+      "p99_us": "2.4784317016601554"
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "QK4",
+      "common_df17": "6026",
+      "geometry_samples": "2020",
+      "classification": "MARGINAL",
+      "slope": "0.999999787528229",
+      "offset_ticks": "12794028660234.68",
+      "p50_us": "2.362548828125",
+      "p90_us": "5.090169270833334",
+      "p95_us": "5.496175130208333",
+      "p99_us": "5.868660481770835"
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "BachLongVi",
+      "common_df17": "7747",
+      "geometry_samples": "2335",
+      "classification": "PASS",
+      "slope": "1.0000014394452938",
+      "offset_ticks": "343046493805.051",
+      "p50_us": "1.7287190755208333",
+      "p90_us": "2.7768452962239585",
+      "p95_us": "2.9442240397135415",
+      "p99_us": "3.0789693196614585"
+    },
+    {
+      "station_a": "QK4",
+      "station_b": "BachLongVi",
+      "common_df17": "2357",
+      "geometry_samples": "709",
+      "classification": "MARGINAL",
+      "slope": "1.0000016574982091",
+      "offset_ticks": "-12451003374518.832",
+      "p50_us": "3.7284647623697915",
+      "p90_us": "8.235101318359375",
+      "p95_us": "8.814072672526041",
+      "p99_us": "10.06327392578125"
+    }
+  ],
+  "fix_rates_per_aircraft_per_min": {
+    "8881f5": 30.15207860271324,
+    "888265": 2.2953139420750563,
+    "888152": 3.4429709131125845,
+    "88811a": 3.4429709131125845,
+    "888264": 9.598585575950235,
+    "8880f3": 0.10433245191250257,
+    "88820f": 2.2953139420750563,
+    "781017": 2.8169762016375692,
+    "151e72": 1.0433245191250256
+  },
+  "frozen_hashes": {
+    "test8a-blind-results-frozen.csv": "31a134f150a1d72f8392ddc5f952e67f50ea9aa5a574a43e40e814221838f2c2",
+    "test8a-blind-candidates-frozen.csv": "c488d1d645ea3d92b628c05b2b0f0c76e40f01d7f77bf7726f04bb589f260c10"
+  },
+  "frozen_integrity_after_truth": true,
+  "anti_leakage": "Target latitude/longitude and trajectories were loaded only after frozen CSVs and SHA256 manifest were written."
+}

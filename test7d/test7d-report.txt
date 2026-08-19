@@ -1,0 +1,76 @@
+TEST 7D — MODE A / MODE C DECODING AND 2D VALIDATION
+===========================================================
+
+DECISION: PARTIAL PASS
+
+AUTHORITATIVE DECODER
+Local readsb: /usr/local/share/adsb-wiki/readsb-install/git/mode_ac.c and track.h
+Beast Type-1 representation: 00:A4:A2:A1:00:B4:B2:B1:SPI:C4:C2:C1:00:D4:D2:D1.
+Mode A: raw & 0x7777 rendered as four octal digits. Mode C: the same pulse field conditionally decoded as Gillham pressure altitude in 100-ft increments.
+A syntactically valid Gillham code does not prove the reply was Mode C; interrogation mode is absent from Beast Type-1.
+Exhaustive validation: 65536/65536 agree, disagreements=0.
+
+EXISTING CAPTURE
+T37: valid Type-1=622352, Mode-C-decodable candidates=332399 (53.41%), invalid/non-altitude=289953, altitude min/median/P95/max=-1200/31100/118600.0/126500 ft, outside -1000..60000 ft=29882
+Dao_Cai_chien: valid Type-1=416162, Mode-C-decodable candidates=202208 (48.59%), invalid/non-altitude=213954, altitude min/median/P95/max=-1200/31100.0/79600.0/126700 ft, outside -1000..60000 ft=17527
+QK4: valid Type-1=43040, Mode-C-decodable candidates=29265 (67.99%), invalid/non-altitude=13775, altitude min/median/P95/max=-1200/38900/120200.0/126700 ft, outside -1000..60000 ft=6921
+BachLongVi: valid Type-1=126375, Mode-C-decodable candidates=60490 (47.87%), invalid/non-altitude=65885, altitude min/median/P95/max=-1200/32100.0/120100.0/126700 ft, outside -1000..60000 ft=11415
+All Test 6 clusters have raw agreement by construction; valid decoded altitudes therefore also agree, but this is not independent association evidence.
+
+INDEPENDENT TRUTH VALIDATION
+Strong events: 3816 unthinned; 859 one-per-ICAO-per-second independent; unique ICAOs=31; valid Gillham candidates=443 (51.6%).
+Altitude error median/median absolute/P95 absolute/max absolute=0.0010509989915590268/16.4502280580964/100719.11496473446/102961.01912123547 ft; within 100/200 ft=80.8%/80.8%.
+Cluster 104422 raw 7411: Mode C valid=False, decoded altitude=None ft; DF17=37050.0 ft.
+
+ASSOCIATION VALUE
+All eight diagnostic clusters use identical raw words at every member station. Altitude interpretation therefore cannot reject a wrong station reply that reused the same word.
+113717 and 130069 incorrect QK4 measurements: not detectable by internal altitude consistency; their words/decoded values equal the other cluster members.
+
+MODE-C-CONSTRAINED LOCALIZATION
+Attempted=443, converged=443, unambiguous=82; 3-receiver=443, 4-receiver=0.
+3-receiver horizontal median/P90/P95=1911.3142265596734/347853.61154745944/414448.0231658848 m; 4-receiver=None/None/None m.
+Mode-C-altitude vs truth-altitude solution shift median/P95=0.20640474710116627/6887.542794537413 m.
+
+POST-HOC TRUTH STRATIFICATION — DIAGNOSTIC ONLY
+Decoded altitude within 200 ft and independently unambiguous: 50 events across 9 ICAOs; horizontal median/P90/P95=139.86563999517003/549.7517047009576/1411.8668789653782 m.
+Syntactically valid but >200-ft altitude disagreement: 85 events. This bimodal failure is not a correctable constant bias; it is consistent with Mode A words that also happen to be valid Gillham patterns.
+
+CONCLUSIONS
+Existing-data status: NO NEW CAPTURE REQUIRED.
+Raw Beast Type-1 alone cannot provide a universally trustworthy altitude label. Mode C can support altitude-constrained 2D only when the reply is independently known/confidently inferred to be an altitude reply and associated correctly. It is supporting evidence, not identity.
+Recommended architecture: timestamp + cautiously decoded Mode A/Mode C features -> redundancy-aware association -> 3+ station altitude-constrained 2D MLAT. Unconstrained TDOA altitude remains diagnostic only.
+
+EXPLICIT REQUIRED ANSWERS
+Decoder:
+1. Beast Type-1 contains the 16-bit pulse layout documented above, not a pre-labelled squawk or altitude.
+2. Authority: local readsb mode_ac.c plus track.h; the Python port agrees exhaustively over all 65,536 words.
+3. Mode A is raw & 0x7777, rendered as four octal digits; SPI is raw bit 0x0080.
+4. Mode C uses readsb's Gillham Gray conversion; output is signed pressure altitude in 100-ft units.
+5. Reserved bits/D1/SPI, zero C group, and illegal C Gray states are invalid for Mode C.
+6. Units/reference: feet, barometric pressure altitude—not geometric ellipsoid height.
+7. Exhaustive validation passed 65,536/65,536.
+8. Quantization is 100 ft. Correct-mode errors cluster near 0/100 ft; catastrophic aliases form distinct tens-of-thousands-foot groups.
+
+Capture:
+1-3. Counts, percentages, distributions, and pathological tails are listed per receiver above and in the histogram CSV.
+4. Cross-receiver copies agree because Test 6 clustering required identical raw words.
+5. Yes: many syntactically decodable values reach 118,000–126,700 ft and are clearly not trustworthy ordinary-aircraft altitude observations.
+
+Truth:
+1-3. Cluster 104422 is not Mode-C-decodable: raw 7411, no decoded altitude, independent DF17 barometric altitude about 37,050 ft.
+4-6. Independent strong events=859, ICAOs=31, valid Gillham candidates=443 (51.6%).
+7. Candidate median absolute/P95 absolute error=16.5/100719.1 ft.
+8. No single correctable bias: the near-zero mode and catastrophic alias modes are bimodal interpretation failures.
+9. The accurate mode is consistent with 100-ft Gillham quantization and interpolated 25-ft DF17 barometric truth.
+
+Association:
+1-2. Internal altitude consistency rejects none of the seven Test 7B failures and does not detect bad QK4 members in 113717/130069; identical raw words imply identical decoded values.
+3. Altitude adds discrimination only against candidates with a different trusted altitude; it adds none against same-word mixed replies.
+4. It is safe only as a supporting, non-unique feature with reply-mode and association confidence.
+
+Localization:
+1-3. Attempted/converged=443/443; three-receiver=443; four-receiver=0 (the only strong four-receiver event had invalid Mode C).
+4. All-candidate 3-receiver horizontal median/P90/P95=1911.3/347853.6/414448.0 m; the truth-confirmed unambiguous stratum is 139.9/549.8/1411.9 m.
+5. 3-receiver condition median/P95=23.61/65.27.
+6. Mode-C-vs-truth-altitude solution shift median/P95=0.2/6887.5 m.
+7. Conditional end-to-end feasibility is demonstrated by 50 events across 9 aircraft, but raw Type-1 alone cannot identify that reliable subset.

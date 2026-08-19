@@ -1,0 +1,164 @@
+{
+  "before": {
+    "diag": {
+      "phase": "10B_WEBSOCKET",
+      "initialized": true,
+      "restErrors": 0,
+      "invalidTracks": 0,
+      "outOfOrderDrops": 0,
+      "received": {
+        "modes": 11,
+        "modeac": 5
+      },
+      "maxima": {
+        "modes": 2,
+        "modeac": 2
+      },
+      "statusPolls": 5,
+      "clockDegradationEvents": 0,
+      "delayedMeasurementExamples": [
+        {
+          "kind": "modes",
+          "trackId": "MS-888061",
+          "measurementTime": "2026-08-10T10:00:00.674051Z",
+          "ageAtReceiptS": 35.132
+        }
+      ],
+      "streams": {
+        "modes": {
+          "status": "LIVE",
+          "connected": true,
+          "lastMessageTime": "2026-08-10T10:00:51.475Z",
+          "reconnectCount": 0
+        },
+        "modeac": {
+          "status": "LIVE",
+          "connected": true,
+          "lastMessageTime": "2026-08-10T10:00:45.354Z",
+          "reconnectCount": 0
+        }
+      },
+      "lastError": null,
+      "tracks": {
+        "modes": {
+          "registrySize": 2,
+          "visibleMarkers": 2,
+          "historyPoints": 7,
+          "oldestMeasurementAgeS": 53.8,
+          "newestReceiptAgeS": 2.999
+        },
+        "modeac": {
+          "registrySize": 2,
+          "visibleMarkers": 2,
+          "historyPoints": 2,
+          "oldestMeasurementAgeS": 40.122,
+          "newestReceiptAgeS": 9.12
+        }
+      },
+      "config": {
+        "apiBase": "http://127.0.0.1:8090",
+        "trackPollMs": 1500,
+        "statusPollMs": 4000,
+        "historyMs": 600000,
+        "staleRemoveMs": 120000,
+        "startTimeoutMs": 30000,
+        "reconnectInitialMs": 1000,
+        "reconnectMaxMs": 30000
+      },
+      "productionPlaneCount": 82
+    },
+    "center": [
+      11774650.044351997,
+      2394810.566570712
+    ],
+    "zoom": 9,
+    "button": "<button type=\"button\" class=\"poc-fit-button\">Zoom to PoC</button>"
+  },
+  "after": {
+    "diag": {
+      "phase": "10B_WEBSOCKET",
+      "initialized": true,
+      "restErrors": 0,
+      "invalidTracks": 0,
+      "outOfOrderDrops": 0,
+      "received": {
+        "modes": 14,
+        "modeac": 5
+      },
+      "maxima": {
+        "modes": 2,
+        "modeac": 2
+      },
+      "statusPolls": 6,
+      "clockDegradationEvents": 0,
+      "delayedMeasurementExamples": [
+        {
+          "kind": "modes",
+          "trackId": "MS-888061",
+          "measurementTime": "2026-08-10T10:00:00.674051Z",
+          "ageAtReceiptS": 35.132
+        }
+      ],
+      "streams": {
+        "modes": {
+          "status": "LIVE",
+          "connected": true,
+          "lastMessageTime": "2026-08-10T10:00:55.805Z",
+          "reconnectCount": 0
+        },
+        "modeac": {
+          "status": "LIVE",
+          "connected": true,
+          "lastMessageTime": "2026-08-10T10:00:45.354Z",
+          "reconnectCount": 0
+        }
+      },
+      "lastError": null,
+      "tracks": {
+        "modes": {
+          "registrySize": 2,
+          "visibleMarkers": 2,
+          "historyPoints": 10,
+          "oldestMeasurementAgeS": 55.806,
+          "newestReceiptAgeS": 0.675
+        },
+        "modeac": {
+          "registrySize": 2,
+          "visibleMarkers": 2,
+          "historyPoints": 2,
+          "oldestMeasurementAgeS": 42.128,
+          "newestReceiptAgeS": 11.126
+        }
+      },
+      "config": {
+        "apiBase": "http://127.0.0.1:8090",
+        "trackPollMs": 1500,
+        "statusPollMs": 4000,
+        "historyMs": 600000,
+        "staleRemoveMs": 120000,
+        "startTimeoutMs": 30000,
+        "reconnectInitialMs": 1000,
+        "reconnectMaxMs": 30000
+      },
+      "productionPlaneCount": 83
+    },
+    "center": [
+      11887456.444800105,
+      2213988.2458606632
+    ],
+    "zoom": 9,
+    "layers": [
+      {
+        "name": "poc_modes",
+        "visible": true,
+        "features": 3
+      },
+      {
+        "name": "poc_modeac",
+        "visible": true,
+        "features": 2
+      }
+    ]
+  },
+  "browserErrors": []
+}

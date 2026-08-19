@@ -1,0 +1,158 @@
+TEST 6 — FOUR-STATION CAPTURE AND VALIDATION
+================================================
+
+Capture accepted: True; common overlap 599.962 s.
+
+PAIRWISE SUMMARY
+T37 <-> Dao_Cai_chien: DF17 PASS, geometry=12697, holdout P95=1.1621696472167968; Mode A/C accepted=170429, ambiguous=307, strict/+0.5 violations=2882/0
+T37 <-> QK4: DF17 MARGINAL, geometry=2869, holdout P95=5.583821614583333; Mode A/C accepted=6471, ambiguous=182, strict/+0.5 violations=0/0
+T37 <-> BachLongVi: DF17 MARGINAL, geometry=3923, holdout P95=5.7754150390625; Mode A/C accepted=19353, ambiguous=225, strict/+0.5 violations=49/0
+Dao_Cai_chien <-> QK4: DF17 PASS, geometry=1736, holdout P95=4.638997395833333; Mode A/C accepted=5685, ambiguous=173, strict/+0.5 violations=0/0
+Dao_Cai_chien <-> BachLongVi: DF17 MARGINAL, geometry=2524, holdout P95=7.202493794759114; Mode A/C accepted=17510, ambiguous=199, strict/+0.5 violations=35/0
+QK4 <-> BachLongVi: DF17 INVESTIGATE, geometry=650, holdout P95=12.70361582438151; Mode A/C accepted=955, ambiguous=7, strict/+0.5 violations=0/0
+
+CLUSTERS
+{
+  "performed": true,
+  "reason": null,
+  "total_clusters": 204881,
+  "two_station_clusters": 197052,
+  "three_station_clusters": 7746,
+  "four_station_clusters": 83,
+  "three_plus_per_second": 13.049163028261802,
+  "four_per_second": 0.13834212943488688,
+  "unique_raw_codes": 487,
+  "ambiguous_clusters": 763,
+  "conflicting_clusters": 0,
+  "rejected_physical_inconsistency_alternatives": 40803,
+  "top_raw_codes_3_plus": [
+    [
+      "5316",
+      1162
+    ],
+    [
+      "4270",
+      586
+    ],
+    [
+      "1034",
+      519
+    ],
+    [
+      "4624",
+      339
+    ],
+    [
+      "5734",
+      303
+    ],
+    [
+      "7072",
+      229
+    ],
+    [
+      "1624",
+      220
+    ],
+    [
+      "5124",
+      207
+    ],
+    [
+      "1634",
+      192
+    ],
+    [
+      "0336",
+      183
+    ],
+    [
+      "1430",
+      176
+    ],
+    [
+      "2467",
+      175
+    ],
+    [
+      "1666",
+      154
+    ],
+    [
+      "1560",
+      149
+    ],
+    [
+      "5224",
+      148
+    ],
+    [
+      "1505",
+      139
+    ],
+    [
+      "2165",
+      134
+    ],
+    [
+      "5655",
+      129
+    ],
+    [
+      "1524",
+      118
+    ],
+    [
+      "5313",
+      116
+    ]
+  ],
+  "sensitivity": [
+    {
+      "margin_us": 0.5,
+      "total": 204881,
+      "two_station": 197052,
+      "three_station": 7746,
+      "four_station": 83,
+      "ambiguous_clusters": 763
+    },
+    {
+      "margin_us": 1.0,
+      "total": 204892,
+      "two_station": 197037,
+      "three_station": 7772,
+      "four_station": 83,
+      "ambiguous_clusters": 743
+    },
+    {
+      "margin_us": 3.0,
+      "total": 204969,
+      "two_station": 197060,
+      "three_station": 7826,
+      "four_station": 83,
+      "ambiguous_clusters": 748
+    },
+    {
+      "margin_us": 5.0,
+      "total": 204995,
+      "two_station": 197078,
+      "three_station": 7834,
+      "four_station": 83,
+      "ambiguous_clusters": 748
+    }
+  ]
+}
+
+FINAL QUESTIONS
+1. All four valid overlapping captures: True.
+2. Reliable DF17 baselines: T37-Dao_Cai_chien, Dao_Cai_chien-QK4.
+3. Mode A/C baselines passing >=99.9% physical+0.5 us compliance: T37-Dao_Cai_chien, T37-QK4, T37-BachLongVi, Dao_Cai_chien-QK4, Dao_Cai_chien-BachLongVi, QK4-BachLongVi.
+4. Association ambiguity remained low: 763 cluster seeds (0.371%).
+5. Three-station clusters: 7746.
+6. Four-station clusters: 83.
+7. 3+ / four-station rates: 13.049163 / 0.138342 per second.
+8. 3+ clusters occur in every 10-second interval; four-station clusters occur only sparsely in the latter part of the capture.
+9. Every accepted cluster passed every included pairwise physical constraint by construction.
+10. The 3-station density is useful for constrained/tracking work, but eight four-station clusters are insufficient for sustained unconstrained 3D position solving.
+11. QK4 is weakest: it recorded the fewest Mode A/C replies and its links have the fewest geometry samples; T37-QK4 and Dao-QK4 also show the largest hold-out drift.
+12. TEST 6: PARTIAL PASS — capture, all clock links, pairwise Mode A/C timing, and sustained 3-station clustering pass; four-station density does not.

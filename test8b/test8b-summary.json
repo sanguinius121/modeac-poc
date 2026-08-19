@@ -1,0 +1,273 @@
+{
+  "decision": "PASS",
+  "source_capture": "/home/mlatserver/modeac-poc/test7h/20260809T071801Z",
+  "known_df17_icaos": 138,
+  "association": {
+    "physical_reject": 31,
+    "nonreciprocal": 11,
+    "2RX": 74087,
+    "3RX": 13150,
+    "4RX": 649,
+    "payloads": 45064,
+    "full_capture_seconds": 2.5999370547942817
+  },
+  "message_type_performance": {
+    "DF4": {
+      "receiver_observations": 24142,
+      "2rx_clusters": 5095,
+      "3rx_clusters": 1013,
+      "4rx_clusters": 48,
+      "blind_unique": 48,
+      "truth_evaluated": 47,
+      "horizontal_error_m": {
+        "count": 47,
+        "p50": 144.07326108970003,
+        "p75": 263.55550314002085,
+        "p90": 882.2402515925,
+        "p95": 1026.609367465757,
+        "p99": 1533.7276078440736,
+        "max": 1628.6954359825988
+      }
+    },
+    "DF5": {
+      "receiver_observations": 7010,
+      "2rx_clusters": 1219,
+      "3rx_clusters": 214,
+      "4rx_clusters": 12,
+      "blind_unique": 12,
+      "truth_evaluated": 12,
+      "horizontal_error_m": {
+        "count": 12,
+        "p50": 290.9061362359675,
+        "p75": 403.365690226787,
+        "p90": 867.5695638748606,
+        "p95": 940.9863745817709,
+        "p99": 962.4229032783196,
+        "max": 967.7820354524567
+      }
+    },
+    "DF11": {
+      "receiver_observations": 245457,
+      "2rx_clusters": 47434,
+      "3rx_clusters": 9486,
+      "4rx_clusters": 542,
+      "blind_unique": 539,
+      "truth_evaluated": 537,
+      "horizontal_error_m": {
+        "count": 537,
+        "p50": 152.66985574818386,
+        "p75": 331.2270035782045,
+        "p90": 1048.1300661910263,
+        "p95": 1351.9493401757807,
+        "p99": 1910.5338373926252,
+        "max": 2671.9226697875492
+      }
+    },
+    "DF20": {
+      "receiver_observations": 92773,
+      "2rx_clusters": 17325,
+      "3rx_clusters": 2016,
+      "4rx_clusters": 32,
+      "blind_unique": 32,
+      "truth_evaluated": 32,
+      "horizontal_error_m": {
+        "count": 32,
+        "p50": 113.98729494728032,
+        "p75": 186.8897533917715,
+        "p90": 543.874291197319,
+        "p95": 770.3714668667596,
+        "p99": 873.4168713854119,
+        "max": 881.0452576141143
+      }
+    },
+    "DF21": {
+      "receiver_observations": 16861,
+      "2rx_clusters": 3014,
+      "3rx_clusters": 421,
+      "4rx_clusters": 15,
+      "blind_unique": 15,
+      "truth_evaluated": 15,
+      "horizontal_error_m": {
+        "count": 15,
+        "p50": 132.8905093065442,
+        "p75": 588.3133349598339,
+        "p90": 976.1391233815157,
+        "p95": 1025.056884457136,
+        "p99": 1059.391816571858,
+        "max": 1067.9755496005384
+      }
+    }
+  },
+  "strict_4rx_results": 649,
+  "strict_4rx_classifications": {
+    "BLIND_UNIQUE": 646,
+    "BLIND_MULTIPLE": 3
+  },
+  "strict_4rx_truth_evaluated": 643,
+  "horizontal_error_m": {
+    "count": 643,
+    "p50": 150.2025508471417,
+    "p75": 335.9506062665645,
+    "p90": 982.4867995127983,
+    "p95": 1323.7219789610913,
+    "p99": 1876.3671998703412,
+    "max": 2671.9226697875492
+  },
+  "threshold_counts": {
+    ">1km": 62,
+    ">2km": 5,
+    ">5km": 0,
+    ">10km": 0
+  },
+  "branch_accuracy": {
+    "selected_nearest_truth": 643,
+    "evaluated": 643
+  },
+  "three_rx_alt": {
+    "attempted": 3029,
+    "classifications": {
+      "ALT_3RX_MULTIPLE": 3019,
+      "ALT_3RX_UNIQUE": 10
+    },
+    "truth_evaluated": 3027,
+    "horizontal_error_m": {
+      "count": 3027,
+      "p50": 41212.14558450303,
+      "p75": 290773.2332540244,
+      "p90": 321875.55815527024,
+      "p95": 410874.95987978316,
+      "p99": 519770.3518150751,
+      "max": 705770.0618179314
+    }
+  },
+  "icao_tracks": 11,
+  "fix_rates_per_aircraft_per_min": {
+    "8881f5": 28.438316601532602,
+    "888264": 15.336377881540795,
+    "88811a": 4.367312906663935,
+    "781017": 4.367312906663935,
+    "88820f": 3.85948582449371,
+    "888152": 3.351658742323485,
+    "151e72": 2.945397076587305,
+    "888265": 2.132873745114945,
+    "71c087": 0.304696249302135,
+    "888215": 0.101565416434045,
+    "8880e8": 0.101565416434045
+  },
+  "latency_ms": {
+    "4rx_solver": {
+      "count": 649,
+      "p50": 1145.208396948874,
+      "p75": 1220.1606039889157,
+      "p90": 1264.3458796665072,
+      "p95": 1288.4898329153657,
+      "p99": 1362.9518927633762,
+      "max": 1465.140949934721
+    },
+    "3rx_alt_solver": {
+      "count": 3029,
+      "p50": 105.34310573711991,
+      "p75": 110.67716404795647,
+      "p90": 117.68800364807251,
+      "p95": 132.16407150030136,
+      "p99": 173.038936387747,
+      "max": 2646.455219015479
+    },
+    "association": {
+      "count": 649,
+      "p50": 0.01835497096180916,
+      "p75": 0.019029248505830765,
+      "p90": 0.020175427198410034,
+      "p95": 0.021231640130281452,
+      "p99": 0.026284791529178612,
+      "max": 0.06204191595315933
+    }
+  },
+  "clock_links": [
+    {
+      "station_a": "T37",
+      "station_b": "Dao_Cai_chien",
+      "common_df17": "42283",
+      "geometry_samples": "14518",
+      "classification": "STRONG PASS",
+      "slope": "0.9999991400966045",
+      "offset_ticks": "11370688536.7995",
+      "p50_us": "0.5355733235677083",
+      "p90_us": "0.9004389444986979",
+      "p95_us": "0.9701118469238281",
+      "p99_us": "1.0551058451334634"
+    },
+    {
+      "station_a": "T37",
+      "station_b": "QK4",
+      "common_df17": "10005",
+      "geometry_samples": "3394",
+      "classification": "MARGINAL",
+      "slope": "0.9999989268341335",
+      "offset_ticks": "12805399346631.053",
+      "p50_us": "2.732421875",
+      "p90_us": "6.145735677083334",
+      "p95_us": "6.892871093749999",
+      "p99_us": "7.409098307291664"
+    },
+    {
+      "station_a": "T37",
+      "station_b": "BachLongVi",
+      "common_df17": "11797",
+      "geometry_samples": "3485",
+      "classification": "PASS",
+      "slope": "1.0000005803452692",
+      "offset_ticks": "354417198428.0111",
+      "p50_us": "1.2364501953125",
+      "p90_us": "2.1469777425130205",
+      "p95_us": "2.2871195475260415",
+      "p99_us": "2.4784317016601554"
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "QK4",
+      "common_df17": "6026",
+      "geometry_samples": "2020",
+      "classification": "MARGINAL",
+      "slope": "0.999999787528229",
+      "offset_ticks": "12794028660234.68",
+      "p50_us": "2.362548828125",
+      "p90_us": "5.090169270833334",
+      "p95_us": "5.496175130208333",
+      "p99_us": "5.868660481770835"
+    },
+    {
+      "station_a": "Dao_Cai_chien",
+      "station_b": "BachLongVi",
+      "common_df17": "7747",
+      "geometry_samples": "2335",
+      "classification": "PASS",
+      "slope": "1.0000014394452938",
+      "offset_ticks": "343046493805.051",
+      "p50_us": "1.7287190755208333",
+      "p90_us": "2.7768452962239585",
+      "p95_us": "2.9442240397135415",
+      "p99_us": "3.0789693196614585"
+    },
+    {
+      "station_a": "QK4",
+      "station_b": "BachLongVi",
+      "common_df17": "2357",
+      "geometry_samples": "709",
+      "classification": "MARGINAL",
+      "slope": "1.0000016574982091",
+      "offset_ticks": "-12451003374518.832",
+      "p50_us": "3.7284647623697915",
+      "p90_us": "8.235101318359375",
+      "p95_us": "8.814072672526041",
+      "p99_us": "10.06327392578125"
+    }
+  ],
+  "frozen_hashes": {
+    "test8b-4rx-results-frozen.csv": "c5354fc3d71823b10192da3a0fe9a6749e77d60ad2e3243e6ca140d2b9dd42fe",
+    "test8b-4rx-candidates-frozen.csv": "30ca080d6c587a2ff046a736f6fbd793740f0776589302da1bb8586bcca5909d",
+    "test8b-3rx-alt-results-frozen.csv": "88b9bba1d142a65a8b16c8792dd9e3af0382f269a5258786c954a365c873bb9c"
+  },
+  "frozen_integrity_after_truth": true,
+  "anti_leakage": "Mode-S MLAT outputs and candidate branches were frozen before DF17 trajectories were loaded."
+}

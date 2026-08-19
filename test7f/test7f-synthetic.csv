@@ -1,0 +1,8 @@
+scenario,events,selected,expected,confidence,passed
+straight,5,1;1;1;1;1,continuous branch 1,inf,True
+constant_turn,6,1;1;1;1;1;1,continuous branch 1,2.671521026354899,True
+speed_change,5,1;1;1;1;1,continuous branch 1,109.63591536467393,True
+measurement_gap,4,1;1;1;1,continuous branch 1,inf,True
+one_wrong_candidate,5,1;1;1;1;1,continuous branch 1,34.17313184514252,True
+crossing_geometry,6,1;1;1;1;1;1,continuous branch 1,108.03341058300815,True
+intentionally_ambiguous,4,,NO_SEED,,True

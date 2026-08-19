@@ -1,0 +1,16 @@
+{"duration_s": 300.0, "event": "capture_start", "pid": 2403866, "time": "2026-08-18T01:06:51.329340Z"}
+{"event": "listener_started", "port": 29996, "station": "T37", "time": "2026-08-18T01:06:51.329585Z"}
+{"event": "listener_started", "port": 29998, "station": "Dao_Cai_chien", "time": "2026-08-18T01:06:51.329731Z"}
+{"event": "listener_started", "port": 29997, "station": "QK4", "time": "2026-08-18T01:06:51.329858Z"}
+{"event": "listener_started", "port": 29999, "station": "BachLongVi", "time": "2026-08-18T01:06:51.329981Z"}
+{"event": "listener_started", "port": 29995, "station": "MongCai", "time": "2026-08-18T01:06:51.330102Z"}
+{"event": "receiver_connected", "peer": "('100.127.47.30', 45566)", "station": "MongCai", "time": "2026-08-18T01:06:51.972531Z"}
+{"event": "receiver_connected", "peer": "('100.102.185.43', 55298)", "station": "T37", "time": "2026-08-18T01:06:53.977010Z"}
+{"event": "receiver_connected", "peer": "('100.74.130.53', 58970)", "station": "Dao_Cai_chien", "time": "2026-08-18T01:06:54.726667Z"}
+{"event": "receiver_connected", "peer": "('100.120.90.84', 48492)", "station": "BachLongVi", "time": "2026-08-18T01:06:54.868323Z"}
+{"event": "receiver_connected", "peer": "('100.119.31.100', 44314)", "station": "QK4", "time": "2026-08-18T01:06:54.988268Z"}
+{"event": "receiver_disconnected", "peer": "('100.102.185.43', 55298)", "station": "T37", "time": "2026-08-18T01:11:51.332063Z"}
+{"event": "receiver_disconnected", "peer": "('100.74.130.53', 58970)", "station": "Dao_Cai_chien", "time": "2026-08-18T01:11:51.332310Z"}
+{"event": "receiver_disconnected", "peer": "('100.120.90.84', 48492)", "station": "BachLongVi", "time": "2026-08-18T01:11:51.332439Z"}
+{"event": "receiver_disconnected", "peer": "('100.119.31.100', 44314)", "station": "QK4", "time": "2026-08-18T01:11:51.332531Z"}
+{"event": "receiver_disconnected", "peer": "('100.127.47.30', 45566)", "station": "MongCai", "time": "2026-08-18T01:11:51.332611Z"}

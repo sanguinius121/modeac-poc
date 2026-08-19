@@ -1,0 +1,407 @@
+{
+  "decision": "PASS",
+  "new_capture_required": false,
+  "self_tests": {
+    "id13_exhaustive_8192": true,
+    "known_df5_vector": true,
+    "fixed_altitude_exact_geometry": true,
+    "passed": true
+  },
+  "method": {
+    "identity": "DF5/DF21 ID13 decoded with local readsb-compatible mapping; AP residual accepted only for ICAOs in DF17 truth trajectories",
+    "squawk_validity_s": 15.0,
+    "event_builder": "fresh same-squawk reciprocal-nearest complete cliques from original Type-1 rows",
+    "physical_gate_margin_us": 0.5,
+    "association": "TDOA-only ranking; strong RMS<=1 us and max<=2 us; shared candidates also require gap>=1 us and ratio>=2",
+    "temporal_thinning": "maximum one strong event per ICAO per capture-relative second",
+    "solver": "unchanged Test 7C deterministic multistart; truth lat/lon excluded from solve and branch selection"
+  },
+  "identity": {
+    "decoded": {
+      "df5": 2484,
+      "df21": 5896
+    },
+    "accepted_identity_transmissions": 6579,
+    "distinct_observed_squawks": 88,
+    "squawk_state_intervals": 143,
+    "aircraft_with_squawk_truth": 87,
+    "aircraft_with_simultaneous_squawk_position_truth": 87,
+    "aircraft_with_position_trajectories": 98
+  },
+  "event_builder": {
+    "decoded_type1": 1207969,
+    "timestamp_zero": 40,
+    "station_T37": 622352,
+    "station_Dao_Cai_chien": 416162,
+    "station_QK4": 43040,
+    "station_BachLongVi": 126375,
+    "pair_edges": 83587,
+    "maximal_cliques": 2421,
+    "ambiguous_overlapping_cliques": 0,
+    "physical_rejects": 37866,
+    "three_receiver_events": 2419,
+    "four_receiver_events": 2
+  },
+  "association": {
+    "mode_a_candidate_events": 2421,
+    "events_with_same_squawk_aircraft": 2410,
+    "strong_unthinned": 2248,
+    "strong_independent": 837,
+    "plausible": 0,
+    "ambiguous": 0,
+    "no_truth_match": 173,
+    "independent_truth_tdoa_rms_us": {
+      "count": 837,
+      "median": 0.06568181184690587,
+      "p50": 0.06568181184690587,
+      "p75": 0.11999801312873025,
+      "p90": 0.19016610479759372,
+      "p95": 0.3060781417455903,
+      "p99": 0.6935836715197641,
+      "max": 0.933022454704058
+    },
+    "independent_truth_tdoa_max_us": {
+      "count": 837,
+      "median": 0.08881711968185613,
+      "p50": 0.08881711968185613,
+      "p75": 0.16100761994891855,
+      "p90": 0.26180011489732063,
+      "p95": 0.3941245295111962,
+      "p99": 0.8834886160221591,
+      "max": 1.244162091851308
+    }
+  },
+  "localization": {
+    "all": {
+      "attempted": 837,
+      "converged": 837,
+      "unambiguous": 102,
+      "ambiguous": 732,
+      "rejected_geometry": 3,
+      "horizontal_error_m": {
+        "count": 102,
+        "median": 121.54347975108382,
+        "p50": 121.54347975108382,
+        "p75": 392.9019766896198,
+        "p90": 686.0741823158835,
+        "p95": 890.3547441222917,
+        "p99": 1809.8407502617852,
+        "max": 2588.0816860264795
+      },
+      "tdoa_rms_us": {
+        "count": 102,
+        "median": 1.2617025816479606e-12,
+        "p50": 1.2617025816479606e-12,
+        "p75": 2.340045458853506e-12,
+        "p90": 4.555779414193888e-12,
+        "p95": 4.872084223495211e-12,
+        "p99": 6.182253142045994e-12,
+        "max": 9.285805883891937e-12
+      },
+      "condition": {
+        "count": 102,
+        "median": 5.538473320894553,
+        "p50": 5.538473320894553,
+        "p75": 22.226544224330826,
+        "p90": 61.03122533057946,
+        "p95": 65.64523168352423,
+        "p99": 67.81815878722344,
+        "max": 68.26283144289431
+      }
+    },
+    "three_receiver": {
+      "attempted": 837,
+      "converged": 837,
+      "unambiguous": 102,
+      "ambiguous": 732,
+      "rejected_geometry": 3,
+      "horizontal_error_m": {
+        "count": 102,
+        "median": 121.54347975108382,
+        "p50": 121.54347975108382,
+        "p75": 392.9019766896198,
+        "p90": 686.0741823158835,
+        "p95": 890.3547441222917,
+        "p99": 1809.8407502617852,
+        "max": 2588.0816860264795
+      },
+      "tdoa_rms_us": {
+        "count": 102,
+        "median": 1.2617025816479606e-12,
+        "p50": 1.2617025816479606e-12,
+        "p75": 2.340045458853506e-12,
+        "p90": 4.555779414193888e-12,
+        "p95": 4.872084223495211e-12,
+        "p99": 6.182253142045994e-12,
+        "max": 9.285805883891937e-12
+      },
+      "condition": {
+        "count": 102,
+        "median": 5.538473320894553,
+        "p50": 5.538473320894553,
+        "p75": 22.226544224330826,
+        "p90": 61.03122533057946,
+        "p95": 65.64523168352423,
+        "p99": 67.81815878722344,
+        "max": 68.26283144289431
+      }
+    },
+    "four_receiver": {
+      "attempted": 0,
+      "converged": 0,
+      "unambiguous": 0,
+      "ambiguous": 0,
+      "rejected_geometry": 0,
+      "horizontal_error_m": {
+        "count": 0,
+        "median": null,
+        "p50": null,
+        "p75": null,
+        "p90": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "tdoa_rms_us": {
+        "count": 0,
+        "median": null,
+        "p50": null,
+        "p75": null,
+        "p90": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "condition": {
+        "count": 0,
+        "median": null,
+        "p50": null,
+        "p75": null,
+        "p90": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      }
+    },
+    "receiver_combinations": {
+      "Dao_Cai_chien;QK4;BachLongVi": {
+        "attempted": 3,
+        "converged": 3,
+        "unambiguous": 3,
+        "ambiguous": 0,
+        "rejected_geometry": 0,
+        "horizontal_error_m": {
+          "count": 3,
+          "median": 104.31521780444231,
+          "p50": 104.31521780444231,
+          "p75": 107.59615365115909,
+          "p90": 109.56471515918915,
+          "p95": 110.2209023285325,
+          "p99": 110.74585206400718,
+          "max": 110.87708949787586
+        },
+        "tdoa_rms_us": {
+          "count": 3,
+          "median": 3.4635636269884553e-12,
+          "p50": 3.4635636269884553e-12,
+          "p75": 4.09604358879216e-12,
+          "p90": 4.475531565874383e-12,
+          "p95": 4.602027558235124e-12,
+          "p99": 4.703224352123717e-12,
+          "max": 4.728523550595865e-12
+        },
+        "condition": {
+          "count": 3,
+          "median": 3.6980225162713847,
+          "p50": 3.6980225162713847,
+          "p75": 4.623710026790789,
+          "p90": 5.179122533102431,
+          "p95": 5.364260035206312,
+          "p99": 5.5123700368894175,
+          "max": 5.549397537310194
+        }
+      },
+      "T37;Dao_Cai_chien;BachLongVi": {
+        "attempted": 716,
+        "converged": 716,
+        "unambiguous": 0,
+        "ambiguous": 713,
+        "rejected_geometry": 3,
+        "horizontal_error_m": {
+          "count": 0,
+          "median": null,
+          "p50": null,
+          "p75": null,
+          "p90": null,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "tdoa_rms_us": {
+          "count": 0,
+          "median": null,
+          "p50": null,
+          "p75": null,
+          "p90": null,
+          "p95": null,
+          "p99": null,
+          "max": null
+        },
+        "condition": {
+          "count": 0,
+          "median": null,
+          "p50": null,
+          "p75": null,
+          "p90": null,
+          "p95": null,
+          "p99": null,
+          "max": null
+        }
+      },
+      "T37;Dao_Cai_chien;QK4": {
+        "attempted": 66,
+        "converged": 66,
+        "unambiguous": 49,
+        "ambiguous": 17,
+        "rejected_geometry": 0,
+        "horizontal_error_m": {
+          "count": 49,
+          "median": 410.0113794601148,
+          "p50": 410.0113794601148,
+          "p75": 624.2391284405808,
+          "p90": 904.3575203518611,
+          "p95": 1431.3969337841127,
+          "p99": 2216.1669093670107,
+          "max": 2588.0816860264795
+        },
+        "tdoa_rms_us": {
+          "count": 49,
+          "median": 1.0336544996020966e-12,
+          "p50": 1.0336544996020966e-12,
+          "p75": 1.7182847017364237e-12,
+          "p90": 3.864562401203985e-12,
+          "p95": 4.686787481342556e-12,
+          "p99": 4.922060038262073e-12,
+          "max": 4.966410785393149e-12
+        },
+        "condition": {
+          "count": 49,
+          "median": 22.261934025255446,
+          "p50": 22.261934025255446,
+          "p75": 60.752641068224676,
+          "p90": 65.81682122164862,
+          "p95": 67.01284931232931,
+          "p99": 68.05214081729349,
+          "max": 68.26283144289431
+        }
+      },
+      "T37;QK4;BachLongVi": {
+        "attempted": 52,
+        "converged": 52,
+        "unambiguous": 50,
+        "ambiguous": 2,
+        "rejected_geometry": 0,
+        "horizontal_error_m": {
+          "count": 50,
+          "median": 77.31470805915531,
+          "p50": 77.31470805915531,
+          "p75": 113.27255704072988,
+          "p90": 155.85300120327088,
+          "p95": 169.77650296266114,
+          "p99": 179.94751335786526,
+          "max": 181.66743482251547
+        },
+        "tdoa_rms_us": {
+          "count": 50,
+          "median": 1.5220995161869854e-12,
+          "p50": 1.5220995161869854e-12,
+          "p75": 2.6052895191026746e-12,
+          "p90": 4.775344403913885e-12,
+          "p95": 5.110550479662097e-12,
+          "p99": 7.770000705319081e-12,
+          "max": 9.285805883891937e-12
+        },
+        "condition": {
+          "count": 50,
+          "median": 4.616872992947414,
+          "p50": 4.616872992947414,
+          "p75": 5.0277945113238305,
+          "p90": 5.343022918075265,
+          "p95": 5.5031075114180705,
+          "p99": 5.661802280348441,
+          "max": 5.790790625791712
+        }
+      }
+    },
+    "three_of_four": {},
+    "median_east_error_m": 57.70217446951785,
+    "median_north_error_m": -58.27183394937825
+  },
+  "squawk_groups": [
+    {
+      "squawk_group": "UNIQUE_SQUAWK",
+      "candidate_events": 2410,
+      "strong_events": 2248,
+      "plausible_events": 0,
+      "ambiguous_events": 0,
+      "association_success_percent": 93.27800829875518,
+      "ambiguity_percent": 0.0,
+      "horizontal_p50_m": 121.54347975108382,
+      "horizontal_p90_m": 686.0741823158835,
+      "horizontal_p95_m": 890.3547441222917
+    },
+    {
+      "squawk_group": "SHARED_2",
+      "candidate_events": 0,
+      "strong_events": 0,
+      "plausible_events": 0,
+      "ambiguous_events": 0,
+      "association_success_percent": 0,
+      "ambiguity_percent": 0,
+      "horizontal_p50_m": null,
+      "horizontal_p90_m": null,
+      "horizontal_p95_m": null
+    },
+    {
+      "squawk_group": "SHARED_3_PLUS",
+      "candidate_events": 0,
+      "strong_events": 0,
+      "plausible_events": 0,
+      "ambiguous_events": 0,
+      "association_success_percent": 0,
+      "ambiguity_percent": 0,
+      "horizontal_p50_m": null,
+      "horizontal_p90_m": null,
+      "horizontal_p95_m": null
+    }
+  ],
+  "altitude_sensitivity": {
+    "events": 100,
+    "absolute_error_change_m": {
+      "count": 200,
+      "median": 45.251241705035355,
+      "p50": 45.251241705035355,
+      "p75": 55.1024071050997,
+      "p90": 61.0439182314131,
+      "p95": 68.89352534880155,
+      "p99": 278.5564203204861,
+      "max": 18873.461596196372
+    }
+  },
+  "data_sufficiency": {
+    "sufficient": true,
+    "target": "at least 100 independent strong events and 20 aircraft",
+    "independent_strong_events": 837,
+    "unique_aircraft": 28,
+    "missing": []
+  },
+  "invariants": {
+    "test7d_decoder_reused": true,
+    "squawk_not_unique_identity": true,
+    "truth_latlon_solver_input": false,
+    "truth_latlon_branch_selection": false,
+    "all_accepted_have_tdoa_evidence": true,
+    "temporal_thinning_applied": true,
+    "source_rows_recorded": true
+  }
+}

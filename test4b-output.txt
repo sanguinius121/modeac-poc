@@ -1,0 +1,69 @@
+================================================================================
+TEST 4B — OUT-OF-SAMPLE CLOCK VALIDATION
+================================================================================
+
+Train ratio           : 0.70
+
+Common DF17 pairs     : 5805
+Geometry samples      : 1855
+
+TIME SPLIT
+----------
+Train samples         : 1298
+Test samples          : 557
+Train time span       : 81.756 s
+Test time span        : 37.193 s
+Train->test gap       : 0.216649 s
+
+CLOCK MODEL — TRAIN ONLY
+------------------------
+TB = slope * TA + intercept + geometric_delay
+
+Slope                 : 0.999998778414
+Relative clock ppm    : -1.221586
+Intercept ticks       : 495066165966.252
+
+TRAIN RESIDUAL
+--------------
+Samples               : 1298
+Residual median       : 0.008 ticks
+|Residual| median     : 0.516 ticks
+|Residual| P90        : 1.371 ticks
+|Residual| P95        : 1.687 ticks
+|Residual| P99        : 2.178 ticks
+
+|Residual| median     : 0.043 us
+|Residual| P95        : 0.141 us
+|Residual| P99        : 0.181 us
+
+HOLD-OUT TEST RESIDUAL
+----------------------
+Samples               : 557
+Residual median       : 0.067 ticks
+|Residual| median     : 0.506 ticks
+|Residual| P90        : 1.273 ticks
+|Residual| P95        : 1.608 ticks
+|Residual| P99        : 2.065 ticks
+
+|Residual| median     : 0.042 us
+|Residual| P95        : 0.134 us
+|Residual| P99        : 0.172 us
+
+TEST RESIDUAL OVER TIME
+-----------------------
+Chunk 1: n= 111 | median=  +0.107 ticks | P95=   1.672 ticks | P95=  0.139 us
+Chunk 2: n= 111 | median=  +0.053 ticks | P95=   1.506 ticks | P95=  0.125 us
+Chunk 3: n= 111 | median=  +0.016 ticks | P95=   1.516 ticks | P95=  0.126 us
+Chunk 4: n= 111 | median=  +0.079 ticks | P95=   1.577 ticks | P95=  0.131 us
+Chunk 5: n= 113 | median=  +0.100 ticks | P95=   1.676 ticks | P95=  0.140 us
+
+================================================================================
+RESULT
+================================================================================
+STRONG PASS
+Out-of-sample P95 clock error is 0.134 us.
+Clock model is suitable for proceeding to Mode A/C cross-station correlation.
+
+Hold-out P95          : 0.134 us
+Hold-out P99          : 0.172 us
+================================================================================

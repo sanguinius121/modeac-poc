@@ -1,0 +1,58 @@
+[
+  {
+    "station": "T37",
+    "host": "client0125@100.102.185.43",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30321688 11845216  17113812      41% /\n84285 4266 975 939\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 17113812,
+    "sample_bytes": 84285,
+    "sample_type1": 4266,
+    "sample_type2": 975,
+    "sample_type3": 939,
+    "passed": true
+  },
+  {
+    "station": "Dao_Cai_chien",
+    "host": "phiyb@100.74.130.53",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30354440 9424344  19643428      33% /\n50920 2915 505 465\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 19643428,
+    "sample_bytes": 50920,
+    "sample_type1": 2915,
+    "sample_type2": 505,
+    "sample_type3": 465,
+    "passed": true
+  },
+  {
+    "station": "QK4",
+    "host": "mlat-client-1@100.119.31.100",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30321688 12905008  16054020      45% /\n14975 743 138 198\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 16054020,
+    "sample_bytes": 14975,
+    "sample_type1": 743,
+    "sample_type2": 138,
+    "sample_type3": 198,
+    "passed": true
+  },
+  {
+    "station": "BachLongVi",
+    "host": "mlat-client-6@100.120.90.84",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30321688 11980652  16978376      42% /\n19332 954 204 241\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 16978376,
+    "sample_bytes": 19332,
+    "sample_type1": 954,
+    "sample_type2": 204,
+    "sample_type3": 241,
+    "passed": true
+  }
+]

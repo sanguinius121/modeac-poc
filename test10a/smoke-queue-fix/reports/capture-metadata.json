@@ -1,0 +1,144 @@
+{
+  "schema": "phase10a-capture-v1",
+  "started_utc": "2026-08-18T01:12:17.112652Z",
+  "ended_utc": "2026-08-18T01:12:22.321781Z",
+  "requested_duration_s": 5.0,
+  "actual_duration_s": 5.209264134056866,
+  "common_overlap_s": 0.0,
+  "capture_accepted": false,
+  "stations": {
+    "T37": {
+      "port": 29996,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 100372,
+      "frames": 7575,
+      "type1": 5548,
+      "type2": 1061,
+      "type3": 966,
+      "timestamp_zero": 5,
+      "parse_errors": 0,
+      "df": {
+        "0": 243,
+        "11": 678,
+        "17": 592,
+        "16": 39,
+        "20": 302,
+        "4": 116,
+        "21": 33,
+        "5": 24
+      },
+      "first_recv_utc_ns": 1787015537734667198,
+      "last_recv_utc_ns": 1787015542113333873
+    },
+    "Dao_Cai_chien": {
+      "port": 29998,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 56532,
+      "frames": 4419,
+      "type1": 3437,
+      "type2": 562,
+      "type3": 420,
+      "timestamp_zero": 5,
+      "parse_errors": 0,
+      "df": {
+        "11": 353,
+        "17": 268,
+        "4": 58,
+        "0": 143,
+        "20": 122,
+        "5": 8,
+        "16": 11,
+        "21": 19
+      },
+      "first_recv_utc_ns": 1787015537984395732,
+      "last_recv_utc_ns": 1787015542077930628
+    },
+    "QK4": {
+      "port": 29997,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 7742,
+      "frames": 504,
+      "type1": 266,
+      "type2": 96,
+      "type3": 142,
+      "timestamp_zero": 5,
+      "parse_errors": 0,
+      "df": {
+        "17": 107,
+        "20": 22,
+        "21": 13,
+        "11": 68,
+        "0": 21,
+        "4": 6,
+        "5": 1
+      },
+      "first_recv_utc_ns": 1787015538808110170,
+      "last_recv_utc_ns": 1787015542020491689
+    },
+    "BachLongVi": {
+      "port": 29999,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 36403,
+      "frames": 2679,
+      "type1": 1841,
+      "type2": 457,
+      "type3": 381,
+      "timestamp_zero": 5,
+      "parse_errors": 0,
+      "df": {
+        "17": 253,
+        "0": 114,
+        "4": 38,
+        "20": 103,
+        "11": 301,
+        "5": 4,
+        "21": 22,
+        "16": 3
+      },
+      "first_recv_utc_ns": 1787015537857328613,
+      "last_recv_utc_ns": 1787015542066587912
+    },
+    "MongCai": {
+      "port": 29995,
+      "connections": 0,
+      "reconnects": 0,
+      "disconnects": 0,
+      "bytes": 0,
+      "frames": 0,
+      "type1": 0,
+      "type2": 0,
+      "type3": 0,
+      "timestamp_zero": 0,
+      "parse_errors": 0,
+      "df": {},
+      "first_recv_utc_ns": null,
+      "last_recv_utc_ns": null
+    }
+  },
+  "queue": {
+    "configured_max": 100000,
+    "high_water": 309,
+    "final": 0,
+    "dropped": 0
+  },
+  "process": {
+    "cpu_average_percent": 39.486177084406485,
+    "cpu_peak_percent": 92.90301478431836,
+    "rss_peak_kib": 34692
+  },
+  "capture_sha256": {
+    "T37": "09455a19a81018c9a46567b5e921e6dcfc6f43c74e02da5512d5941f33d5a983",
+    "Dao_Cai_chien": "9e56c91e9549571e615650b3bda9069186528f9f85b0478b35019f4a2d19ff68",
+    "QK4": "e6962477d02ffc61ae9d61ee5af986154a1f209737b2e4ec27dd7c92389857a1",
+    "BachLongVi": "38890bf9aa35c2dfe55af19611020cbfe4d37cef5d1a35593317b0e7432fbae9",
+    "MongCai": "4331676f947608c4b552d374d518f228e26dc934e58e6e9e4042f915e2bd5df9"
+  }
+}

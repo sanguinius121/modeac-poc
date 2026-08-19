@@ -1,0 +1,47 @@
+TEST 7H — TEN-MINUTE FOUR-RECEIVER MODE-A VALIDATION
+==============================================================
+
+TEST 7H STATUS: PARTIAL PASS
+CLOCK GATE: DEGRADED — localization is diagnostic only and not headline evidence
+
+Capture start/stop: 2026-08-09T09:36:37.940326+00:00 / 2026-08-09T09:46:37.940326Z; requested duration 600 s; common overlap 599.962 s.
+Station Type-1 counts: T37=820305 (1367.17/s), Dao_Cai_chien=487921 (813.20/s), QK4=63603 (106.00/s), BachLongVi=184427 (307.38/s)
+
+CLOCK SYNCHRONIZATION
+T37—Dao_Cai_chien: PASS, samples=12697, P95/P99=1.1621696472167968/1.2694508870442707 us
+T37—QK4: MARGINAL, samples=2869, P95/P99=5.583821614583333/6.015364583333334 us
+T37—BachLongVi: MARGINAL, samples=3923, P95/P99=5.7754150390625/6.056631673177083 us
+Dao_Cai_chien—QK4: PASS, samples=1736, P95/P99=4.638997395833333/4.860644531249999 us
+Dao_Cai_chien—BachLongVi: MARGINAL, samples=2524, P95/P99=7.202493794759114/7.502105814615884 us
+QK4—BachLongVi: INVESTIGATE, samples=650, P95/P99=12.70361582438151/13.12168884277344 us
+
+FOUR-STATION EVENT YIELD
+Generic 4-RX candidates/strict accepted/difference: 83/81/2; association-overlap ambiguities across 3+ cliques=16.
+Strict rate=8.10/min, codes=26; prior Test 6 rate=1.60/min. Top codes: 4624:30, 5540:6, 5520:5, 1260:4, 5320:3.
+
+FOUR-RECEIVER BRANCH OBSERVABILITY
+UNIQUE/MULTIPLE/INCONSISTENT/SOLVER_FAIL: 35/2/2/42.
+Unique=43.2%; mirrored/ambiguous=2.5%; ±1 km changed classification for 0 events.
+
+ACCURACY
+Eligible unique fixes=30 (5 frozen fixes lacked reliable truth); horizontal P50/P75/P90/P95/P99/max=439.2576082203817/486.48325397989765/536.222016782535/640.4026427943045/931.6222705311062/1025.9737024519475 m.
+Cross-track P50/P75/P90/P95/P99/max=262.4710319379121/294.40816329491713/322.79852685364455/385.25764271428375/493.61914894755/537.1192496136318 m; >5 km/>10 km=0/0.
+
+TRACK DENSITY AND DURATION
+Unique/eligible fixes per capture minute=3.50/3.00; eligible gap median/P90=5.182261628219605/32.71647826987104 s.
+Track spans >=30/60/120/180 s=2/2/2/2; continuous tracks=1.
+Densest track: 88820f (26 fixes, 6.52/min, heading median/P90=1.0025682946643428/3.027878458122905 deg).
+
+MIRROR ANALYSIS
+All 35 unique events began with multiple solver branches; the redundant residual rejected competitors. The selected residual winner was nearest eligible truth in 30/30 cases (100.0%).
+
+YIELD COST
+Raw Type-1 / 3+ event / strict 4-RX event per UNIQUE fix: 44464.5 / 224.2 / 2.31.
+5001a9 and 782253 did not appear among independently validated aircraft in this capture.
+
+SCIENTIFIC INTERPRETATION
+Four-receiver redundancy produced 35 diagnostic unique candidates from 81 strict events. MULTIPLE/INCONSISTENT/SOLVER_FAIL remain non-measurements.
+Conclusion: PARTIAL PASS. Because 4 clock links degraded, these UNIQUE_4RX labels are diagnostic and Test 7H does not justify promoting them to a new high-confidence measurement class.
+
+ANTI-LEAKAGE
+test7h-selected-before-truth.csv was closed before truth association and contains no truth-coordinate fields. Truth latitude/longitude were never solver inputs or branch selectors.

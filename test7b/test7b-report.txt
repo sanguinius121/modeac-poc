@@ -1,0 +1,198 @@
+TEST 7B — OFFLINE DF17 EXTERNAL-TRUTH DIAGNOSTIC
+=======================================================
+
+Sign convention: TDOA A->B = normalized_B - normalized_A = (distance_B-distance_A)/c. Residual = measured - predicted.
+Truth: 85565 receiver copies -> 62877 deduplicated DF17 transmissions -> 22271 valid trajectory points for 98 ICAOs.
+Candidate ranking uses only six-baseline TDOA RMS. Test 7A positions are compared only after ranking.
+
+Cluster ID: 31620
+Raw Mode A/C: 1071
+Event time: 2026-08-09T03:44:06.246078+00:00
+Test 7A: lat=22.70031913528235, lon=6.7073255931076154, alt=4161775800.862956
+DF17 truth candidates: 58
+Best independent candidate: ICAO=88804e, quality=interpolated, interpolated=True, lat=20.336433, lon=105.691232, alt=7047.9 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: -51.884 / -30.936 / -20.947
+  T37-QK4: -280.593 / -255.639 / -24.953
+  T37-BachLongVi: +288.099 / -125.218 / +413.316
+  Dao_Cai_chien-QK4: -228.709 / -224.703 / -4.006
+  Dao_Cai_chien-BachLongVi: +339.983 / -94.281 / +434.264
+  QK4-BachLongVi: +568.692 / +130.422 / +438.270
+RMS=303.472 us; max=438.270 us; median |residual|=219.135 us
+Second best: 8880df, RMS=351.8184899609972
+Best leave-one-station-out: exclude BachLongVi, remaining RMS=18.952 us
+Raw-code local density (±2 ms/±5 ms): T37=1/2, Dao_Cai_chien=2/3, QK4=2/3, BachLongVi=1/1
+Raw-code capture appearances: T37=1905, Dao_Cai_chien=1520, QK4=4746, BachLongVi=348; 3+ clusters=24, four-station=1
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs
+
+Cluster ID: 102973
+Raw Mode A/C: 5224
+Event time: 2026-08-09T03:46:26.867815+00:00
+Test 7A: lat=21.42338955972836, lon=107.61800699936116, alt=171432.4883387694
+DF17 truth candidates: 58
+Best independent candidate: ICAO=abdaa4, quality=interpolated, interpolated=True, lat=22.003819, lon=106.595471, alt=7018.0 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: +0.687 / +27.191 / -26.504
+  T37-QK4: +766.734 / +792.146 / -25.412
+  T37-BachLongVi: +174.828 / +344.972 / -170.144
+  Dao_Cai_chien-QK4: +766.047 / +764.955 / +1.092
+  Dao_Cai_chien-BachLongVi: +174.141 / +317.781 / -143.640
+  QK4-BachLongVi: -591.906 / -447.174 / -144.732
+RMS=109.452 us; max=170.144 us; median |residual|=85.072 us
+Second best: 5001a9, RMS=144.59938500601234
+Best leave-one-station-out: exclude BachLongVi, remaining RMS=21.209 us
+Raw-code local density (±2 ms/±5 ms): T37=1/1, Dao_Cai_chien=1/1, QK4=1/1, BachLongVi=1/1
+Raw-code capture appearances: T37=8096, Dao_Cai_chien=7963, QK4=3262, BachLongVi=1381; 3+ clusters=226, four-station=2
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs
+
+Cluster ID: 103833
+Raw Mode A/C: 7411
+Event time: 2026-08-09T03:46:28.513795+00:00
+Test 7A: lat=8.067599721126594, lon=12.828497401986036, alt=1373619116.882133
+DF17 truth candidates: 59
+Best independent candidate: ICAO=8880df, quality=interpolated, interpolated=True, lat=20.133538, lon=105.793602, alt=7226.1 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: +0.827 / -36.005 / +36.832
+  T37-QK4: -621.875 / -340.166 / -281.708
+  T37-BachLongVi: +175.607 / -176.168 / +351.775
+  Dao_Cai_chien-QK4: -622.701 / -304.161 / -318.540
+  Dao_Cai_chien-BachLongVi: +174.780 / -140.163 / +314.943
+  QK4-BachLongVi: +797.481 / +163.998 / +633.483
+RMS=366.611 us; max=633.483 us; median |residual|=316.742 us
+Second best: 76cd05, RMS=368.1630791717141
+Best leave-one-station-out: exclude BachLongVi, remaining RMS=246.430 us
+Raw-code local density (±2 ms/±5 ms): T37=1/3, Dao_Cai_chien=1/3, QK4=1/1, BachLongVi=1/2
+Raw-code capture appearances: T37=10490, Dao_Cai_chien=9996, QK4=270, BachLongVi=1822; 3+ clusters=274, four-station=2
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs
+
+Cluster ID: 104422
+Raw Mode A/C: 7411
+Event time: 2026-08-09T03:46:29.933747+00:00
+Test 7A: lat=21.47859506804235, lon=106.13195385060584, alt=1544.1466536214575
+DF17 truth candidates: 59
+Best independent candidate: ICAO=70401f, quality=interpolated, interpolated=True, lat=21.479999, lon=106.130663, alt=11292.8 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: +0.846 / +0.914 / -0.068
+  T37-QK4: +449.968 / +449.782 / +0.186
+  T37-BachLongVi: +176.274 / +176.363 / -0.088
+  Dao_Cai_chien-QK4: +449.122 / +448.868 / +0.254
+  Dao_Cai_chien-BachLongVi: +175.429 / +175.448 / -0.020
+  QK4-BachLongVi: -273.693 / -273.419 / -0.274
+RMS=0.176 us; max=0.274 us; median |residual|=0.137 us
+Second best: 781e42, RMS=96.50539787743271
+Best leave-one-station-out: exclude QK4, remaining RMS=0.065 us
+Test 7A vs truth: horizontal=0.222 km, vertical=-9748.3 m, 3D=9.751 km
+Raw-code local density (±2 ms/±5 ms): T37=1/1, Dao_Cai_chien=1/1, QK4=1/1, BachLongVi=1/1
+Raw-code capture appearances: T37=10490, Dao_Cai_chien=9996, QK4=270, BachLongVi=1822; 3+ clusters=274, four-station=2
+Truth classification: STRONG TRUTH MATCH
+Primary diagnostic: GEOMETRY / VERTICAL ILL-CONDITIONING
+Reason: Independent DF17 geometry agrees at sub/low-microsecond scale
+
+Cluster ID: 108557
+Raw Mode A/C: 7024
+Event time: 2026-08-09T03:46:39.332595+00:00
+Test 7A: lat=19.975099621076208, lon=108.23480567198749, alt=-379.0158389667049
+DF17 truth candidates: 62
+Best independent candidate: ICAO=7818f3, quality=interpolated, interpolated=True, lat=19.579779, lon=109.104093, alt=9174.5 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: -53.479 / -48.502 / -4.977
+  T37-QK4: +427.556 / +403.569 / +23.987
+  T37-BachLongVi: -393.380 / -318.841 / -74.538
+  Dao_Cai_chien-QK4: +481.035 / +452.071 / +28.964
+  Dao_Cai_chien-BachLongVi: -339.901 / -270.340 / -69.561
+  QK4-BachLongVi: -820.936 / -722.411 / -98.526
+RMS=59.918 us; max=98.526 us; median |residual|=49.263 us
+Second best: 780b1b, RMS=86.90008381499277
+Best leave-one-station-out: exclude BachLongVi, remaining RMS=21.902 us
+Raw-code local density (±2 ms/±5 ms): T37=1/1, Dao_Cai_chien=1/1, QK4=1/2, BachLongVi=1/1
+Raw-code capture appearances: T37=2463, Dao_Cai_chien=382, QK4=3674, BachLongVi=128; 3+ clusters=38, four-station=1
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs
+
+Cluster ID: 113717
+Raw Mode A/C: 7520
+Event time: 2026-08-09T03:46:52.377420+00:00
+Test 7A: lat=19.710391177936856, lon=107.07359658291715, alt=52289.24584122747
+DF17 truth candidates: 70
+Best independent candidate: ICAO=8880b3, quality=interpolated, interpolated=True, lat=19.713202, lon=106.911147, alt=5936.0 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: -55.901 / -55.835 / -0.066
+  T37-QK4: -88.843 / -157.134 / +68.290
+  T37-BachLongVi: -396.366 / -396.283 / -0.083
+  Dao_Cai_chien-QK4: -32.942 / -101.298 / +68.356
+  Dao_Cai_chien-BachLongVi: -340.465 / -340.447 / -0.018
+  QK4-BachLongVi: -307.523 / -239.149 / -68.374
+RMS=48.324 us; max=68.374 us; median |residual|=34.187 us
+Second best: 8832cc, RMS=103.002036518771
+Best leave-one-station-out: exclude QK4, remaining RMS=0.062 us
+Raw-code local density (±2 ms/±5 ms): T37=1/1, Dao_Cai_chien=1/1, QK4=1/1, BachLongVi=1/1
+Raw-code capture appearances: T37=355, Dao_Cai_chien=201, QK4=7, BachLongVi=69; 3+ clusters=15, four-station=1
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs; mixed association is strongly indicated: excluding QK4 reduces the remaining three-baseline RMS to 0.062 us
+
+Cluster ID: 130069
+Raw Mode A/C: 5224
+Event time: 2026-08-09T03:47:37.825776+00:00
+Test 7A: lat=21.58083695402436, lon=106.36754608439094, alt=-61317.69144712947
+DF17 truth candidates: 66
+Best independent candidate: ICAO=70401f, quality=interpolated, interpolated=True, lat=21.587531, lon=106.230056, alt=11285.2 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: +5.453 / +5.573 / -0.120
+  T37-QK4: +558.595 / +528.105 / +30.489
+  T37-BachLongVi: +212.087 / +212.163 / -0.076
+  Dao_Cai_chien-QK4: +553.142 / +522.532 / +30.609
+  Dao_Cai_chien-BachLongVi: +206.634 / +206.590 / +0.044
+  QK4-BachLongVi: -346.508 / -315.942 / -30.565
+RMS=21.605 us; max=30.609 us; median |residual|=15.305 us
+Second best: 88813d, RMS=175.0883914629244
+Best leave-one-station-out: exclude QK4, remaining RMS=0.086 us
+Raw-code local density (±2 ms/±5 ms): T37=2/2, Dao_Cai_chien=1/1, QK4=1/1, BachLongVi=1/1
+Raw-code capture appearances: T37=8096, Dao_Cai_chien=7963, QK4=3262, BachLongVi=1381; 3+ clusters=226, four-station=2
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs; mixed association is strongly indicated: excluding QK4 reduces the remaining three-baseline RMS to 0.086 us
+
+Cluster ID: 133692
+Raw Mode A/C: 1624
+Event time: 2026-08-09T03:47:47.157377+00:00
+Test 7A: lat=-55.82442282323097, lon=-68.8776508330199, alt=1858173902.6310673
+DF17 truth candidates: 70
+Best independent candidate: ICAO=76cd05, quality=interpolated, interpolated=True, lat=19.238217, lon=106.245071, alt=11887.2 m
+Measured/predicted/residual us:
+  T37-Dao_Cai_chien: -23.517 / -51.843 / +28.326
+  T37-QK4: -618.102 / -713.208 / +95.106
+  T37-BachLongVi: -288.109 / -371.918 / +83.810
+  Dao_Cai_chien-QK4: -594.585 / -661.366 / +66.780
+  Dao_Cai_chien-BachLongVi: -264.592 / -320.076 / +55.484
+  QK4-BachLongVi: +329.993 / +341.290 / -11.297
+RMS=63.950 us; max=95.106 us; median |residual|=61.132 us
+Second best: 888210, RMS=124.99942444445094
+Best leave-one-station-out: exclude T37, remaining RMS=50.549 us
+Raw-code local density (±2 ms/±5 ms): T37=1/1, Dao_Cai_chien=1/1, QK4=1/1, BachLongVi=1/1
+Raw-code capture appearances: T37=8044, Dao_Cai_chien=3587, QK4=4161, BachLongVi=1969; 3+ clusters=106, four-station=1
+Truth classification: NO TRUTH MATCH
+Primary diagnostic: ASSOCIATION FAILURE SUSPECTED
+Reason: Nearby decoded DF17 trajectories do not predict compatible TDOAs
+
+KEY QUESTIONS
+1. All eight independently analyzed: True.
+2. Usable nearby truth: 8/8.
+3-7. STRONG=1, PLAUSIBLE=0, AMBIGUOUS=0, NO MATCH=7, NO USABLE TRUTH=0.
+8. Good-match Test 7A horizontal separation min/median/max km: 0.2224326892478589/0.2224326892478589/0.2224326892478589.
+9. Geometry/vertical diagnostic events: 1.
+10. Suspected association failures: 7.
+11. Local same-code crowding occurred in 4/8 events and 4/7 failures. It contributes but does not explain every failure; the valid 104422 event uses globally frequent code 7411, so global reuse alone is not determinative.
+12. DIAGNOSTIC ONLY receiver-offset medians (not fitted/applied): T37=0.000 us, Dao_Cai_chien=-0.094 us, QK4=12.086 us, BachLongVi=-0.080 us. Event-to-event signs/magnitudes vary strongly, while 104422 agrees on all links; no coherent systematic clock bias is supported.
+13. Cluster 104422 does correspond to a real DF17 aircraft: STRONG TRUTH MATCH, with 0.176 us RMS and 0.274 us max residual.
+14. Cluster 108557 has nearby DF17 aircraft but none is compatible: NO TRUTH MATCH (best RMS 59.918 us).
+15. Before Test 8: enforce redundant global clique/4-of-5 consistency, feasible-position and leave-one-out residual checks, reciprocal matching, and density-aware ambiguity penalties.
+
+DIAGNOSTIC CONCLUSION: ASSOCIATION IS PRIMARY LIMITATION

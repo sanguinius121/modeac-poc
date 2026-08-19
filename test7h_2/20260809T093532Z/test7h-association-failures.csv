@@ -1,0 +1,52 @@
+event_id,mode_a_code,stations,candidate_aircraft_count,classification,failure_reason,best_rms_us,best_max_us
+230,5710,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+315,5730,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+507,5740,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+510,5740,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+558,5540,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+584,5540,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+592,5540,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+593,5540,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+596,5540,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+597,5540,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+607,4624,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,118.4244423187869,167.63497599413677
+667,5560,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+694,5520,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+780,5520,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+829,5520,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+830,5520,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+839,5520,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+870,4624,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,330.9545139331759,468.14686232853614
+897,5530,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+1304,5120,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+1310,5120,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+1451,5140,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+1460,5140,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+1773,5224,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+1856,1110,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2436,1560,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2469,5320,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2504,5320,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2542,5320,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2552,1740,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2553,4624,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,295.9074691902062,418.927763786412
+2736,1710,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+2759,4624,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,340.5557375638163,481.7333736276223
+2981,1240,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3126,1260,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3141,1260,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3152,1260,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3158,1260,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3181,1220,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3201,1220,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3437,5124,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+3781,1660,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+4038,5224,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+4904,1540,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,1320.4349483904864,2026.075022547949
+4929,1540,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,1320.7024205784885,2026.4316159726645
+4983,1540,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,1321.6667415038419,2027.945369943456
+6065,5124,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+7387,1624,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+7393,1624,T37;Dao_Cai_chien;QK4;BachLongVi,0,NO_TRUTH_MATCH,insufficient truth trajectory or no confirmed active same-squawk state,,
+7396,1505,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,5.947043339398459,10.222609446037637
+7423,1505,T37;Dao_Cai_chien;QK4;BachLongVi,1,NO_TRUTH_MATCH,same squawk but wrong geometry,5.936962677434479,10.211145329515361

@@ -1,0 +1,119 @@
+TEST 7A — FOUR-STATION 3D POSITION SOLVER VALIDATION
+=========================================================
+
+Timestamp representation: original corrected Beast timestamps and normalized timestamps are retained per station. Normalized values are 12 MHz ticks in the T37 receiver clock domain; pairwise TDOA is their difference divided by 12 in microseconds.
+Solver: scipy.optimize.least_squares 1.10.1, unconstrained ECEF range-difference equations, 61 deterministic starts, c=299792458.0 m/s.
+
+SYNTHETIC VALIDATION
+Noiseless recovery: PASS; maximum ECEF error 0.000000 m.
+Noise 0.1 us: horizontal median/max 341.3/893.5 m; |vertical| median/max 5110.1/12343.2 m
+Noise 0.25 us: horizontal median/max 866.8/2917.6 m; |vertical| median/max 10634.3/19649.7 m
+Noise 0.5 us: horizontal median/max 1852.4/8727.9 m; |vertical| median/max 17846.8/27976.2 m
+Noise 1.0 us: horizontal median/max 3745.0/18658.9 m; |vertical| median/max 29040.7/39838.2 m
+The displaced/poor geometry cases are most timing-sensitive. QK4 improves rank: without it the remaining three receivers provide only two independent TDOA equations for unconstrained 3D.
+
+REAL CLUSTERS
+
+Cluster: 31620 (source CSV row 31621)
+Raw Mode A/C: 1071
+Time: 2026-08-09T03:44:06.246078+00:00
+Measured TDOAs: T37->Dao_Cai_chien=-51.883756 us, T37->QK4=-280.592654 us, T37->BachLongVi=288.098941 us
+Solver: 10 converged starts; 10 unique branches
+Best candidate: lat=22.700319, lon=6.707326, alt=4161775800.9 m
+Residual: RMS=100.095612 us, max=167.231776 us; Jacobian condition=1.81e+05
+Distances: nearest receiver=4168236.3 km, network centroid=4168309.6 km; far outside network
+Classification: REJECT
+Reason: Converged branches are geographically/altitudinally implausible or catastrophically conditioned
+
+Cluster: 102973 (source CSV row 102974)
+Raw Mode A/C: 5224
+Time: 2026-08-09T03:46:26.867815+00:00
+Measured TDOAs: T37->Dao_Cai_chien=0.686867 us, T37->QK4=766.733640 us, T37->BachLongVi=174.827527 us
+Solver: 61 converged starts; 2 unique branches
+Best candidate: lat=21.423390, lon=107.618007, alt=171432.5 m
+Residual: RMS=0.000000 us, max=0.000000 us; Jacobian condition=46.3
+Distances: nearest receiver=172.3 km, network centroid=208.8 km; near network
+Classification: REJECT
+Reason: Converged branches are geographically/altitudinally implausible or catastrophically conditioned
+
+Cluster: 103833 (source CSV row 103834)
+Raw Mode A/C: 7411
+Time: 2026-08-09T03:46:28.513795+00:00
+Measured TDOAs: T37->Dao_Cai_chien=0.826566 us, T37->QK4=-621.874626 us, T37->BachLongVi=175.606735 us
+Solver: 1 converged starts; 1 unique branches
+Best candidate: lat=8.067600, lon=12.828497, alt=1373619116.9 m
+Residual: RMS=97.326183 us, max=161.295676 us; Jacobian condition=4.07e+04
+Distances: nearest receiver=1380020.9 km, network centroid=1380155.6 km; far outside network
+Classification: REJECT
+Reason: Converged branches are geographically/altitudinally implausible or catastrophically conditioned
+
+Cluster: 104422 (source CSV row 104423)
+Raw Mode A/C: 7411
+Time: 2026-08-09T03:46:29.933747+00:00
+Measured TDOAs: T37->Dao_Cai_chien=0.845757 us, T37->QK4=449.967565 us, T37->BachLongVi=176.274422 us
+Solver: 61 converged starts; 2 unique branches
+Best candidate: lat=21.478595, lon=106.131954, alt=1544.1 m
+Residual: RMS=0.007849 us, max=0.012521 us; Jacobian condition=4.94e+09
+Distances: nearest receiver=170.1 km, network centroid=163.3 km; near network
+Classification: QUESTIONABLE
+Reason: Best credible branch is ordinary-aircraft range, near network, and/or poorly conditioned (condition 4.94e+09)
+
+Cluster: 108557 (source CSV row 108558)
+Raw Mode A/C: 7024
+Time: 2026-08-09T03:46:39.332595+00:00
+Measured TDOAs: T37->Dao_Cai_chien=-53.478808 us, T37->QK4=427.556348 us, T37->BachLongVi=-393.379710 us
+Solver: 59 converged starts; 9 unique branches
+Best candidate: lat=19.975100, lon=108.234806, alt=-379.0 m
+Residual: RMS=2.816545 us, max=4.209955 us; Jacobian condition=6.34e+08
+Distances: nearest receiver=56.2 km, network centroid=116.1 km; near network
+Classification: QUESTIONABLE
+Reason: Best credible branch is questionable below surface, near network, and/or poorly conditioned (condition 6.34e+08)
+
+Cluster: 113717 (source CSV row 113718)
+Raw Mode A/C: 7520
+Time: 2026-08-09T03:46:52.377420+00:00
+Measured TDOAs: T37->Dao_Cai_chien=-55.900843 us, T37->QK4=-88.843264 us, T37->BachLongVi=-396.365952 us
+Solver: 61 converged starts; 4 unique branches
+Best candidate: lat=19.710391, lon=107.073597, alt=52289.2 m
+Residual: RMS=0.000000 us, max=0.000000 us; Jacobian condition=489
+Distances: nearest receiver=98.0 km, network centroid=96.5 km; inside network
+Classification: REJECT
+Reason: Converged branches are geographically/altitudinally implausible or catastrophically conditioned
+
+Cluster: 130069 (source CSV row 130070)
+Raw Mode A/C: 5224
+Time: 2026-08-09T03:47:37.825776+00:00
+Measured TDOAs: T37->Dao_Cai_chien=5.452843 us, T37->QK4=558.594508 us, T37->BachLongVi=212.086922 us
+Solver: 61 converged starts; 3 unique branches
+Best candidate: lat=21.580837, lon=106.367546, alt=-61317.7 m
+Residual: RMS=0.000000 us, max=0.000000 us; Jacobian condition=126
+Distances: nearest receiver=157.7 km, network centroid=167.2 km; near network
+Classification: REJECT
+Reason: Converged branches are geographically/altitudinally implausible or catastrophically conditioned
+
+Cluster: 133692 (source CSV row 133693)
+Raw Mode A/C: 1624
+Time: 2026-08-09T03:47:47.157377+00:00
+Measured TDOAs: T37->Dao_Cai_chien=-23.516645 us, T37->QK4=-618.101911 us, T37->BachLongVi=-288.108724 us
+Solver: 61 converged starts; 61 unique branches
+Best candidate: lat=-55.824423, lon=-68.877651, alt=1858173902.6 m
+Residual: RMS=8.106069 us, max=12.279320 us; Jacobian condition=7.68e+05
+Distances: nearest receiver=1869606.0 km, network centroid=1869722.2 km; far outside network
+Classification: REJECT
+Reason: Converged branches are geographically/altitudinally implausible or catastrophically conditioned
+
+OVERALL QUESTIONS
+1. Exactly eight found and attempted: True.
+2. Synthetic validation passed: True.
+3. Real clusters with convergence: 8/8.
+4-6. VALID=0, QUESTIONABLE=2, REJECT=6.
+7. Selected-branch RMS residual min/median/max: 0.000000/1.412197/100.095612 us.
+8. Selected altitude min/median/max: -61317.7/111860.9/4161775800.9 m.
+9. Unique branches min/median/max: 1/3.5/61; competing plausible branches drive QUESTIONABLE classifications.
+10. Jacobian conditions are reported per cluster; high values indicate vertical/branch sensitivity even when residual is nearly zero.
+11. Physically plausible without external truth: 2/8 retain a credible branch.
+12. Synthetic results show no solver bias. The eight real events do not establish a consistent correctable timing bias; most are instead incompatible with ordinary-aircraft 3D geometry.
+13. The present four-station geometry does not robustly demonstrate genuine 3D localization: only two events retain questionable branches and none are VALID.
+14. Use external truth as a diagnostic follow-up for the two questionable events, and prioritize five-station 4-of-5 solving when MongCai returns; do not advance this result to production localization.
+
+DECISION: PARTIAL PASS

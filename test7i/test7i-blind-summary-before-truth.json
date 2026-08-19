@@ -1,0 +1,52 @@
+{
+  "source_capture": "/home/mlatserver/modeac-poc/test7h/20260809T071801Z",
+  "synthetic_tests": {
+    "single_target_exact": true,
+    "mirror_branch_exposed": true,
+    "timing_noise_solver_runs": true,
+    "poor_qk4_explicitly_weighted": true,
+    "two_same_code_tracker_scenario": true,
+    "code_transition_scenario": true,
+    "altitude_grid_ambiguity_scenario": true,
+    "passed": true
+  },
+  "clock_warning": "Test 7H QK4 links are degraded; P95 link residuals are propagated as weights.",
+  "clock_p95_us": {
+    "T37__Dao_Cai_chien": 1.0,
+    "T37__QK4": 6.892871093749999,
+    "T37__BachLongVi": 2.2871195475260415,
+    "Dao_Cai_chien__QK4": 5.496175130208333,
+    "Dao_Cai_chien__BachLongVi": 2.9442240397135415,
+    "QK4__BachLongVi": 8.814072672526041
+  },
+  "search_region": {
+    "primary_radius_km": 1500,
+    "expanded_sensitivity_radius_km": 3000,
+    "origin": "mean receiver latitude/longitude from unchanged Test 7C solver; no target truth bounding box"
+  },
+  "altitude_grid_ft": [
+    0,
+    5000,
+    10000,
+    15000,
+    20000,
+    25000,
+    30000,
+    35000,
+    40000,
+    45000
+  ],
+  "events": 68,
+  "classifications": {
+    "BLIND_UNIQUE": 58,
+    "BLIND_MULTIPLE": 2,
+    "BLIND_INCONSISTENT": 8
+  },
+  "anonymous_tracks": 17,
+  "track_quality": {
+    "HIGH": 3,
+    "LOW": 14
+  },
+  "tracker": "same code plus constant-velocity prediction, <=450 m/s hard gate, 2 km allowance, <=120 s gap; code equality alone never merges tracks",
+  "truth_loaded": false
+}

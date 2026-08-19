@@ -1,0 +1,79 @@
+PHASE 10A — FIVE-RECEIVER COMMON-RECEPTION DIAGNOSTIC
+=============================================================
+
+Clock reference: T37; direct timestamp mappings available: 5/5.
+T37-MongCai: samples=1250, P50=0.08708254496256511, P95=0.25139757792154926 us, quality=STRONG, slope=1.000000534682007, offset=16499646053.881424.
+
+COMMON RECEPTION
+ModeAC: observations=955386; 2/3/4/5RX=125588/21054/740/0; baseline=0; any4of5=748; increase=748 (n/a).
+ModeS_all: observations=365971; 2/3/4/5RX=60226/23728/3766/0; baseline=35; any4of5=3766; increase=3731 (10660.0%).
+DF0: observations=48487; 2/3/4/5RX=9117/3155/330/0; baseline=2; any4of5=330; increase=328 (16400.0%).
+DF4: observations=17814; 2/3/4/5RX=3171/1399/197/0; baseline=1; any4of5=197; increase=196 (19600.0%).
+DF5: observations=4206; 2/3/4/5RX=676/232/31/0; baseline=0; any4of5=31; increase=31 (n/a).
+DF11: observations=127915; 2/3/4/5RX=18967/8587/1943/0; baseline=16; any4of5=1943; increase=1927 (12043.75%).
+DF16: observations=3949; 2/3/4/5RX=749/158/6/0; baseline=0; any4of5=6; increase=6 (n/a).
+DF17: observations=107884; 2/3/4/5RX=18342/7518/1032/0; baseline=13; any4of5=1032; increase=1019 (7838.461538461539%).
+DF18: observations=1; 2/3/4/5RX=0/0/0/0; baseline=0; any4of5=0; increase=0 (n/a).
+DF20: observations=47868; 2/3/4/5RX=7989/2410/202/0; baseline=2; any4of5=202; increase=200 (10000.0%).
+DF21: observations=7847; 2/3/4/5RX=1215/269/25/0; baseline=1; any4of5=25; increase=24 (2400.0%).
+
+DF16 SPECIAL
+{
+  "observations": 3949,
+  "two_rx": 749,
+  "three_rx": 158,
+  "four_rx": 6,
+  "five_rx": 0,
+  "any_4_of_5": 6,
+  "strict_5rx": 0,
+  "baseline_fixed_4rx": 0,
+  "absolute_increase": 6,
+  "percent_increase": null,
+  "subset_counts": {
+    "T37+Dao_Cai_chien+QK4+BachLongVi": 0,
+    "T37+Dao_Cai_chien+QK4+MongCai": 0,
+    "T37+Dao_Cai_chien+BachLongVi+MongCai": 6,
+    "T37+QK4+BachLongVi+MongCai": 0,
+    "Dao_Cai_chien+QK4+BachLongVi+MongCai": 0
+  },
+  "association_diagnostics": {
+    "2RX": 749,
+    "3RX": 158,
+    "4RX": 6,
+    "payloads": 2795,
+    "observations_used": 1996
+  },
+  "subset_diagnostics": {
+    "T37+Dao_Cai_chien+QK4+BachLongVi": {
+      "2RX": 541,
+      "3RX": 44,
+      "payloads": 2635,
+      "observations_used": 1214
+    },
+    "T37+Dao_Cai_chien+QK4+MongCai": {
+      "2RX": 691,
+      "3RX": 117,
+      "payloads": 2526,
+      "observations_used": 1733
+    },
+    "T37+Dao_Cai_chien+BachLongVi+MongCai": {
+      "2RX": 737,
+      "3RX": 158,
+      "4RX": 6,
+      "payloads": 2762,
+      "observations_used": 1972
+    },
+    "T37+QK4+BachLongVi+MongCai": {
+      "2RX": 528,
+      "3RX": 14,
+      "payloads": 2449,
+      "observations_used": 1098
+    },
+    "Dao_Cai_chien+QK4+BachLongVi+MongCai": {
+      "2RX": 224,
+      "3RX": 7,
+      "payloads": 1709,
+      "observations_used": 469
+    }
+  }
+}

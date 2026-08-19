@@ -1,0 +1,50 @@
+TEST 7F — TRACK-ASSISTED 2D BRANCH DISAMBIGUATION
+=========================================================
+
+TEST 7F STATUS: PARTIAL PASS
+
+DATASET
+Aircraft streams 28; independent events 837; dense events 2248; ambiguous independent 732; unambiguous seeds 102.
+Segments 112 at the fixed 10 s gap; event interval median/P90 1.3949910609029135/6.781426010588074 s.
+
+SYNTHETIC VALIDATION
+7/7 deterministic scenarios passed, including the intentionally ambiguous NO_SEED case.
+
+METHOD COMPARISON
+baseline: usable 102/837 (12.2%), branch accuracy 100.0%, P50/P90/P95 121.54347975108382/686.0741823158835/890.3547441222917 m, >1/5/10 km 4/0/0.
+nearest_previous: usable 185/837 (22.1%), branch accuracy 100.0%, P50/P90/P95 218.68889522581676/912.7050753601557/1120.4821286394545 m, >1/5/10 km 15/0/0.
+cv_greedy: usable 80/837 (9.6%), branch accuracy 100.0%, P50/P90/P95 147.99631531734002/717.4790095738566/892.671871557966 m, >1/5/10 km 2/0/0.
+global_dp: usable 111/837 (13.3%), branch accuracy 100.0%, P50/P90/P95 137.62775292067894/687.8351106173461/888.0551121443149 m, >1/5/10 km 4/0/0.
+
+RECEIVER COMBINATIONS
+{"baseline_usable": 3, "branch_accuracy_percent": 100.0, "events": 3, "over_5km": 0, "p50_m": 104.31521780444231, "p90_m": 109.56471515918915, "p95_m": 110.2209023285325, "stations": "Dao_Cai_chien;QK4;BachLongVi", "track_usable": 3, "track_usable_percent": 100.0}
+{"baseline_usable": 0, "branch_accuracy_percent": 100.0, "events": 716, "over_5km": 0, "p50_m": 294.48777027482106, "p90_m": 397.14544097447737, "p95_m": 401.42575052978066, "stations": "T37;Dao_Cai_chien;BachLongVi", "track_usable": 5, "track_usable_percent": 0.6983240223463687}
+{"baseline_usable": 49, "branch_accuracy_percent": 100.0, "events": 66, "over_5km": 0, "p50_m": 410.0113794601148, "p90_m": 889.7324475851134, "p95_m": 1411.3900028901357, "stations": "T37;Dao_Cai_chien;QK4", "track_usable": 53, "track_usable_percent": 80.3030303030303}
+{"baseline_usable": 50, "branch_accuracy_percent": 100.0, "events": 52, "over_5km": 0, "p50_m": 77.31470805915531, "p90_m": 155.85300120327088, "p95_m": 169.77650296266114, "stations": "T37;QK4;BachLongVi", "track_usable": 50, "track_usable_percent": 96.15384615384616}
+
+QUALITY
+{"branch_accuracy_percent": 100.0, "error_count": 20, "error_max": 880.9321294118989, "error_p50": 99.48382154676113, "error_p75": 230.38403673789495, "error_p90": 412.84272942535443, "error_p95": 460.4552416274804, "error_p99": 796.8367518550147, "events": 20, "over_10km": 0, "over_1km": 0, "over_5km": 0, "quality": "HIGH", "selected": 20}
+{"branch_accuracy_percent": 100.0, "error_count": 91, "error_max": 2588.0816860264795, "error_p50": 145.19886158755247, "error_p75": 418.5561051772825, "error_p90": 706.0641448021983, "error_p95": 924.6177940611835, "error_p99": 1890.7414797899764, "events": 91, "over_10km": 0, "over_1km": 4, "over_5km": 0, "quality": "MEDIUM", "selected": 91}
+{"branch_accuracy_percent": 37.5, "error_count": 56, "error_max": 354936.1000679104, "error_p50": 299594.82326540083, "error_p75": 301437.287127977, "error_p90": 349689.1796469473, "error_p95": 350635.2522298213, "error_p99": 353555.0544702466, "events": 56, "over_10km": 35, "over_1km": 43, "over_5km": 35, "quality": "LOW", "selected": 56}
+{"branch_accuracy_percent": 0, "error_count": 0, "error_max": null, "error_p50": null, "error_p75": null, "error_p90": null, "error_p95": null, "error_p99": null, "events": 670, "over_10km": 0, "over_1km": 0, "over_5km": 0, "quality": "REJECT", "selected": 0}
+
+COLD START
+Seed event counts: {'STRONG_SEED': 94, 'NO_SEED': 670, 'SEQUENCE_SEED': 54, 'WEAK_SEED': 19}; segment seed counts: {'STRONG_SEED': 34, 'NO_SEED': 63, 'SEQUENCE_SEED': 7, 'WEAK_SEED': 8}. Sequence seeds require 3 events by definition and remain LOW; NO_SEED remains rejected.
+
+ANSWERS
+1-3. Temporal continuity selected 111 of 837 independent events (13.3%), versus 102 baseline.
+4. Global-DP P50/P90/P95: 137.62775292067894/687.8351106173461/888.0551121443149 m.
+5. Truth-nearest branch accuracy: 100.0%.
+6. Above 1/5/10 km: 4/0/0.
+7. Global DP does not outperform the simple nearest-previous method: usable/P90 111/687.8351106173461 versus 185/912.7050753601557.
+8. T37+CaiChien+BachLongVi is not materially rescued: 5/716 HIGH/MEDIUM events; its 35 sequence-only mirror lock-ons exceed 5 km.
+9. T37+CaiChien+BachLongVi still requires fourth-receiver redundancy or an independently anchored track.
+10-11. Cold start is not reliable: 3-event SEQUENCE_SEED paths remain LOW; their branch accuracy is exposed in the quality table rather than promoted.
+12. Path margin does not predict correctness here; mirrored paths can have high confidence. Strata: [{"accuracy_percent": 0, "events": 0, "label": "LOW_MARGIN", "p90_m": null}, {"accuracy_percent": 100.0, "events": 9, "label": "MEDIUM_MARGIN", "p90_m": 757.7575752489307}, {"accuracy_percent": 7.894736842105263, "events": 38, "label": "HIGH_MARGIN", "p90_m": 350368.7399766859}].
+13. Catastrophic wrong-track lock-on >5 km: 0 HIGH/MEDIUM events, but 35 retained LOW cold-start events.
+14. East/north bias changes across aircraft, receiver combination, time quartile, and condition strata in test7f-bias.csv; it is not stable enough to correct.
+15. +/-1 km branch-choice stability was not remeasured in Test 7F; only Test 7E's small position-error sensitivity is available, so branch-choice robustness remains unproven.
+16. Viability decision: PARTIAL PASS. Anchored temporal assistance is useful, but three-receiver tracking is not a substitute for added receiver redundancy.
+
+ANTI-LEAKAGE
+Selections were written to test7f-selected-before-truth.csv without truth coordinates before the evaluation pass loaded DF17 latitude/longitude. ICAO was used only to segment validation streams.

@@ -1,0 +1,18 @@
+[Unit]
+Description=Realtime four-receiver Mode A/C MLAT backend
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=mlatserver
+Group=mlatserver
+WorkingDirectory=/home/mlatserver/modeac-poc
+ExecStart=/usr/bin/python3 -m realtime
+Restart=always
+RestartSec=5
+KillSignal=SIGTERM
+TimeoutStopSec=20
+
+[Install]
+WantedBy=multi-user.target

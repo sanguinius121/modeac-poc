@@ -1,0 +1,271 @@
+{
+  "decision": "PARTIAL PASS",
+  "new_capture_required": false,
+  "decoder_validation": {
+    "values_tested": 65536,
+    "agreement_count": 65536,
+    "disagreement_count": 0,
+    "passed": true,
+    "reference_source": "/usr/local/share/adsb-wiki/readsb-install/git/mode_ac.c and track.h"
+  },
+  "semantics": {
+    "beast_type1": "16-bit pulse field 00:A4:A2:A1:00:B4:B2:B1:SPI:C4:C2:C1:00:D4:D2:D1",
+    "mode_a": "raw & 0x7777 rendered as four octal digits; readsb reports this for every reply",
+    "mode_c": "same pulses conditionally decoded as Gillham pressure altitude in signed 100-ft units; valid pattern does not identify interrogation mode",
+    "invalid": "reserved bits or D1/SPI set, zero C group, illegal C Gray state",
+    "quantization_ft": 100,
+    "ambiguity": "Without interrogation context a word can be a Mode A identity reply yet also be syntactically valid Gillham."
+  },
+  "capture_station_statistics": {
+    "T37": {
+      "station": "T37",
+      "valid_type1": 622352,
+      "timestamp_zero": 10,
+      "mode_c_decodable": 332399,
+      "invalid_or_nonaltitude": 289953,
+      "mode_c_percent": 53.41012803043937,
+      "altitude_ft_min": -1200,
+      "altitude_ft_p01": 0.0,
+      "altitude_ft_p05": 4900.0,
+      "altitude_ft_median": 31100,
+      "altitude_ft_p95": 118600.0,
+      "altitude_ft_p99": 120200.0,
+      "altitude_ft_max": 126500,
+      "plausible_minus1000_to60000": 302517,
+      "outside_plausible": 29882
+    },
+    "Dao_Cai_chien": {
+      "station": "Dao_Cai_chien",
+      "valid_type1": 416162,
+      "timestamp_zero": 10,
+      "mode_c_decodable": 202208,
+      "invalid_or_nonaltitude": 213954,
+      "mode_c_percent": 48.58877071909497,
+      "altitude_ft_min": -1200,
+      "altitude_ft_p01": 3300.0,
+      "altitude_ft_p05": 5100.0,
+      "altitude_ft_median": 31100.0,
+      "altitude_ft_p95": 79600.0,
+      "altitude_ft_p99": 120100.0,
+      "altitude_ft_max": 126700,
+      "plausible_minus1000_to60000": 184681,
+      "outside_plausible": 17527
+    },
+    "QK4": {
+      "station": "QK4",
+      "valid_type1": 43040,
+      "timestamp_zero": 10,
+      "mode_c_decodable": 29265,
+      "invalid_or_nonaltitude": 13775,
+      "mode_c_percent": 67.99488847583643,
+      "altitude_ft_min": -1200,
+      "altitude_ft_p01": 400.0,
+      "altitude_ft_p05": 19100.0,
+      "altitude_ft_median": 38900,
+      "altitude_ft_p95": 120200.0,
+      "altitude_ft_p99": 120200.0,
+      "altitude_ft_max": 126700,
+      "plausible_minus1000_to60000": 22344,
+      "outside_plausible": 6921
+    },
+    "BachLongVi": {
+      "station": "BachLongVi",
+      "valid_type1": 126375,
+      "timestamp_zero": 10,
+      "mode_c_decodable": 60490,
+      "invalid_or_nonaltitude": 65885,
+      "mode_c_percent": 47.86547972304649,
+      "altitude_ft_min": -1200,
+      "altitude_ft_p01": -800.0,
+      "altitude_ft_p05": 2800.0,
+      "altitude_ft_median": 32100.0,
+      "altitude_ft_p95": 120100.0,
+      "altitude_ft_p99": 120200.0,
+      "altitude_ft_max": 126700,
+      "plausible_minus1000_to60000": 49075,
+      "outside_plausible": 11415
+    }
+  },
+  "cluster_integrity": {
+    "2": {
+      "clusters": 133403,
+      "clusters_with_valid_mode_c_candidate": 66973,
+      "all_station_raw_agreement": 133403,
+      "all_station_altitude_agreement": 66973,
+      "altitude_disagreement": 0
+    },
+    "3": {
+      "clusters": 4273,
+      "clusters_with_valid_mode_c_candidate": 2103,
+      "all_station_raw_agreement": 4273,
+      "all_station_altitude_agreement": 2103,
+      "altitude_disagreement": 0
+    },
+    "4": {
+      "clusters": 8,
+      "clusters_with_valid_mode_c_candidate": 5,
+      "all_station_raw_agreement": 8,
+      "all_station_altitude_agreement": 5,
+      "altitude_disagreement": 0
+    }
+  },
+  "truth_validation": {
+    "strong_events_all_unthinned": 3816,
+    "independent_strong_events": 859,
+    "unique_aircraft": 31,
+    "unique_raw_words": 91,
+    "valid_mode_c_candidates": 443,
+    "valid_fraction_percent": 51.571594877764845,
+    "median_error_ft": 0.0010509989915590268,
+    "median_abs_error_ft": 16.4502280580964,
+    "p90_abs_error_ft": 89018.6741391346,
+    "p95_abs_error_ft": 100719.11496473446,
+    "p99_abs_error_ft": 102213.7970210136,
+    "max_abs_error_ft": 102961.01912123547,
+    "within_100ft_percent": 80.81264108352144,
+    "within_200ft_percent": 80.81264108352144
+  },
+  "localization": {
+    "attempted": 443,
+    "converged": 443,
+    "unambiguous": 82,
+    "three_receiver": {
+      "attempted": 443,
+      "horizontal_error_m": {
+        "count": 443,
+        "median": 1911.3142265596734,
+        "p75": 203338.6832691378,
+        "p90": 347853.61154745944,
+        "p95": 414448.0231658848,
+        "p99": 511945.4235847228,
+        "max": 548412.7468249132
+      },
+      "condition": {
+        "count": 443,
+        "median": 23.610432047026915,
+        "p75": 45.222531314403476,
+        "p90": 56.50286437476982,
+        "p95": 65.27346735922555,
+        "p99": 98.24062841810324,
+        "max": 147.52165992352366
+      },
+      "tdoa_rms_us": {
+        "count": 443,
+        "median": 4.0079061440333643e-13,
+        "p75": 8.999377942304698e-13,
+        "p90": 1.5432237993983508e-12,
+        "p95": 2.303110881309981e-12,
+        "p99": 5.125924440481191e-12,
+        "max": 9.19331374037089e-12
+      }
+    },
+    "four_receiver": {
+      "attempted": 0,
+      "horizontal_error_m": {
+        "count": 0,
+        "median": null,
+        "p75": null,
+        "p90": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "condition": {
+        "count": 0,
+        "median": null,
+        "p75": null,
+        "p90": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      },
+      "tdoa_rms_us": {
+        "count": 0,
+        "median": null,
+        "p75": null,
+        "p90": null,
+        "p95": null,
+        "p99": null,
+        "max": null
+      }
+    },
+    "modec_vs_truth_alt_shift_m": {
+      "count": 443,
+      "median": 0.20640474710116627,
+      "p75": 0.6114415013105086,
+      "p90": 4990.917931759851,
+      "p95": 6887.542794537413,
+      "p99": 7175.498523579488,
+      "max": 18925.87714510597
+    },
+    "posthoc_truth_strata_diagnostic_only": {
+      "altitude_within_200ft": {
+        "events": 358,
+        "unique_aircraft": 29,
+        "horizontal_error_m": {
+          "count": 358,
+          "median": 967.3470022218553,
+          "p75": 227647.13378102254,
+          "p90": 401199.0783415038,
+          "p95": 416341.44269912445,
+          "p99": 513468.4046241639,
+          "max": 548412.7468249132
+        }
+      },
+      "altitude_within_200ft_and_unambiguous": {
+        "events": 50,
+        "unique_aircraft": 9,
+        "horizontal_error_m": {
+          "count": 50,
+          "median": 139.86563999517003,
+          "p75": 286.42219375990345,
+          "p90": 549.7517047009576,
+          "p95": 1411.8668789653782,
+          "p99": 2051.480110272323,
+          "max": 2378.6088209177465
+        }
+      },
+      "altitude_error_over_200ft": {
+        "events": 85,
+        "horizontal_error_m": {
+          "count": 85,
+          "median": 5300.281790619788,
+          "p75": 7907.133670394511,
+          "p90": 9080.973694136357,
+          "p95": 12659.054106200107,
+          "p99": 441716.51069841033,
+          "max": 471485.81612479576
+        }
+      }
+    }
+  },
+  "cluster_104422": {
+    "cluster_id": "104422",
+    "raw_hex": "7411",
+    "stations": "T37;Dao_Cai_chien;QK4;BachLongVi",
+    "all_station_raw_same": true,
+    "all_station_decoded_altitude_same": true,
+    "mode_a_code": "7411",
+    "mode_c_valid": false,
+    "mode_c_altitude_ft": null,
+    "best_truth_icao": "70401f",
+    "truth_altitude_ft": 37049.999455346915,
+    "altitude_error_ft": null,
+    "truth_classification": "STRONG TRUTH MATCH",
+    "test7b_diagnostic": "GEOMETRY / VERTICAL ILL-CONDITIONING",
+    "incorrect_qk4_detectable_by_internal_altitude": "not_applicable",
+    "reason": "Test 6 cluster membership required identical raw words, so all members necessarily have identical Mode A and Mode C interpretations"
+  },
+  "eight_event_association": {
+    "failures_altitude_could_reject_internally": 0,
+    "qk4_113717_detected": false,
+    "qk4_130069_detected": false,
+    "reason": "cluster members have identical raw words by construction; decoded altitude is therefore identical even for mixed same-code replies"
+  },
+  "data_sufficiency": {
+    "sufficient": true,
+    "criteria": "at least 50 independent strong events, 3 ICAOs, and 20 valid Mode C candidates",
+    "status": "NO NEW CAPTURE REQUIRED"
+  },
+  "architectural_recommendation": "Use a decoded Gillham value as a supporting altitude hypothesis only after reply-mode/association confidence; never as identity. Keep unconstrained TDOA altitude diagnostic-only."
+}

@@ -1,0 +1,38 @@
+{
+  "analysis_window": {
+    "start_utc": "2026-08-18T01:13:34.412416Z",
+    "end_utc": "2026-08-18T01:18:34.291218Z",
+    "duration_s": 299.878801516,
+    "policy": "intersection of first/last receive timestamps across all five receivers"
+  },
+  "match": true,
+  "expected": {
+    "all": 35,
+    "0": 2,
+    "4": 1,
+    "5": 0,
+    "11": 16,
+    "16": 0,
+    "17": 13,
+    "18": 0,
+    "20": 2,
+    "21": 1
+  },
+  "production_associator_actual": {
+    "all": 35,
+    "0": 2,
+    "4": 1,
+    "11": 16,
+    "17": 13,
+    "20": 2,
+    "21": 1
+  },
+  "diagnostics": {
+    "physical_reject": 673,
+    "nonreciprocal": 11,
+    "2RX": 54659,
+    "3RX": 8263,
+    "4RX": 35,
+    "payloads": 64189
+  }
+}

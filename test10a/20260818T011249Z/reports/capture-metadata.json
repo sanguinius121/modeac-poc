@@ -1,0 +1,155 @@
+{
+  "schema": "phase10a-capture-v1",
+  "started_utc": "2026-08-18T01:12:49.599982Z",
+  "ended_utc": "2026-08-18T01:18:34.597583Z",
+  "requested_duration_s": 300.0,
+  "actual_duration_s": 344.99776969791856,
+  "common_overlap_s": 299.878801516,
+  "capture_accepted": true,
+  "stations": {
+    "T37": {
+      "port": 29996,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 8795899,
+      "frames": 663885,
+      "type1": 485279,
+      "type2": 95634,
+      "type3": 82972,
+      "timestamp_zero": 8,
+      "parse_errors": 0,
+      "df": {
+        "21": 3908,
+        "11": 61086,
+        "4": 8345,
+        "17": 50505,
+        "20": 26286,
+        "0": 24078,
+        "5": 2125,
+        "16": 2273
+      },
+      "first_recv_utc_ns": 1787015573971239567,
+      "last_recv_utc_ns": 1787015914377490855
+    },
+    "Dao_Cai_chien": {
+      "port": 29998,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 4023406,
+      "frames": 307522,
+      "type1": 229210,
+      "type2": 43927,
+      "type3": 34385,
+      "timestamp_zero": 8,
+      "parse_errors": 0,
+      "df": {
+        "11": 28348,
+        "17": 22253,
+        "16": 1015,
+        "0": 10985,
+        "20": 9829,
+        "5": 766,
+        "4": 3828,
+        "21": 1288
+      },
+      "first_recv_utc_ns": 1787015574233655383,
+      "last_recv_utc_ns": 1787015914377220913
+    },
+    "QK4": {
+      "port": 29997,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 815098,
+      "frames": 55560,
+      "type1": 33545,
+      "type2": 8896,
+      "type3": 13119,
+      "timestamp_zero": 11,
+      "parse_errors": 0,
+      "df": {
+        "0": 1888,
+        "4": 1206,
+        "17": 9938,
+        "11": 5544,
+        "20": 1864,
+        "16": 58,
+        "5": 258,
+        "21": 1259
+      },
+      "first_recv_utc_ns": 1787015591601012573,
+      "last_recv_utc_ns": 1787015914291217714
+    },
+    "BachLongVi": {
+      "port": 29999,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 2982789,
+      "frames": 222252,
+      "type1": 155138,
+      "type2": 38966,
+      "type3": 28148,
+      "timestamp_zero": 8,
+      "parse_errors": 0,
+      "df": {
+        "11": 25437,
+        "5": 924,
+        "4": 3195,
+        "17": 19806,
+        "0": 9410,
+        "20": 6457,
+        "21": 1401,
+        "16": 483,
+        "18": 1
+      },
+      "first_recv_utc_ns": 1787015573876632436,
+      "last_recv_utc_ns": 1787015914368100868
+    },
+    "MongCai": {
+      "port": 29995,
+      "connections": 1,
+      "reconnects": 0,
+      "disconnects": 1,
+      "bytes": 3110333,
+      "frames": 235822,
+      "type1": 174006,
+      "type2": 33266,
+      "type3": 28550,
+      "timestamp_zero": 8,
+      "parse_errors": 0,
+      "df": {
+        "0": 7357,
+        "17": 17953,
+        "11": 22061,
+        "20": 8938,
+        "5": 596,
+        "16": 620,
+        "4": 3252,
+        "21": 1039
+      },
+      "first_recv_utc_ns": 1787015614412416198,
+      "last_recv_utc_ns": 1787015914373967063
+    }
+  },
+  "queue": {
+    "configured_max": 100000,
+    "high_water": 25799,
+    "final": 0,
+    "dropped": 0
+  },
+  "process": {
+    "cpu_average_percent": 30.425260433252813,
+    "cpu_peak_percent": 99.04223762684727,
+    "rss_peak_kib": 51864
+  },
+  "capture_sha256": {
+    "T37": "4ac095527f1b7adde6fa3b675f7bff47b284f38a651d2ca42d7d43dbfc781222",
+    "Dao_Cai_chien": "43992d8daa17e45ba7bcb4e7ac7de91d51600301ea6afcdfd068017385a34847",
+    "QK4": "69de31cb0ff3001f133d5d22ebe7866ccf4405a7444d7c44d117c3c45d06d621",
+    "BachLongVi": "5af94ae2b76f38421ef917fdca9bae1cc20eef3a1b693f0c37cdd2b12066b5c5",
+    "MongCai": "9206058493b58abb4f7a6b0e717c71ccd94cda09b75f5cc2dc95b81147d7c8a2"
+  }
+}

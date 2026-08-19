@@ -1,0 +1,218 @@
+{
+  "diag": {
+    "phase": "10B_WEBSOCKET",
+    "initialized": true,
+    "restErrors": 0,
+    "invalidTracks": 0,
+    "outOfOrderDrops": 0,
+    "received": {
+      "modes": 22,
+      "modeac": 9
+    },
+    "maxima": {
+      "modes": 4,
+      "modeac": 3
+    },
+    "statusPolls": 7,
+    "clockDegradationEvents": 0,
+    "delayedMeasurementExamples": [
+      {
+        "kind": "modes",
+        "trackId": "MS-888192",
+        "measurementTime": "2026-08-10T10:03:52.584864Z",
+        "ageAtReceiptS": 42.62
+      },
+      {
+        "kind": "modes",
+        "trackId": "MS-781298",
+        "measurementTime": "2026-08-10T10:04:01.757005Z",
+        "ageAtReceiptS": 33.447
+      },
+      {
+        "kind": "modeac",
+        "trackId": "MAC-000017",
+        "measurementTime": "2026-08-10T10:03:13.174152Z",
+        "ageAtReceiptS": 82.03
+      },
+      {
+        "kind": "modeac",
+        "trackId": "MAC-000020",
+        "measurementTime": "2026-08-10T10:03:04.671698Z",
+        "ageAtReceiptS": 90.533
+      },
+      {
+        "kind": "modeac",
+        "trackId": "MAC-000021",
+        "measurementTime": "2026-08-10T10:03:02.900770Z",
+        "ageAtReceiptS": 92.304
+      }
+    ],
+    "streams": {
+      "modes": {
+        "status": "LIVE",
+        "connected": true,
+        "lastMessageTime": "2026-08-10T10:04:59.122Z",
+        "reconnectCount": 0
+      },
+      "modeac": {
+        "status": "LIVE",
+        "connected": true,
+        "lastMessageTime": "2026-08-10T10:04:35.403Z",
+        "reconnectCount": 0
+      }
+    },
+    "lastError": null,
+    "tracks": {
+      "modes": {
+        "registrySize": 4,
+        "visibleMarkers": 4,
+        "historyPoints": 13,
+        "oldestMeasurementAgeS": 68.279,
+        "newestReceiptAgeS": 1.741
+      },
+      "modeac": {
+        "registrySize": 3,
+        "visibleMarkers": 3,
+        "historyPoints": 3,
+        "oldestMeasurementAgeS": 117.963,
+        "newestReceiptAgeS": 25.46
+      }
+    },
+    "config": {
+      "apiBase": "http://127.0.0.1:8090",
+      "trackPollMs": 1500,
+      "statusPollMs": 4000,
+      "historyMs": 600000,
+      "staleRemoveMs": 120000,
+      "startTimeoutMs": 30000,
+      "reconnectInitialMs": 1000,
+      "reconnectMaxMs": 30000
+    },
+    "productionPlaneCount": 119
+  },
+  "stored": {
+    "modes": null,
+    "modeac": null
+  },
+  "layers": [
+    {
+      "name": "poc_modes",
+      "visible": true,
+      "opacity": 1,
+      "z": 1001,
+      "features": 6
+    },
+    {
+      "name": "poc_modeac",
+      "visible": true,
+      "opacity": 1,
+      "z": 1002,
+      "features": 3
+    }
+  ],
+  "entries": [
+    {
+      "id": "MS-88821B",
+      "kind": "modes",
+      "age": 52.716,
+      "pixel": [
+        200.2064701097661,
+        584.1638560046522
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": []
+    },
+    {
+      "id": "MS-888192",
+      "kind": "modes",
+      "age": 68.284,
+      "pixel": [
+        255.81676978721953,
+        506.54552160116873
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": []
+    },
+    {
+      "id": "MS-781298",
+      "kind": "modes",
+      "age": 3.567,
+      "pixel": [
+        611.1277587909317,
+        140.73706329499146
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": [
+        {
+          "poc": null,
+          "kind": null,
+          "hex": "781298"
+        }
+      ]
+    },
+    {
+      "id": "MS-76B454",
+      "kind": "modes",
+      "age": 3.789,
+      "pixel": [
+        92.0616601290094,
+        612
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": [
+        {
+          "poc": null,
+          "kind": null,
+          "hex": "76b454"
+        }
+      ]
+    },
+    {
+      "id": "MAC-000017",
+      "kind": "modeac",
+      "age": 107.698,
+      "pixel": [
+        185.0334298287853,
+        549.3664720209417
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": []
+    },
+    {
+      "id": "MAC-000020",
+      "kind": "modeac",
+      "age": 116.202,
+      "pixel": [
+        622.2247908238023,
+        70.99106544005281
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": []
+    },
+    {
+      "id": "MAC-000021",
+      "kind": "modeac",
+      "age": 117.974,
+      "pixel": [
+        622.9383398709797,
+        70
+      ],
+      "style": {
+        "error": "TypeError: ol.style.RegularShape is not a constructor"
+      },
+      "hits": []
+    }
+  ]
+}

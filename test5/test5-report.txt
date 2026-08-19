@@ -1,0 +1,77 @@
+TEST 5 — MODE A/C CROSS-STATION CORRELATION
+===================================================
+
+Method: DF17 geometry-corrected clock fit using the first 70% of samples; Mode A/C corrected Beast timestamps only.
+Clock: TB = 0.999998778414 * TA + 495066165966.252; relative -1.221586 ppm
+DF17 pairs / geometry / training samples: 5805 / 1855 / 1298
+ECEF baseline: 18245.773 m; physical limit: 60.861348 us (730.336 ticks)
+Configured margin/gate: 3.000 / 63.861348 us
+
+Total Mode A/C A / B: 174019 / 66269
+Unique codes A / B / common: 2245 / 2207 / 1266
+Timestamp-zero rejected A / B: 2 / 2
+0 candidates: 149976 (86.184% of A)
+1 candidate:  24008 (13.796% of A)
+2 candidates: 35 (0.020% of A)
+3+ candidates:0 (0.000% of A)
+Accepted one-to-one: 23969 (13.774% of A)
+Rejected ambiguous: 35 (0.020% of A)
+Rejected reused/conflicting: 39 (0.022% of A)
+Reciprocal accepted pairs: 23910 (99.754% of accepted)
+
+TDOA (B-A propagation after clock normalization), us:
+  min/max/mean/median: -60.773773 / 61.021820 / 33.122542 / 57.000427
+  P01/P05/P25/P75/P95/P99: -56.898027 / -30.930182 / 9.542501 / 59.647664 / 60.473134 / 60.630483
+  |TDOA| median/P90/P95/P99: 57.081950 / 60.364948 / 60.473140 / 60.630680
+Violations physical / +0.5 us / +1 us / gate: 6 / 0 / 0 / 0
+
+Sensitivity (margin us: unique / ambiguous / physical violations):
+  0.5: 23969 / 35 / 6
+  1.0: 23969 / 35 / 6
+  3.0: 23969 / 35 / 6
+  5.0: 23968 / 37 / 7
+
+Temporal 10-second chunks (n, median, P05, P95, violations, ambiguity %):
+    0.0- 10.0:   1593,   58.348,  -56.982,   60.639,    3, 0.022
+   10.0- 20.0:   2030,   58.562,  -54.697,   60.476,    2, 0.028
+   20.0- 30.0:   1773,   58.837,  -52.768,   60.113,    0, 0.022
+   30.0- 40.0:   1927,   40.375,  -55.120,   59.979,    0, 0.015
+   40.0- 50.0:   2324,   39.992,  -52.891,   59.853,    0, 0.014
+   50.0- 60.0:   2470,   39.664,  -25.780,   59.760,    0, 0.020
+   60.0- 70.0:   2140,   39.412,  -30.976,   60.268,    0, 0.020
+   70.0- 80.0:   1784,   57.773,  -30.752,   60.365,    0, 0.019
+   80.0- 90.0:   1685,   57.482,   -7.142,   60.416,    0, 0.013
+   90.0-100.0:   1880,   57.071,  -22.763,   60.444,    0, 0.027
+  100.0-110.0:   1901,   56.700,  -23.281,   60.485,    0, 0.014
+  110.0-120.0:   2462,   56.247,  -29.892,   60.593,    1, 0.027
+
+Top raw codes (code, A, B, accepted, ambiguous, median, P95 |TDOA|):
+  7050    6371    4512    2973       3    59.832    60.543
+  3466    4794    2658    1741       6    58.257    59.556
+  5734    5730    2600    1653       3    57.903    59.539
+  2465    3578    2333    1530       2    59.600    60.343
+  1534   10131    3039    1413       3    59.446    60.351
+  7407    1842    1489     911       1    33.122    36.928
+  3406    2625    1596     825       0    39.135    40.265
+  1526    3019    1350     819       2    60.452    60.686
+  2240    1499    1246     801       0    32.505    36.124
+  1334    3540    1105     626       1    60.463    60.694
+  1560    6369    1111     623       0   -14.475    16.575
+  0025    2349    1421     618       0   -22.163    24.127
+  6341    3175    1038     596       1    41.147    42.332
+  7300    4860     862     592       1   -14.813    16.288
+  1154    3266     917     361       0    -8.186    12.796
+
+ANSWERS AND CONCLUSION
+----------------------
+1. Yes. 23969 same-payload, clock-consistent, one-to-one pairs were accepted; 23910 were also reciprocal-unique.
+2. Accepted pairs are 13.774% of valid A messages and 36.169% of valid B messages.
+3. Raw-code ambiguity is low inside the gate: 35 A attempts (0.020%) had multiple candidates.
+4. 23963 of 23969 (99.975%) are within the strict ECEF baseline bound. The 6 exceedances are all within 0.5 us.
+5. Median TDOA is 57.000 us; P05/P95 are -30.930/60.473 us; the full range is -60.774 to 61.022 us.
+6. Matches occur in every 10-second chunk. Distribution changes reflect the traffic mixture; violations do not grow with time, so no clock-drift failure is evident.
+7. Results are insensitive from +0.5 through +3 us (23969 accepted at +0.5 us versus 23969 at +3 us); +5 us changes only 1 accepted pair(s).
+8. No Mode A/C-specific millisecond or microsecond-scale timestamp bias is evident. The strict-bound excess is at most 0.160 us, comparable to the independently measured DF17 clock-model residual.
+9. Test 5 supports proceeding to a four-station localization PoC, while retaining unique/reciprocal matching, explicit ambiguity rejection, and physical-residual diagnostics.
+
+Overall result: STRONG PASS for cross-station correlation (not a position-solver validation).

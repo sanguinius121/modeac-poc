@@ -1,0 +1,185 @@
+{
+  "decision": "PARTIAL PASS",
+  "diagnostic_clock_gate": true,
+  "blind_freeze_hashes": {
+    "test7i-blind-localizations-before-truth.csv": "788383f8c954fd992113569899b47491ec0e31a4ca7daffdec15b4f593a41972",
+    "test7i-anonymous-tracks-before-truth.csv": "bb965995204418fb7cc9dd3005fd5080996954f82fbb9fd9d4501f3747c6cdeb",
+    "test7i-blind-summary-before-truth.json": "94bd22fa4b013ca38d9a48bfbbdb482146f30971d35307dcdb535a743f2fbe02"
+  },
+  "synthetic_tests": {
+    "single_target_exact": true,
+    "mirror_branch_exposed": true,
+    "timing_noise_solver_runs": true,
+    "poor_qk4_explicitly_weighted": true,
+    "two_same_code_tracker_scenario": true,
+    "code_transition_scenario": true,
+    "altitude_grid_ambiguity_scenario": true,
+    "passed": true
+  },
+  "blind": {
+    "source_capture": "/home/mlatserver/modeac-poc/test7h/20260809T071801Z",
+    "synthetic_tests": {
+      "single_target_exact": true,
+      "mirror_branch_exposed": true,
+      "timing_noise_solver_runs": true,
+      "poor_qk4_explicitly_weighted": true,
+      "two_same_code_tracker_scenario": true,
+      "code_transition_scenario": true,
+      "altitude_grid_ambiguity_scenario": true,
+      "passed": true
+    },
+    "clock_warning": "Test 7H QK4 links are degraded; P95 link residuals are propagated as weights.",
+    "clock_p95_us": {
+      "T37__Dao_Cai_chien": 1.0,
+      "T37__QK4": 6.892871093749999,
+      "T37__BachLongVi": 2.2871195475260415,
+      "Dao_Cai_chien__QK4": 5.496175130208333,
+      "Dao_Cai_chien__BachLongVi": 2.9442240397135415,
+      "QK4__BachLongVi": 8.814072672526041
+    },
+    "search_region": {
+      "primary_radius_km": 1500,
+      "expanded_sensitivity_radius_km": 3000,
+      "origin": "mean receiver latitude/longitude from unchanged Test 7C solver; no target truth bounding box"
+    },
+    "altitude_grid_ft": [
+      0,
+      5000,
+      10000,
+      15000,
+      20000,
+      25000,
+      30000,
+      35000,
+      40000,
+      45000
+    ],
+    "events": 68,
+    "classifications": {
+      "BLIND_UNIQUE": 58,
+      "BLIND_MULTIPLE": 2,
+      "BLIND_INCONSISTENT": 8
+    },
+    "anonymous_tracks": 17,
+    "track_quality": {
+      "HIGH": 3,
+      "LOW": 14
+    },
+    "tracker": "same code plus constant-velocity prediction, <=450 m/s hard gate, 2 km allowance, <=120 s gap; code equality alone never merges tracks",
+    "truth_loaded": false
+  },
+  "evaluation": {
+    "matched_unique_fixes": 55,
+    "branch_accuracy_percent": 100.0,
+    "horizontal_error_m": {
+      "count": 55,
+      "p50": 116.12756416202214,
+      "p75": 312.1496472688335,
+      "p90": 489.70962081752526,
+      "p95": 751.7366033954734,
+      "p99": 6272.852484171551,
+      "max": 12016.978804158094
+    },
+    "cross_track_error_m": {
+      "count": 55,
+      "p50": 71.45284862613937,
+      "p75": 130.78367759416273,
+      "p90": 224.37122064792555,
+      "p95": 542.2347349500918,
+      "p99": 5792.003598691464,
+      "max": 11123.809655984871
+    },
+    "under_250m": 36,
+    "under_500m": 50,
+    "under_1km": 52,
+    "under_2km": 54,
+    "under_5km": 54,
+    "over_5km": 1,
+    "over_10km": 1,
+    "anonymous_tracks": 17,
+    "matched_track_ids_including_singletons": 14,
+    "matched_multifix_tracks": 6,
+    "matched_substantive_tracks_3plus": 3
+  },
+  "altitude_method_evaluation": {
+    "ALTITUDE_GRID": {
+      "evaluated": 68,
+      "horizontal_error_m": {
+        "count": 68,
+        "p50": 215.49673036543066,
+        "p75": 514.9700599266939,
+        "p90": 71024.7814774804,
+        "p95": 141059.28074405922,
+        "p99": 559771.1115545183,
+        "max": 1014774.1312542002
+      },
+      "altitude_abs_error_m": {
+        "count": 68,
+        "p50": 5181.600107644685,
+        "p75": 8469.629843181698,
+        "p90": 8534.399843036104,
+        "p95": 9305.375962751265,
+        "p99": 10710.292417610919,
+        "max": 11136.518542525358
+      },
+      "altitude_alias_over_3000m": 38
+    },
+    "MODE_C_ASSISTED": {
+      "evaluated": 42,
+      "horizontal_error_m": {
+        "count": 42,
+        "p50": 123.17023249815057,
+        "p75": 1411.2698929137798,
+        "p90": 122428.26662622209,
+        "p95": 303074.2968480959,
+        "p99": 735938.1592511386,
+        "max": 1014406.2087523881
+      },
+      "altitude_abs_error_m": {
+        "count": 42,
+        "p50": 0.00033720172905304935,
+        "p75": 14.259785883128188,
+        "p90": 4385.811895629529,
+        "p95": 5087.67824032317,
+        "p99": 6940.148117157696,
+        "max": 7558.530943786651
+      },
+      "altitude_alias_over_3000m": 7
+    },
+    "UNCONSTRAINED_3D_DIAGNOSTIC": {
+      "evaluated": 37,
+      "horizontal_error_m": {
+        "count": 37,
+        "p50": 113.59573543080921,
+        "p75": 472.9727853008205,
+        "p90": 4854.857129717247,
+        "p95": 42514.17175210273,
+        "p99": 221632.40586260697,
+        "max": 313379.19765467977
+      },
+      "altitude_abs_error_m": {
+        "count": 37,
+        "p50": 1414.0532515523955,
+        "p75": 4695.88198920805,
+        "p90": 9194.882414856913,
+        "p95": 15096.015358314664,
+        "p99": 21290.146979582314,
+        "max": 24763.328344989568
+      },
+      "altitude_alias_over_3000m": 12
+    }
+  },
+  "comparison_test7h": {
+    "test7h_unique": 25,
+    "test7i_blind_unique": 58,
+    "test7h_eligible": 23,
+    "test7i_eligible": 55,
+    "test7h_horizontal_p90_m": 281.786903924544,
+    "test7i_horizontal_p90_m": 489.70962081752526,
+    "test7h_continuous_tracks": 0,
+    "test7i_tracks": 17,
+    "test7i_matched_track_ids_including_singletons": 14,
+    "test7i_matched_multifix_tracks": 6,
+    "test7i_matched_substantive_tracks_3plus": 3
+  }
+}

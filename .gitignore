@@ -1,0 +1,12 @@
+# Large/raw MLAT captures
+test*/**/captures/
+*/captures/
+
+# Runtime/generated data
+*.log
+*.pcap
+__pycache__/
+*.pyc
+.venv/
+.env
+.run/

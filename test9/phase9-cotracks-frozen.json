@@ -1,0 +1,862 @@
+[
+  {
+    "classification": "POSSIBLE",
+    "compatiblePoints": 2,
+    "icao": "888188",
+    "meanDistanceM": 124.15981930419085,
+    "modeAcId": "MAC-000001",
+    "modeSId": "MS-888188",
+    "rank": 1,
+    "spanMs": 2719
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "888188",
+    "meanDistanceM": 248.88468905208256,
+    "modeAcId": "MAC-000003",
+    "modeSId": "MS-888188",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "88808A",
+    "meanDistanceM": 259.4944883703013,
+    "modeAcId": "MAC-000005",
+    "modeSId": "MS-88808A",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "750111",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000005",
+    "modeSId": "MS-750111",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888265",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000005",
+    "modeSId": "MS-888265",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "750111",
+    "meanDistanceM": 63.33326259227273,
+    "modeAcId": "MAC-000006",
+    "modeSId": "MS-750111",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888265",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000006",
+    "modeSId": "MS-888265",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "88808A",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000006",
+    "modeSId": "MS-88808A",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888095",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-888095",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "STRONG_COTRACK",
+    "compatiblePoints": 5,
+    "icao": "8880AD",
+    "meanDistanceM": 248.88954595626666,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-8880AD",
+    "rank": 2,
+    "spanMs": 190215
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "888095",
+    "meanDistanceM": 146.7028456370177,
+    "modeAcId": "MAC-000008",
+    "modeSId": "MS-888095",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880AD",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000008",
+    "modeSId": "MS-8880AD",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "STRONG_COTRACK",
+    "compatiblePoints": 5,
+    "icao": "8880AD",
+    "meanDistanceM": 283.93840106442667,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-8880AD",
+    "rank": 2,
+    "spanMs": 156949
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888095",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-888095",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888164",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-888164",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880AD",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000010",
+    "modeSId": "MS-8880AD",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "STRONG_COTRACK",
+    "compatiblePoints": 5,
+    "icao": "888164",
+    "meanDistanceM": 219.5816686955158,
+    "modeAcId": "MAC-000010",
+    "modeSId": "MS-888164",
+    "rank": 2,
+    "spanMs": 61871
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8881B6",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000010",
+    "modeSId": "MS-8881B6",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "POSSIBLE",
+    "compatiblePoints": 2,
+    "icao": "888164",
+    "meanDistanceM": 146.5603660490054,
+    "modeAcId": "MAC-000011",
+    "modeSId": "MS-888164",
+    "rank": 1,
+    "spanMs": 2638
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880AD",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000011",
+    "modeSId": "MS-8880AD",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888164",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-888164",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880E7",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-8880E7",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "750111",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-750111",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8881B6",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-8881B6",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880E7",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-8880E7",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "750111",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-750111",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8881B6",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-8881B6",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8881B6",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000011",
+    "modeSId": "MS-8881B6",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880AD",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000012",
+    "modeSId": "MS-8880AD",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888164",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000012",
+    "modeSId": "MS-888164",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880E0",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000012",
+    "modeSId": "MS-8880E0",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880E0",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000009",
+    "modeSId": "MS-8880E0",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880E0",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000010",
+    "modeSId": "MS-8880E0",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880E0",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000007",
+    "modeSId": "MS-8880E0",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8881B6",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000012",
+    "modeSId": "MS-8881B6",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "88811C",
+    "meanDistanceM": 102.93555184059238,
+    "modeAcId": "MAC-000013",
+    "modeSId": "MS-88811C",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000013",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "88811C",
+    "meanDistanceM": 57.097640055639914,
+    "modeAcId": "MAC-000014",
+    "modeSId": "MS-88811C",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000013",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000014",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "88811C",
+    "meanDistanceM": 426.73638993988175,
+    "modeAcId": "MAC-000015",
+    "modeSId": "MS-88811C",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "88811C",
+    "meanDistanceM": 311.506215345316,
+    "modeAcId": "MAC-000016",
+    "modeSId": "MS-88811C",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000015",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000016",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000017",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "88811C",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000017",
+    "modeSId": "MS-88811C",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000014",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000015",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000016",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000017",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000018",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "780B5F",
+    "meanDistanceM": 75.45103963769863,
+    "modeAcId": "MAC-000018",
+    "modeSId": "MS-780B5F",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "POSSIBLE",
+    "compatiblePoints": 2,
+    "icao": "780B5F",
+    "meanDistanceM": 275.1742503442046,
+    "modeAcId": "MAC-000019",
+    "modeSId": "MS-780B5F",
+    "rank": 1,
+    "spanMs": 2745
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000018",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888093",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000018",
+    "modeSId": "MS-888093",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888192",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000019",
+    "modeSId": "MS-888192",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888184",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000019",
+    "modeSId": "MS-888184",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888093",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000019",
+    "modeSId": "MS-888093",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000020",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888093",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000020",
+    "modeSId": "MS-888093",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888268",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000020",
+    "modeSId": "MS-888268",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888093",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000021",
+    "modeSId": "MS-888093",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000021",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888268",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000021",
+    "modeSId": "MS-888268",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "8880C5",
+    "meanDistanceM": 121.8026408640606,
+    "modeAcId": "MAC-000021",
+    "modeSId": "MS-8880C5",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000022",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888268",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000022",
+    "modeSId": "MS-888268",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "8880C5",
+    "meanDistanceM": 126.11586042354011,
+    "modeAcId": "MAC-000022",
+    "modeSId": "MS-8880C5",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888093",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000022",
+    "modeSId": "MS-888093",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888093",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000023",
+    "modeSId": "MS-888093",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "8880C5",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000023",
+    "modeSId": "MS-8880C5",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888268",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000023",
+    "modeSId": "MS-888268",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000023",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "STRONG_COTRACK",
+    "compatiblePoints": 9,
+    "icao": "888268",
+    "meanDistanceM": 186.66632279545968,
+    "modeAcId": "MAC-000024",
+    "modeSId": "MS-888268",
+    "rank": 2,
+    "spanMs": 71319
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888238",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000024",
+    "modeSId": "MS-888238",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "STRONG_COTRACK",
+    "compatiblePoints": 6,
+    "icao": "888268",
+    "meanDistanceM": 179.94796892751563,
+    "modeAcId": "MAC-000025",
+    "modeSId": "MS-888268",
+    "rank": 2,
+    "spanMs": 49434
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888238",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000025",
+    "modeSId": "MS-888238",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888268",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000026",
+    "modeSId": "MS-888268",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "888238",
+    "meanDistanceM": 3163.4102495822635,
+    "modeAcId": "MAC-000026",
+    "modeSId": "MS-888238",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "STRONG_COTRACK",
+    "compatiblePoints": 4,
+    "icao": "888268",
+    "meanDistanceM": 61.78010058776559,
+    "modeAcId": "MAC-000027",
+    "modeSId": "MS-888268",
+    "rank": 2,
+    "spanMs": 13956
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000024",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000025",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000026",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000027",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 0,
+    "icao": "888216",
+    "meanDistanceM": null,
+    "modeAcId": "MAC-000028",
+    "modeSId": "MS-888216",
+    "rank": 0,
+    "spanMs": 0
+  },
+  {
+    "classification": "NO_MATCH",
+    "compatiblePoints": 1,
+    "icao": "888268",
+    "meanDistanceM": 118.05945897201866,
+    "modeAcId": "MAC-000028",
+    "modeSId": "MS-888268",
+    "rank": 0,
+    "spanMs": 0
+  }
+]

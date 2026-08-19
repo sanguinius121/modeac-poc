@@ -1,0 +1,82 @@
+{
+  "run_id": "20260809T034035Z",
+  "scheduled_start_ns": 1786246976085343469,
+  "scheduled_start_utc": "2026-08-09T03:42:56.085344+00:00",
+  "duration_s": 300,
+  "stations": {
+    "T37": {
+      "path": "/home/mlatserver/modeac-poc/test6/20260809T034035Z/captures/modeac-T37.csv",
+      "size_bytes": 65656926,
+      "data_lines": 762651,
+      "stations": {
+        "T37": 762651
+      },
+      "station_valid": true,
+      "first_utc_ns": 1786246976134545812,
+      "last_utc_ns": 1786247276125478550,
+      "span_s": 299.990932738,
+      "counts": {
+        "modeac": 622362,
+        "timestamp_zero": 10,
+        "modes_short": 72926,
+        "modes_long": 67363
+      }
+    },
+    "Dao_Cai_chien": {
+      "path": "/home/mlatserver/modeac-poc/test6/20260809T034035Z/captures/modeac-Dao_Cai_chien.csv",
+      "size_bytes": 46186302,
+      "data_lines": 485268,
+      "stations": {
+        "Dao_Cai_chien": 485268
+      },
+      "station_valid": true,
+      "first_utc_ns": 1786246976134420021,
+      "last_utc_ns": 1786247276118661272,
+      "span_s": 299.984241251,
+      "counts": {
+        "modeac": 416172,
+        "timestamp_zero": 10,
+        "modes_short": 35525,
+        "modes_long": 33571
+      }
+    },
+    "QK4": {
+      "path": "/home/mlatserver/modeac-poc/test6/20260809T034035Z/captures/modeac-QK4.csv",
+      "size_bytes": 6126145,
+      "data_lines": 63927,
+      "stations": {
+        "QK4": 63927
+      },
+      "station_valid": true,
+      "first_utc_ns": 1786246976120437529,
+      "last_utc_ns": 1786247276111336404,
+      "span_s": 299.990898875,
+      "counts": {
+        "modeac": 43050,
+        "timestamp_zero": 10,
+        "modes_long": 12786,
+        "modes_short": 8091
+      }
+    },
+    "BachLongVi": {
+      "path": "/home/mlatserver/modeac-poc/test6/20260809T034035Z/captures/modeac-BachLongVi.csv",
+      "size_bytes": 14828536,
+      "data_lines": 158664,
+      "stations": {
+        "BachLongVi": 158664
+      },
+      "station_valid": true,
+      "first_utc_ns": 1786246976106103561,
+      "last_utc_ns": 1786247276091474344,
+      "span_s": 299.985370783,
+      "counts": {
+        "modeac": 126385,
+        "timestamp_zero": 10,
+        "modes_long": 14904,
+        "modes_short": 17375
+      }
+    }
+  },
+  "common_overlap_s": 299.956928532,
+  "capture_accepted": true
+}

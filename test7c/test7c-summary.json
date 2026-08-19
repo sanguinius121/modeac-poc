@@ -1,0 +1,418 @@
+{
+  "decision": "STRONG PASS",
+  "robustness": "ROBUST",
+  "constants": {
+    "speed_of_light_m_s": 299792458.0,
+    "beast_hz": 12000000.0
+  },
+  "cluster_id": "104422",
+  "truth": {
+    "lat": 21.47999879912412,
+    "lon": 106.13066297343983,
+    "alt": 11292.83983398974,
+    "icao": "70401f"
+  },
+  "measured_tdoas_us": {
+    "T37__Dao_Cai_chien": 0.8457565307617188,
+    "T37__QK4": 449.9675649007161,
+    "T37__BachLongVi": 176.27442169189453,
+    "Dao_Cai_chien__QK4": 449.1218083699544,
+    "Dao_Cai_chien__BachLongVi": 175.4286651611328,
+    "QK4__BachLongVi": -273.6931432088216
+  },
+  "four_receiver_truth_altitude": {
+    "assumed_altitude_m": 11292.83983398974,
+    "altitude_error_m": 0.0,
+    "selected": true,
+    "branches": 10,
+    "competitive_credible_branches": 1,
+    "solution_lat": 21.479185866523228,
+    "solution_lon": 106.13187355258269,
+    "horizontal_error_m": 154.68094191509834,
+    "rms_residual_us": 0.029461329625875995,
+    "max_residual_us": 0.04698874232695971,
+    "jacobian_condition": 5.0623408619334205,
+    "network_center_distance_km": 163.9293907986722,
+    "horizontal_solution_displacement_m": 0.0,
+    "displacement_per_km_altitude_error_m": 0
+  },
+  "test7a": {
+    "horizontal_error_m": 222.4326892478589,
+    "vertical_error_m": -9748.316857310132,
+    "condition": 4944483822.593122
+  },
+  "conditioning": {
+    "2d_condition": 5.0623408619334205,
+    "3d_condition": 4944483822.593122,
+    "improvement_ratio": 976718865.3323343
+  },
+  "altitude_offsets": {
+    "-5000": {
+      "assumed_altitude_m": 6292.839833989739,
+      "altitude_error_m": -5000.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.478699847232093,
+      "solution_lon": 106.13182668196656,
+      "horizontal_error_m": 196.74998654916166,
+      "rms_residual_us": 0.012992741008085364,
+      "max_residual_us": 0.02072495192285828,
+      "jacobian_condition": 5.0638992774153495,
+      "network_center_distance_km": 163.8942042198767,
+      "horizontal_solution_displacement_m": 54.12848484696095,
+      "displacement_per_km_altitude_error_m": 10.82569696939219
+    },
+    "-3000": {
+      "assumed_altitude_m": 8292.83983398974,
+      "altitude_error_m": -3000.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.47884813242396,
+      "solution_lon": 106.13182324946449,
+      "horizontal_error_m": 180.45012187606827,
+      "rms_residual_us": 0.018226446472139442,
+      "max_residual_us": 0.029072153870970396,
+      "jacobian_condition": 5.063377501188657,
+      "network_center_distance_km": 163.9062324244243,
+      "horizontal_solution_displacement_m": 37.82377401859532,
+      "displacement_per_km_altitude_error_m": 12.607924672865108
+    },
+    "-1000": {
+      "assumed_altitude_m": 10292.83983398974,
+      "altitude_error_m": -1000.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.479057941121216,
+      "solution_lon": 106.1318494071543,
+      "horizontal_error_m": 162.89666874556033,
+      "rms_residual_us": 0.02526679620738922,
+      "max_residual_us": 0.04029989199111128,
+      "jacobian_condition": 5.062720114479849,
+      "network_center_distance_km": 163.9209898003259,
+      "horizontal_solution_displacement_m": 14.40922219527577,
+      "displacement_per_km_altitude_error_m": 14.40922219527577
+    },
+    "0": {
+      "assumed_altitude_m": 11292.83983398974,
+      "altitude_error_m": 0.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.479185866523228,
+      "solution_lon": 106.13187355258269,
+      "horizontal_error_m": 154.68094191509834,
+      "rms_residual_us": 0.029461329625875995,
+      "max_residual_us": 0.04698874232695971,
+      "jacobian_condition": 5.0623408619334205,
+      "network_center_distance_km": 163.9293907986722,
+      "horizontal_solution_displacement_m": 0.0,
+      "displacement_per_km_altitude_error_m": 0
+    },
+    "1000": {
+      "assumed_altitude_m": 12292.83983398974,
+      "altitude_error_m": 1000.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.47932911078316,
+      "solution_lon": 106.1319050586138,
+      "horizontal_error_m": 147.71462770066682,
+      "rms_residual_us": 0.034103546142895694,
+      "max_residual_us": 0.05439109701038092,
+      "jacobian_condition": 5.061928077722354,
+      "network_center_distance_km": 163.93847280155245,
+      "horizontal_solution_displacement_m": 16.221857600421842,
+      "displacement_per_km_altitude_error_m": 16.221857600421842
+    },
+    "3000": {
+      "assumed_altitude_m": 14292.83983398974,
+      "altitude_error_m": 3000.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.479661465308702,
+      "solution_lon": 106.13199009732499,
+      "horizontal_error_m": 141.19897667130437,
+      "rms_residual_us": 0.0447247161368834,
+      "max_residual_us": 0.07132578526608313,
+      "jacobian_condition": 5.0610024916298055,
+      "network_center_distance_km": 163.95867841746923,
+      "horizontal_solution_displacement_m": 54.12325055877305,
+      "displacement_per_km_altitude_error_m": 18.041083519591016
+    },
+    "5000": {
+      "assumed_altitude_m": 16292.83983398974,
+      "altitude_error_m": 5000.0,
+      "selected": true,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "solution_lat": 21.480054815231192,
+      "solution_lon": 106.13210440676198,
+      "horizontal_error_m": 150.7956806877745,
+      "rms_residual_us": 0.05711662165020899,
+      "max_residual_us": 0.09108110846739237,
+      "jacobian_condition": 5.0599445939391146,
+      "network_center_distance_km": 163.9816041703593,
+      "horizontal_solution_displacement_m": 99.31900621054763,
+      "displacement_per_km_altitude_error_m": 19.863801242109524
+    }
+  },
+  "three_station_truth_altitude": [
+    {
+      "stations": "T37;Dao_Cai_chien;QK4",
+      "assumed_altitude_m": 11292.83983398974,
+      "altitude_error_m": 0.0,
+      "branches": 10,
+      "competitive_credible_branches": 1,
+      "selected": true,
+      "solution_lat": 21.478176768140635,
+      "solution_lon": 106.13279336085769,
+      "horizontal_error_m": 299.60319370521034,
+      "rms_residual_us": 9.12875897964071e-13,
+      "max_residual_us": 1.1937117960769683e-12,
+      "jacobian_condition": 19.61651589409959,
+      "network_center_distance_km": 163.7821257772263
+    },
+    {
+      "stations": "T37;Dao_Cai_chien;BachLongVi",
+      "assumed_altitude_m": 11292.83983398974,
+      "altitude_error_m": 0.0,
+      "branches": 8,
+      "competitive_credible_branches": 2,
+      "selected": true,
+      "solution_lat": 21.47808132679484,
+      "solution_lon": 106.13512707496479,
+      "horizontal_error_m": 509.92847161192054,
+      "rms_residual_us": 3.1344226247333046e-13,
+      "max_residual_us": 4.263256414560601e-13,
+      "jacobian_condition": 22.23153819763431,
+      "network_center_distance_km": 163.6043758870021
+    },
+    {
+      "stations": "T37;QK4;BachLongVi",
+      "assumed_altitude_m": 11292.83983398974,
+      "altitude_error_m": 0.0,
+      "branches": 11,
+      "competitive_credible_branches": 1,
+      "selected": true,
+      "solution_lat": 21.47923902420206,
+      "solution_lon": 106.13182061428279,
+      "horizontal_error_m": 146.7867831674673,
+      "rms_residual_us": 1.4993630303604253e-12,
+      "max_residual_us": 1.9042545318370685e-12,
+      "jacobian_condition": 5.181663482358742,
+      "network_center_distance_km": 163.93747562325302
+    },
+    {
+      "stations": "Dao_Cai_chien;QK4;BachLongVi",
+      "assumed_altitude_m": 11292.83983398974,
+      "altitude_error_m": 0.0,
+      "branches": 11,
+      "competitive_credible_branches": 1,
+      "selected": true,
+      "solution_lat": 21.47946702458184,
+      "solution_lon": 106.13173446152486,
+      "horizontal_error_m": 125.91046512139198,
+      "rms_residual_us": 3.669226909823367e-14,
+      "max_residual_us": 5.684341886080802e-14,
+      "jacobian_condition": 5.5767684533735595,
+      "network_center_distance_km": 163.96187388782212
+    }
+  ],
+  "synthetic": {
+    "passed": true,
+    "exact_case_count": 25,
+    "noise_summary": [
+      {
+        "stations": "T37;Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 0.1,
+        "count": 5,
+        "median_m": 64.91913851766,
+        "p90_m": 209.60622356927766,
+        "max_m": 303.56933884588705
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 0.25,
+        "count": 5,
+        "median_m": 162.43378299160742,
+        "p90_m": 522.8538611823723,
+        "max_m": 756.9790732585793
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 0.5,
+        "count": 5,
+        "median_m": 325.3217948663066,
+        "p90_m": 1041.8593632857542,
+        "max_m": 1507.5165613999384
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 1.0,
+        "count": 5,
+        "median_m": 652.4688130609385,
+        "p90_m": 2068.4654173769973,
+        "max_m": 2989.4956396612756
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4",
+        "noise_us": 0.1,
+        "count": 5,
+        "median_m": 960.6755898001956,
+        "p90_m": 61145.72824195363,
+        "max_m": 101009.91935991167
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4",
+        "noise_us": 0.25,
+        "count": 5,
+        "median_m": 2392.9383474577735,
+        "p90_m": 65573.55416651342,
+        "max_m": 107129.3017754489
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4",
+        "noise_us": 0.5,
+        "count": 5,
+        "median_m": 4758.963208688366,
+        "p90_m": 70899.97101404761,
+        "max_m": 114094.86301297818
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;QK4",
+        "noise_us": 1.0,
+        "count": 5,
+        "median_m": 9426.369091048928,
+        "p90_m": 78099.18584682331,
+        "max_m": 122774.4360447975
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;BachLongVi",
+        "noise_us": 0.1,
+        "count": 5,
+        "median_m": 1772.346003986534,
+        "p90_m": 155580.2734567679,
+        "max_m": 255719.1342926561
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;BachLongVi",
+        "noise_us": 0.25,
+        "count": 5,
+        "median_m": 4368.047721894332,
+        "p90_m": 160500.07004920283,
+        "max_m": 258334.03186950542
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;BachLongVi",
+        "noise_us": 0.5,
+        "count": 5,
+        "median_m": 8590.099697943664,
+        "p90_m": 169286.12623411504,
+        "max_m": 263054.1772868643
+      },
+      {
+        "stations": "T37;Dao_Cai_chien;BachLongVi",
+        "noise_us": 1.0,
+        "count": 5,
+        "median_m": 16908.547887898843,
+        "p90_m": 189425.37227463652,
+        "max_m": 274082.99985431327
+      },
+      {
+        "stations": "T37;QK4;BachLongVi",
+        "noise_us": 0.1,
+        "count": 5,
+        "median_m": 60.602921915019614,
+        "p90_m": 784.8035508457166,
+        "max_m": 1266.4628261517064
+      },
+      {
+        "stations": "T37;QK4;BachLongVi",
+        "noise_us": 0.25,
+        "count": 5,
+        "median_m": 151.57352307923003,
+        "p90_m": 1945.3186370655258,
+        "max_m": 3138.3358834934425
+      },
+      {
+        "stations": "T37;QK4;BachLongVi",
+        "noise_us": 0.5,
+        "count": 5,
+        "median_m": 303.36865336029,
+        "p90_m": 3836.387376708111,
+        "max_m": 6186.241123852352
+      },
+      {
+        "stations": "T37;QK4;BachLongVi",
+        "noise_us": 1.0,
+        "count": 5,
+        "median_m": 607.6303471672793,
+        "p90_m": 7465.550145825304,
+        "max_m": 12027.0480778041
+      },
+      {
+        "stations": "Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 0.1,
+        "count": 5,
+        "median_m": 29.93556763664543,
+        "p90_m": 2609.627425853832,
+        "max_m": 4310.577740233572
+      },
+      {
+        "stations": "Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 0.25,
+        "count": 5,
+        "median_m": 74.85228562615548,
+        "p90_m": 6259.318349746658,
+        "max_m": 10335.1854695492
+      },
+      {
+        "stations": "Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 0.5,
+        "count": 5,
+        "median_m": 149.74922238448627,
+        "p90_m": 11745.609156180028,
+        "max_m": 19381.963356772652
+      },
+      {
+        "stations": "Dao_Cai_chien;QK4;BachLongVi",
+        "noise_us": 1.0,
+        "count": 5,
+        "median_m": 299.6777734634593,
+        "p90_m": 21003.28881216376,
+        "max_m": 34617.264666193274
+      }
+    ],
+    "four_receiver_altitude_error_summary": {
+      "-5000": {
+        "median_m": 239.687929614434,
+        "max_m": 2694.9055438781857
+      },
+      "-3000": {
+        "median_m": 196.25329605720526,
+        "max_m": 1980.2902309326605
+      },
+      "-1000": {
+        "median_m": 82.89720084538335,
+        "max_m": 780.5472530961723
+      },
+      "1000": {
+        "median_m": 100.26378530814829,
+        "max_m": 900.2901934511822
+      },
+      "3000": {
+        "median_m": 352.3546452621845,
+        "max_m": 3057.4893448051653
+      },
+      "5000": {
+        "median_m": 672.0665992643491,
+        "max_m": 5684.543404920432
+      }
+    }
+  },
+  "architectural_recommendation": "Prioritize TDOA-derived latitude/longitude with altitude from an independently trusted Mode C, Mode S, or other source; do not treat TDOA altitude as a primary output."
+}

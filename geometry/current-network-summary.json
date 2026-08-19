@@ -1,0 +1,151 @@
+{
+  "method": {
+    "truth_used": false,
+    "grid": {
+      "lat": [
+        17.5,
+        22.5
+      ],
+      "lon": [
+        104.5,
+        109.0
+      ],
+      "step_deg": 0.1
+    },
+    "altitude_m": 10000,
+    "monte_carlo_draws": 256,
+    "seed": 20260811,
+    "classification_thresholds": {
+      "GOOD": "P95@0.25us <=500m, condition <=10, remote separation >=1us",
+      "ACCEPTABLE": "<=1500m, condition <=30, separation >=0.5us",
+      "POOR": "<=5000m, condition <=100, separation >=0.2us",
+      "VERY POOR": "otherwise"
+    }
+  },
+  "pair_distances": [
+    {
+      "a": "T37",
+      "b": "QK4",
+      "distance_km": 374.9109984032206
+    },
+    {
+      "a": "T37",
+      "b": "Dao_Cai_chien",
+      "distance_km": 18.323359900237346
+    },
+    {
+      "a": "T37",
+      "b": "BachLongVi",
+      "distance_km": 150.56668442319793
+    },
+    {
+      "a": "QK4",
+      "b": "Dao_Cai_chien",
+      "distance_km": 359.8927504643248
+    },
+    {
+      "a": "QK4",
+      "b": "BachLongVi",
+      "distance_km": 264.90521084196143
+    },
+    {
+      "a": "Dao_Cai_chien",
+      "b": "BachLongVi",
+      "distance_km": 132.24372226881894
+    }
+  ],
+  "class_counts": {
+    "GOOD": 511,
+    "ACCEPTABLE": 984,
+    "POOR": 557,
+    "VERY POOR": 294
+  },
+  "class_fraction": {
+    "GOOD": 0.21781756180733164,
+    "ACCEPTABLE": 0.4194373401534527,
+    "POOR": 0.23742540494458653,
+    "VERY POOR": 0.12531969309462915
+  },
+  "inside_hull_fraction": 0.05839727195225917,
+  "p95_0_25us_m": {
+    "median": 1036.620890815323,
+    "p90": 6873.364072075303,
+    "p95": 14204.894767918817
+  },
+  "altitude_sensitivity": [
+    {
+      "altitude_m": 1000,
+      "median_linear_hrmse_0_25us_m": 529.5395783255769,
+      "p90_linear_hrmse_0_25us_m": 3674.7795297833945,
+      "p95_linear_hrmse_0_25us_m": 8732.710593563126
+    },
+    {
+      "altitude_m": 3000,
+      "median_linear_hrmse_0_25us_m": 527.5339863514153,
+      "p90_linear_hrmse_0_25us_m": 3631.469912577476,
+      "p95_linear_hrmse_0_25us_m": 8733.530857600956
+    },
+    {
+      "altitude_m": 10000,
+      "median_linear_hrmse_0_25us_m": 524.8849609502697,
+      "p90_linear_hrmse_0_25us_m": 3609.9846027995072,
+      "p95_linear_hrmse_0_25us_m": 7464.4938338916445
+    },
+    {
+      "altitude_m": 12000,
+      "median_linear_hrmse_0_25us_m": 525.5068467642652,
+      "p90_linear_hrmse_0_25us_m": 3426.3666042157693,
+      "p95_linear_hrmse_0_25us_m": 7244.328329724708
+    }
+  ],
+  "regional_summary": {
+    "central_18.8_21.6N_105.5_108E": {
+      "points": 754,
+      "good_fraction": 0.6737400530503979,
+      "good_or_acceptable_fraction": 0.9270557029177718,
+      "median_condition": 4.047558549919036,
+      "median_mc_p95_0_25us_m": 408.9265988675601,
+      "p90_mc_p95_0_25us_m": 1070.4237387518447
+    },
+    "gulf_core_19_21.5N_106_108E": {
+      "points": 546,
+      "good_fraction": 0.7710622710622711,
+      "good_or_acceptable_fraction": 0.9285714285714286,
+      "median_condition": 3.5179357901834627,
+      "median_mc_p95_0_25us_m": 340.2973568513478,
+      "p90_mc_p95_0_25us_m": 1039.762369146431
+    },
+    "north_21.5N_plus": {
+      "points": 506,
+      "good_fraction": 0.045454545454545456,
+      "good_or_acceptable_fraction": 0.6403162055335968,
+      "median_condition": 6.979102387549938,
+      "median_mc_p95_0_25us_m": 1235.7973194515534,
+      "p90_mc_p95_0_25us_m": 8593.119225152563
+    },
+    "south_19.2N_minus": {
+      "points": 828,
+      "good_fraction": 0.01932367149758454,
+      "good_or_acceptable_fraction": 0.2922705314009662,
+      "median_condition": 13.036631689728779,
+      "median_mc_p95_0_25us_m": 2537.8009757735636,
+      "p90_mc_p95_0_25us_m": 17939.061852077055
+    },
+    "east_107.8E_plus": {
+      "points": 663,
+      "good_fraction": 0.05128205128205128,
+      "good_or_acceptable_fraction": 0.4193061840120664,
+      "median_condition": 11.971304644681037,
+      "median_mc_p95_0_25us_m": 1916.7235325070922,
+      "p90_mc_p95_0_25us_m": 8477.77002810708
+    },
+    "west_106E_minus": {
+      "points": 816,
+      "good_fraction": 0.125,
+      "good_or_acceptable_fraction": 0.7267156862745098,
+      "median_condition": 6.390502265257507,
+      "median_mc_p95_0_25us_m": 967.5536371747609,
+      "p90_mc_p95_0_25us_m": 7045.5370906540065
+    }
+  }
+}

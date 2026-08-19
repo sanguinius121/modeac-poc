@@ -1,0 +1,4 @@
+squawk_group,candidate_events,strong_events,plausible_events,ambiguous_events,association_success_percent,ambiguity_percent,horizontal_p50_m,horizontal_p90_m,horizontal_p95_m
+UNIQUE_SQUAWK,2410,2248,0,0,93.27800829875518,0.0,121.54347975108382,686.0741823158835,890.3547441222917
+SHARED_2,0,0,0,0,0,0,,,
+SHARED_3_PLUS,0,0,0,0,0,0,,,

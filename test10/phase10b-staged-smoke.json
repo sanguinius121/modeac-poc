@@ -1,0 +1,5324 @@
+{
+  "phase": "10B_STAGED_SMOKE",
+  "started_utc": 1786355469.916108,
+  "duration_s": 30.0,
+  "sample_count": 10,
+  "monitor_errors": 0,
+  "resource_summary": {
+    "backend_cpu_percent": {
+      "min": 51.947785961518065,
+      "mean": 118.07626239650237,
+      "max": 195.8043432730206
+    },
+    "backend_rss_mib": {
+      "min": 210.234375,
+      "mean": 210.234375,
+      "max": 210.234375
+    },
+    "firefox_cpu_percent": {
+      "min": 2.7383053340903847,
+      "mean": 21.901637794550798,
+      "max": 85.24764875736297
+    },
+    "firefox_rss_mib": {
+      "min": 321.796875,
+      "mean": 354.41171875,
+      "max": 423.78125
+    }
+  },
+  "browser_log_events": 22,
+  "browser_error_events": [],
+  "samples": [
+    {
+      "sample_utc": 1786355469.9161086,
+      "backend_cpu_percent": null,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": null,
+      "firefox_rss_mib": 332.46875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 15,
+            "modeac": 16
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 4
+          },
+          "statusPolls": 3,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:04.498Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:06.931Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 7,
+              "oldestMeasurementAgeS": 101.976,
+              "newestReceiptAgeS": 5.425
+            },
+            "modeac": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 8,
+              "oldestMeasurementAgeS": 41.754,
+              "newestReceiptAgeS": 2.992
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 91
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 91
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 488.75605511665344,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.30890989303588867,
+            "frames_total": 1028235,
+            "type1_total": 778893,
+            "type2_total": 124895,
+            "type3_total": 124447,
+            "type1_rate_s": 1600.8333333333333,
+            "type2_rate_s": 240.81666666666666,
+            "type3_rate_s": 245.43333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.2780177593231201,
+            "frames_total": 366165,
+            "type1_total": 270710,
+            "type2_total": 49310,
+            "type3_total": 46145,
+            "type1_rate_s": 629.6333333333333,
+            "type2_rate_s": 102.03333333333333,
+            "type3_rate_s": 97.58333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.30454397201538086,
+            "frames_total": 92052,
+            "type1_total": 54739,
+            "type2_total": 17079,
+            "type3_total": 20234,
+            "type1_rate_s": 111.25,
+            "type2_rate_s": 31.8,
+            "type3_rate_s": 40.15,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.3105888366699219,
+            "frames_total": 249432,
+            "type1_total": 185238,
+            "type2_total": 34077,
+            "type3_total": 30117,
+            "type1_rate_s": 435.03333333333336,
+            "type2_rate_s": 68.16666666666667,
+            "type3_rate_s": 67.63333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991156377621,
+            "offset": -43092794466.45111,
+            "p50_us": 0.0509490966796875,
+            "p90_us": 0.12173309326171876,
+            "p95_us": 0.14573542277018225,
+            "p99_us": 0.2041339619954427,
+            "last_update": 1786355473.0134041,
+            "updated_age_s": 0.21834778785705566,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985781788154,
+            "offset": 13832157278865.275,
+            "p50_us": 0.539306640625,
+            "p90_us": 1.1596028645833338,
+            "p95_us": 1.4248291015624999,
+            "p99_us": 1.838212890625,
+            "last_update": 1786355473.1305163,
+            "updated_age_s": 0.10320734977722168,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000720376841,
+            "offset": 1381177300552.0613,
+            "p50_us": 0.09223429361979166,
+            "p90_us": 0.21492716471354173,
+            "p95_us": 0.2546854654947917,
+            "p99_us": 0.31215026855468747,
+            "last_update": 1786355473.0384047,
+            "updated_age_s": 0.1970348358154297,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1008,
+            "slope": 0.9999994601232015,
+            "offset": 13875250051193.006,
+            "p50_us": 0.45076497395833337,
+            "p90_us": 1.0349446614583337,
+            "p95_us": 1.2853922526041666,
+            "p99_us": 1.6250927734374998,
+            "last_update": 1786355473.098853,
+            "updated_age_s": 0.1393892765045166,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1061,
+            "slope": 1.0000016010256885,
+            "offset": 1424270165741.727,
+            "p50_us": 0.10038248697916667,
+            "p90_us": 0.23313395182291666,
+            "p95_us": 0.2786865234375,
+            "p99_us": 0.3447591145833333,
+            "last_update": 1786355472.7995133,
+            "updated_age_s": 0.4395110607147217,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 957,
+            "slope": 1.0000021410001394,
+            "offset": -12451009592403.686,
+            "p50_us": 0.6387125651041666,
+            "p90_us": 1.1365478515625,
+            "p95_us": 1.3908121744791653,
+            "p99_us": 1.663118489583333,
+            "last_update": 1786355473.1275759,
+            "updated_age_s": 0.1123647689819336,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 492.20667028427124,
+        "type1_rate_per_receiver": {
+          "T37": 1608.1666666666667,
+          "Dao_Cai_chien": 631.4833333333333,
+          "QK4": 110.71666666666667,
+          "BachLongVi": 439.0
+        },
+        "strict_4rx_per_min": 17,
+        "blind_unique_per_min": 16,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 19,
+          "ambiguous_association": 5,
+          "inconsistent_association": 11,
+          "blind_unique": 18,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 5,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 1,
+        "processing_latency_ms": {
+          "p50": 1306.6763309761882,
+          "p90": 2979.786856099963,
+          "p95": 3341.7370938695967
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 2296,
+          "clock_samples": 9031
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 492.2277936935425,
+        "type2_rate_per_receiver": {
+          "T37": 243.43333333333334,
+          "Dao_Cai_chien": 102.11666666666666,
+          "QK4": 31.716666666666665,
+          "BachLongVi": 69.25
+        },
+        "type3_rate_per_receiver": {
+          "T37": 247.88333333333333,
+          "Dao_Cai_chien": 97.01666666666667,
+          "QK4": 40.21666666666667,
+          "BachLongVi": 68.16666666666667
+        },
+        "df_distribution": {
+          "17": 142438,
+          "11": 167394,
+          "0": 39563,
+          "16": 5307,
+          "20": 63288,
+          "21": 11128,
+          "4": 15710,
+          "5": 3811,
+          "18": 1
+        },
+        "clustered_per_min": 104,
+        "strict_4rx_per_min": 40,
+        "mlat_fix_per_min": 40,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 433,
+          "strict_4rx": 189,
+          "mlat_fix": 188,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1220,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 4,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 189,
+            "p50": 0.04944112151861191,
+            "p90": 0.07654726505279541,
+            "p95": 0.10311603546142578,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 189,
+            "p50": 2.450352068990469,
+            "p90": 7.286650128662586,
+            "p95": 14.604405034333467,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 188,
+            "p50": 821.978657040745,
+            "p90": 954.2666599154472,
+            "p95": 1245.7840889692307,
+            "p99": 1414.3321118317544
+          },
+          "track": {
+            "count": 188,
+            "p50": 0.13589486479759216,
+            "p90": 0.20141713321208954,
+            "p95": 0.5879318341612816,
+            "p99": 19.504576921463013
+          },
+          "total": {
+            "count": 188,
+            "p50": 828.8140129297972,
+            "p90": 987.7347112633288,
+            "p95": 1316.083652433008,
+            "p99": 1767.078427132219
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0.016484372783452272,
+          "association_entries": 838
+        }
+      },
+      "production": {
+        "now": 1786355474.0,
+        "messages": 1180427349,
+        "aircraft_count": 89,
+        "position_count": 85,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355474.4652076,
+      "backend_cpu_percent": 117.60571915434615,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 4.836123030646011,
+      "firefox_rss_mib": 325.6796875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 16,
+            "modeac": 21
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 5
+          },
+          "statusPolls": 4,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:10.547Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:14.432Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 8,
+              "oldestMeasurementAgeS": 106.521,
+              "newestReceiptAgeS": 3.921
+            },
+            "modeac": {
+              "registrySize": 5,
+              "visibleMarkers": 5,
+              "historyPoints": 12,
+              "oldestMeasurementAgeS": 46.299,
+              "newestReceiptAgeS": 0.036
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 492.2347445487976,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.02260589599609375,
+            "frames_total": 1033330,
+            "type1_total": 782641,
+            "type2_total": 125541,
+            "type3_total": 125148,
+            "type1_rate_s": 1610.0166666666667,
+            "type2_rate_s": 243.43333333333334,
+            "type3_rate_s": 247.88333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.04146432876586914,
+            "frames_total": 368336,
+            "type1_total": 272382,
+            "type2_total": 49569,
+            "type3_total": 46385,
+            "type1_rate_s": 630.85,
+            "type2_rate_s": 102.11666666666666,
+            "type3_rate_s": 97.01666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.02187180519104004,
+            "frames_total": 92498,
+            "type1_total": 55022,
+            "type2_total": 17132,
+            "type3_total": 20344,
+            "type1_rate_s": 111.18333333333334,
+            "type2_rate_s": 31.716666666666665,
+            "type3_rate_s": 40.21666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.030301809310913086,
+            "frames_total": 250952,
+            "type1_total": 186431,
+            "type2_total": 34236,
+            "type3_total": 30285,
+            "type1_rate_s": 439.0,
+            "type2_rate_s": 69.25,
+            "type3_rate_s": 68.16666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991155871574,
+            "offset": -43092794442.87244,
+            "p50_us": 0.050504048665364586,
+            "p90_us": 0.12187347412109376,
+            "p95_us": 0.14572245279947915,
+            "p99_us": 0.20547007242838541,
+            "last_update": 1786355474.4356453,
+            "updated_age_s": 0.03663158416748047,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985780428376,
+            "offset": 13832157278928.361,
+            "p50_us": 0.5436197916666667,
+            "p90_us": 1.157698567708334,
+            "p95_us": 1.4256022135416666,
+            "p99_us": 1.8594222005208332,
+            "last_update": 1786355474.431892,
+            "updated_age_s": 0.04246687889099121,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000007203709025,
+            "offset": 1381177300554.815,
+            "p50_us": 0.09203084309895834,
+            "p90_us": 0.21527099609375008,
+            "p95_us": 0.25467325846354166,
+            "p99_us": 0.31069519042968746,
+            "last_update": 1786355474.444104,
+            "updated_age_s": 0.031958580017089844,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1012,
+            "slope": 0.9999994600195222,
+            "offset": 13875250051236.543,
+            "p50_us": 0.4541015625,
+            "p90_us": 1.0609537760416663,
+            "p95_us": 1.297802734375,
+            "p99_us": 1.6835758463541666,
+            "last_update": 1786355474.4610639,
+            "updated_age_s": 0.016753196716308594,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1062,
+            "slope": 1.0000016010290367,
+            "offset": 1424270165740.3225,
+            "p50_us": 0.10051472981770834,
+            "p90_us": 0.23302408854166665,
+            "p95_us": 0.27867126464843744,
+            "p99_us": 0.34482462565104177,
+            "last_update": 1786355474.4041834,
+            "updated_age_s": 0.07435441017150879,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 959,
+            "slope": 1.0000021410501871,
+            "offset": -12451009593119.113,
+            "p50_us": 0.6431070963541666,
+            "p90_us": 1.1344523111979168,
+            "p95_us": 1.4185770670572915,
+            "p99_us": 1.652333577473958,
+            "last_update": 1786355474.4335163,
+            "updated_age_s": 0.04585862159729004,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 492.2459919452667,
+        "type1_rate_per_receiver": {
+          "T37": 1610.0166666666667,
+          "Dao_Cai_chien": 630.85,
+          "QK4": 111.18333333333334,
+          "BachLongVi": 439.0
+        },
+        "strict_4rx_per_min": 17,
+        "blind_unique_per_min": 16,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 19,
+          "ambiguous_association": 5,
+          "inconsistent_association": 11,
+          "blind_unique": 18,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 5,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 1,
+        "processing_latency_ms": {
+          "p50": 1306.6763309761882,
+          "p90": 2979.786856099963,
+          "p95": 3341.7370938695967
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 2296,
+          "clock_samples": 9031
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 492.2467429637909,
+        "type2_rate_per_receiver": {
+          "T37": 243.43333333333334,
+          "Dao_Cai_chien": 102.11666666666666,
+          "QK4": 31.716666666666665,
+          "BachLongVi": 69.25
+        },
+        "type3_rate_per_receiver": {
+          "T37": 247.88333333333333,
+          "Dao_Cai_chien": 97.01666666666667,
+          "QK4": 40.21666666666667,
+          "BachLongVi": 68.16666666666667
+        },
+        "df_distribution": {
+          "17": 142438,
+          "11": 167394,
+          "0": 39563,
+          "16": 5307,
+          "20": 63288,
+          "21": 11128,
+          "4": 15710,
+          "5": 3811,
+          "18": 1
+        },
+        "clustered_per_min": 104,
+        "strict_4rx_per_min": 40,
+        "mlat_fix_per_min": 40,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 433,
+          "strict_4rx": 189,
+          "mlat_fix": 188,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1220,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 4,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 189,
+            "p50": 0.04944112151861191,
+            "p90": 0.07654726505279541,
+            "p95": 0.10311603546142578,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 189,
+            "p50": 2.450352068990469,
+            "p90": 7.286650128662586,
+            "p95": 14.604405034333467,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 188,
+            "p50": 821.978657040745,
+            "p90": 954.2666599154472,
+            "p95": 1245.7840889692307,
+            "p99": 1414.3321118317544
+          },
+          "track": {
+            "count": 188,
+            "p50": 0.13589486479759216,
+            "p90": 0.20141713321208954,
+            "p95": 0.5879318341612816,
+            "p99": 19.504576921463013
+          },
+          "total": {
+            "count": 188,
+            "p50": 828.8140129297972,
+            "p90": 987.7347112633288,
+            "p95": 1316.083652433008,
+            "p99": 1767.078427132219
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0.016484372783452272,
+          "association_entries": 838
+        }
+      },
+      "production": {
+        "now": 1786355474.0,
+        "messages": 1180427349,
+        "aircraft_count": 89,
+        "position_count": 85,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355477.4675221,
+      "backend_cpu_percent": 90.26370513934782,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 2.9976876245539867,
+      "firefox_rss_mib": 321.796875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 18,
+            "modeac": 21
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 5
+          },
+          "statusPolls": 4,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:16.041Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:14.432Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 10,
+              "oldestMeasurementAgeS": 109.523,
+              "newestReceiptAgeS": 1.429
+            },
+            "modeac": {
+              "registrySize": 5,
+              "visibleMarkers": 5,
+              "historyPoints": 12,
+              "oldestMeasurementAgeS": 49.301,
+              "newestReceiptAgeS": 3.038
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 496.00581789016724,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.007563114166259766,
+            "frames_total": 1041332,
+            "type1_total": 788844,
+            "type2_total": 126428,
+            "type3_total": 126060,
+            "type1_rate_s": 1604.0666666666666,
+            "type2_rate_s": 242.93333333333334,
+            "type3_rate_s": 247.53333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.01115560531616211,
+            "frames_total": 372532,
+            "type1_total": 275864,
+            "type2_total": 49930,
+            "type3_total": 46738,
+            "type1_rate_s": 636.0333333333333,
+            "type2_rate_s": 100.85,
+            "type3_rate_s": 95.53333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.00408172607421875,
+            "frames_total": 93092,
+            "type1_total": 55368,
+            "type2_total": 17234,
+            "type3_total": 20490,
+            "type1_rate_s": 109.95,
+            "type2_rate_s": 31.7,
+            "type3_rate_s": 39.833333333333336,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.011497735977172852,
+            "frames_total": 253012,
+            "type1_total": 187959,
+            "type2_total": 34500,
+            "type3_total": 30553,
+            "type1_rate_s": 430.15,
+            "type2_rate_s": 69.11666666666666,
+            "type3_rate_s": 68.18333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991154948265,
+            "offset": -43092794399.8548,
+            "p50_us": 0.05069478352864583,
+            "p90_us": 0.12312469482421877,
+            "p95_us": 0.14702911376953126,
+            "p99_us": 0.20550694783528647,
+            "last_update": 1786355478.3183467,
+            "updated_age_s": 0.024776220321655273,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.999998577694755,
+            "offset": 13832157279089.861,
+            "p50_us": 0.5504557291666666,
+            "p90_us": 1.170979817708334,
+            "p95_us": 1.4459960937499998,
+            "p99_us": 1.8489176432291665,
+            "last_update": 1786355478.338383,
+            "updated_age_s": 0.0069522857666015625,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000007203192647,
+            "offset": 1381177300578.7866,
+            "p50_us": 0.09203084309895833,
+            "p90_us": 0.215740966796875,
+            "p95_us": 0.2530141194661458,
+            "p99_us": 0.3123065185546875,
+            "last_update": 1786355478.306939,
+            "updated_age_s": 0.04032182693481445,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1021,
+            "slope": 0.9999994597980154,
+            "offset": 13875250051329.568,
+            "p50_us": 0.4679361979166667,
+            "p90_us": 1.08251953125,
+            "p95_us": 1.33544921875,
+            "p99_us": 1.7540364583333332,
+            "last_update": 1786355478.2918758,
+            "updated_age_s": 0.05757856369018555,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1079,
+            "slope": 1.000001601079019,
+            "offset": 1424270165719.3538,
+            "p50_us": 0.10286458333333333,
+            "p90_us": 0.238037109375,
+            "p95_us": 0.2869893391927083,
+            "p99_us": 0.3495975748697917,
+            "last_update": 1786355478.3209054,
+            "updated_age_s": 0.02942824363708496,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 965,
+            "slope": 1.000002141202509,
+            "offset": -12451009595296.547,
+            "p50_us": 0.6551717122395834,
+            "p90_us": 1.1618326822916667,
+            "p95_us": 1.4438273111979165,
+            "p99_us": 1.696644694010417,
+            "last_update": 1786355478.3402977,
+            "updated_age_s": 0.011061429977416992,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 496.1181755065918,
+        "type1_rate_per_receiver": {
+          "T37": 1604.0666666666666,
+          "Dao_Cai_chien": 636.0333333333333,
+          "QK4": 109.95,
+          "BachLongVi": 430.15
+        },
+        "strict_4rx_per_min": 18,
+        "blind_unique_per_min": 17,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 20,
+          "ambiguous_association": 5,
+          "inconsistent_association": 11,
+          "blind_unique": 19,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 6,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 1,
+        "processing_latency_ms": {
+          "p50": 1306.6763309761882,
+          "p90": 2979.786856099963,
+          "p95": 3341.7370938695967
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 2423,
+          "clock_samples": 9057
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 496.11903142929077,
+        "type2_rate_per_receiver": {
+          "T37": 242.93333333333334,
+          "Dao_Cai_chien": 100.85,
+          "QK4": 31.7,
+          "BachLongVi": 69.11666666666666
+        },
+        "type3_rate_per_receiver": {
+          "T37": 247.53333333333333,
+          "Dao_Cai_chien": 95.53333333333333,
+          "QK4": 39.833333333333336,
+          "BachLongVi": 68.18333333333334
+        },
+        "df_distribution": {
+          "17": 143558,
+          "11": 168628,
+          "0": 39810,
+          "16": 5344,
+          "20": 63744,
+          "21": 11194,
+          "4": 15828,
+          "5": 3826,
+          "18": 1
+        },
+        "clustered_per_min": 111,
+        "strict_4rx_per_min": 42,
+        "mlat_fix_per_min": 39,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 443,
+          "strict_4rx": 193,
+          "mlat_fix": 190,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1221,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 4,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 193,
+            "p50": 0.04832400009036064,
+            "p90": 0.07654726505279541,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 193,
+            "p50": 2.509559039026499,
+            "p90": 7.596799172461033,
+            "p95": 14.604405034333467,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 190,
+            "p50": 821.978657040745,
+            "p90": 954.2666599154472,
+            "p95": 1245.7840889692307,
+            "p99": 1414.3321118317544
+          },
+          "track": {
+            "count": 190,
+            "p50": 0.13589486479759216,
+            "p90": 0.20141713321208954,
+            "p95": 0.5879318341612816,
+            "p99": 19.504576921463013
+          },
+          "total": {
+            "count": 190,
+            "p50": 828.8140129297972,
+            "p90": 1025.0686700455844,
+            "p95": 1316.083652433008,
+            "p99": 1767.078427132219
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 268
+        }
+      },
+      "production": {
+        "now": 1786355478.0,
+        "messages": 1180430501,
+        "aircraft_count": 89,
+        "position_count": 84,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355480.4676003,
+      "backend_cpu_percent": 165.66240412833747,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 2.999922811177137,
+      "firefox_rss_mib": 321.8203125,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 21,
+            "modeac": 22
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 6
+          },
+          "statusPolls": 5,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:20.197Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:18.323Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 13,
+              "oldestMeasurementAgeS": 112.526,
+              "newestReceiptAgeS": 0.276
+            },
+            "modeac": {
+              "registrySize": 6,
+              "visibleMarkers": 6,
+              "historyPoints": 13,
+              "oldestMeasurementAgeS": 52.304,
+              "newestReceiptAgeS": 2.15
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 498.2396080493927,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.020042896270751953,
+            "frames_total": 1045936,
+            "type1_total": 792457,
+            "type2_total": 126919,
+            "type3_total": 126560,
+            "type1_rate_s": 1607.6833333333334,
+            "type2_rate_s": 242.43333333333334,
+            "type3_rate_s": 246.76666666666668,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.05182647705078125,
+            "frames_total": 374298,
+            "type1_total": 277248,
+            "type2_total": 50114,
+            "type3_total": 46936,
+            "type1_rate_s": 626.1,
+            "type2_rate_s": 98.71666666666667,
+            "type3_rate_s": 94.38333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.11440038681030273,
+            "frames_total": 93444,
+            "type1_total": 55590,
+            "type2_total": 17303,
+            "type3_total": 20551,
+            "type1_rate_s": 109.33333333333333,
+            "type2_rate_s": 31.666666666666668,
+            "type3_rate_s": 39.233333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.006650447845458984,
+            "frames_total": 254223,
+            "type1_total": 188884,
+            "type2_total": 34658,
+            "type3_total": 30681,
+            "type1_rate_s": 425.43333333333334,
+            "type2_rate_s": 69.48333333333333,
+            "type3_rate_s": 68.01666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991154641975,
+            "offset": -43092794385.58307,
+            "p50_us": 0.050168355305989586,
+            "p90_us": 0.12311045328776042,
+            "p95_us": 0.14659220377604165,
+            "p99_us": 0.20391092936197913,
+            "last_update": 1786355480.3426201,
+            "updated_age_s": 0.13382196426391602,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985776378297,
+            "offset": 13832157279116.273,
+            "p50_us": 0.55126953125,
+            "p90_us": 1.1778157552083335,
+            "p95_us": 1.4398437499999992,
+            "p99_us": 1.8652669270833333,
+            "last_update": 1786355479.9158812,
+            "updated_age_s": 0.5623669624328613,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000007203024603,
+            "offset": 1381177300586.5864,
+            "p50_us": 0.09165445963541666,
+            "p90_us": 0.215594482421875,
+            "p95_us": 0.2538055419921875,
+            "p99_us": 0.31250651041666666,
+            "last_update": 1786355480.4716864,
+            "updated_age_s": 0.008135557174682617,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1025,
+            "slope": 0.9999994597013976,
+            "offset": 13875250051370.145,
+            "p50_us": 0.4767252604166667,
+            "p90_us": 1.1003906250000002,
+            "p95_us": 1.3543294270833335,
+            "p99_us": 1.7716145833333328,
+            "last_update": 1786355479.8429701,
+            "updated_age_s": 0.6385533809661865,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1085,
+            "slope": 1.000001601095047,
+            "offset": 1424270165712.6296,
+            "p50_us": 0.10325113932291667,
+            "p90_us": 0.23818766276041664,
+            "p95_us": 0.2879638671875,
+            "p99_us": 0.3509318033854167,
+            "last_update": 1786355480.3472493,
+            "updated_age_s": 0.13498282432556152,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 966,
+            "slope": 1.0000021412289364,
+            "offset": -12451009595674.322,
+            "p50_us": 0.6563822428385417,
+            "p90_us": 1.1659444173177085,
+            "p95_us": 1.4440053304036458,
+            "p99_us": 1.7010620117187503,
+            "last_update": 1786355479.0086558,
+            "updated_age_s": 1.4744172096252441,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 498.2518332004547,
+        "type1_rate_per_receiver": {
+          "T37": 1606.5833333333333,
+          "Dao_Cai_chien": 625.0,
+          "QK4": 109.43333333333334,
+          "BachLongVi": 425.43333333333334
+        },
+        "strict_4rx_per_min": 18,
+        "blind_unique_per_min": 17,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 20,
+          "ambiguous_association": 5,
+          "inconsistent_association": 14,
+          "blind_unique": 19,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 6,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 1,
+        "processing_latency_ms": {
+          "p50": 1306.6763309761882,
+          "p90": 2979.786856099963,
+          "p95": 3341.7370938695967
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 3034,
+          "clock_samples": 9072
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 498.25262546539307,
+        "type2_rate_per_receiver": {
+          "T37": 242.3,
+          "Dao_Cai_chien": 98.53333333333333,
+          "QK4": 31.716666666666665,
+          "BachLongVi": 69.48333333333333
+        },
+        "type3_rate_per_receiver": {
+          "T37": 246.5,
+          "Dao_Cai_chien": 94.15,
+          "QK4": 39.31666666666667,
+          "BachLongVi": 68.01666666666667
+        },
+        "df_distribution": {
+          "17": 144137,
+          "11": 169342,
+          "0": 39943,
+          "16": 5365,
+          "20": 63989,
+          "21": 11241,
+          "4": 15871,
+          "5": 3841,
+          "18": 1
+        },
+        "clustered_per_min": 114,
+        "strict_4rx_per_min": 42,
+        "mlat_fix_per_min": 43,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 448,
+          "strict_4rx": 194,
+          "mlat_fix": 194,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1222,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 4,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 194,
+            "p50": 0.04832400009036064,
+            "p90": 0.07654726505279541,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 194,
+            "p50": 2.509559039026499,
+            "p90": 7.596799172461033,
+            "p95": 14.604405034333467,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 194,
+            "p50": 824.0522681735456,
+            "p90": 957.8463151119649,
+            "p95": 1231.9212132133543,
+            "p99": 1414.3321118317544
+          },
+          "track": {
+            "count": 194,
+            "p50": 0.13597682118415833,
+            "p90": 0.20141713321208954,
+            "p95": 0.564774964004755,
+            "p99": 19.504576921463013
+          },
+          "total": {
+            "count": 194,
+            "p50": 831.393918953836,
+            "p90": 1053.9051261730492,
+            "p95": 1306.6086829639971,
+            "p99": 1767.078427132219
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 677
+        }
+      },
+      "production": {
+        "now": 1786355480.0,
+        "messages": 1180432049,
+        "aircraft_count": 88,
+        "position_count": 84,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355483.470597,
+      "backend_cpu_percent": 195.8043432730206,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 7.992014011143699,
+      "firefox_rss_mib": 324.07421875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 22,
+            "modeac": 23
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 6
+          },
+          "statusPolls": 6,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:22.796Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:22.485Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 14,
+              "oldestMeasurementAgeS": 115.526,
+              "newestReceiptAgeS": 0.677
+            },
+            "modeac": {
+              "registrySize": 6,
+              "visibleMarkers": 6,
+              "historyPoints": 14,
+              "oldestMeasurementAgeS": 55.304,
+              "newestReceiptAgeS": 0.988
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 502.5847930908203,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.04972696304321289,
+            "frames_total": 1055389,
+            "type1_total": 799620,
+            "type2_total": 128118,
+            "type3_total": 127651,
+            "type1_rate_s": 1593.7333333333333,
+            "type2_rate_s": 239.63333333333333,
+            "type3_rate_s": 241.98333333333332,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.042783260345458984,
+            "frames_total": 378535,
+            "type1_total": 280507,
+            "type2_total": 50626,
+            "type3_total": 47402,
+            "type1_rate_s": 613.3333333333334,
+            "type2_rate_s": 96.96666666666667,
+            "type3_rate_s": 92.93333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.040749311447143555,
+            "frames_total": 94385,
+            "type1_total": 56150,
+            "type2_total": 17484,
+            "type3_total": 20751,
+            "type1_rate_s": 106.16666666666667,
+            "type2_rate_s": 31.166666666666668,
+            "type3_rate_s": 38.9,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.05138659477233887,
+            "frames_total": 257459,
+            "type1_total": 191515,
+            "type2_total": 34989,
+            "type3_total": 30955,
+            "type1_rate_s": 417.55,
+            "type2_rate_s": 68.45,
+            "type3_rate_s": 66.78333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991153110273,
+            "offset": -43092794314.2063,
+            "p50_us": 0.048700968424479164,
+            "p90_us": 0.12389373779296875,
+            "p95_us": 0.14453379313151038,
+            "p99_us": 0.20362548828125,
+            "last_update": 1786355486.2564464,
+            "updated_age_s": 0.35106897354125977,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985769456521,
+            "offset": 13832157279437.453,
+            "p50_us": 0.56494140625,
+            "p90_us": 1.1606770833333342,
+            "p95_us": 1.4800048828124996,
+            "p99_us": 1.9290787760416666,
+            "last_update": 1786355486.528544,
+            "updated_age_s": 0.08075094223022461,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000007202516,
+            "offset": 1381177300610.186,
+            "p50_us": 0.09189860026041666,
+            "p90_us": 0.21930745442708344,
+            "p95_us": 0.2578582763671875,
+            "p99_us": 0.3156404622395833,
+            "last_update": 1786355486.286627,
+            "updated_age_s": 0.32424020767211914,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1036,
+            "slope": 0.9999994594325778,
+            "offset": 13875250051483.045,
+            "p50_us": 0.49609375,
+            "p90_us": 1.1166178385416665,
+            "p95_us": 1.3873697916666667,
+            "p99_us": 1.7459798177083334,
+            "last_update": 1786355486.5106647,
+            "updated_age_s": 0.13185596466064453,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1101,
+            "slope": 1.0000016011288777,
+            "offset": 1424270165698.436,
+            "p50_us": 0.1038818359375,
+            "p90_us": 0.24216715494791666,
+            "p95_us": 0.2892659505208333,
+            "p99_us": 0.34466552734375,
+            "last_update": 1786355486.1562421,
+            "updated_age_s": 0.4871664047241211,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 972,
+            "slope": 1.0000021413881872,
+            "offset": -12451009597950.807,
+            "p50_us": 0.667022705078125,
+            "p90_us": 1.1836954752604165,
+            "p95_us": 1.442973836263021,
+            "p99_us": 1.8169091796874994,
+            "last_update": 1786355485.0826392,
+            "updated_age_s": 1.561753749847412,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 505.2402436733246,
+        "type1_rate_per_receiver": {
+          "T37": 1587.2166666666667,
+          "Dao_Cai_chien": 613.1166666666667,
+          "QK4": 106.45,
+          "BachLongVi": 421.75
+        },
+        "strict_4rx_per_min": 22,
+        "blind_unique_per_min": 22,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 25,
+          "ambiguous_association": 6,
+          "inconsistent_association": 15,
+          "blind_unique": 24,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 8,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 2,
+        "processing_latency_ms": {
+          "p50": 1353.0049701221287,
+          "p90": 3794.726557098329,
+          "p95": 4318.048833869398
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 1867,
+          "clock_samples": 9111
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 505.2508645057678,
+        "type2_rate_per_receiver": {
+          "T37": 240.38333333333333,
+          "Dao_Cai_chien": 97.45,
+          "QK4": 31.283333333333335,
+          "BachLongVi": 68.76666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 242.31666666666666,
+          "Dao_Cai_chien": 93.56666666666666,
+          "QK4": 39.266666666666666,
+          "BachLongVi": 67.53333333333333
+        },
+        "df_distribution": {
+          "17": 145975,
+          "11": 171584,
+          "0": 40356,
+          "16": 5438,
+          "20": 64875,
+          "21": 11405,
+          "4": 16090,
+          "5": 3898,
+          "18": 1
+        },
+        "clustered_per_min": 114,
+        "strict_4rx_per_min": 40,
+        "mlat_fix_per_min": 41,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 463,
+          "strict_4rx": 198,
+          "mlat_fix": 198,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1236,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 4,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 198,
+            "p50": 0.047979410737752914,
+            "p90": 0.07555913180112839,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 198,
+            "p50": 2.5443960912525654,
+            "p90": 8.12327628955245,
+            "p95": 23.214262910187244,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 198,
+            "p50": 825.2380671910942,
+            "p90": 988.1318300031126,
+            "p95": 1280.4371290840209,
+            "p99": 1479.3468620628119
+          },
+          "track": {
+            "count": 198,
+            "p50": 0.13605691492557526,
+            "p90": 0.21476484835147858,
+            "p95": 0.5947812460362911,
+            "p99": 23.79828132688999
+          },
+          "total": {
+            "count": 198,
+            "p50": 832.9149526543915,
+            "p90": 1130.261908750981,
+            "p95": 1335.517032071948,
+            "p99": 1869.5846269838512
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 517
+        }
+      },
+      "production": {
+        "now": 1786355487.0,
+        "messages": 1180437459,
+        "aircraft_count": 88,
+        "position_count": 85,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355487.4876795,
+      "backend_cpu_percent": 139.90250888716332,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 2.7383053340903847,
+      "firefox_rss_mib": 324.37890625,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 24,
+            "modeac": 27
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 8
+          },
+          "statusPolls": 7,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:25.728Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:27.467Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 4,
+              "visibleMarkers": 4,
+              "historyPoints": 16,
+              "oldestMeasurementAgeS": 119.543,
+              "newestReceiptAgeS": 1.762
+            },
+            "modeac": {
+              "registrySize": 8,
+              "visibleMarkers": 8,
+              "historyPoints": 18,
+              "oldestMeasurementAgeS": 59.321,
+              "newestReceiptAgeS": 0.023
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 505.256196975708,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.008099079132080078,
+            "frames_total": 1058599,
+            "type1_total": 801916,
+            "type2_total": 128530,
+            "type3_total": 128153,
+            "type1_rate_s": 1588.0,
+            "type2_rate_s": 240.38333333333333,
+            "type3_rate_s": 242.31666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.022523164749145508,
+            "frames_total": 379951,
+            "type1_total": 281539,
+            "type2_total": 50783,
+            "type3_total": 47629,
+            "type1_rate_s": 613.1166666666667,
+            "type2_rate_s": 97.45,
+            "type3_rate_s": 93.56666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.02510857582092285,
+            "frames_total": 94677,
+            "type1_total": 56308,
+            "type2_total": 17540,
+            "type3_total": 20829,
+            "type1_rate_s": 106.45,
+            "type2_rate_s": 31.283333333333335,
+            "type3_rate_s": 39.266666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.007301807403564453,
+            "frames_total": 258705,
+            "type1_total": 192547,
+            "type2_total": 35075,
+            "type3_total": 31083,
+            "type1_rate_s": 423.1333333333333,
+            "type2_rate_s": 68.76666666666667,
+            "type3_rate_s": 67.53333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991152569092,
+            "offset": -43092794288.98224,
+            "p50_us": 0.04878489176432292,
+            "p90_us": 0.12378743489583333,
+            "p95_us": 0.1437527974446614,
+            "p99_us": 0.1993859354654948,
+            "last_update": 1786355487.472504,
+            "updated_age_s": 0.02014946937561035,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985768375248,
+            "offset": 13832157279487.629,
+            "p50_us": 0.5687662760416667,
+            "p90_us": 1.1592122395833333,
+            "p95_us": 1.489990234375,
+            "p99_us": 1.9193457031249999,
+            "last_update": 1786355487.4674885,
+            "updated_age_s": 0.02696061134338379,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000720243501,
+            "offset": 1381177300613.9443,
+            "p50_us": 0.09162394205729167,
+            "p90_us": 0.219647216796875,
+            "p95_us": 0.258294677734375,
+            "p99_us": 0.31892964680989583,
+            "last_update": 1786355487.4653664,
+            "updated_age_s": 0.03069019317626953,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1037,
+            "slope": 0.9999994594091391,
+            "offset": 13875250051492.89,
+            "p50_us": 0.4977213541666667,
+            "p90_us": 1.1251627604166667,
+            "p95_us": 1.3979492187499998,
+            "p99_us": 1.739140625,
+            "last_update": 1786355487.4354963,
+            "updated_age_s": 0.06236124038696289,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1105,
+            "slope": 1.0000016011308308,
+            "offset": 1424270165697.6167,
+            "p50_us": 0.10378011067708333,
+            "p90_us": 0.2413655598958334,
+            "p95_us": 0.2890340169270833,
+            "p99_us": 0.3439518229166667,
+            "last_update": 1786355487.4736059,
+            "updated_age_s": 0.024981021881103516,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 972,
+            "slope": 1.0000021413881872,
+            "offset": -12451009597950.807,
+            "p50_us": 0.667022705078125,
+            "p90_us": 1.1836954752604165,
+            "p95_us": 1.442973836263021,
+            "p99_us": 1.8169091796874994,
+            "last_update": 1786355485.0826392,
+            "updated_age_s": 2.416818857192993,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 505.26573610305786,
+        "type1_rate_per_receiver": {
+          "T37": 1588.0,
+          "Dao_Cai_chien": 613.1166666666667,
+          "QK4": 106.45,
+          "BachLongVi": 423.1333333333333
+        },
+        "strict_4rx_per_min": 22,
+        "blind_unique_per_min": 22,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 25,
+          "ambiguous_association": 6,
+          "inconsistent_association": 15,
+          "blind_unique": 24,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 8,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 2,
+        "processing_latency_ms": {
+          "p50": 1353.0049701221287,
+          "p90": 3794.726557098329,
+          "p95": 4318.048833869398
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 1867,
+          "clock_samples": 9111
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 505.26635789871216,
+        "type2_rate_per_receiver": {
+          "T37": 240.38333333333333,
+          "Dao_Cai_chien": 97.45,
+          "QK4": 31.283333333333335,
+          "BachLongVi": 68.76666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 242.31666666666666,
+          "Dao_Cai_chien": 93.56666666666666,
+          "QK4": 39.266666666666666,
+          "BachLongVi": 67.53333333333333
+        },
+        "df_distribution": {
+          "17": 145975,
+          "11": 171584,
+          "0": 40356,
+          "16": 5438,
+          "20": 64875,
+          "21": 11405,
+          "4": 16090,
+          "5": 3898,
+          "18": 1
+        },
+        "clustered_per_min": 114,
+        "strict_4rx_per_min": 40,
+        "mlat_fix_per_min": 41,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 463,
+          "strict_4rx": 198,
+          "mlat_fix": 198,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1236,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 4,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 198,
+            "p50": 0.047979410737752914,
+            "p90": 0.07555913180112839,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 198,
+            "p50": 2.5443960912525654,
+            "p90": 8.12327628955245,
+            "p95": 23.214262910187244,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 198,
+            "p50": 825.2380671910942,
+            "p90": 988.1318300031126,
+            "p95": 1280.4371290840209,
+            "p99": 1479.3468620628119
+          },
+          "track": {
+            "count": 198,
+            "p50": 0.13605691492557526,
+            "p90": 0.21476484835147858,
+            "p95": 0.5947812460362911,
+            "p99": 23.79828132688999
+          },
+          "total": {
+            "count": 198,
+            "p50": 832.9149526543915,
+            "p90": 1130.261908750981,
+            "p95": 1335.517032071948,
+            "p99": 1869.5846269838512
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 517
+        }
+      },
+      "production": {
+        "now": 1786355487.0,
+        "messages": 1180437459,
+        "aircraft_count": 88,
+        "position_count": 85,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355490.490692,
+      "backend_cpu_percent": 109.22368014602407,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 5.327984397367027,
+      "firefox_rss_mib": 327.921875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 26,
+            "modeac": 27
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 8
+          },
+          "statusPolls": 8,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:30.085Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:27.467Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 3,
+              "visibleMarkers": 3,
+              "historyPoints": 17,
+              "oldestMeasurementAgeS": 109.438,
+              "newestReceiptAgeS": 0.409
+            },
+            "modeac": {
+              "registrySize": 8,
+              "visibleMarkers": 8,
+              "historyPoints": 18,
+              "oldestMeasurementAgeS": 62.325,
+              "newestReceiptAgeS": 3.027
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 508.2608745098114,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.007803678512573242,
+            "frames_total": 1064135,
+            "type1_total": 806240,
+            "type2_total": 129101,
+            "type3_total": 128794,
+            "type1_rate_s": 1577.6333333333334,
+            "type2_rate_s": 238.78333333333333,
+            "type3_rate_s": 240.66666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.07752490043640137,
+            "frames_total": 382168,
+            "type1_total": 283149,
+            "type2_total": 51079,
+            "type3_total": 47940,
+            "type1_rate_s": 611.5333333333333,
+            "type2_rate_s": 97.23333333333333,
+            "type3_rate_s": 94.21666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.10038614273071289,
+            "frames_total": 95246,
+            "type1_total": 56649,
+            "type2_total": 17641,
+            "type3_total": 20956,
+            "type1_rate_s": 108.3,
+            "type2_rate_s": 31.65,
+            "type3_rate_s": 39.416666666666664,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.08390092849731445,
+            "frames_total": 260522,
+            "type1_total": 194000,
+            "type2_total": 35259,
+            "type3_total": 31263,
+            "type1_rate_s": 432.56666666666666,
+            "type2_rate_s": 68.76666666666667,
+            "type3_rate_s": 67.5,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991151746146,
+            "offset": -43092794250.62836,
+            "p50_us": 0.04988861083984375,
+            "p90_us": 0.12449900309244798,
+            "p95_us": 0.1451738993326823,
+            "p99_us": 0.19774897257486979,
+            "last_update": 1786355490.2902083,
+            "updated_age_s": 0.20775842666625977,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985764037709,
+            "offset": 13832157279688.932,
+            "p50_us": 0.5868326822916667,
+            "p90_us": 1.1971842447916667,
+            "p95_us": 1.5021240234375,
+            "p99_us": 1.8992561848958334,
+            "last_update": 1786355490.2785869,
+            "updated_age_s": 0.2216658592224121,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000007202243812,
+            "offset": 1381177300622.8223,
+            "p50_us": 0.091064453125,
+            "p90_us": 0.22043253580729172,
+            "p95_us": 0.25730183919270827,
+            "p99_us": 0.3160188802083333,
+            "last_update": 1786355490.2994485,
+            "updated_age_s": 0.20276427268981934,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1044,
+            "slope": 0.9999994592411414,
+            "offset": 13875250051563.451,
+            "p50_us": 0.5133463541666667,
+            "p90_us": 1.1356282552083334,
+            "p95_us": 1.4308593749999998,
+            "p99_us": 1.7504573567708328,
+            "last_update": 1786355489.7189653,
+            "updated_age_s": 0.7879514694213867,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1118,
+            "slope": 1.0000016011559765,
+            "offset": 1424270165687.0662,
+            "p50_us": 0.10422770182291666,
+            "p90_us": 0.24133300781250006,
+            "p95_us": 0.2904876708984374,
+            "p99_us": 0.34439900716145816,
+            "last_update": 1786355490.3009326,
+            "updated_age_s": 0.20690655708312988,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 973,
+            "slope": 1.0000021414176468,
+            "offset": -12451009598371.93,
+            "p50_us": 0.6678466796875,
+            "p90_us": 1.1899820963541667,
+            "p95_us": 1.4467732747395834,
+            "p99_us": 1.825138346354166,
+            "last_update": 1786355489.71957,
+            "updated_age_s": 0.7892987728118896,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 508.2758548259735,
+        "type1_rate_per_receiver": {
+          "T37": 1577.6333333333334,
+          "Dao_Cai_chien": 611.5333333333333,
+          "QK4": 108.4,
+          "BachLongVi": 432.56666666666666
+        },
+        "strict_4rx_per_min": 18,
+        "blind_unique_per_min": 20,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 25,
+          "ambiguous_association": 6,
+          "inconsistent_association": 15,
+          "blind_unique": 24,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 8,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 2,
+        "processing_latency_ms": {
+          "p50": 1353.0049701221287,
+          "p90": 3794.726557098329,
+          "p95": 4318.048833869398
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 2500,
+          "clock_samples": 9135
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 508.2766947746277,
+        "type2_rate_per_receiver": {
+          "T37": 238.78333333333333,
+          "Dao_Cai_chien": 97.23333333333333,
+          "QK4": 31.833333333333332,
+          "BachLongVi": 68.76666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 240.66666666666666,
+          "Dao_Cai_chien": 94.21666666666667,
+          "QK4": 39.483333333333334,
+          "BachLongVi": 67.5
+        },
+        "df_distribution": {
+          "17": 146777,
+          "11": 172466,
+          "0": 40549,
+          "16": 5468,
+          "20": 65247,
+          "21": 11464,
+          "4": 16156,
+          "5": 3920,
+          "18": 1
+        },
+        "clustered_per_min": 115,
+        "strict_4rx_per_min": 42,
+        "mlat_fix_per_min": 40,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 473,
+          "strict_4rx": 202,
+          "mlat_fix": 200,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1239,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 3,
+        "confirmed_tracks": 1,
+        "latency_ms": {
+          "association": {
+            "count": 202,
+            "p50": 0.047880690544843674,
+            "p90": 0.07555913180112839,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 202,
+            "p50": 2.531982958316803,
+            "p90": 8.12327628955245,
+            "p95": 23.214262910187244,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 200,
+            "p50": 825.8564341813326,
+            "p90": 988.1318300031126,
+            "p95": 1280.4371290840209,
+            "p99": 1479.3468620628119
+          },
+          "track": {
+            "count": 200,
+            "p50": 0.13649370521306992,
+            "p90": 0.22820616140961647,
+            "p95": 0.5947812460362911,
+            "p99": 23.79828132688999
+          },
+          "total": {
+            "count": 200,
+            "p50": 838.6310650967062,
+            "p90": 1130.261908750981,
+            "p95": 1335.517032071948,
+            "p99": 1869.5846269838512
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 709
+        }
+      },
+      "production": {
+        "now": 1786355490.0,
+        "messages": 1180439639,
+        "aircraft_count": 87,
+        "position_count": 84,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355493.4915571,
+      "backend_cpu_percent": 134.62785578809695,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 69.64658876166402,
+      "firefox_rss_mib": 423.78125,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 31,
+            "modeac": 27
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 8
+          },
+          "statusPolls": 8,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:32.556Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:27.467Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 3,
+              "visibleMarkers": 3,
+              "historyPoints": 21,
+              "oldestMeasurementAgeS": 112.439,
+              "newestReceiptAgeS": 0.939
+            },
+            "modeac": {
+              "registrySize": 8,
+              "visibleMarkers": 8,
+              "historyPoints": 18,
+              "oldestMeasurementAgeS": 65.326,
+              "newestReceiptAgeS": 6.028
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 511.2619652748108,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.03934764862060547,
+            "frames_total": 1069834,
+            "type1_total": 810495,
+            "type2_total": 129835,
+            "type3_total": 129504,
+            "type1_rate_s": 1581.9166666666667,
+            "type2_rate_s": 239.2,
+            "type3_rate_s": 239.38333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.015337705612182617,
+            "frames_total": 384488,
+            "type1_total": 284843,
+            "type2_total": 51408,
+            "type3_total": 48237,
+            "type1_rate_s": 618.6833333333333,
+            "type2_rate_s": 97.48333333333333,
+            "type3_rate_s": 94.68333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.0731654167175293,
+            "frames_total": 95955,
+            "type1_total": 57129,
+            "type2_total": 17745,
+            "type3_total": 21081,
+            "type1_rate_s": 111.65,
+            "type2_rate_s": 31.166666666666668,
+            "type3_rate_s": 39.35,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.047451019287109375,
+            "frames_total": 262435,
+            "type1_total": 195494,
+            "type2_total": 35463,
+            "type3_total": 31478,
+            "type1_rate_s": 441.6333333333333,
+            "type2_rate_s": 69.43333333333334,
+            "type3_rate_s": 68.11666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991151065306,
+            "offset": -43092794218.8952,
+            "p50_us": 0.049680074055989586,
+            "p90_us": 0.12530466715494795,
+            "p95_us": 0.1478724161783854,
+            "p99_us": 0.1965618896484375,
+            "last_update": 1786355493.483765,
+            "updated_age_s": 0.01648569107055664,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.999998576029452,
+            "offset": 13832157279862.672,
+            "p50_us": 0.5956217447916667,
+            "p90_us": 1.2087239583333333,
+            "p95_us": 1.521028645833333,
+            "p99_us": 1.8491308593750002,
+            "last_update": 1786355493.426225,
+            "updated_age_s": 0.07656192779541016,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000720160789,
+            "offset": 1381177300652.3608,
+            "p50_us": 0.090362548828125,
+            "p90_us": 0.21908162434895834,
+            "p95_us": 0.25579935709635415,
+            "p99_us": 0.3161421712239583,
+            "last_update": 1786355493.460478,
+            "updated_age_s": 0.04402661323547363,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1050,
+            "slope": 0.9999994590955252,
+            "offset": 13875250051624.611,
+            "p50_us": 0.5263671875,
+            "p90_us": 1.1762532552083336,
+            "p95_us": 1.4714355468749998,
+            "p99_us": 1.8047705078124998,
+            "last_update": 1786355493.1845815,
+            "updated_age_s": 0.32167744636535645,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1135,
+            "slope": 1.00000160118413,
+            "offset": 1424270165675.2534,
+            "p50_us": 0.10550944010416667,
+            "p90_us": 0.24485677083333335,
+            "p95_us": 0.29041544596354163,
+            "p99_us": 0.35395263671875066,
+            "last_update": 1786355493.4856908,
+            "updated_age_s": 0.021300315856933594,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 975,
+            "slope": 1.000002141476972,
+            "offset": -12451009599219.982,
+            "p50_us": 0.6720987955729166,
+            "p90_us": 1.1932210286458336,
+            "p95_us": 1.4559163411458333,
+            "p99_us": 1.8394974772135417,
+            "last_update": 1786355491.7397373,
+            "updated_age_s": 1.768193006515503,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 511.2762734889984,
+        "type1_rate_per_receiver": {
+          "T37": 1583.1166666666666,
+          "Dao_Cai_chien": 618.6833333333333,
+          "QK4": 111.65,
+          "BachLongVi": 441.6333333333333
+        },
+        "strict_4rx_per_min": 17,
+        "blind_unique_per_min": 17,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 25,
+          "ambiguous_association": 6,
+          "inconsistent_association": 15,
+          "blind_unique": 24,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 8,
+        "confirmed_tracks": 2,
+        "high_quality_tracks": 2,
+        "processing_latency_ms": {
+          "p50": 1353.0049701221287,
+          "p90": 3794.726557098329,
+          "p95": 4318.048833869398
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 3211,
+          "clock_samples": 9159
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 511.2770779132843,
+        "type2_rate_per_receiver": {
+          "T37": 239.31666666666666,
+          "Dao_Cai_chien": 97.48333333333333,
+          "QK4": 31.166666666666668,
+          "BachLongVi": 69.43333333333334
+        },
+        "type3_rate_per_receiver": {
+          "T37": 239.61666666666667,
+          "Dao_Cai_chien": 94.68333333333334,
+          "QK4": 39.35,
+          "BachLongVi": 68.11666666666666
+        },
+        "df_distribution": {
+          "17": 147684,
+          "11": 173502,
+          "0": 40768,
+          "16": 5496,
+          "20": 65600,
+          "21": 11533,
+          "4": 16236,
+          "5": 3952,
+          "18": 1
+        },
+        "clustered_per_min": 115,
+        "strict_4rx_per_min": 42,
+        "mlat_fix_per_min": 43,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 481,
+          "strict_4rx": 205,
+          "mlat_fix": 205,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1244,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 3,
+        "confirmed_tracks": 2,
+        "latency_ms": {
+          "association": {
+            "count": 205,
+            "p50": 0.047880690544843674,
+            "p90": 0.07654726505279541,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 205,
+            "p50": 2.5596600025892258,
+            "p90": 8.12327628955245,
+            "p95": 23.214262910187244,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 205,
+            "p50": 826.6176860779524,
+            "p90": 1003.9900569245219,
+            "p95": 1280.4371290840209,
+            "p99": 1479.3468620628119
+          },
+          "track": {
+            "count": 205,
+            "p50": 0.13659195974469185,
+            "p90": 0.22820616140961647,
+            "p95": 0.5947812460362911,
+            "p99": 23.79828132688999
+          },
+          "total": {
+            "count": 205,
+            "p50": 840.8707440830767,
+            "p90": 1130.261908750981,
+            "p95": 1335.517032071948,
+            "p99": 1869.5846269838512
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 619
+        }
+      },
+      "production": {
+        "now": 1786355493.0,
+        "messages": 1180442132,
+        "aircraft_count": 87,
+        "position_count": 83,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355496.4945726,
+      "backend_cpu_percent": 51.947785961518065,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 85.24764875736297,
+      "firefox_rss_mib": 421.765625,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 32,
+            "modeac": 28
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 8
+          },
+          "statusPolls": 9,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:34.606Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:34.487Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 3,
+              "visibleMarkers": 3,
+              "historyPoints": 22,
+              "oldestMeasurementAgeS": 115.443,
+              "newestReceiptAgeS": 1.893
+            },
+            "modeac": {
+              "registrySize": 8,
+              "visibleMarkers": 8,
+              "historyPoints": 18,
+              "oldestMeasurementAgeS": 68.33,
+              "newestReceiptAgeS": 2.012
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 514.2695026397705,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.005492448806762695,
+            "frames_total": 1076624,
+            "type1_total": 815743,
+            "type2_total": 130634,
+            "type3_total": 130247,
+            "type1_rate_s": 1595.7166666666667,
+            "type2_rate_s": 235.7,
+            "type3_rate_s": 237.6,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.03147602081298828,
+            "frames_total": 386407,
+            "type1_total": 286173,
+            "type2_total": 51706,
+            "type3_total": 48528,
+            "type1_rate_s": 614.7833333333333,
+            "type2_rate_s": 95.91666666666667,
+            "type3_rate_s": 94.05,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.08935976028442383,
+            "frames_total": 96403,
+            "type1_total": 57346,
+            "type2_total": 17865,
+            "type3_total": 21192,
+            "type1_rate_s": 106.73333333333333,
+            "type2_rate_s": 31.583333333333332,
+            "type3_rate_s": 38.666666666666664,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.07938385009765625,
+            "frames_total": 264542,
+            "type1_total": 197157,
+            "type2_total": 35695,
+            "type3_total": 31690,
+            "type1_rate_s": 451.93333333333334,
+            "type2_rate_s": 69.0,
+            "type3_rate_s": 68.26666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999991150464584,
+            "offset": -43092794190.89673,
+            "p50_us": 0.049585978190104164,
+            "p90_us": 0.12590026855468753,
+            "p95_us": 0.14844080607096355,
+            "p99_us": 0.19590342203776043,
+            "last_update": 1786355496.4779458,
+            "updated_age_s": 0.030180692672729492,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985759214132,
+            "offset": 13832157279912.818,
+            "p50_us": 0.59521484375,
+            "p90_us": 1.2083333333333337,
+            "p95_us": 1.5278076171875,
+            "p99_us": 1.8433154296875,
+            "last_update": 1786355496.4171262,
+            "updated_age_s": 0.09472084045410156,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000720124256,
+            "offset": 1381177300669.3315,
+            "p50_us": 0.091400146484375,
+            "p90_us": 0.21825764973958334,
+            "p95_us": 0.25666097005208327,
+            "p99_us": 0.31869689941406243,
+            "last_update": 1786355496.303995,
+            "updated_age_s": 0.21106290817260742,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1056,
+            "slope": 0.9999994589528663,
+            "offset": 13875250051684.531,
+            "p50_us": 0.536376953125,
+            "p90_us": 1.1834309895833333,
+            "p95_us": 1.4930419921875,
+            "p99_us": 1.8088948567708334,
+            "last_update": 1786355496.479985,
+            "updated_age_s": 0.03777313232421875,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1147,
+            "slope": 1.0000016012086066,
+            "offset": 1424270165664.9834,
+            "p50_us": 0.10654703776041667,
+            "p90_us": 0.24677734375000007,
+            "p95_us": 0.2935139973958334,
+            "p99_us": 0.36063557942708324,
+            "last_update": 1786355496.2103946,
+            "updated_age_s": 0.30826497077941895,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 977,
+            "slope": 1.0000021415337637,
+            "offset": -12451009600031.82,
+            "p50_us": 0.6760457356770834,
+            "p90_us": 1.1972534179687502,
+            "p95_us": 1.446089680989583,
+            "p99_us": 1.8502547200520836,
+            "last_update": 1786355496.09417,
+            "updated_age_s": 0.4254896640777588,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 514.2860953807831,
+        "type1_rate_per_receiver": {
+          "T37": 1595.7166666666667,
+          "Dao_Cai_chien": 614.7833333333333,
+          "QK4": 106.73333333333333,
+          "BachLongVi": 451.6
+        },
+        "strict_4rx_per_min": 16,
+        "blind_unique_per_min": 16,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 25,
+          "ambiguous_association": 6,
+          "inconsistent_association": 15,
+          "blind_unique": 24,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 8,
+        "confirmed_tracks": 1,
+        "high_quality_tracks": 2,
+        "processing_latency_ms": {
+          "p50": 1353.0049701221287,
+          "p90": 3794.726557098329,
+          "p95": 4318.048833869398
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 3093,
+          "clock_samples": 9180
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 514.2867820262909,
+        "type2_rate_per_receiver": {
+          "T37": 235.7,
+          "Dao_Cai_chien": 95.91666666666667,
+          "QK4": 31.583333333333332,
+          "BachLongVi": 68.96666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 237.6,
+          "Dao_Cai_chien": 94.05,
+          "QK4": 38.666666666666664,
+          "BachLongVi": 68.13333333333334
+        },
+        "df_distribution": {
+          "17": 148486,
+          "11": 174635,
+          "0": 40935,
+          "16": 5530,
+          "20": 66037,
+          "21": 11603,
+          "4": 16352,
+          "5": 3978,
+          "18": 1
+        },
+        "clustered_per_min": 110,
+        "strict_4rx_per_min": 40,
+        "mlat_fix_per_min": 41,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 483,
+          "strict_4rx": 206,
+          "mlat_fix": 206,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1245,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 3,
+        "confirmed_tracks": 2,
+        "latency_ms": {
+          "association": {
+            "count": 206,
+            "p50": 0.047880690544843674,
+            "p90": 0.07555913180112839,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 206,
+            "p50": 2.5596600025892258,
+            "p90": 8.078034967184067,
+            "p95": 23.214262910187244,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 206,
+            "p50": 826.6176860779524,
+            "p90": 997.5763168185949,
+            "p95": 1280.4371290840209,
+            "p99": 1479.3468620628119
+          },
+          "track": {
+            "count": 206,
+            "p50": 0.13659195974469185,
+            "p90": 0.21476484835147858,
+            "p95": 0.5947812460362911,
+            "p99": 23.79828132688999
+          },
+          "total": {
+            "count": 206,
+            "p50": 840.8707440830767,
+            "p90": 1085.8216062188148,
+            "p95": 1335.517032071948,
+            "p99": 1869.5846269838512
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 691
+        }
+      },
+      "production": {
+        "now": 1786355496.0,
+        "messages": 1180444685,
+        "aircraft_count": 86,
+        "position_count": 81,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1786355499.4955251,
+      "backend_cpu_percent": 57.64835909066698,
+      "backend_rss_mib": 210.234375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 15.328465422951915,
+      "firefox_rss_mib": 420.4296875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 33,
+            "modeac": 28
+          },
+          "maxima": {
+            "modes": 4,
+            "modeac": 8
+          },
+          "statusPolls": 10,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-888142",
+              "measurementTime": "2026-08-10T09:49:41.056918Z",
+              "ageAtReceiptS": 80.863
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-888173",
+              "measurementTime": "2026-08-10T09:49:27.947275Z",
+              "ageAtReceiptS": 93.972
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-76B449",
+              "measurementTime": "2026-08-10T09:50:16.878940Z",
+              "ageAtReceiptS": 45.041
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000003",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000004",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000005",
+              "measurementTime": "2026-08-10T09:50:28.169333Z",
+              "ageAtReceiptS": 33.75
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:37.495Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-10T09:51:34.487Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 3,
+              "visibleMarkers": 3,
+              "historyPoints": 23,
+              "oldestMeasurementAgeS": 118.442,
+              "newestReceiptAgeS": 2.003
+            },
+            "modeac": {
+              "registrySize": 8,
+              "visibleMarkers": 8,
+              "historyPoints": 18,
+              "oldestMeasurementAgeS": 71.329,
+              "newestReceiptAgeS": 5.011
+            }
+          },
+          "config": {
+            "apiBase": "http://127.0.0.1:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 92
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-09",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 92
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 517.2639529705048,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-10T09:43:06.210352Z",
+            "last_frame_age_s": 0.012094259262084961,
+            "frames_total": 1083588,
+            "type1_total": 821485,
+            "type2_total": 131160,
+            "type3_total": 130943,
+            "type1_rate_s": 1609.2666666666667,
+            "type2_rate_s": 236.16666666666666,
+            "type3_rate_s": 238.73333333333332,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-10T09:43:06.225400Z",
+            "last_frame_age_s": 0.018642663955688477,
+            "frames_total": 387752,
+            "type1_total": 287104,
+            "type2_total": 51901,
+            "type3_total": 48747,
+            "type1_rate_s": 608.2666666666667,
+            "type2_rate_s": 95.28333333333333,
+            "type3_rate_s": 93.73333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "QK4",
+            "port": 29997,
+            "lat": 18.760032,
+            "lon": 105.659087,
+            "alt_m": 20.0,
+            "connected": true,
+            "remote_address": "100.119.31.100",
+            "connected_since": "2026-08-10T09:43:06.307623Z",
+            "last_frame_age_s": 0.08379149436950684,
+            "frames_total": 96785,
+            "type1_total": 57524,
+            "type2_total": 17946,
+            "type3_total": 21315,
+            "type1_rate_s": 105.15,
+            "type2_rate_s": 31.883333333333333,
+            "type3_rate_s": 38.78333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-10T09:43:06.317659Z",
+            "last_frame_age_s": 0.008697032928466797,
+            "frames_total": 266568,
+            "type1_total": 198816,
+            "type2_total": 35856,
+            "type3_total": 31896,
+            "type1_rate_s": 466.4,
+            "type2_rate_s": 70.0,
+            "type3_rate_s": 68.93333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.999999114989616,
+            "offset": -43092794164.40338,
+            "p50_us": 0.049573262532552086,
+            "p90_us": 0.12610371907552084,
+            "p95_us": 0.14961827596028646,
+            "p99_us": 0.19541854858398436,
+            "last_update": 1786355499.3651326,
+            "updated_age_s": 0.13542699813842773,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 2000,
+            "slope": 0.9999985756192736,
+            "offset": 13832157280053.07,
+            "p50_us": 0.601806640625,
+            "p90_us": 1.2215169270833335,
+            "p95_us": 1.5458251953125,
+            "p99_us": 1.8326839192708335,
+            "last_update": 1786355499.2039135,
+            "updated_age_s": 0.2985498905181885,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000007200766625,
+            "offset": 1381177300691.4407,
+            "p50_us": 0.09147135416666666,
+            "p90_us": 0.22000325520833344,
+            "p95_us": 0.2600209554036458,
+            "p99_us": 0.32526245117187497,
+            "last_update": 1786355499.4432044,
+            "updated_age_s": 0.06095314025878906,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "QK4",
+            "quality": "PASS",
+            "samples": 1064,
+            "slope": 0.9999994587658441,
+            "offset": 13875250051763.088,
+            "p50_us": 0.5553385416666666,
+            "p90_us": 1.2146158854166667,
+            "p95_us": 1.509895833333333,
+            "p99_us": 1.8366650390624994,
+            "last_update": 1786355499.2179618,
+            "updated_age_s": 0.2879304885864258,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1157,
+            "slope": 1.0000016012297077,
+            "offset": 1424270165656.129,
+            "p50_us": 0.10813395182291667,
+            "p90_us": 0.24739583333333337,
+            "p95_us": 0.2955403645833333,
+            "p99_us": 0.36511962890625027,
+            "last_update": 1786355499.0867352,
+            "updated_age_s": 0.41989970207214355,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "QK4",
+            "b": "BachLongVi",
+            "quality": "PASS",
+            "samples": 977,
+            "slope": 1.0000021415337637,
+            "offset": -12451009600031.82,
+            "p50_us": 0.6760457356770834,
+            "p90_us": 1.1972534179687502,
+            "p95_us": 1.446089680989583,
+            "p99_us": 1.8502547200520836,
+            "last_update": 1786355496.09417,
+            "updated_age_s": 3.4134633541107178,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 517.2800042629242,
+        "type1_rate_per_receiver": {
+          "T37": 1610.2833333333333,
+          "Dao_Cai_chien": 608.2666666666667,
+          "QK4": 105.15,
+          "BachLongVi": 466.4
+        },
+        "strict_4rx_per_min": 15,
+        "blind_unique_per_min": 16,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 25,
+          "ambiguous_association": 6,
+          "inconsistent_association": 15,
+          "blind_unique": 24,
+          "blind_multiple": 0,
+          "blind_inconsistent": 1
+        },
+        "active_tracks": 8,
+        "confirmed_tracks": 1,
+        "high_quality_tracks": 2,
+        "processing_latency_ms": {
+          "p50": 1353.0049701221287,
+          "p90": 3794.726557098329,
+          "p95": 4318.048833869398
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 0,
+          "modeac_entries": 3130,
+          "clock_samples": 9198
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 0
+      },
+      "modes": {
+        "uptime_s": 517.2809524536133,
+        "type2_rate_per_receiver": {
+          "T37": 235.81666666666666,
+          "Dao_Cai_chien": 95.28333333333333,
+          "QK4": 31.883333333333333,
+          "BachLongVi": 69.9
+        },
+        "type3_rate_per_receiver": {
+          "T37": 238.43333333333334,
+          "Dao_Cai_chien": 93.73333333333333,
+          "QK4": 38.78333333333333,
+          "BachLongVi": 68.8
+        },
+        "df_distribution": {
+          "17": 149294,
+          "11": 175349,
+          "0": 41124,
+          "16": 5562,
+          "20": 66380,
+          "21": 11678,
+          "4": 16416,
+          "5": 3988,
+          "18": 1
+        },
+        "clustered_per_min": 107,
+        "strict_4rx_per_min": 40,
+        "mlat_fix_per_min": 40,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 485,
+          "strict_4rx": 208,
+          "mlat_fix": 207,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 1251,
+          "clock_not_ready": 1623,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 0,
+          "events_dropped_stale": 0
+        },
+        "active_tracks": 3,
+        "confirmed_tracks": 2,
+        "latency_ms": {
+          "association": {
+            "count": 208,
+            "p50": 0.047979410737752914,
+            "p90": 0.07555913180112839,
+            "p95": 0.09599002078175545,
+            "p99": 0.15677977353334427
+          },
+          "queue": {
+            "count": 208,
+            "p50": 2.67863180488348,
+            "p90": 8.12327628955245,
+            "p95": 23.214262910187244,
+            "p99": 360.6253922916949
+          },
+          "solver": {
+            "count": 207,
+            "p50": 831.6065412946045,
+            "p90": 997.5763168185949,
+            "p95": 1280.4371290840209,
+            "p99": 1479.3468620628119
+          },
+          "track": {
+            "count": 207,
+            "p50": 0.13672281056642532,
+            "p90": 0.21476484835147858,
+            "p95": 0.5947812460362911,
+            "p99": 23.79828132688999
+          },
+          "total": {
+            "count": 207,
+            "p50": 842.4955043010414,
+            "p90": 1085.8216062188148,
+            "p95": 1335.517032071948,
+            "p99": 1869.5846269838512
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 0,
+          "event_queue_high_water": 2,
+          "oldest_queued_age_s": 0,
+          "association_entries": 705
+        }
+      },
+      "production": {
+        "now": 1786355499.0,
+        "messages": 1180446681,
+        "aircraft_count": 85,
+        "position_count": 81,
+        "mlat_position_count": 0
+      }
+    }
+  ],
+  "final": {
+    "sample_utc": 1786355499.4955251,
+    "backend_cpu_percent": 57.64835909066698,
+    "backend_rss_mib": 210.234375,
+    "backend_process_count": 4,
+    "firefox_cpu_percent": 15.328465422951915,
+    "firefox_rss_mib": 420.4296875,
+    "firefox_process_count": 1,
+    "page": {
+      "overlay": {
+        "phase": "10B_WEBSOCKET",
+        "initialized": true,
+        "restErrors": 0,
+        "invalidTracks": 0,
+        "outOfOrderDrops": 0,
+        "received": {
+          "modes": 33,
+          "modeac": 28
+        },
+        "maxima": {
+          "modes": 4,
+          "modeac": 8
+        },
+        "statusPolls": 10,
+        "clockDegradationEvents": 0,
+        "delayedMeasurementExamples": [
+          {
+            "kind": "modes",
+            "trackId": "MS-888142",
+            "measurementTime": "2026-08-10T09:49:41.056918Z",
+            "ageAtReceiptS": 80.863
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-888173",
+            "measurementTime": "2026-08-10T09:49:27.947275Z",
+            "ageAtReceiptS": 93.972
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-76B449",
+            "measurementTime": "2026-08-10T09:50:16.878940Z",
+            "ageAtReceiptS": 45.041
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000003",
+            "measurementTime": "2026-08-10T09:50:28.169333Z",
+            "ageAtReceiptS": 33.75
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000004",
+            "measurementTime": "2026-08-10T09:50:28.169333Z",
+            "ageAtReceiptS": 33.75
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000005",
+            "measurementTime": "2026-08-10T09:50:28.169333Z",
+            "ageAtReceiptS": 33.75
+          }
+        ],
+        "streams": {
+          "modes": {
+            "status": "LIVE",
+            "connected": true,
+            "lastMessageTime": "2026-08-10T09:51:37.495Z",
+            "reconnectCount": 0
+          },
+          "modeac": {
+            "status": "LIVE",
+            "connected": true,
+            "lastMessageTime": "2026-08-10T09:51:34.487Z",
+            "reconnectCount": 0
+          }
+        },
+        "lastError": null,
+        "tracks": {
+          "modes": {
+            "registrySize": 3,
+            "visibleMarkers": 3,
+            "historyPoints": 23,
+            "oldestMeasurementAgeS": 118.442,
+            "newestReceiptAgeS": 2.003
+          },
+          "modeac": {
+            "registrySize": 8,
+            "visibleMarkers": 8,
+            "historyPoints": 18,
+            "oldestMeasurementAgeS": 71.329,
+            "newestReceiptAgeS": 5.011
+          }
+        },
+        "config": {
+          "apiBase": "http://127.0.0.1:8090",
+          "trackPollMs": 1500,
+          "statusPollMs": 4000,
+          "historyMs": 600000,
+          "staleRemoveMs": 120000,
+          "startTimeoutMs": 30000,
+          "reconnectInitialMs": 1000,
+          "reconnectMaxMs": 30000
+        },
+        "productionPlaneCount": 92
+      },
+      "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE",
+      "layerTitles": [
+        "Custom",
+        "Europe",
+        "UK AWACS Orbits",
+        "UK A2A Refueling",
+        "UK Radar Corridors",
+        "DE AWACS Orbits",
+        "NL AWACS Orbits",
+        "PL AWACS Orbits",
+        "DWD RADOLAN",
+        "US",
+        "US ARTCC Boundaries",
+        "US A2A Refueling",
+        "NOAA Radar",
+        "NOAA Infrared Sat",
+        "NEXRAD",
+        "Special Use Airspace",
+        "TFRs",
+        "IFR Enroute Chart High",
+        "IFR Enroute Chart Low",
+        "VFR Terminal Chart",
+        "VFR Sectional Chart",
+        "Worldwide",
+        "RainViewer Radar",
+        "openAIP TMS",
+        "CARTO.com light_nolabels",
+        "CARTO.com light_all",
+        "CARTO.com dark_nolabels",
+        "CARTO.com dark_all",
+        "GIBS Clouds 2026-08-09",
+        "ESRI.com Streets",
+        "ESRI.com Gray",
+        "ESRI.com Sat.",
+        "OpenFreeMap Fiord",
+        "OpenFreeMap Dark",
+        "OpenFreeMap Positron",
+        "OpenFreeMap Liberty",
+        "OpenFreeMap Bright",
+        "OpenStreetMap DE",
+        "CARTO.com English",
+        "OpenStreetMap",
+        "Range rings",
+        "Site position",
+        "actual range outline",
+        "Aircraft trails",
+        "Aircraft positions",
+        "PoC Mode-S MLAT",
+        "PoC Mode A/C MLAT"
+      ],
+      "productionPlaneCount": 92
+    },
+    "health": {
+      "status": "ok",
+      "uptime_s": 517.2639529705048,
+      "receivers_connected": 4,
+      "strict_4rx_enabled": true,
+      "modes_strict_4rx_enabled": true
+    },
+    "receivers": {
+      "receivers": [
+        {
+          "station": "T37",
+          "port": 29996,
+          "lat": 21.485594,
+          "lon": 107.773191,
+          "alt_m": 60.0,
+          "connected": true,
+          "remote_address": "100.102.185.43",
+          "connected_since": "2026-08-10T09:43:06.210352Z",
+          "last_frame_age_s": 0.012094259262084961,
+          "frames_total": 1083588,
+          "type1_total": 821485,
+          "type2_total": 131160,
+          "type3_total": 130943,
+          "type1_rate_s": 1609.2666666666667,
+          "type2_rate_s": 236.16666666666666,
+          "type3_rate_s": 238.73333333333332,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        },
+        {
+          "station": "Dao_Cai_chien",
+          "port": 29998,
+          "lat": 21.32094,
+          "lon": 107.766116,
+          "alt_m": 28.0,
+          "connected": true,
+          "remote_address": "100.74.130.53",
+          "connected_since": "2026-08-10T09:43:06.225400Z",
+          "last_frame_age_s": 0.018642663955688477,
+          "frames_total": 387752,
+          "type1_total": 287104,
+          "type2_total": 51901,
+          "type3_total": 48747,
+          "type1_rate_s": 608.2666666666667,
+          "type2_rate_s": 95.28333333333333,
+          "type3_rate_s": 93.73333333333333,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        },
+        {
+          "station": "QK4",
+          "port": 29997,
+          "lat": 18.760032,
+          "lon": 105.659087,
+          "alt_m": 20.0,
+          "connected": true,
+          "remote_address": "100.119.31.100",
+          "connected_since": "2026-08-10T09:43:06.307623Z",
+          "last_frame_age_s": 0.08379149436950684,
+          "frames_total": 96785,
+          "type1_total": 57524,
+          "type2_total": 17946,
+          "type3_total": 21315,
+          "type1_rate_s": 105.15,
+          "type2_rate_s": 31.883333333333333,
+          "type3_rate_s": 38.78333333333333,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        },
+        {
+          "station": "BachLongVi",
+          "port": 29999,
+          "lat": 20.132285,
+          "lon": 107.724413,
+          "alt_m": 28.0,
+          "connected": true,
+          "remote_address": "100.120.90.84",
+          "connected_since": "2026-08-10T09:43:06.317659Z",
+          "last_frame_age_s": 0.008697032928466797,
+          "frames_total": 266568,
+          "type1_total": 198816,
+          "type2_total": 35856,
+          "type3_total": 31896,
+          "type1_rate_s": 466.4,
+          "type2_rate_s": 70.0,
+          "type3_rate_s": 68.93333333333334,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        }
+      ]
+    },
+    "clocks": {
+      "links": [
+        {
+          "a": "T37",
+          "b": "Dao_Cai_chien",
+          "quality": "STRONG",
+          "samples": 2000,
+          "slope": 0.999999114989616,
+          "offset": -43092794164.40338,
+          "p50_us": 0.049573262532552086,
+          "p90_us": 0.12610371907552084,
+          "p95_us": 0.14961827596028646,
+          "p99_us": 0.19541854858398436,
+          "last_update": 1786355499.3651326,
+          "updated_age_s": 0.13542699813842773,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "T37",
+          "b": "QK4",
+          "quality": "PASS",
+          "samples": 2000,
+          "slope": 0.9999985756192736,
+          "offset": 13832157280053.07,
+          "p50_us": 0.601806640625,
+          "p90_us": 1.2215169270833335,
+          "p95_us": 1.5458251953125,
+          "p99_us": 1.8326839192708335,
+          "last_update": 1786355499.2039135,
+          "updated_age_s": 0.2985498905181885,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "T37",
+          "b": "BachLongVi",
+          "quality": "STRONG",
+          "samples": 2000,
+          "slope": 1.0000007200766625,
+          "offset": 1381177300691.4407,
+          "p50_us": 0.09147135416666666,
+          "p90_us": 0.22000325520833344,
+          "p95_us": 0.2600209554036458,
+          "p99_us": 0.32526245117187497,
+          "last_update": 1786355499.4432044,
+          "updated_age_s": 0.06095314025878906,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "Dao_Cai_chien",
+          "b": "QK4",
+          "quality": "PASS",
+          "samples": 1064,
+          "slope": 0.9999994587658441,
+          "offset": 13875250051763.088,
+          "p50_us": 0.5553385416666666,
+          "p90_us": 1.2146158854166667,
+          "p95_us": 1.509895833333333,
+          "p99_us": 1.8366650390624994,
+          "last_update": 1786355499.2179618,
+          "updated_age_s": 0.2879304885864258,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "Dao_Cai_chien",
+          "b": "BachLongVi",
+          "quality": "STRONG",
+          "samples": 1157,
+          "slope": 1.0000016012297077,
+          "offset": 1424270165656.129,
+          "p50_us": 0.10813395182291667,
+          "p90_us": 0.24739583333333337,
+          "p95_us": 0.2955403645833333,
+          "p99_us": 0.36511962890625027,
+          "last_update": 1786355499.0867352,
+          "updated_age_s": 0.41989970207214355,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "QK4",
+          "b": "BachLongVi",
+          "quality": "PASS",
+          "samples": 977,
+          "slope": 1.0000021415337637,
+          "offset": -12451009600031.82,
+          "p50_us": 0.6760457356770834,
+          "p90_us": 1.1972534179687502,
+          "p95_us": 1.446089680989583,
+          "p99_us": 1.8502547200520836,
+          "last_update": 1786355496.09417,
+          "updated_age_s": 3.4134633541107178,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        }
+      ]
+    },
+    "modeac": {
+      "uptime_s": 517.2800042629242,
+      "type1_rate_per_receiver": {
+        "T37": 1610.2833333333333,
+        "Dao_Cai_chien": 608.2666666666667,
+        "QK4": 105.15,
+        "BachLongVi": 466.4
+      },
+      "strict_4rx_per_min": 15,
+      "blind_unique_per_min": 16,
+      "blind_multiple_per_min": 0,
+      "blind_inconsistent_per_min": 0,
+      "totals": {
+        "strict_4rx": 25,
+        "ambiguous_association": 6,
+        "inconsistent_association": 15,
+        "blind_unique": 24,
+        "blind_multiple": 0,
+        "blind_inconsistent": 1
+      },
+      "active_tracks": 8,
+      "confirmed_tracks": 1,
+      "high_quality_tracks": 2,
+      "processing_latency_ms": {
+        "p50": 1353.0049701221287,
+        "p90": 3794.726557098329,
+        "p95": 4318.048833869398
+      },
+      "buffers": {
+        "frame_queue_depth": 0,
+        "event_queue_depth": 0,
+        "modeac_entries": 3130,
+        "clock_samples": 9198
+      },
+      "frames_dropped_queue": 0,
+      "events_dropped_queue": 0
+    },
+    "modes": {
+      "uptime_s": 517.2809524536133,
+      "type2_rate_per_receiver": {
+        "T37": 235.81666666666666,
+        "Dao_Cai_chien": 95.28333333333333,
+        "QK4": 31.883333333333333,
+        "BachLongVi": 69.9
+      },
+      "type3_rate_per_receiver": {
+        "T37": 238.43333333333334,
+        "Dao_Cai_chien": 93.73333333333333,
+        "QK4": 38.78333333333333,
+        "BachLongVi": 68.8
+      },
+      "df_distribution": {
+        "17": 149294,
+        "11": 175349,
+        "0": 41124,
+        "16": 5562,
+        "20": 66380,
+        "21": 11678,
+        "4": 16416,
+        "5": 3988,
+        "18": 1
+      },
+      "clustered_per_min": 107,
+      "strict_4rx_per_min": 40,
+      "mlat_fix_per_min": 40,
+      "three_rx_alt_per_min": 0,
+      "totals": {
+        "clustered": 485,
+        "strict_4rx": 208,
+        "mlat_fix": 207,
+        "three_rx_alt": 0,
+        "ambiguous_association": 0,
+        "inconsistent_association": 1251,
+        "clock_not_ready": 1623,
+        "untrusted_identity": 0,
+        "events_dropped_queue": 0,
+        "events_dropped_stale": 0
+      },
+      "active_tracks": 3,
+      "confirmed_tracks": 2,
+      "latency_ms": {
+        "association": {
+          "count": 208,
+          "p50": 0.047979410737752914,
+          "p90": 0.07555913180112839,
+          "p95": 0.09599002078175545,
+          "p99": 0.15677977353334427
+        },
+        "queue": {
+          "count": 208,
+          "p50": 2.67863180488348,
+          "p90": 8.12327628955245,
+          "p95": 23.214262910187244,
+          "p99": 360.6253922916949
+        },
+        "solver": {
+          "count": 207,
+          "p50": 831.6065412946045,
+          "p90": 997.5763168185949,
+          "p95": 1280.4371290840209,
+          "p99": 1479.3468620628119
+        },
+        "track": {
+          "count": 207,
+          "p50": 0.13672281056642532,
+          "p90": 0.21476484835147858,
+          "p95": 0.5947812460362911,
+          "p99": 23.79828132688999
+        },
+        "total": {
+          "count": 207,
+          "p50": 842.4955043010414,
+          "p90": 1085.8216062188148,
+          "p95": 1335.517032071948,
+          "p99": 1869.5846269838512
+        }
+      },
+      "buffers": {
+        "event_queue_depth": 0,
+        "event_queue_high_water": 2,
+        "oldest_queued_age_s": 0,
+        "association_entries": 705
+      }
+    },
+    "production": {
+      "now": 1786355499.0,
+      "messages": 1180446681,
+      "aircraft_count": 85,
+      "position_count": 81,
+      "mlat_position_count": 0
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "before": {
+    "modes": {
+      "status": "LIVE",
+      "connected": true,
+      "lastMessageTime": "2026-08-10T09:51:55.928Z",
+      "reconnectCount": 0
+    },
+    "modeac": {
+      "status": "LIVE",
+      "connected": true,
+      "lastMessageTime": "2026-08-10T09:51:53.589Z",
+      "reconnectCount": 0
+    }
+  },
+  "during": {
+    "modes": {
+      "status": "LIVE",
+      "connected": true,
+      "lastMessageTime": "2026-08-10T09:51:55.928Z",
+      "reconnectCount": 0
+    },
+    "modeac": {
+      "status": "LIVE",
+      "connected": true,
+      "lastMessageTime": "2026-08-10T09:51:53.589Z",
+      "reconnectCount": 0
+    }
+  },
+  "after": {
+    "modes": {
+      "status": "LIVE",
+      "connected": true,
+      "lastMessageTime": "2026-08-10T09:51:55.928Z",
+      "reconnectCount": 0
+    },
+    "modeac": {
+      "status": "LIVE",
+      "connected": true,
+      "lastMessageTime": "2026-08-10T09:51:53.589Z",
+      "reconnectCount": 0
+    }
+  }
+}

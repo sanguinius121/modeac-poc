@@ -1,0 +1,5922 @@
+{
+  "phase": "pre10c-strict4-t37-caichien-blv-mongcai",
+  "started_utc": 1787131750.2886274,
+  "duration_s": 45.0,
+  "sample_count": 9,
+  "monitor_errors": 0,
+  "resource_summary": {
+    "backend_cpu_percent": {
+      "min": 290.02873313326893,
+      "mean": 305.27375927883907,
+      "max": 319.14404895987667
+    },
+    "backend_rss_mib": {
+      "min": 215.109375,
+      "mean": 215.109375,
+      "max": 215.109375
+    },
+    "firefox_cpu_percent": {
+      "min": 3.7969548717831287,
+      "mean": 13.943760107612269,
+      "max": 54.99507667520328
+    },
+    "firefox_rss_mib": {
+      "min": 325.62109375,
+      "mean": 364.10503472222223,
+      "max": 395.8984375
+    }
+  },
+  "browser_log_events": 24,
+  "browser_error_events": [],
+  "samples": [
+    {
+      "sample_utc": 1787131750.2886288,
+      "backend_cpu_percent": null,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": null,
+      "firefox_rss_mib": 395.8984375,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 64,
+            "modeac": 2
+          },
+          "maxima": {
+            "modes": 20,
+            "modeac": 1
+          },
+          "statusPolls": 2,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:09.418Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:09.411Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 19,
+              "visibleMarkers": 19,
+              "historyPoints": 26,
+              "oldestMeasurementAgeS": 109.797,
+              "newestReceiptAgeS": 0.88
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 137
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 19 \u00b7 Mode A/C 0\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 137
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 200.55028748512268,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.0353550910949707,
+            "frames_total": 349326,
+            "type1_total": 212684,
+            "type2_total": 64732,
+            "type3_total": 71910,
+            "type1_rate_s": 1076.1166666666666,
+            "type2_rate_s": 327.8,
+            "type3_rate_s": 360.03333333333336,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.010783195495605469,
+            "frames_total": 167125,
+            "type1_total": 111004,
+            "type2_total": 28271,
+            "type3_total": 27850,
+            "type1_rate_s": 523.9,
+            "type2_rate_s": 139.38333333333333,
+            "type3_rate_s": 135.83333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.03625965118408203,
+            "frames_total": 128664,
+            "type1_total": 86217,
+            "type2_total": 21830,
+            "type3_total": 20617,
+            "type1_rate_s": 488.9166666666667,
+            "type2_rate_s": 110.91666666666667,
+            "type3_rate_s": 98.03333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.03573155403137207,
+            "frames_total": 175438,
+            "type1_total": 126270,
+            "type2_total": 26358,
+            "type3_total": 22810,
+            "type1_rate_s": 612.4333333333333,
+            "type2_rate_s": 124.28333333333333,
+            "type3_rate_s": 102.51666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990376266205,
+            "offset": 307918951675.1331,
+            "p50_us": 0.04816691080729167,
+            "p90_us": 0.1158360799153646,
+            "p95_us": 0.1387741088867187,
+            "p99_us": 0.18425094604492187,
+            "last_update": 1787131751.2893429,
+            "updated_age_s": 0.07087111473083496,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008709457906,
+            "offset": 11027755030936.354,
+            "p50_us": 0.06624348958333334,
+            "p90_us": 0.15792643229166672,
+            "p95_us": 0.18671061197916664,
+            "p99_us": 0.26112304687499993,
+            "last_update": 1787131751.2980826,
+            "updated_age_s": 0.0647878646850586,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005063865995,
+            "offset": 105313831630.0379,
+            "p50_us": 0.049198150634765625,
+            "p90_us": 0.1195785522460938,
+            "p95_us": 0.13804410298665365,
+            "p99_us": 0.18463172912597656,
+            "last_update": 1787131751.1927254,
+            "updated_age_s": 0.17280006408691406,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1517,
+            "slope": 1.0000018305400469,
+            "offset": 10719835515978.762,
+            "p50_us": 0.07861328125,
+            "p90_us": 0.18203125000000003,
+            "p95_us": 0.22086588541666666,
+            "p99_us": 0.2755078124999999,
+            "last_update": 1787131751.299752,
+            "updated_age_s": 0.0684213638305664,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000001465171524,
+            "offset": -202605570714.64886,
+            "p50_us": 0.09719340006510416,
+            "p90_us": 0.2135625203450521,
+            "p95_us": 0.2479316711425781,
+            "p99_us": 0.31758895874023435,
+            "last_update": 1787131751.2617538,
+            "updated_age_s": 0.10956215858459473,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1210,
+            "slope": 0.9999996331511208,
+            "offset": -10922437153478.2,
+            "p50_us": 0.08529027303059897,
+            "p90_us": 0.19675598144531253,
+            "p95_us": 0.23062413533528645,
+            "p99_us": 0.31041877746582036,
+            "last_update": 1787131751.312694,
+            "updated_age_s": 0.06170344352722168,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 202.0075249671936,
+        "type1_rate_per_receiver": {
+          "T37": 1079.4,
+          "Dao_Cai_chien": 526.55,
+          "BachLongVi": 493.56666666666666,
+          "MongCai": 612.8333333333334
+        },
+        "strict_4rx_per_min": 320,
+        "blind_unique_per_min": 23,
+        "blind_multiple_per_min": 2,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 989,
+          "ambiguous_association": 16,
+          "inconsistent_association": 66,
+          "blind_unique": 67,
+          "blind_multiple": 15,
+          "blind_inconsistent": 3
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 99618.04039799608,
+          "p90": 160269.9715649942,
+          "p95": 168878.82063200232
+        },
+        "buffers": {
+          "frame_queue_depth": 251,
+          "event_queue_depth": 200,
+          "modeac_entries": 2971,
+          "clock_samples": 10733
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 703
+      },
+      "modes": {
+        "uptime_s": 203.43641448020935,
+        "type2_rate_per_receiver": {
+          "T37": 326.18333333333334,
+          "Dao_Cai_chien": 137.7,
+          "BachLongVi": 111.06666666666666,
+          "MongCai": 123.46666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 358.53333333333336,
+          "Dao_Cai_chien": 134.33333333333334,
+          "BachLongVi": 97.31666666666666,
+          "MongCai": 102.21666666666667
+        },
+        "df_distribution": {
+          "11": 94691,
+          "4": 16337,
+          "17": 95772,
+          "0": 28692,
+          "20": 39432,
+          "21": 5730,
+          "16": 3555,
+          "5": 2972
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 23,
+            "blind_unique": 21,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 82,
+            "blind_unique": 76,
+            "blind_multiple": 6
+          },
+          "4": {
+            "attempts": 20,
+            "blind_unique": 16,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 40,
+            "blind_unique": 36,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 143,
+            "blind_unique": 128,
+            "blind_multiple": 15
+          },
+          "21": {
+            "attempts": 6,
+            "blind_unique": 6
+          },
+          "5": {
+            "attempts": 2,
+            "blind_unique": 2
+          },
+          "16": {
+            "attempts": 1,
+            "blind_unique": 1
+          }
+        },
+        "clustered_per_min": 1231,
+        "strict_4rx_per_min": 1231,
+        "mlat_fix_per_min": 87,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 4566,
+          "strict_4rx": 4566,
+          "mlat_fix": 286,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 5551,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1443,
+          "events_dropped_stale": 2755
+        },
+        "active_tracks": 19,
+        "confirmed_tracks": 7,
+        "latency_ms": {
+          "association": {
+            "count": 3075,
+            "p50": 0.04578591324388981,
+            "p90": 0.071894028224051,
+            "p95": 0.08346897084265947,
+            "p99": 0.10915892198681831
+          },
+          "queue": {
+            "count": 3075,
+            "p50": 3303.780396003276,
+            "p90": 3972.2533939639106,
+            "p95": 4211.272042011842,
+            "p99": 4767.283314024098
+          },
+          "solver": {
+            "count": 317,
+            "p50": 1761.5325080696493,
+            "p90": 2389.13926796522,
+            "p95": 2648.110863985494,
+            "p99": 3151.03699604515
+          },
+          "track": {
+            "count": 286,
+            "p50": 0.16579905059188604,
+            "p90": 9.629080072045326,
+            "p95": 28.071503969840705,
+            "p99": 87.5021870015189
+          },
+          "total": {
+            "count": 286,
+            "p50": 4635.687399073504,
+            "p90": 5425.126901012845,
+            "p95": 5687.623046920635,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 48,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 3.578838007990271,
+          "association_entries": 1139
+        }
+      },
+      "production": {
+        "now": 1787131753.0,
+        "messages": 384314846,
+        "aircraft_count": 107,
+        "position_count": 104,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131755.2907045,
+      "backend_cpu_percent": 301.07506901784143,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 7.197013602020114,
+      "firefox_rss_mib": 326.875,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 70,
+            "modeac": 4
+          },
+          "maxima": {
+            "modes": 20,
+            "modeac": 1
+          },
+          "statusPolls": 3,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:13.355Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:14.255Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 19,
+              "visibleMarkers": 19,
+              "historyPoints": 31,
+              "oldestMeasurementAgeS": 114.793,
+              "newestReceiptAgeS": 1.939
+            },
+            "modeac": {
+              "registrySize": 1,
+              "visibleMarkers": 0,
+              "historyPoints": 1,
+              "oldestMeasurementAgeS": 180.511,
+              "newestReceiptAgeS": 1.039
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 137
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 19 \u00b7 Mode A/C 1\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 137
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 207.7156479358673,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.10013532638549805,
+            "frames_total": 363274,
+            "type1_total": 221232,
+            "type2_total": 67255,
+            "type3_total": 74787,
+            "type1_rate_s": 1085.9,
+            "type2_rate_s": 330.1166666666667,
+            "type3_rate_s": 363.48333333333335,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.21783041954040527,
+            "frames_total": 173122,
+            "type1_total": 114982,
+            "type2_total": 29293,
+            "type3_total": 28847,
+            "type1_rate_s": 519.5833333333334,
+            "type2_rate_s": 138.11666666666667,
+            "type3_rate_s": 135.41666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.1013646125793457,
+            "frames_total": 134744,
+            "type1_total": 90421,
+            "type2_total": 22813,
+            "type3_total": 21510,
+            "type1_rate_s": 485.5833333333333,
+            "type2_rate_s": 112.96666666666667,
+            "type3_rate_s": 99.58333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.2214665412902832,
+            "frames_total": 182162,
+            "type1_total": 131028,
+            "type2_total": 27413,
+            "type3_total": 23721,
+            "type1_rate_s": 613.1,
+            "type2_rate_s": 126.1,
+            "type3_rate_s": 105.03333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990373235814,
+            "offset": 307918951716.05286,
+            "p50_us": 0.0476837158203125,
+            "p90_us": 0.1183369954427084,
+            "p95_us": 0.14074529012044268,
+            "p99_us": 0.19110427856445314,
+            "last_update": 1787131758.614245,
+            "updated_age_s": 0.22025704383850098,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008709318335,
+            "offset": 11027755030938.22,
+            "p50_us": 0.06608072916666667,
+            "p90_us": 0.15987955729166672,
+            "p95_us": 0.18788248697916662,
+            "p99_us": 0.27024088541666663,
+            "last_update": 1787131758.6937938,
+            "updated_age_s": 0.1446821689605713,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005067751836,
+            "offset": 105313831577.60162,
+            "p50_us": 0.049729665120442704,
+            "p90_us": 0.11989313761393229,
+            "p95_us": 0.14393552144368488,
+            "p99_us": 0.19207173665364582,
+            "last_update": 1787131758.757616,
+            "updated_age_s": 0.09446525573730469,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1552,
+            "slope": 1.000001830667129,
+            "offset": 10719835515922.611,
+            "p50_us": 0.07950846354166666,
+            "p90_us": 0.1858235677083334,
+            "p95_us": 0.22578938802083318,
+            "p99_us": 0.28278808593750004,
+            "last_update": 1787131758.7069833,
+            "updated_age_s": 0.14787673950195312,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014658035998,
+            "offset": -202605570994.30014,
+            "p50_us": 0.09787623087565103,
+            "p90_us": 0.21531270345052086,
+            "p95_us": 0.25480333964029944,
+            "p99_us": 0.32253084818522126,
+            "last_update": 1787131758.763954,
+            "updated_age_s": 0.09323477745056152,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1233,
+            "slope": 0.9999996332693344,
+            "offset": -10922437154797.666,
+            "p50_us": 0.08662923177083333,
+            "p90_us": 0.1981964111328125,
+            "p95_us": 0.23661397298177078,
+            "p99_us": 0.31468516031901045,
+            "last_update": 1787131758.7150333,
+            "updated_age_s": 0.14482378959655762,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 210.2203242778778,
+        "type1_rate_per_receiver": {
+          "T37": 1085.0833333333333,
+          "Dao_Cai_chien": 518.9333333333333,
+          "BachLongVi": 483.51666666666665,
+          "MongCai": 611.5166666666667
+        },
+        "strict_4rx_per_min": 339,
+        "blind_unique_per_min": 23,
+        "blind_multiple_per_min": 2,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 1056,
+          "ambiguous_association": 17,
+          "inconsistent_association": 69,
+          "blind_unique": 71,
+          "blind_multiple": 15,
+          "blind_inconsistent": 3
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 104147.62299507856,
+          "p90": 168878.82063200232,
+          "p95": 176636.80441700853
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 200,
+          "modeac_entries": 1346,
+          "clock_samples": 10791
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 766
+      },
+      "modes": {
+        "uptime_s": 211.9979441165924,
+        "type2_rate_per_receiver": {
+          "T37": 326.6666666666667,
+          "Dao_Cai_chien": 136.56666666666666,
+          "BachLongVi": 113.96666666666667,
+          "MongCai": 125.31666666666666
+        },
+        "type3_rate_per_receiver": {
+          "T37": 359.3666666666667,
+          "Dao_Cai_chien": 134.9,
+          "BachLongVi": 98.96666666666667,
+          "MongCai": 104.4
+        },
+        "df_distribution": {
+          "11": 99123,
+          "4": 17083,
+          "17": 100277,
+          "0": 30057,
+          "20": 41305,
+          "21": 6026,
+          "16": 3716,
+          "5": 3114,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 23,
+            "blind_unique": 21,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 84,
+            "blind_unique": 78,
+            "blind_multiple": 6
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 41,
+            "blind_unique": 37,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 150,
+            "blind_unique": 134,
+            "blind_multiple": 16
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 4,
+            "blind_unique": 4
+          },
+          "16": {
+            "attempts": 1,
+            "blind_unique": 1
+          }
+        },
+        "clustered_per_min": 1171,
+        "strict_4rx_per_min": 1171,
+        "mlat_fix_per_min": 86,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 4720,
+          "strict_4rx": 4720,
+          "mlat_fix": 299,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 5739,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1461,
+          "events_dropped_stale": 2880
+        },
+        "active_tracks": 19,
+        "confirmed_tracks": 5,
+        "latency_ms": {
+          "association": {
+            "count": 3214,
+            "p50": 0.045779976062476635,
+            "p90": 0.071894028224051,
+            "p95": 0.08346897084265947,
+            "p99": 0.11192297097295523
+          },
+          "queue": {
+            "count": 3214,
+            "p50": 3307.9709210433066,
+            "p90": 3984.5260829897597,
+            "p95": 4223.486103001051,
+            "p99": 4701.700489968061
+          },
+          "solver": {
+            "count": 331,
+            "p50": 1790.0957430247217,
+            "p90": 2389.13926796522,
+            "p95": 2648.110863985494,
+            "p99": 3151.03699604515
+          },
+          "track": {
+            "count": 299,
+            "p50": 0.1660019624978304,
+            "p90": 9.629080072045326,
+            "p95": 28.071503969840705,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 299,
+            "p50": 4656.4266519853845,
+            "p90": 5425.126901012845,
+            "p95": 5672.094520996325,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 45,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 2.494528513052501,
+          "association_entries": 711
+        }
+      },
+      "production": {
+        "now": 1787131761.0,
+        "messages": 384328855,
+        "aircraft_count": 106,
+        "position_count": 103,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131761.838958,
+      "backend_cpu_percent": 301.30167379360824,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 4.886798561274944,
+      "firefox_rss_mib": 325.62109375,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 82,
+            "modeac": 7
+          },
+          "maxima": {
+            "modes": 20,
+            "modeac": 1
+          },
+          "statusPolls": 5,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:21.541Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:19.866Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 19,
+              "visibleMarkers": 19,
+              "historyPoints": 39,
+              "oldestMeasurementAgeS": 108.27,
+              "newestReceiptAgeS": 0.356
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 138
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 19 \u00b7 Mode A/C 0\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 138
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 212.40071845054626,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.14010834693908691,
+            "frames_total": 371313,
+            "type1_total": 225958,
+            "type2_total": 68851,
+            "type3_total": 76504,
+            "type1_rate_s": 1096.6333333333334,
+            "type2_rate_s": 327.8833333333333,
+            "type3_rate_s": 361.15,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.0007944107055664062,
+            "frames_total": 176400,
+            "type1_total": 116985,
+            "type2_total": 29907,
+            "type3_total": 29508,
+            "type1_rate_s": 524.15,
+            "type2_rate_s": 136.55,
+            "type3_rate_s": 135.11666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.13947749137878418,
+            "frames_total": 137827,
+            "type1_total": 92400,
+            "type2_total": 23406,
+            "type3_total": 22021,
+            "type1_rate_s": 490.95,
+            "type2_rate_s": 113.73333333333333,
+            "type3_rate_s": 99.56666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.13686871528625488,
+            "frames_total": 185664,
+            "type1_total": 133469,
+            "type2_total": 27989,
+            "type3_total": 24206,
+            "type1_rate_s": 615.6,
+            "type2_rate_s": 125.16666666666667,
+            "type3_rate_s": 104.51666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.999999037057378,
+            "offset": 307918951752.009,
+            "p50_us": 0.048395792643229164,
+            "p90_us": 0.11892038981119793,
+            "p95_us": 0.1407788594563802,
+            "p99_us": 0.19245361328125,
+            "last_update": 1787131763.9650578,
+            "updated_age_s": 0.006652355194091797,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008709020787,
+            "offset": 11027755030942.225,
+            "p50_us": 0.06673177083333333,
+            "p90_us": 0.1608886718750001,
+            "p95_us": 0.19011230468749998,
+            "p99_us": 0.27123046874999995,
+            "last_update": 1787131763.7348473,
+            "updated_age_s": 0.23960566520690918,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000506966032,
+            "offset": 105313831551.83493,
+            "p50_us": 0.048908233642578125,
+            "p90_us": 0.12044830322265627,
+            "p95_us": 0.14509620666503906,
+            "p99_us": 0.18992113749186196,
+            "last_update": 1787131763.9023392,
+            "updated_age_s": 0.0749661922454834,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1600,
+            "slope": 1.0000018308293097,
+            "offset": 10719835515850.945,
+            "p50_us": 0.083984375,
+            "p90_us": 0.19026692708333334,
+            "p95_us": 0.22868652343749998,
+            "p99_us": 0.29134440104166665,
+            "last_update": 1787131763.768103,
+            "updated_age_s": 0.22394323348999023,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014661524597,
+            "offset": -202605571148.66104,
+            "p50_us": 0.09651819864908855,
+            "p90_us": 0.21631673177083344,
+            "p95_us": 0.2609048207600911,
+            "p99_us": 0.3234691619873047,
+            "last_update": 1787131763.9462981,
+            "updated_age_s": 0.04781484603881836,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1257,
+            "slope": 0.9999996334016863,
+            "offset": -10922437156274.945,
+            "p50_us": 0.08919525146484375,
+            "p90_us": 0.20384318033854176,
+            "p95_us": 0.23759155273437502,
+            "p99_us": 0.33223642985026103,
+            "last_update": 1787131763.7193158,
+            "updated_age_s": 0.2775418758392334,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 215.82651805877686,
+        "type1_rate_per_receiver": {
+          "T37": 1094.2166666666667,
+          "Dao_Cai_chien": 527.7,
+          "BachLongVi": 487.56666666666666,
+          "MongCai": 615.4666666666667
+        },
+        "strict_4rx_per_min": 340,
+        "blind_unique_per_min": 22,
+        "blind_multiple_per_min": 2,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 1092,
+          "ambiguous_association": 19,
+          "inconsistent_association": 72,
+          "blind_unique": 73,
+          "blind_multiple": 15,
+          "blind_inconsistent": 3
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 108524.27067200188,
+          "p90": 175576.38304005377,
+          "p95": 180080.4429849377
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 200,
+          "modeac_entries": 2592,
+          "clock_samples": 10861
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 800
+      },
+      "modes": {
+        "uptime_s": 216.49982595443726,
+        "type2_rate_per_receiver": {
+          "T37": 329.78333333333336,
+          "Dao_Cai_chien": 136.9,
+          "BachLongVi": 112.83333333333333,
+          "MongCai": 125.18333333333334
+        },
+        "type3_rate_per_receiver": {
+          "T37": 364.31666666666666,
+          "Dao_Cai_chien": 135.68333333333334,
+          "BachLongVi": 99.86666666666666,
+          "MongCai": 104.93333333333334
+        },
+        "df_distribution": {
+          "11": 101149,
+          "4": 17404,
+          "17": 102483,
+          "0": 30764,
+          "20": 42203,
+          "21": 6156,
+          "16": 3787,
+          "5": 3180,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 24,
+            "blind_unique": 22,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 86,
+            "blind_unique": 80,
+            "blind_multiple": 6
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 41,
+            "blind_unique": 37,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 153,
+            "blind_unique": 137,
+            "blind_multiple": 16
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 4,
+            "blind_unique": 4
+          },
+          "16": {
+            "attempts": 1,
+            "blind_unique": 1
+          }
+        },
+        "clustered_per_min": 1132,
+        "strict_4rx_per_min": 1132,
+        "mlat_fix_per_min": 85,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 4797,
+          "strict_4rx": 4797,
+          "mlat_fix": 305,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 5798,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1461,
+          "events_dropped_stale": 2935
+        },
+        "active_tracks": 20,
+        "confirmed_tracks": 5,
+        "latency_ms": {
+          "association": {
+            "count": 3275,
+            "p50": 0.04572700709104538,
+            "p90": 0.0722069526091218,
+            "p95": 0.08353195153176785,
+            "p99": 0.1097730128094554
+          },
+          "queue": {
+            "count": 3275,
+            "p50": 3309.2929229605943,
+            "p90": 3965.0433809729293,
+            "p95": 4216.486316989176,
+            "p99": 4701.521116076037
+          },
+          "solver": {
+            "count": 337,
+            "p50": 1792.1079450752586,
+            "p90": 2385.181884979829,
+            "p95": 2644.149833940901,
+            "p99": 3151.03699604515
+          },
+          "track": {
+            "count": 305,
+            "p50": 0.16626098658889532,
+            "p90": 11.903950944542885,
+            "p95": 29.328058939427137,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 305,
+            "p50": 4646.60964498762,
+            "p90": 5436.638108105399,
+            "p95": 5672.094520996325,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 61,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 2.962152812979184,
+          "association_entries": 956
+        }
+      },
+      "production": {
+        "now": 1787131766.0,
+        "messages": 384337084,
+        "aircraft_count": 106,
+        "position_count": 104,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131766.839483,
+      "backend_cpu_percent": 314.1670556942869,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 6.399328951124877,
+      "firefox_rss_mib": 326.03515625,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 91,
+            "modeac": 10
+          },
+          "maxima": {
+            "modes": 20,
+            "modeac": 1
+          },
+          "statusPolls": 6,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000043",
+              "measurementTime": "2026-08-19T09:26:15.481947Z",
+              "ageAtReceiptS": 186.422
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000044",
+              "measurementTime": "2026-08-19T09:26:15.561716Z",
+              "ageAtReceiptS": 188.447
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000045",
+              "measurementTime": "2026-08-19T09:26:15.645768Z",
+              "ageAtReceiptS": 190.357
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:25.979Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:26.002Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 20,
+              "visibleMarkers": 20,
+              "historyPoints": 45,
+              "oldestMeasurementAgeS": 113.226,
+              "newestReceiptAgeS": 0.863
+            },
+            "modeac": {
+              "registrySize": 1,
+              "visibleMarkers": 1,
+              "historyPoints": 1,
+              "oldestMeasurementAgeS": 191.197,
+              "newestReceiptAgeS": 0.84
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 138
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 20 \u00b7 Mode A/C 1\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 138
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 218.40372276306152,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.19715642929077148,
+            "frames_total": 384051,
+            "type1_total": 234462,
+            "type2_total": 70804,
+            "type3_total": 78785,
+            "type1_rate_s": 1111.2666666666667,
+            "type2_rate_s": 330.0,
+            "type3_rate_s": 366.01666666666665,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.2337818145751953,
+            "frames_total": 182134,
+            "type1_total": 121092,
+            "type2_total": 30687,
+            "type3_total": 30355,
+            "type1_rate_s": 537.9666666666667,
+            "type2_rate_s": 136.31666666666666,
+            "type3_rate_s": 136.41666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.16959118843078613,
+            "frames_total": 141762,
+            "type1_total": 94986,
+            "type2_total": 24095,
+            "type3_total": 22681,
+            "type1_rate_s": 484.6666666666667,
+            "type2_rate_s": 113.06666666666666,
+            "type3_rate_s": 100.53333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.16808843612670898,
+            "frames_total": 191158,
+            "type1_total": 137663,
+            "type2_total": 28686,
+            "type3_total": 24809,
+            "type1_rate_s": 621.05,
+            "type2_rate_s": 125.18333333333334,
+            "type3_rate_s": 105.21666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990366429967,
+            "offset": 307918951808.0203,
+            "p50_us": 0.04981231689453125,
+            "p90_us": 0.11974334716796876,
+            "p95_us": 0.14198939005533853,
+            "p99_us": 0.19253199259440104,
+            "last_update": 1787131770.4413743,
+            "updated_age_s": 0.061669111251831055,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000870854957,
+            "offset": 11027755030948.57,
+            "p50_us": 0.06697591145833334,
+            "p90_us": 0.16215820312500007,
+            "p95_us": 0.1901529947916666,
+            "p99_us": 0.2722086588541666,
+            "last_update": 1787131770.4799063,
+            "updated_age_s": 0.026330947875976562,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005072630942,
+            "offset": 105313831511.70044,
+            "p50_us": 0.048163096110026046,
+            "p90_us": 0.12072067260742189,
+            "p95_us": 0.1431660970052083,
+            "p99_us": 0.19797325134277344,
+            "last_update": 1787131770.36694,
+            "updated_age_s": 0.14210295677185059,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1642,
+            "slope": 1.0000018309573955,
+            "offset": 10719835515794.348,
+            "p50_us": 0.087158203125,
+            "p90_us": 0.19466145833333334,
+            "p95_us": 0.23356119791666666,
+            "p99_us": 0.2965120442708333,
+            "last_update": 1787131770.481772,
+            "updated_age_s": 0.029916048049926758,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014665964105,
+            "offset": -202605571345.1185,
+            "p50_us": 0.09977340698242188,
+            "p90_us": 0.21977055867513023,
+            "p95_us": 0.26764920552571614,
+            "p99_us": 0.32926460266113283,
+            "last_update": 1787131770.438501,
+            "updated_age_s": 0.07534074783325195,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1292,
+            "slope": 0.999999633609334,
+            "offset": -10922437158592.656,
+            "p50_us": 0.09077835083007812,
+            "p90_us": 0.2124303181966147,
+            "p95_us": 0.24862073262532558,
+            "p99_us": 0.35124674479166657,
+            "last_update": 1787131770.4617891,
+            "updated_age_s": 0.05460071563720703,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 221.69901132583618,
+        "type1_rate_per_receiver": {
+          "T37": 1123.6333333333334,
+          "Dao_Cai_chien": 550.5666666666667,
+          "BachLongVi": 476.8,
+          "MongCai": 625.9833333333333
+        },
+        "strict_4rx_per_min": 339,
+        "blind_unique_per_min": 24,
+        "blind_multiple_per_min": 1,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 1135,
+          "ambiguous_association": 19,
+          "inconsistent_association": 74,
+          "blind_unique": 76,
+          "blind_multiple": 15,
+          "blind_inconsistent": 3
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 115315.21426094696,
+          "p90": 180080.4429849377,
+          "p95": 186037.80926798936
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 200,
+          "modeac_entries": 2858,
+          "clock_samples": 10930
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 840
+      },
+      "modes": {
+        "uptime_s": 222.39839005470276,
+        "type2_rate_per_receiver": {
+          "T37": 329.1,
+          "Dao_Cai_chien": 139.1,
+          "BachLongVi": 112.13333333333334,
+          "MongCai": 126.16666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 364.48333333333335,
+          "Dao_Cai_chien": 138.43333333333334,
+          "BachLongVi": 99.15,
+          "MongCai": 105.31666666666666
+        },
+        "df_distribution": {
+          "11": 103817,
+          "4": 17797,
+          "17": 105200,
+          "0": 31502,
+          "20": 43256,
+          "21": 6300,
+          "16": 3901,
+          "5": 3278,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 24,
+            "blind_unique": 22,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 89,
+            "blind_unique": 82,
+            "blind_multiple": 7
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 42,
+            "blind_unique": 38,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 157,
+            "blind_unique": 139,
+            "blind_multiple": 18
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 4,
+            "blind_unique": 4
+          },
+          "16": {
+            "attempts": 1,
+            "blind_unique": 1
+          }
+        },
+        "clustered_per_min": 1089,
+        "strict_4rx_per_min": 1089,
+        "mlat_fix_per_min": 83,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 4857,
+          "strict_4rx": 4857,
+          "mlat_fix": 310,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 5862,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1466,
+          "events_dropped_stale": 3011
+        },
+        "active_tracks": 20,
+        "confirmed_tracks": 5,
+        "latency_ms": {
+          "association": {
+            "count": 3359,
+            "p50": 0.045748078264296055,
+            "p90": 0.0722069526091218,
+            "p95": 0.08353404700756073,
+            "p99": 0.10915892198681831
+          },
+          "queue": {
+            "count": 3359,
+            "p50": 3311.4135359646752,
+            "p90": 3965.0433809729293,
+            "p95": 4217.934299027547,
+            "p99": 4700.24174102582
+          },
+          "solver": {
+            "count": 345,
+            "p50": 1806.2453409656882,
+            "p90": 2385.181884979829,
+            "p95": 2644.149833940901,
+            "p99": 3151.03699604515
+          },
+          "track": {
+            "count": 310,
+            "p50": 0.16626098658889532,
+            "p90": 11.351302033290267,
+            "p95": 29.328058939427137,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 310,
+            "p50": 4646.60964498762,
+            "p90": 5425.126901012845,
+            "p95": 5672.094520996325,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 32,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 1.922500857966952,
+          "association_entries": 886
+        }
+      },
+      "production": {
+        "now": 1787131772.0,
+        "messages": 384347098,
+        "aircraft_count": 107,
+        "position_count": 104,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131772.2394078,
+      "backend_cpu_percent": 306.67090554061457,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 26.29665977461792,
+      "firefox_rss_mib": 365.8828125,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 97,
+            "modeac": 12
+          },
+          "maxima": {
+            "modes": 20,
+            "modeac": 1
+          },
+          "statusPolls": 8,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000043",
+              "measurementTime": "2026-08-19T09:26:15.481947Z",
+              "ageAtReceiptS": 186.422
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000044",
+              "measurementTime": "2026-08-19T09:26:15.561716Z",
+              "ageAtReceiptS": 188.447
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000045",
+              "measurementTime": "2026-08-19T09:26:15.645768Z",
+              "ageAtReceiptS": 190.357
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000046",
+              "measurementTime": "2026-08-19T09:26:15.660360Z",
+              "ageAtReceiptS": 192.476
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000047",
+              "measurementTime": "2026-08-19T09:26:15.674000Z",
+              "ageAtReceiptS": 194.579
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:31.769Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:30.486Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 20,
+              "visibleMarkers": 20,
+              "historyPoints": 50,
+              "oldestMeasurementAgeS": 118.628,
+              "newestReceiptAgeS": 0.475
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 138
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 20 \u00b7 Mode A/C 0\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 138
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 222.94576287269592,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.0023109912872314453,
+            "frames_total": 391958,
+            "type1_total": 239458,
+            "type2_total": 72249,
+            "type3_total": 80251,
+            "type1_rate_s": 1140.95,
+            "type2_rate_s": 332.8333333333333,
+            "type3_rate_s": 368.68333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.09945225715637207,
+            "frames_total": 186186,
+            "type1_total": 123836,
+            "type2_total": 31390,
+            "type3_total": 30960,
+            "type1_rate_s": 559.8166666666667,
+            "type2_rate_s": 140.01666666666668,
+            "type3_rate_s": 139.11666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.07886815071105957,
+            "frames_total": 144327,
+            "type1_total": 96785,
+            "type2_total": 24524,
+            "type3_total": 23018,
+            "type1_rate_s": 471.98333333333335,
+            "type2_rate_s": 113.11666666666666,
+            "type3_rate_s": 99.68333333333334,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.100067138671875,
+            "frames_total": 194101,
+            "type1_total": 139739,
+            "type2_total": 29190,
+            "type3_total": 25172,
+            "type1_rate_s": 623.9166666666666,
+            "type2_rate_s": 125.85,
+            "type3_rate_s": 105.0,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.99999903638255,
+            "offset": 307918951843.2535,
+            "p50_us": 0.04872894287109375,
+            "p90_us": 0.11799418131510418,
+            "p95_us": 0.1428248087565104,
+            "p99_us": 0.1929101053873698,
+            "last_update": 1787131774.0200825,
+            "updated_age_s": 0.009701728820800781,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000000870839641,
+            "offset": 11027755030950.633,
+            "p50_us": 0.06754557291666666,
+            "p90_us": 0.1616536458333334,
+            "p95_us": 0.1906087239583333,
+            "p99_us": 0.2725260416666666,
+            "last_update": 1787131773.5192556,
+            "updated_age_s": 0.5148706436157227,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005074040685,
+            "offset": 105313831492.65204,
+            "p50_us": 0.04828898111979167,
+            "p90_us": 0.12121200561523443,
+            "p95_us": 0.14545402526855467,
+            "p99_us": 0.19390922546386719,
+            "last_update": 1787131773.8192813,
+            "updated_age_s": 0.22229433059692383,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1660,
+            "slope": 1.0000018310198264,
+            "offset": 10719835515766.76,
+            "p50_us": 0.08732096354166666,
+            "p90_us": 0.197265625,
+            "p95_us": 0.23763834635416667,
+            "p99_us": 0.2986360677083334,
+            "last_update": 1787131773.844719,
+            "updated_age_s": 0.19966745376586914,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014669523856,
+            "offset": -202605571502.66214,
+            "p50_us": 0.09902699788411458,
+            "p90_us": 0.2264439900716146,
+            "p95_us": 0.26390380859375,
+            "p99_us": 0.3308310953776041,
+            "last_update": 1787131773.9745297,
+            "updated_age_s": 0.09551835060119629,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1303,
+            "slope": 0.9999996336749668,
+            "offset": -10922437159325.236,
+            "p50_us": 0.09162394205729167,
+            "p90_us": 0.21871999104817708,
+            "p95_us": 0.2542859395345051,
+            "p99_us": 0.3494765726725261,
+            "last_update": 1787131773.5755143,
+            "updated_age_s": 0.49732208251953125,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 225.20656371116638,
+        "type1_rate_per_receiver": {
+          "T37": 1139.1,
+          "Dao_Cai_chien": 558.8666666666667,
+          "BachLongVi": 451.46666666666664,
+          "MongCai": 619.85
+        },
+        "strict_4rx_per_min": 335,
+        "blind_unique_per_min": 23,
+        "blind_multiple_per_min": 1,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 1153,
+          "ambiguous_association": 19,
+          "inconsistent_association": 74,
+          "blind_unique": 77,
+          "blind_multiple": 15,
+          "blind_inconsistent": 3
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 115315.21426094696,
+          "p90": 180080.4429849377,
+          "p95": 188111.67305300478
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 200,
+          "modeac_entries": 2346,
+          "clock_samples": 10963
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 857
+      },
+      "modes": {
+        "uptime_s": 225.8880410194397,
+        "type2_rate_per_receiver": {
+          "T37": 334.48333333333335,
+          "Dao_Cai_chien": 141.15,
+          "BachLongVi": 112.33333333333333,
+          "MongCai": 127.63333333333334
+        },
+        "type3_rate_per_receiver": {
+          "T37": 372.51666666666665,
+          "Dao_Cai_chien": 141.41666666666666,
+          "BachLongVi": 100.11666666666666,
+          "MongCai": 106.51666666666667
+        },
+        "df_distribution": {
+          "11": 105490,
+          "4": 18040,
+          "17": 106889,
+          "0": 32051,
+          "20": 43932,
+          "21": 6393,
+          "16": 3963,
+          "5": 3323,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 24,
+            "blind_unique": 22,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 89,
+            "blind_unique": 82,
+            "blind_multiple": 7
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 42,
+            "blind_unique": 38,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 162,
+            "blind_unique": 144,
+            "blind_multiple": 18
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 4,
+            "blind_unique": 4
+          },
+          "16": {
+            "attempts": 1,
+            "blind_unique": 1
+          }
+        },
+        "clustered_per_min": 1057,
+        "strict_4rx_per_min": 1057,
+        "mlat_fix_per_min": 84,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 4896,
+          "strict_4rx": 4896,
+          "mlat_fix": 315,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 5957,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1466,
+          "events_dropped_stale": 3039
+        },
+        "active_tracks": 19,
+        "confirmed_tracks": 6,
+        "latency_ms": {
+          "association": {
+            "count": 3392,
+            "p50": 0.04572700709104538,
+            "p90": 0.07226597517728806,
+            "p95": 0.08353905286639929,
+            "p99": 0.1097730128094554
+          },
+          "queue": {
+            "count": 3392,
+            "p50": 3310.7928809477016,
+            "p90": 3958.748916978948,
+            "p95": 4211.521306075156,
+            "p99": 4700.24174102582
+          },
+          "solver": {
+            "count": 350,
+            "p50": 1812.832696014084,
+            "p90": 2386.1880300100893,
+            "p95": 2644.149833940901,
+            "p99": 3151.03699604515
+          },
+          "track": {
+            "count": 315,
+            "p50": 0.1678549451753497,
+            "p90": 11.351302033290267,
+            "p95": 28.071503969840705,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 315,
+            "p50": 4673.625029972754,
+            "p90": 5436.638108105399,
+            "p95": 5670.630943030119,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 38,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 3.321664594928734,
+          "association_entries": 945
+        }
+      },
+      "production": {
+        "now": 1787131775.0,
+        "messages": 384352099,
+        "aircraft_count": 107,
+        "position_count": 103,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131777.2398558,
+      "backend_cpu_percent": 299.17321711310586,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 54.99507667520328,
+      "firefox_rss_mib": 390.515625,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 106,
+            "modeac": 14
+          },
+          "maxima": {
+            "modes": 20,
+            "modeac": 1
+          },
+          "statusPolls": 9,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000043",
+              "measurementTime": "2026-08-19T09:26:15.481947Z",
+              "ageAtReceiptS": 186.422
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000044",
+              "measurementTime": "2026-08-19T09:26:15.561716Z",
+              "ageAtReceiptS": 188.447
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000045",
+              "measurementTime": "2026-08-19T09:26:15.645768Z",
+              "ageAtReceiptS": 190.357
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000046",
+              "measurementTime": "2026-08-19T09:26:15.660360Z",
+              "ageAtReceiptS": 192.476
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000047",
+              "measurementTime": "2026-08-19T09:26:15.674000Z",
+              "ageAtReceiptS": 194.579
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:37.183Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:37.048Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 20,
+              "visibleMarkers": 20,
+              "historyPoints": 57,
+              "oldestMeasurementAgeS": 93.661,
+              "newestReceiptAgeS": 0.06
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 138
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 20 \u00b7 Mode A/C 0\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 138
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 227.58732557296753,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.028682470321655273,
+            "frames_total": 399989,
+            "type1_total": 244466,
+            "type2_total": 73585,
+            "type3_total": 81938,
+            "type1_rate_s": 1129.9333333333334,
+            "type2_rate_s": 329.3333333333333,
+            "type3_rate_s": 366.98333333333335,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.028078794479370117,
+            "frames_total": 189551,
+            "type1_total": 125891,
+            "type2_total": 31992,
+            "type3_total": 31668,
+            "type1_rate_s": 547.35,
+            "type2_rate_s": 139.56666666666666,
+            "type3_rate_s": 140.46666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.06995129585266113,
+            "frames_total": 146657,
+            "type1_total": 98215,
+            "type2_total": 24964,
+            "type3_total": 23478,
+            "type1_rate_s": 443.1666666666667,
+            "type2_rate_s": 111.0,
+            "type3_rate_s": 99.08333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.027496337890625,
+            "frames_total": 197398,
+            "type1_total": 142088,
+            "type2_total": 29676,
+            "type3_total": 25634,
+            "type1_rate_s": 610.4333333333333,
+            "type2_rate_s": 124.73333333333333,
+            "type3_rate_s": 104.66666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990361386848,
+            "offset": 307918951876.25574,
+            "p50_us": 0.049753824869791664,
+            "p90_us": 0.11705881754557301,
+            "p95_us": 0.1426938374837239,
+            "p99_us": 0.18695388793945308,
+            "last_update": 1787131777.499414,
+            "updated_age_s": 0.02737903594970703,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008708322679,
+            "offset": 11027755030951.637,
+            "p50_us": 0.06770833333333333,
+            "p90_us": 0.16066080729166668,
+            "p95_us": 0.190283203125,
+            "p99_us": 0.27186848958333326,
+            "last_update": 1787131777.4553947,
+            "updated_age_s": 0.0740957260131836,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005075565623,
+            "offset": 105313831472.04718,
+            "p50_us": 0.048892974853515625,
+            "p90_us": 0.12018381754557292,
+            "p95_us": 0.14699808756510416,
+            "p99_us": 0.1917443593343099,
+            "last_update": 1787131777.4026108,
+            "updated_age_s": 0.12952637672424316,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1684,
+            "slope": 1.0000018311105345,
+            "offset": 10719835515726.674,
+            "p50_us": 0.089599609375,
+            "p90_us": 0.20237630208333335,
+            "p95_us": 0.24360351562499996,
+            "p99_us": 0.30398437500000003,
+            "last_update": 1787131777.48242,
+            "updated_age_s": 0.05232644081115723,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014672443092,
+            "offset": -202605571631.86823,
+            "p50_us": 0.1006927490234375,
+            "p90_us": 0.23129196166992189,
+            "p95_us": 0.2647932688395182,
+            "p99_us": 0.3437362162272135,
+            "last_update": 1787131777.3737447,
+            "updated_age_s": 0.16322612762451172,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1321,
+            "slope": 0.9999996337805631,
+            "offset": -10922437160503.879,
+            "p50_us": 0.09368896484375,
+            "p90_us": 0.2209192911783854,
+            "p95_us": 0.26193491617838544,
+            "p99_us": 0.3511637369791665,
+            "last_update": 1787131777.2969532,
+            "updated_age_s": 0.2426748275756836,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 227.77539443969727,
+        "type1_rate_per_receiver": {
+          "T37": 1133.2666666666667,
+          "Dao_Cai_chien": 547.0833333333334,
+          "BachLongVi": 443.85,
+          "MongCai": 612.0
+        },
+        "strict_4rx_per_min": 321,
+        "blind_unique_per_min": 23,
+        "blind_multiple_per_min": 1,
+        "blind_inconsistent_per_min": 0,
+        "totals": {
+          "strict_4rx": 1162,
+          "ambiguous_association": 19,
+          "inconsistent_association": 75,
+          "blind_unique": 78,
+          "blind_multiple": 15,
+          "blind_inconsistent": 3
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 115315.21426094696,
+          "p90": 181901.34034398943,
+          "p95": 190259.8320650868
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 200,
+          "modeac_entries": 1642,
+          "clock_samples": 10990
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 865
+      },
+      "modes": {
+        "uptime_s": 227.78046298027039,
+        "type2_rate_per_receiver": {
+          "T37": 330.3833333333333,
+          "Dao_Cai_chien": 139.15,
+          "BachLongVi": 111.26666666666667,
+          "MongCai": 124.93333333333334
+        },
+        "type3_rate_per_receiver": {
+          "T37": 367.95,
+          "Dao_Cai_chien": 140.26666666666668,
+          "BachLongVi": 99.28333333333333,
+          "MongCai": 104.8
+        },
+        "df_distribution": {
+          "11": 106383,
+          "4": 18216,
+          "17": 107953,
+          "0": 32352,
+          "20": 44387,
+          "21": 6452,
+          "16": 4011,
+          "5": 3359,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 24,
+            "blind_unique": 22,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 92,
+            "blind_unique": 85,
+            "blind_multiple": 7
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 42,
+            "blind_unique": 38,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 162,
+            "blind_unique": 144,
+            "blind_multiple": 18
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 4,
+            "blind_unique": 4
+          },
+          "16": {
+            "attempts": 1,
+            "blind_unique": 1
+          }
+        },
+        "clustered_per_min": 1016,
+        "strict_4rx_per_min": 1016,
+        "mlat_fix_per_min": 84,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 4924,
+          "strict_4rx": 4924,
+          "mlat_fix": 318,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 5971,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1466,
+          "events_dropped_stale": 3062
+        },
+        "active_tracks": 20,
+        "confirmed_tracks": 6,
+        "latency_ms": {
+          "association": {
+            "count": 3418,
+            "p50": 0.04572700709104538,
+            "p90": 0.071894028224051,
+            "p95": 0.08353404700756073,
+            "p99": 0.1097730128094554
+          },
+          "queue": {
+            "count": 3418,
+            "p50": 3309.552534017712,
+            "p90": 3956.258973921649,
+            "p95": 4211.272042011842,
+            "p99": 4700.24174102582
+          },
+          "solver": {
+            "count": 353,
+            "p50": 1821.4488580124453,
+            "p90": 2386.1880300100893,
+            "p95": 2642.6765189971775,
+            "p99": 3074.165396974422
+          },
+          "track": {
+            "count": 318,
+            "p50": 0.1678549451753497,
+            "p90": 9.629080072045326,
+            "p95": 28.071503969840705,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 318,
+            "p50": 4677.644666982815,
+            "p90": 5425.126901012845,
+            "p95": 5670.630943030119,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 40,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 3.0239370650378987,
+          "association_entries": 701
+        }
+      },
+      "production": {
+        "now": 1787131777.0,
+        "messages": 384355699,
+        "aircraft_count": 107,
+        "position_count": 103,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131782.2438662,
+      "backend_cpu_percent": 319.14404895987667,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 3.7969548717831287,
+      "firefox_rss_mib": 383.65625,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 114,
+            "modeac": 16
+          },
+          "maxima": {
+            "modes": 21,
+            "modeac": 1
+          },
+          "statusPolls": 10,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000043",
+              "measurementTime": "2026-08-19T09:26:15.481947Z",
+              "ageAtReceiptS": 186.422
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000044",
+              "measurementTime": "2026-08-19T09:26:15.561716Z",
+              "ageAtReceiptS": 188.447
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000045",
+              "measurementTime": "2026-08-19T09:26:15.645768Z",
+              "ageAtReceiptS": 190.357
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000046",
+              "measurementTime": "2026-08-19T09:26:15.660360Z",
+              "ageAtReceiptS": 192.476
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000047",
+              "measurementTime": "2026-08-19T09:26:15.674000Z",
+              "ageAtReceiptS": 194.579
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:41.249Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:40.996Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 21,
+              "visibleMarkers": 21,
+              "historyPoints": 63,
+              "oldestMeasurementAgeS": 85.916,
+              "newestReceiptAgeS": 1.009
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 138
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 21 \u00b7 Mode A/C 0\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 138
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 234.73415184020996,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.3136615753173828,
+            "frames_total": 414944,
+            "type1_total": 253544,
+            "type2_total": 76373,
+            "type3_total": 85027,
+            "type1_rate_s": 1141.8166666666666,
+            "type2_rate_s": 324.6,
+            "type3_rate_s": 363.6166666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.3154606819152832,
+            "frames_total": 195861,
+            "type1_total": 129809,
+            "type2_total": 33153,
+            "type3_total": 32899,
+            "type1_rate_s": 550.9833333333333,
+            "type2_rate_s": 137.71666666666667,
+            "type3_rate_s": 140.4,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.03809833526611328,
+            "frames_total": 152079,
+            "type1_total": 101894,
+            "type2_total": 25826,
+            "type3_total": 24359,
+            "type1_rate_s": 441.0,
+            "type2_rate_s": 108.71666666666667,
+            "type3_rate_s": 99.46666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.03976917266845703,
+            "frames_total": 203490,
+            "type1_total": 146461,
+            "type2_total": 30618,
+            "type3_total": 26411,
+            "type1_rate_s": 612.9666666666667,
+            "type2_rate_s": 123.15,
+            "type3_rate_s": 102.8,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990356535319,
+            "offset": 307918951941.9611,
+            "p50_us": 0.0496368408203125,
+            "p90_us": 0.116314188639323,
+            "p95_us": 0.14002787272135417,
+            "p99_us": 0.18728790283203123,
+            "last_update": 1787131787.0253837,
+            "updated_age_s": 0.18083739280700684,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008707926897,
+            "offset": 11027755030956.96,
+            "p50_us": 0.06746419270833334,
+            "p90_us": 0.162109375,
+            "p95_us": 0.19092610677083333,
+            "p99_us": 0.2639274088541666,
+            "last_update": 1787131786.8695595,
+            "updated_age_s": 0.33933472633361816,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005079057301,
+            "offset": 105313831424.81174,
+            "p50_us": 0.048158009847005204,
+            "p90_us": 0.11885833740234375,
+            "p95_us": 0.14671592712402343,
+            "p99_us": 0.19383405049641925,
+            "last_update": 1787131786.7979276,
+            "updated_age_s": 0.41374802589416504,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1749,
+            "slope": 1.0000018313185397,
+            "offset": 10719835515634.744,
+            "p50_us": 0.09228515625,
+            "p90_us": 0.21083984375,
+            "p95_us": 0.25257161458333327,
+            "p99_us": 0.3173958333333333,
+            "last_update": 1787131787.1250446,
+            "updated_age_s": 0.08936452865600586,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014679404554,
+            "offset": -202605571940.0342,
+            "p50_us": 0.1022796630859375,
+            "p90_us": 0.23261362711588549,
+            "p95_us": 0.2684103647867839,
+            "p99_us": 0.3330908203125,
+            "last_update": 1787131787.0932424,
+            "updated_age_s": 0.12349343299865723,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1355,
+            "slope": 0.9999996339757341,
+            "offset": -10922437162682.34,
+            "p50_us": 0.09701792399088542,
+            "p90_us": 0.23256632486979167,
+            "p95_us": 0.2735715230305989,
+            "p99_us": 0.3639908854166669,
+            "last_update": 1787131786.7524383,
+            "updated_age_s": 0.48540377616882324,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 239.11164665222168,
+        "type1_rate_per_receiver": {
+          "T37": 1138.6,
+          "Dao_Cai_chien": 550.6333333333333,
+          "BachLongVi": 439.01666666666665,
+          "MongCai": 607.5166666666667
+        },
+        "strict_4rx_per_min": 329,
+        "blind_unique_per_min": 23,
+        "blind_multiple_per_min": 1,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 1189,
+          "ambiguous_association": 19,
+          "inconsistent_association": 80,
+          "blind_unique": 83,
+          "blind_multiple": 15,
+          "blind_inconsistent": 4
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 122011.85845490545,
+          "p90": 192028.22266006842,
+          "p95": 202471.1360889487
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 199,
+          "modeac_entries": 1632,
+          "clock_samples": 11105
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 887
+      },
+      "modes": {
+        "uptime_s": 239.34034061431885,
+        "type2_rate_per_receiver": {
+          "T37": 330.5833333333333,
+          "Dao_Cai_chien": 139.88333333333333,
+          "BachLongVi": 109.25,
+          "MongCai": 124.81666666666666
+        },
+        "type3_rate_per_receiver": {
+          "T37": 370.3,
+          "Dao_Cai_chien": 142.58333333333334,
+          "BachLongVi": 100.48333333333333,
+          "MongCai": 103.98333333333333
+        },
+        "df_distribution": {
+          "11": 111392,
+          "4": 19080,
+          "17": 113422,
+          "0": 34110,
+          "20": 46587,
+          "21": 6802,
+          "16": 4249,
+          "5": 3481,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 25,
+            "blind_unique": 23,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 93,
+            "blind_unique": 86,
+            "blind_multiple": 7
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 46,
+            "blind_unique": 42,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 171,
+            "blind_unique": 153,
+            "blind_multiple": 18
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 5,
+            "blind_unique": 5
+          },
+          "16": {
+            "attempts": 2,
+            "blind_unique": 2
+          }
+        },
+        "clustered_per_min": 964,
+        "strict_4rx_per_min": 964,
+        "mlat_fix_per_min": 81,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 5064,
+          "strict_4rx": 5064,
+          "mlat_fix": 335,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 6185,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1471,
+          "events_dropped_stale": 3191
+        },
+        "active_tracks": 21,
+        "confirmed_tracks": 8,
+        "latency_ms": {
+          "association": {
+            "count": 3564,
+            "p50": 0.04563305992633104,
+            "p90": 0.07210101466625929,
+            "p95": 0.08353404700756073,
+            "p99": 0.10915892198681831
+          },
+          "queue": {
+            "count": 3564,
+            "p50": 3312.5637030461803,
+            "p90": 3993.5934470267966,
+            "p95": 4243.2498229900375,
+            "p99": 4692.28427298367
+          },
+          "solver": {
+            "count": 370,
+            "p50": 1834.3664299463853,
+            "p90": 2389.13926796522,
+            "p95": 2648.110863985494,
+            "p99": 3074.165396974422
+          },
+          "track": {
+            "count": 335,
+            "p50": 0.16721198335289955,
+            "p90": 11.351302033290267,
+            "p95": 28.071503969840705,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 335,
+            "p50": 4703.98283994291,
+            "p90": 5454.279002035037,
+            "p95": 5687.623046920635,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 29,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 3.040420770063065,
+          "association_entries": 526
+        }
+      },
+      "production": {
+        "now": 1787131789.0,
+        "messages": 384376313,
+        "aircraft_count": 105,
+        "position_count": 102,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131789.181109,
+      "backend_cpu_percent": 290.02873313326893,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 4.180334622696222,
+      "firefox_rss_mib": 383.61328125,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 125,
+            "modeac": 19
+          },
+          "maxima": {
+            "modes": 21,
+            "modeac": 1
+          },
+          "statusPolls": 12,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000043",
+              "measurementTime": "2026-08-19T09:26:15.481947Z",
+              "ageAtReceiptS": 186.422
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000044",
+              "measurementTime": "2026-08-19T09:26:15.561716Z",
+              "ageAtReceiptS": 188.447
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000045",
+              "measurementTime": "2026-08-19T09:26:15.645768Z",
+              "ageAtReceiptS": 190.357
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000046",
+              "measurementTime": "2026-08-19T09:26:15.660360Z",
+              "ageAtReceiptS": 192.476
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000047",
+              "measurementTime": "2026-08-19T09:26:15.674000Z",
+              "ageAtReceiptS": 194.579
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:48.774Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:48.355Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 21,
+              "visibleMarkers": 21,
+              "historyPoints": 73,
+              "oldestMeasurementAgeS": 92.842,
+              "newestReceiptAgeS": 0.41
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 139
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 21 \u00b7 Mode A/C 0\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 139
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 239.406991481781,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.006016969680786133,
+            "frames_total": 421493,
+            "type1_total": 257678,
+            "type2_total": 77460,
+            "type3_total": 86355,
+            "type1_rate_s": 1136.8833333333334,
+            "type2_rate_s": 328.7,
+            "type3_rate_s": 367.73333333333335,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.04119277000427246,
+            "frames_total": 198853,
+            "type1_total": 131858,
+            "type2_total": 33592,
+            "type3_total": 33403,
+            "type1_rate_s": 548.4166666666666,
+            "type2_rate_s": 139.03333333333333,
+            "type3_rate_s": 141.36666666666667,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.03899812698364258,
+            "frames_total": 153784,
+            "type1_total": 103051,
+            "type2_total": 26089,
+            "type3_total": 24644,
+            "type1_rate_s": 438.8,
+            "type2_rate_s": 108.68333333333334,
+            "type3_rate_s": 100.1,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.07329869270324707,
+            "frames_total": 206322,
+            "type1_total": 148587,
+            "type2_total": 30988,
+            "type3_total": 26747,
+            "type1_rate_s": 610.6833333333333,
+            "type2_rate_s": 124.81666666666666,
+            "type3_rate_s": 103.98333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990355710322,
+            "offset": 307918951953.14124,
+            "p50_us": 0.0491943359375,
+            "p90_us": 0.11608378092447921,
+            "p95_us": 0.13973312377929686,
+            "p99_us": 0.19115010579427083,
+            "last_update": 1787131789.2081196,
+            "updated_age_s": 0.12132620811462402,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008707754775,
+            "offset": 11027755030959.281,
+            "p50_us": 0.067138671875,
+            "p90_us": 0.1597819010416668,
+            "p95_us": 0.19026692708333334,
+            "p99_us": 0.26392903645833327,
+            "last_update": 1787131789.2293344,
+            "updated_age_s": 0.10278201103210449,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005080189134,
+            "offset": 105313831409.50229,
+            "p50_us": 0.04811604817708333,
+            "p90_us": 0.1190142313639323,
+            "p95_us": 0.145742925008138,
+            "p99_us": 0.19321146647135415,
+            "last_update": 1787131789.3249218,
+            "updated_age_s": 0.009807586669921875,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1760,
+            "slope": 1.000001831366065,
+            "offset": 10719835515613.738,
+            "p50_us": 0.09285481770833334,
+            "p90_us": 0.21404622395833336,
+            "p95_us": 0.259765625,
+            "p99_us": 0.329072265625,
+            "last_update": 1787131789.2249455,
+            "updated_age_s": 0.1126713752746582,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.000001468040133,
+            "offset": -202605571984.16312,
+            "p50_us": 0.10230255126953125,
+            "p90_us": 0.23501917521158855,
+            "p95_us": 0.26848131815592446,
+            "p99_us": 0.34038579305013017,
+            "last_update": 1787131789.2972221,
+            "updated_age_s": 0.0427556037902832,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1358,
+            "slope": 0.9999996339919297,
+            "offset": -10922437162863.111,
+            "p50_us": 0.09735361735026041,
+            "p90_us": 0.2332107543945312,
+            "p95_us": 0.27417030334472636,
+            "p99_us": 0.3646281178792322,
+            "last_update": 1787131789.0438597,
+            "updated_age_s": 0.3167729377746582,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 239.66118597984314,
+        "type1_rate_per_receiver": {
+          "T37": 1138.5,
+          "Dao_Cai_chien": 548.3,
+          "BachLongVi": 437.1333333333333,
+          "MongCai": 604.25
+        },
+        "strict_4rx_per_min": 326,
+        "blind_unique_per_min": 23,
+        "blind_multiple_per_min": 1,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 1189,
+          "ambiguous_association": 19,
+          "inconsistent_association": 80,
+          "blind_unique": 83,
+          "blind_multiple": 15,
+          "blind_inconsistent": 4
+        },
+        "active_tracks": 0,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 122011.85845490545,
+          "p90": 192028.22266006842,
+          "p95": 202471.1360889487
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 199,
+          "modeac_entries": 1632,
+          "clock_samples": 11105
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 887
+      },
+      "modes": {
+        "uptime_s": 239.7343235015869,
+        "type2_rate_per_receiver": {
+          "T37": 329.0,
+          "Dao_Cai_chien": 139.1,
+          "BachLongVi": 108.7,
+          "MongCai": 124.38333333333334
+        },
+        "type3_rate_per_receiver": {
+          "T37": 368.21666666666664,
+          "Dao_Cai_chien": 141.4,
+          "BachLongVi": 100.23333333333333,
+          "MongCai": 103.45
+        },
+        "df_distribution": {
+          "11": 111554,
+          "4": 19107,
+          "17": 113612,
+          "0": 34150,
+          "20": 46639,
+          "21": 6818,
+          "16": 4263,
+          "5": 3484,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 25,
+            "blind_unique": 23,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 93,
+            "blind_unique": 86,
+            "blind_multiple": 7
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 46,
+            "blind_unique": 42,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 171,
+            "blind_unique": 153,
+            "blind_multiple": 18
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 5,
+            "blind_unique": 5
+          },
+          "16": {
+            "attempts": 2,
+            "blind_unique": 2
+          }
+        },
+        "clustered_per_min": 952,
+        "strict_4rx_per_min": 952,
+        "mlat_fix_per_min": 81,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 5068,
+          "strict_4rx": 5068,
+          "mlat_fix": 335,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 6196,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1471,
+          "events_dropped_stale": 3191
+        },
+        "active_tracks": 21,
+        "confirmed_tracks": 8,
+        "latency_ms": {
+          "association": {
+            "count": 3564,
+            "p50": 0.04563305992633104,
+            "p90": 0.07210101466625929,
+            "p95": 0.08353404700756073,
+            "p99": 0.10915892198681831
+          },
+          "queue": {
+            "count": 3564,
+            "p50": 3312.5637030461803,
+            "p90": 3993.5934470267966,
+            "p95": 4243.2498229900375,
+            "p99": 4692.28427298367
+          },
+          "solver": {
+            "count": 370,
+            "p50": 1834.3664299463853,
+            "p90": 2389.13926796522,
+            "p95": 2648.110863985494,
+            "p99": 3074.165396974422
+          },
+          "track": {
+            "count": 335,
+            "p50": 0.16721198335289955,
+            "p90": 11.351302033290267,
+            "p95": 28.071503969840705,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 335,
+            "p50": 4703.98283994291,
+            "p90": 5454.279002035037,
+            "p95": 5687.623046920635,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 33,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 3.040420770063065,
+          "association_entries": 526
+        }
+      },
+      "production": {
+        "now": 1787131789.0,
+        "messages": 384376313,
+        "aircraft_count": 105,
+        "position_count": 102,
+        "mlat_position_count": 0
+      }
+    },
+    {
+      "sample_utc": 1787131794.1838565,
+      "backend_cpu_percent": 310.62937097810976,
+      "backend_rss_mib": 215.109375,
+      "backend_process_count": 4,
+      "firefox_cpu_percent": 3.797913802177662,
+      "firefox_rss_mib": 378.84765625,
+      "firefox_process_count": 1,
+      "page": {
+        "overlay": {
+          "phase": "10B_WEBSOCKET",
+          "initialized": true,
+          "restErrors": 0,
+          "invalidTracks": 0,
+          "outOfOrderDrops": 0,
+          "received": {
+            "modes": 133,
+            "modeac": 21
+          },
+          "maxima": {
+            "modes": 21,
+            "modeac": 1
+          },
+          "statusPolls": 13,
+          "clockDegradationEvents": 0,
+          "delayedMeasurementExamples": [
+            {
+              "kind": "modes",
+              "trackId": "MS-7804D8",
+              "measurementTime": "2026-08-19T09:28:03.582945Z",
+              "ageAtReceiptS": 61.354
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-78165C",
+              "measurementTime": "2026-08-19T09:28:34.448725Z",
+              "ageAtReceiptS": 30.488
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7810B5",
+              "measurementTime": "2026-08-19T09:27:03.418061Z",
+              "ageAtReceiptS": 121.518
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780725",
+              "measurementTime": "2026-08-19T09:27:33.616127Z",
+              "ageAtReceiptS": 91.32
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-7823A4",
+              "measurementTime": "2026-08-19T09:28:06.666965Z",
+              "ageAtReceiptS": 58.27
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-780E13",
+              "measurementTime": "2026-08-19T09:27:20.501186Z",
+              "ageAtReceiptS": 104.435
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781CD1",
+              "measurementTime": "2026-08-19T09:28:16.342207Z",
+              "ageAtReceiptS": 48.594
+            },
+            {
+              "kind": "modes",
+              "trackId": "MS-781FE6",
+              "measurementTime": "2026-08-19T09:28:19.789864Z",
+              "ageAtReceiptS": 45.147
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000036",
+              "measurementTime": "2026-08-19T09:26:13.470867Z",
+              "ageAtReceiptS": 173.042
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000037",
+              "measurementTime": "2026-08-19T09:26:13.495883Z",
+              "ageAtReceiptS": 175.595
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000038",
+              "measurementTime": "2026-08-19T09:26:14.424391Z",
+              "ageAtReceiptS": 176.897
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000039",
+              "measurementTime": "2026-08-19T09:26:14.783960Z",
+              "ageAtReceiptS": 179.472
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000040",
+              "measurementTime": "2026-08-19T09:26:15.339582Z",
+              "ageAtReceiptS": 181.337
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000041",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 182.159
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000042",
+              "measurementTime": "2026-08-19T09:26:15.427063Z",
+              "ageAtReceiptS": 184.438
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000043",
+              "measurementTime": "2026-08-19T09:26:15.481947Z",
+              "ageAtReceiptS": 186.422
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000044",
+              "measurementTime": "2026-08-19T09:26:15.561716Z",
+              "ageAtReceiptS": 188.447
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000045",
+              "measurementTime": "2026-08-19T09:26:15.645768Z",
+              "ageAtReceiptS": 190.357
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000046",
+              "measurementTime": "2026-08-19T09:26:15.660360Z",
+              "ageAtReceiptS": 192.476
+            },
+            {
+              "kind": "modeac",
+              "trackId": "MAC-000047",
+              "measurementTime": "2026-08-19T09:26:15.674000Z",
+              "ageAtReceiptS": 194.579
+            }
+          ],
+          "streams": {
+            "modes": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:53.028Z",
+              "reconnectCount": 0
+            },
+            "modeac": {
+              "status": "LIVE",
+              "connected": true,
+              "lastMessageTime": "2026-08-19T09:29:54.006Z",
+              "reconnectCount": 0
+            }
+          },
+          "lastError": null,
+          "tracks": {
+            "modes": {
+              "registrySize": 21,
+              "visibleMarkers": 21,
+              "historyPoints": 78,
+              "oldestMeasurementAgeS": 97.845,
+              "newestReceiptAgeS": 1.159
+            },
+            "modeac": {
+              "registrySize": 0,
+              "visibleMarkers": 0,
+              "historyPoints": 0,
+              "oldestMeasurementAgeS": null,
+              "newestReceiptAgeS": null
+            }
+          },
+          "config": {
+            "apiBase": "http://100.100.24.4:8090",
+            "trackPollMs": 1500,
+            "statusPollMs": 4000,
+            "historyMs": 600000,
+            "staleRemoveMs": 120000,
+            "startTimeoutMs": 30000,
+            "reconnectInitialMs": 1000,
+            "reconnectMaxMs": 30000
+          },
+          "productionPlaneCount": 139
+        },
+        "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 21 \u00b7 Mode A/C 1\nZoom to PoC",
+        "layerTitles": [
+          "Custom",
+          "Europe",
+          "UK AWACS Orbits",
+          "UK A2A Refueling",
+          "UK Radar Corridors",
+          "DE AWACS Orbits",
+          "NL AWACS Orbits",
+          "PL AWACS Orbits",
+          "DWD RADOLAN",
+          "US",
+          "US ARTCC Boundaries",
+          "US A2A Refueling",
+          "NOAA Radar",
+          "NOAA Infrared Sat",
+          "NEXRAD",
+          "Special Use Airspace",
+          "TFRs",
+          "IFR Enroute Chart High",
+          "IFR Enroute Chart Low",
+          "VFR Terminal Chart",
+          "VFR Sectional Chart",
+          "Worldwide",
+          "RainViewer Radar",
+          "openAIP TMS",
+          "CARTO.com light_nolabels",
+          "CARTO.com light_all",
+          "CARTO.com dark_nolabels",
+          "CARTO.com dark_all",
+          "GIBS Clouds 2026-08-18",
+          "ESRI.com Streets",
+          "ESRI.com Gray",
+          "ESRI.com Sat.",
+          "OpenFreeMap Fiord",
+          "OpenFreeMap Dark",
+          "OpenFreeMap Positron",
+          "OpenFreeMap Liberty",
+          "OpenFreeMap Bright",
+          "OpenStreetMap DE",
+          "CARTO.com English",
+          "OpenStreetMap",
+          "Range rings",
+          "Site position",
+          "actual range outline",
+          "Aircraft trails",
+          "Aircraft positions",
+          "PoC Mode-S MLAT",
+          "PoC Mode A/C MLAT"
+        ],
+        "productionPlaneCount": 139
+      },
+      "health": {
+        "status": "ok",
+        "uptime_s": 245.6146047115326,
+        "receivers_connected": 4,
+        "strict_4rx_enabled": true,
+        "modes_strict_4rx_enabled": true
+      },
+      "receivers": {
+        "receivers": [
+          {
+            "station": "T37",
+            "port": 29996,
+            "lat": 21.485594,
+            "lon": 107.773191,
+            "alt_m": 60.0,
+            "connected": true,
+            "remote_address": "100.102.185.43",
+            "connected_since": "2026-08-19T09:25:52.603897Z",
+            "last_frame_age_s": 0.13282203674316406,
+            "frames_total": 432349,
+            "type1_total": 264092,
+            "type2_total": 79612,
+            "type3_total": 88645,
+            "type1_rate_s": 1144.6666666666667,
+            "type2_rate_s": 332.28333333333336,
+            "type3_rate_s": 371.78333333333336,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "Dao_Cai_chien",
+            "port": 29998,
+            "lat": 21.32094,
+            "lon": 107.766116,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.74.130.53",
+            "connected_since": "2026-08-19T09:25:52.892649Z",
+            "last_frame_age_s": 0.09978079795837402,
+            "frames_total": 203860,
+            "type1_total": 135141,
+            "type2_total": 34472,
+            "type3_total": 34247,
+            "type1_rate_s": 538.2166666666667,
+            "type2_rate_s": 138.96666666666667,
+            "type3_rate_s": 141.73333333333332,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "BachLongVi",
+            "port": 29999,
+            "lat": 20.132285,
+            "lon": 107.724413,
+            "alt_m": 28.0,
+            "connected": true,
+            "remote_address": "100.120.90.84",
+            "connected_since": "2026-08-19T09:25:52.626149Z",
+            "last_frame_age_s": 0.0990750789642334,
+            "frames_total": 156941,
+            "type1_total": 105019,
+            "type2_total": 26683,
+            "type3_total": 25239,
+            "type1_rate_s": 427.71666666666664,
+            "type2_rate_s": 109.31666666666666,
+            "type3_rate_s": 101.98333333333333,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          },
+          {
+            "station": "MongCai",
+            "port": 29995,
+            "lat": 21.550206,
+            "lon": 107.938978,
+            "alt_m": 36.0,
+            "connected": true,
+            "remote_address": "100.127.47.30",
+            "connected_since": "2026-08-19T09:25:51.620140Z",
+            "last_frame_age_s": 0.10033035278320312,
+            "frames_total": 210938,
+            "type1_total": 151844,
+            "type2_total": 31748,
+            "type3_total": 27346,
+            "type1_rate_s": 589.7666666666667,
+            "type2_rate_s": 124.21666666666667,
+            "type3_rate_s": 103.81666666666666,
+            "parse_errors": 0,
+            "reconnect_count": 0
+          }
+        ]
+      },
+      "clocks": {
+        "links": [
+          {
+            "a": "T37",
+            "b": "Dao_Cai_chien",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 0.9999990352647979,
+            "offset": 307918951994.65186,
+            "p50_us": 0.04844156901041667,
+            "p90_us": 0.11776072184244793,
+            "p95_us": 0.14325078328450513,
+            "p99_us": 0.19273661295572916,
+            "last_update": 1787131796.3080297,
+            "updated_age_s": 0.5803074836730957,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000008707352144,
+            "offset": 11027755030964.71,
+            "p50_us": 0.06754557291666667,
+            "p90_us": 0.16080729166666666,
+            "p95_us": 0.19029134114583332,
+            "p99_us": 0.2655436197916666,
+            "last_update": 1787131796.1536508,
+            "updated_age_s": 0.7372550964355469,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "T37",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000005083230545,
+            "offset": 105313831368.32617,
+            "p50_us": 0.04881540934244792,
+            "p90_us": 0.12072703043619794,
+            "p95_us": 0.14266738891601563,
+            "p99_us": 0.19378295898437498,
+            "last_update": 1787131796.6532733,
+            "updated_age_s": 0.24025702476501465,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "BachLongVi",
+            "quality": "STRONG",
+            "samples": 1807,
+            "slope": 1.0000018315315562,
+            "offset": 10719835515540.596,
+            "p50_us": 0.09781901041666667,
+            "p90_us": 0.22395833333333337,
+            "p95_us": 0.26738281249999984,
+            "p99_us": 0.32937825520833336,
+            "last_update": 1787131796.3396928,
+            "updated_age_s": 0.572211742401123,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "Dao_Cai_chien",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 2000,
+            "slope": 1.0000014686301497,
+            "offset": -202605572245.39322,
+            "p50_us": 0.10676193237304688,
+            "p90_us": 0.2367650349934897,
+            "p95_us": 0.27368087768554683,
+            "p99_us": 0.35548095703125,
+            "last_update": 1787131796.6554756,
+            "updated_age_s": 0.25878453254699707,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          },
+          {
+            "a": "BachLongVi",
+            "b": "MongCai",
+            "quality": "STRONG",
+            "samples": 1368,
+            "slope": 0.9999996340637403,
+            "offset": -10922437163664.648,
+            "p50_us": 0.09797414143880209,
+            "p90_us": 0.23834762573242185,
+            "p95_us": 0.2769012451171875,
+            "p99_us": 0.3668295288085931,
+            "last_update": 1787131796.6465013,
+            "updated_age_s": 0.2909257411956787,
+            "rejected_discontinuities": 0,
+            "model_resets": 0
+          }
+        ]
+      },
+      "modeac": {
+        "uptime_s": 249.487074136734,
+        "type1_rate_per_receiver": {
+          "T37": 1126.3666666666666,
+          "Dao_Cai_chien": 526.15,
+          "BachLongVi": 409.51666666666665,
+          "MongCai": 570.25
+        },
+        "strict_4rx_per_min": 291,
+        "blind_unique_per_min": 25,
+        "blind_multiple_per_min": 0,
+        "blind_inconsistent_per_min": 1,
+        "totals": {
+          "strict_4rx": 1201,
+          "ambiguous_association": 19,
+          "inconsistent_association": 81,
+          "blind_unique": 88,
+          "blind_multiple": 15,
+          "blind_inconsistent": 4
+        },
+        "active_tracks": 1,
+        "confirmed_tracks": 0,
+        "high_quality_tracks": 0,
+        "processing_latency_ms": {
+          "p50": 128584.37942306045,
+          "p90": 202471.1360889487,
+          "p95": 213429.8424560111
+        },
+        "buffers": {
+          "frame_queue_depth": 0,
+          "event_queue_depth": 199,
+          "modeac_entries": 3017,
+          "clock_samples": 11195
+        },
+        "frames_dropped_queue": 0,
+        "events_dropped_queue": 894
+      },
+      "modes": {
+        "uptime_s": 250.02453088760376,
+        "type2_rate_per_receiver": {
+          "T37": 330.01666666666665,
+          "Dao_Cai_chien": 137.43333333333334,
+          "BachLongVi": 107.38333333333334,
+          "MongCai": 122.21666666666667
+        },
+        "type3_rate_per_receiver": {
+          "T37": 368.98333333333335,
+          "Dao_Cai_chien": 141.4,
+          "BachLongVi": 99.93333333333334,
+          "MongCai": 101.55
+        },
+        "df_distribution": {
+          "11": 115985,
+          "4": 19878,
+          "17": 118427,
+          "0": 35582,
+          "20": 48526,
+          "21": 7046,
+          "16": 4443,
+          "5": 3604,
+          "18": 1
+        },
+        "solver_by_df": {
+          "20": {
+            "attempts": 25,
+            "blind_unique": 23,
+            "blind_multiple": 2
+          },
+          "11": {
+            "attempts": 101,
+            "blind_unique": 94,
+            "blind_multiple": 7
+          },
+          "4": {
+            "attempts": 21,
+            "blind_unique": 17,
+            "blind_multiple": 4
+          },
+          "0": {
+            "attempts": 48,
+            "blind_unique": 44,
+            "blind_multiple": 4
+          },
+          "17": {
+            "attempts": 175,
+            "blind_unique": 156,
+            "blind_multiple": 19
+          },
+          "21": {
+            "attempts": 7,
+            "blind_unique": 7
+          },
+          "5": {
+            "attempts": 6,
+            "blind_unique": 6
+          },
+          "16": {
+            "attempts": 2,
+            "blind_unique": 2
+          }
+        },
+        "clustered_per_min": 845,
+        "strict_4rx_per_min": 845,
+        "mlat_fix_per_min": 79,
+        "three_rx_alt_per_min": 0,
+        "totals": {
+          "clustered": 5181,
+          "strict_4rx": 5181,
+          "mlat_fix": 349,
+          "three_rx_alt": 0,
+          "ambiguous_association": 0,
+          "inconsistent_association": 6353,
+          "clock_not_ready": 1435,
+          "untrusted_identity": 0,
+          "events_dropped_queue": 1471,
+          "events_dropped_stale": 3261
+        },
+        "active_tracks": 21,
+        "confirmed_tracks": 8,
+        "latency_ms": {
+          "association": {
+            "count": 3649,
+            "p50": 0.04562793765217066,
+            "p90": 0.07187807932496071,
+            "p95": 0.08341693319380283,
+            "p99": 0.10915892198681831
+          },
+          "queue": {
+            "count": 3649,
+            "p50": 3313.777239061892,
+            "p90": 3993.4291050303727,
+            "p95": 4246.129414997995,
+            "p99": 4692.28427298367
+          },
+          "solver": {
+            "count": 385,
+            "p50": 1848.3083508908749,
+            "p90": 2408.7812589714304,
+            "p95": 2648.110863985494,
+            "p99": 3074.165396974422
+          },
+          "track": {
+            "count": 349,
+            "p50": 0.16721198335289955,
+            "p90": 11.351302033290267,
+            "p95": 29.328058939427137,
+            "p99": 88.00340909510851
+          },
+          "total": {
+            "count": 349,
+            "p50": 4708.072195993736,
+            "p90": 5454.279002035037,
+            "p95": 5687.744076014496,
+            "p99": 6251.891174004413
+          }
+        },
+        "buffers": {
+          "event_queue_depth": 61,
+          "event_queue_high_water": 64,
+          "oldest_queued_age_s": 2.8857835970120504,
+          "association_entries": 1048
+        }
+      },
+      "production": {
+        "now": 1787131799.0,
+        "messages": 384392874,
+        "aircraft_count": 106,
+        "position_count": 100,
+        "mlat_position_count": 0
+      }
+    }
+  ],
+  "final": {
+    "sample_utc": 1787131794.1838565,
+    "backend_cpu_percent": 310.62937097810976,
+    "backend_rss_mib": 215.109375,
+    "backend_process_count": 4,
+    "firefox_cpu_percent": 3.797913802177662,
+    "firefox_rss_mib": 378.84765625,
+    "firefox_process_count": 1,
+    "page": {
+      "overlay": {
+        "phase": "10B_WEBSOCKET",
+        "initialized": true,
+        "restErrors": 0,
+        "invalidTracks": 0,
+        "outOfOrderDrops": 0,
+        "received": {
+          "modes": 133,
+          "modeac": 21
+        },
+        "maxima": {
+          "modes": 21,
+          "modeac": 1
+        },
+        "statusPolls": 13,
+        "clockDegradationEvents": 0,
+        "delayedMeasurementExamples": [
+          {
+            "kind": "modes",
+            "trackId": "MS-7804D8",
+            "measurementTime": "2026-08-19T09:28:03.582945Z",
+            "ageAtReceiptS": 61.354
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-78165C",
+            "measurementTime": "2026-08-19T09:28:34.448725Z",
+            "ageAtReceiptS": 30.488
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-7810B5",
+            "measurementTime": "2026-08-19T09:27:03.418061Z",
+            "ageAtReceiptS": 121.518
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-780725",
+            "measurementTime": "2026-08-19T09:27:33.616127Z",
+            "ageAtReceiptS": 91.32
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-7823A4",
+            "measurementTime": "2026-08-19T09:28:06.666965Z",
+            "ageAtReceiptS": 58.27
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-780E13",
+            "measurementTime": "2026-08-19T09:27:20.501186Z",
+            "ageAtReceiptS": 104.435
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-781CD1",
+            "measurementTime": "2026-08-19T09:28:16.342207Z",
+            "ageAtReceiptS": 48.594
+          },
+          {
+            "kind": "modes",
+            "trackId": "MS-781FE6",
+            "measurementTime": "2026-08-19T09:28:19.789864Z",
+            "ageAtReceiptS": 45.147
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000036",
+            "measurementTime": "2026-08-19T09:26:13.470867Z",
+            "ageAtReceiptS": 173.042
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000037",
+            "measurementTime": "2026-08-19T09:26:13.495883Z",
+            "ageAtReceiptS": 175.595
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000038",
+            "measurementTime": "2026-08-19T09:26:14.424391Z",
+            "ageAtReceiptS": 176.897
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000039",
+            "measurementTime": "2026-08-19T09:26:14.783960Z",
+            "ageAtReceiptS": 179.472
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000040",
+            "measurementTime": "2026-08-19T09:26:15.339582Z",
+            "ageAtReceiptS": 181.337
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000041",
+            "measurementTime": "2026-08-19T09:26:15.427063Z",
+            "ageAtReceiptS": 182.159
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000042",
+            "measurementTime": "2026-08-19T09:26:15.427063Z",
+            "ageAtReceiptS": 184.438
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000043",
+            "measurementTime": "2026-08-19T09:26:15.481947Z",
+            "ageAtReceiptS": 186.422
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000044",
+            "measurementTime": "2026-08-19T09:26:15.561716Z",
+            "ageAtReceiptS": 188.447
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000045",
+            "measurementTime": "2026-08-19T09:26:15.645768Z",
+            "ageAtReceiptS": 190.357
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000046",
+            "measurementTime": "2026-08-19T09:26:15.660360Z",
+            "ageAtReceiptS": 192.476
+          },
+          {
+            "kind": "modeac",
+            "trackId": "MAC-000047",
+            "measurementTime": "2026-08-19T09:26:15.674000Z",
+            "ageAtReceiptS": 194.579
+          }
+        ],
+        "streams": {
+          "modes": {
+            "status": "LIVE",
+            "connected": true,
+            "lastMessageTime": "2026-08-19T09:29:53.028Z",
+            "reconnectCount": 0
+          },
+          "modeac": {
+            "status": "LIVE",
+            "connected": true,
+            "lastMessageTime": "2026-08-19T09:29:54.006Z",
+            "reconnectCount": 0
+          }
+        },
+        "lastError": null,
+        "tracks": {
+          "modes": {
+            "registrySize": 21,
+            "visibleMarkers": 21,
+            "historyPoints": 78,
+            "oldestMeasurementAgeS": 97.845,
+            "newestReceiptAgeS": 1.159
+          },
+          "modeac": {
+            "registrySize": 0,
+            "visibleMarkers": 0,
+            "historyPoints": 0,
+            "oldestMeasurementAgeS": null,
+            "newestReceiptAgeS": null
+          }
+        },
+        "config": {
+          "apiBase": "http://100.100.24.4:8090",
+          "trackPollMs": 1500,
+          "statusPollMs": 4000,
+          "historyMs": 600000,
+          "staleRemoveMs": 120000,
+          "startTimeoutMs": 30000,
+          "reconnectInitialMs": 1000,
+          "reconnectMaxMs": 30000
+        },
+        "productionPlaneCount": 139
+      },
+      "status": "PoC MLAT\nBackend: OK\nReceivers: 4 / 4\nClock: 6 / 6 OK\nMode-S PoC: LIVE\nMode A/C PoC: LIVE\nTargets: Mode-S 21 \u00b7 Mode A/C 1\nZoom to PoC",
+      "layerTitles": [
+        "Custom",
+        "Europe",
+        "UK AWACS Orbits",
+        "UK A2A Refueling",
+        "UK Radar Corridors",
+        "DE AWACS Orbits",
+        "NL AWACS Orbits",
+        "PL AWACS Orbits",
+        "DWD RADOLAN",
+        "US",
+        "US ARTCC Boundaries",
+        "US A2A Refueling",
+        "NOAA Radar",
+        "NOAA Infrared Sat",
+        "NEXRAD",
+        "Special Use Airspace",
+        "TFRs",
+        "IFR Enroute Chart High",
+        "IFR Enroute Chart Low",
+        "VFR Terminal Chart",
+        "VFR Sectional Chart",
+        "Worldwide",
+        "RainViewer Radar",
+        "openAIP TMS",
+        "CARTO.com light_nolabels",
+        "CARTO.com light_all",
+        "CARTO.com dark_nolabels",
+        "CARTO.com dark_all",
+        "GIBS Clouds 2026-08-18",
+        "ESRI.com Streets",
+        "ESRI.com Gray",
+        "ESRI.com Sat.",
+        "OpenFreeMap Fiord",
+        "OpenFreeMap Dark",
+        "OpenFreeMap Positron",
+        "OpenFreeMap Liberty",
+        "OpenFreeMap Bright",
+        "OpenStreetMap DE",
+        "CARTO.com English",
+        "OpenStreetMap",
+        "Range rings",
+        "Site position",
+        "actual range outline",
+        "Aircraft trails",
+        "Aircraft positions",
+        "PoC Mode-S MLAT",
+        "PoC Mode A/C MLAT"
+      ],
+      "productionPlaneCount": 139
+    },
+    "health": {
+      "status": "ok",
+      "uptime_s": 245.6146047115326,
+      "receivers_connected": 4,
+      "strict_4rx_enabled": true,
+      "modes_strict_4rx_enabled": true
+    },
+    "receivers": {
+      "receivers": [
+        {
+          "station": "T37",
+          "port": 29996,
+          "lat": 21.485594,
+          "lon": 107.773191,
+          "alt_m": 60.0,
+          "connected": true,
+          "remote_address": "100.102.185.43",
+          "connected_since": "2026-08-19T09:25:52.603897Z",
+          "last_frame_age_s": 0.13282203674316406,
+          "frames_total": 432349,
+          "type1_total": 264092,
+          "type2_total": 79612,
+          "type3_total": 88645,
+          "type1_rate_s": 1144.6666666666667,
+          "type2_rate_s": 332.28333333333336,
+          "type3_rate_s": 371.78333333333336,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        },
+        {
+          "station": "Dao_Cai_chien",
+          "port": 29998,
+          "lat": 21.32094,
+          "lon": 107.766116,
+          "alt_m": 28.0,
+          "connected": true,
+          "remote_address": "100.74.130.53",
+          "connected_since": "2026-08-19T09:25:52.892649Z",
+          "last_frame_age_s": 0.09978079795837402,
+          "frames_total": 203860,
+          "type1_total": 135141,
+          "type2_total": 34472,
+          "type3_total": 34247,
+          "type1_rate_s": 538.2166666666667,
+          "type2_rate_s": 138.96666666666667,
+          "type3_rate_s": 141.73333333333332,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        },
+        {
+          "station": "BachLongVi",
+          "port": 29999,
+          "lat": 20.132285,
+          "lon": 107.724413,
+          "alt_m": 28.0,
+          "connected": true,
+          "remote_address": "100.120.90.84",
+          "connected_since": "2026-08-19T09:25:52.626149Z",
+          "last_frame_age_s": 0.0990750789642334,
+          "frames_total": 156941,
+          "type1_total": 105019,
+          "type2_total": 26683,
+          "type3_total": 25239,
+          "type1_rate_s": 427.71666666666664,
+          "type2_rate_s": 109.31666666666666,
+          "type3_rate_s": 101.98333333333333,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        },
+        {
+          "station": "MongCai",
+          "port": 29995,
+          "lat": 21.550206,
+          "lon": 107.938978,
+          "alt_m": 36.0,
+          "connected": true,
+          "remote_address": "100.127.47.30",
+          "connected_since": "2026-08-19T09:25:51.620140Z",
+          "last_frame_age_s": 0.10033035278320312,
+          "frames_total": 210938,
+          "type1_total": 151844,
+          "type2_total": 31748,
+          "type3_total": 27346,
+          "type1_rate_s": 589.7666666666667,
+          "type2_rate_s": 124.21666666666667,
+          "type3_rate_s": 103.81666666666666,
+          "parse_errors": 0,
+          "reconnect_count": 0
+        }
+      ]
+    },
+    "clocks": {
+      "links": [
+        {
+          "a": "T37",
+          "b": "Dao_Cai_chien",
+          "quality": "STRONG",
+          "samples": 2000,
+          "slope": 0.9999990352647979,
+          "offset": 307918951994.65186,
+          "p50_us": 0.04844156901041667,
+          "p90_us": 0.11776072184244793,
+          "p95_us": 0.14325078328450513,
+          "p99_us": 0.19273661295572916,
+          "last_update": 1787131796.3080297,
+          "updated_age_s": 0.5803074836730957,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "T37",
+          "b": "BachLongVi",
+          "quality": "STRONG",
+          "samples": 2000,
+          "slope": 1.0000008707352144,
+          "offset": 11027755030964.71,
+          "p50_us": 0.06754557291666667,
+          "p90_us": 0.16080729166666666,
+          "p95_us": 0.19029134114583332,
+          "p99_us": 0.2655436197916666,
+          "last_update": 1787131796.1536508,
+          "updated_age_s": 0.7372550964355469,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "T37",
+          "b": "MongCai",
+          "quality": "STRONG",
+          "samples": 2000,
+          "slope": 1.0000005083230545,
+          "offset": 105313831368.32617,
+          "p50_us": 0.04881540934244792,
+          "p90_us": 0.12072703043619794,
+          "p95_us": 0.14266738891601563,
+          "p99_us": 0.19378295898437498,
+          "last_update": 1787131796.6532733,
+          "updated_age_s": 0.24025702476501465,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "Dao_Cai_chien",
+          "b": "BachLongVi",
+          "quality": "STRONG",
+          "samples": 1807,
+          "slope": 1.0000018315315562,
+          "offset": 10719835515540.596,
+          "p50_us": 0.09781901041666667,
+          "p90_us": 0.22395833333333337,
+          "p95_us": 0.26738281249999984,
+          "p99_us": 0.32937825520833336,
+          "last_update": 1787131796.3396928,
+          "updated_age_s": 0.572211742401123,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "Dao_Cai_chien",
+          "b": "MongCai",
+          "quality": "STRONG",
+          "samples": 2000,
+          "slope": 1.0000014686301497,
+          "offset": -202605572245.39322,
+          "p50_us": 0.10676193237304688,
+          "p90_us": 0.2367650349934897,
+          "p95_us": 0.27368087768554683,
+          "p99_us": 0.35548095703125,
+          "last_update": 1787131796.6554756,
+          "updated_age_s": 0.25878453254699707,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        },
+        {
+          "a": "BachLongVi",
+          "b": "MongCai",
+          "quality": "STRONG",
+          "samples": 1368,
+          "slope": 0.9999996340637403,
+          "offset": -10922437163664.648,
+          "p50_us": 0.09797414143880209,
+          "p90_us": 0.23834762573242185,
+          "p95_us": 0.2769012451171875,
+          "p99_us": 0.3668295288085931,
+          "last_update": 1787131796.6465013,
+          "updated_age_s": 0.2909257411956787,
+          "rejected_discontinuities": 0,
+          "model_resets": 0
+        }
+      ]
+    },
+    "modeac": {
+      "uptime_s": 249.487074136734,
+      "type1_rate_per_receiver": {
+        "T37": 1126.3666666666666,
+        "Dao_Cai_chien": 526.15,
+        "BachLongVi": 409.51666666666665,
+        "MongCai": 570.25
+      },
+      "strict_4rx_per_min": 291,
+      "blind_unique_per_min": 25,
+      "blind_multiple_per_min": 0,
+      "blind_inconsistent_per_min": 1,
+      "totals": {
+        "strict_4rx": 1201,
+        "ambiguous_association": 19,
+        "inconsistent_association": 81,
+        "blind_unique": 88,
+        "blind_multiple": 15,
+        "blind_inconsistent": 4
+      },
+      "active_tracks": 1,
+      "confirmed_tracks": 0,
+      "high_quality_tracks": 0,
+      "processing_latency_ms": {
+        "p50": 128584.37942306045,
+        "p90": 202471.1360889487,
+        "p95": 213429.8424560111
+      },
+      "buffers": {
+        "frame_queue_depth": 0,
+        "event_queue_depth": 199,
+        "modeac_entries": 3017,
+        "clock_samples": 11195
+      },
+      "frames_dropped_queue": 0,
+      "events_dropped_queue": 894
+    },
+    "modes": {
+      "uptime_s": 250.02453088760376,
+      "type2_rate_per_receiver": {
+        "T37": 330.01666666666665,
+        "Dao_Cai_chien": 137.43333333333334,
+        "BachLongVi": 107.38333333333334,
+        "MongCai": 122.21666666666667
+      },
+      "type3_rate_per_receiver": {
+        "T37": 368.98333333333335,
+        "Dao_Cai_chien": 141.4,
+        "BachLongVi": 99.93333333333334,
+        "MongCai": 101.55
+      },
+      "df_distribution": {
+        "11": 115985,
+        "4": 19878,
+        "17": 118427,
+        "0": 35582,
+        "20": 48526,
+        "21": 7046,
+        "16": 4443,
+        "5": 3604,
+        "18": 1
+      },
+      "solver_by_df": {
+        "20": {
+          "attempts": 25,
+          "blind_unique": 23,
+          "blind_multiple": 2
+        },
+        "11": {
+          "attempts": 101,
+          "blind_unique": 94,
+          "blind_multiple": 7
+        },
+        "4": {
+          "attempts": 21,
+          "blind_unique": 17,
+          "blind_multiple": 4
+        },
+        "0": {
+          "attempts": 48,
+          "blind_unique": 44,
+          "blind_multiple": 4
+        },
+        "17": {
+          "attempts": 175,
+          "blind_unique": 156,
+          "blind_multiple": 19
+        },
+        "21": {
+          "attempts": 7,
+          "blind_unique": 7
+        },
+        "5": {
+          "attempts": 6,
+          "blind_unique": 6
+        },
+        "16": {
+          "attempts": 2,
+          "blind_unique": 2
+        }
+      },
+      "clustered_per_min": 845,
+      "strict_4rx_per_min": 845,
+      "mlat_fix_per_min": 79,
+      "three_rx_alt_per_min": 0,
+      "totals": {
+        "clustered": 5181,
+        "strict_4rx": 5181,
+        "mlat_fix": 349,
+        "three_rx_alt": 0,
+        "ambiguous_association": 0,
+        "inconsistent_association": 6353,
+        "clock_not_ready": 1435,
+        "untrusted_identity": 0,
+        "events_dropped_queue": 1471,
+        "events_dropped_stale": 3261
+      },
+      "active_tracks": 21,
+      "confirmed_tracks": 8,
+      "latency_ms": {
+        "association": {
+          "count": 3649,
+          "p50": 0.04562793765217066,
+          "p90": 0.07187807932496071,
+          "p95": 0.08341693319380283,
+          "p99": 0.10915892198681831
+        },
+        "queue": {
+          "count": 3649,
+          "p50": 3313.777239061892,
+          "p90": 3993.4291050303727,
+          "p95": 4246.129414997995,
+          "p99": 4692.28427298367
+        },
+        "solver": {
+          "count": 385,
+          "p50": 1848.3083508908749,
+          "p90": 2408.7812589714304,
+          "p95": 2648.110863985494,
+          "p99": 3074.165396974422
+        },
+        "track": {
+          "count": 349,
+          "p50": 0.16721198335289955,
+          "p90": 11.351302033290267,
+          "p95": 29.328058939427137,
+          "p99": 88.00340909510851
+        },
+        "total": {
+          "count": 349,
+          "p50": 4708.072195993736,
+          "p90": 5454.279002035037,
+          "p95": 5687.744076014496,
+          "p99": 6251.891174004413
+        }
+      },
+      "buffers": {
+        "event_queue_depth": 61,
+        "event_queue_high_water": 64,
+        "oldest_queued_age_s": 2.8857835970120504,
+        "association_entries": 1048
+      }
+    },
+    "production": {
+      "now": 1787131799.0,
+      "messages": 384392874,
+      "aircraft_count": 106,
+      "position_count": 100,
+      "mlat_position_count": 0
+    }
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "station": "T37",
+    "host": "client0125@100.102.185.43",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30321688 11845212  17113816      41% /\n70854 3150 907 936\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 17113816,
+    "sample_bytes": 70854,
+    "sample_type1": 3150,
+    "sample_type2": 907,
+    "sample_type3": 936,
+    "passed": true
+  },
+  {
+    "station": "Dao_Cai_chien",
+    "host": "phiyb@100.74.130.53",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30354440 9424112  19643660      33% /\n50018 3293 351 352\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 19643660,
+    "sample_bytes": 50018,
+    "sample_type1": 3293,
+    "sample_type2": 351,
+    "sample_type3": 352,
+    "passed": true
+  },
+  {
+    "station": "QK4",
+    "host": "mlat-client-1@100.119.31.100",
+    "exit_code": 255,
+    "output": "ssh: connect to host 100.119.31.100 port 22: Connection timed out\n",
+    "parse_error": true,
+    "passed": false
+  },
+  {
+    "station": "BachLongVi",
+    "host": "mlat-client-6@100.120.90.84",
+    "exit_code": 0,
+    "output": "ntp=yes\nport=ok\n/dev/root         30321688 11980648  16978380      42% /\n17112 908 169 191\n",
+    "ntp_synchronized": true,
+    "port_listening": true,
+    "disk_available_kb": 16978380,
+    "sample_bytes": 17112,
+    "sample_type1": 908,
+    "sample_type2": 169,
+    "sample_type3": 191,
+    "passed": true
+  }
+]

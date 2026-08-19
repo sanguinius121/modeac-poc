@@ -1,0 +1,2 @@
+icao,from_squawk,to_squawk,transition_event_id,gap_s,distance_m,continuous,before_fix_event,after_fix_event
+5001a9,2161,2456,2217,,,False,,

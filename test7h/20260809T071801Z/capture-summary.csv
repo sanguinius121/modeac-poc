@@ -1,0 +1,5 @@
+station,packet_count,type1,type2,type3,timestamp_zero,span_s,type1_per_s,parse_errors,socket_timeouts,disconnects
+T37,1263343,893419,186550,183374,15,599.986920632,1489.0316666666668,not_instrumented,not_instrumented,0
+Dao_Cai_chien,874906,679651,98796,96459,15,599.986385842,1132.7516666666668,not_instrumented,not_instrumented,0
+QK4,129104,76521,22789,29794,15,599.984882112,127.535,not_instrumented,not_instrumented,0
+BachLongVi,304322,223044,42915,38363,15,599.978951251,371.74,not_instrumented,not_instrumented,0

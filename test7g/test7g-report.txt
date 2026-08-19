@@ -1,0 +1,42 @@
+TEST 7G — 2D TRACK YIELD, CONTINUITY, AND ADS-B AGREEMENT
+================================================================
+
+TEST 7G STATUS: PASS
+
+POLICY COMPARISON
+{"cross_track_p50_m": 67.1142699535364, "cross_track_p90_m": 441.0093187354914, "cross_track_p95_m": 651.1041607218559, "dataset": "INDEPENDENT", "fixes_per_min": 2.5863887313074514, "gap_max_s": 152.832066064209, "gap_median_s": 2.35656865981547, "gap_p90_s": 20.432230783988953, "horizontal_p50_m": 121.54347975108382, "horizontal_p90_m": 686.0741823158835, "horizontal_p95_m": 890.3547441222917, "over_10km": 0, "over_1km": 4, "over_2km": 1, "over_5km": 0, "policy": "STRICT", "production_ready": true, "usable_fixes": 102, "usable_percent": 12.186379928315413}
+{"cross_track_p50_m": 179.91081812096996, "cross_track_p90_m": 765.1245284617746, "cross_track_p95_m": 986.2614830685701, "dataset": "INDEPENDENT", "fixes_per_min": 4.690999169528221, "gap_max_s": 152.832066064209, "gap_median_s": 1.5836066107304891, "gap_p90_s": 9.890106427689616, "horizontal_p50_m": 218.68889522581676, "horizontal_p90_m": 912.7050753601557, "horizontal_p95_m": 1120.4821286394545, "over_10km": 0, "over_1km": 15, "over_2km": 1, "over_5km": 0, "policy": "ANCHORED_TEMPORAL", "production_ready": true, "usable_fixes": 185, "usable_percent": 22.102747909199522}
+{"cross_track_p50_m": 81.46628812868718, "cross_track_p90_m": 423.1499488340799, "cross_track_p95_m": 644.921808020483, "dataset": "INDEPENDENT", "fixes_per_min": 2.8145995017169327, "gap_max_s": 152.832066064209, "gap_median_s": 2.1302688971048993, "gap_p90_s": 19.35119510220438, "horizontal_p50_m": 137.62775292067894, "horizontal_p90_m": 687.8351106173461, "horizontal_p95_m": 888.0551121443149, "over_10km": 0, "over_1km": 4, "over_2km": 1, "over_5km": 0, "policy": "QUALITY_DP", "production_ready": true, "usable_fixes": 111, "usable_percent": 13.261648745519713}
+{"cross_track_p50_m": 374.7081572613534, "cross_track_p90_m": 1777.4553400562454, "cross_track_p95_m": 2670.7181381261817, "dataset": "INDEPENDENT", "fixes_per_min": 6.022712021382976, "gap_max_s": 2.9453551903355915, "gap_median_s": 0.54740596236674, "gap_p90_s": 1.506785003571065, "horizontal_p50_m": 411.9813611250257, "horizontal_p90_m": 2046.157563915607, "horizontal_p95_m": 2949.872359172766, "over_10km": 4, "over_1km": 191, "over_2km": 86, "over_5km": 12, "policy": "CANDIDATE_TRAJECTORY_DIAGNOSTIC", "production_ready": false, "usable_fixes": 834, "usable_percent": 99.6415770609319}
+{"cross_track_p50_m": 70.51996603325831, "cross_track_p90_m": 452.3882482944066, "cross_track_p95_m": 656.0879086796666, "dataset": "DENSE", "fixes_per_min": 4.107793867370658, "gap_max_s": 152.832066064209, "gap_median_s": 1.2816767049738567, "gap_p90_s": 16.521619864565544, "horizontal_p50_m": 137.5979018879379, "horizontal_p90_m": 704.2412413837131, "horizontal_p95_m": 890.5028269702584, "over_10km": 0, "over_1km": 6, "over_2km": 1, "over_5km": 0, "policy": "STRICT", "production_ready": true, "usable_fixes": 162, "usable_percent": 7.2064056939501775}
+{"cross_track_p50_m": 137.48893717789002, "cross_track_p90_m": 653.1479792881697, "cross_track_p95_m": 826.8399949563461, "dataset": "DENSE", "fixes_per_min": 5.0206369490085825, "gap_max_s": 152.832066064209, "gap_median_s": 0.8776594025243123, "gap_p90_s": 12.599921135803221, "horizontal_p50_m": 180.5639357264554, "horizontal_p90_m": 928.5654923242619, "horizontal_p95_m": 1205.940904645017, "over_10km": 0, "over_1km": 15, "over_2km": 1, "over_5km": 0, "policy": "ANCHORED_TEMPORAL", "production_ready": true, "usable_fixes": 198, "usable_percent": 8.807829181494663}
+{"cross_track_p50_m": 93.90443183556405, "cross_track_p90_m": 506.7081699415179, "cross_track_p95_m": 656.0879086796666, "dataset": "DENSE", "fixes_per_min": 4.614928912725061, "gap_max_s": 152.832066064209, "gap_median_s": 1.184126843123118, "gap_p90_s": 14.248297749889655, "horizontal_p50_m": 152.96050438866618, "horizontal_p90_m": 807.4392540285492, "horizontal_p95_m": 952.3799909004498, "over_10km": 0, "over_1km": 7, "over_2km": 1, "over_5km": 0, "policy": "QUALITY_DP", "production_ready": true, "usable_fixes": 182, "usable_percent": 8.09608540925267}
+{"cross_track_p50_m": 564.0348688658141, "cross_track_p90_m": 1915.766214951189, "cross_track_p95_m": 2659.535441703008, "dataset": "DENSE", "fixes_per_min": 16.20499493523189, "gap_max_s": 1.7451773401412964, "gap_median_s": 0.04025086447143555, "gap_p90_s": 0.24318381009724943, "horizontal_p50_m": 613.1940238617491, "horizontal_p90_m": 2152.722235643175, "horizontal_p95_m": 2940.5312318986594, "over_10km": 5, "over_1km": 718, "over_2km": 259, "over_5km": 27, "policy": "CANDIDATE_TRAJECTORY_DIAGNOSTIC", "production_ready": false, "usable_fixes": 2244, "usable_percent": 99.8220640569395}
+
+TRACK RESULTS
+Validated tracks: 3; useful duration >=30/60/120/180 s: 3/3/3/2.
+Anchored independent fixes: 185/837 (22.1%); fixes/min 4.690999169528221; gap median/P90 1.5836066107304891/9.890106427689616 s.
+Horizontal P50/P90/P95 218.68889522581676/912.7050753601557/1120.4821286394545 m; cross-track 179.91081812096996/765.1245284617746/986.2614830685701 m.
+
+5001A9 CASE
+{"candidate_events": 545, "coverage_1s": 0, "coverage_2s": 0, "coverage_5s": 0, "cross_track_p50_m": null, "cross_track_p90_m": null, "cross_track_p95_m": null, "duration_s": 290.8519987538147, "fixes_per_min": 0.0, "gap_median_s": null, "gap_p90_s": null, "gap_p95_s": null, "heading_error_median_deg": null, "heading_error_p90_deg": null, "horizontal_p50_m": null, "horizontal_p90_m": null, "horizontal_p95_m": null, "icao": "5001a9", "largest_modea_jump_m": 0, "max_gap_s": null, "receiver_combinations": "", "selected_duration_s": 0, "speed_error_median_mps": null, "speed_error_p90_mps": null, "squawks": "2161;2456", "truth_blind_track_quality": "AMBIGUOUS", "usable_fixes": 0, "validation_status": "TRACK_AMBIGUOUS"}
+Squawk transitions: [{"after_fix_event": null, "before_fix_event": null, "continuous": false, "distance_m": null, "from_squawk": "2161", "gap_s": null, "icao": "5001a9", "to_squawk": "2456", "transition_event_id": 2217}]
+
+SCIENTIFIC ANSWERS
+1-4. Confirmed Mode-A trajectories exist for 3 aircraft. Anchored cadence is 4.690999169528221 fixes/min, median/P90 gap 1.5836066107304891/9.890106427689616 s; duration-weighted coverage within 1/2/5 s is 0.05353706552569652/0.08046213177587079/0.13395852037188705.
+5-6. Anchored horizontal P50/P90/P95 is 218.68889522581676/912.7050753601557/1120.4821286394545 m; absolute cross-track is 179.91081812096996/765.1245284617746/986.2614830685701 m.
+7-8. Track-shape metrics are in track-shape.csv. Heading error median/P90 is 5.191588439148916/40.478037982889255 deg; speed error median/P90 is 21.833373770862977/139.64897763809805 m/s.
+9. Anchored catastrophic >5 km event errors: 0; raw and speed-qualified truth-blind jump counts are in continuity.csv.
+10-11. 5001a9 has no anchored fixes, so continuity across 2161->2456 is not established; the candidate transition is preserved in squawk-transitions.csv.
+12. Densest candidate aircraft: 5001a9 (545 events); densest usable track: 70401f (15.870282855969945 fixes/min).
+13-15. T37+Cai+BLV remains weak (high yield but 1.03 km P90); T37+QK4+BLV remains strongest (161 m horizontal and 104 m cross-track P90).
+16. Anchored assistance changes independent yield from 102 to 185 fixes.
+17. Credible candidate branches are dense, but no truth-blind method reliably extracts their trajectory in mirrored geometry; candidate output remains diagnostic only.
+18-20. Validated useful tracks >=30/60/120 s: 3/3/3.
+21. Conclusion: PASS. The statement is supported for anchored/favorable tracks only, not anonymous cold-start tracks or all receiver geometries.
+
+ARCHITECTURE
+Continue with association -> candidate 2D positions -> quality/anchored temporal filtering -> horizontal track. Carry uncertainty and branch confidence; add receiver redundancy before treating anonymous cold starts as operational.
+
+ANTI-LEAKAGE
+The before-truth CSV contains no ADS-B coordinates. Truth was loaded only in the evaluation phase. No truth-based smoothing, branch selection, rejection, or bias correction was performed.
